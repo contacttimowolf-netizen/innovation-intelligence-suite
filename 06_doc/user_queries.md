@@ -54,7 +54,7 @@ https://www.kaggle.com/datasets/pashupatigupta/startups-worldwide?utm_source=cha
 
 Reports (5-10)
 
--
+- (Timo: I will check on World Economic Forum, Consulting Big5, MIT, Stanford, my private collection from former work)
 -
 -
 -
