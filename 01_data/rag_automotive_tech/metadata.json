@@ -1,0 +1,35 @@
+{
+    "automotive_papers": [],
+  
+    "tech_reports": [
+    {
+      "id": "wef_2025",
+      "publisher": "World Economic Forum", 
+      "title": "Top 10 Emerging Technologies of 2025",
+      "key_focus": "Future technologies with societal impact",
+      "best_for": "Strategic foresight and innovation planning"
+    },
+    {
+      "id": "mckinsey_2025",
+      "publisher": "McKinsey & Company",
+      "title": "Technology Trends 2025", 
+      "key_focus": "Business value and implementation",
+      "best_for": "ROI analysis and adoption strategies"
+    },
+    {
+      "id": "bcg_2025", 
+      "publisher": "Boston Consulting Group",
+      "title": "The Widening AI Value Gap",
+      "key_focus": "AI maturity and competitive advantage",
+      "best_for": "Benchmarking and transformation roadmaps"
+    }
+  ],
+  "startups_dataset": {
+    "source": "Startups Worldwide (Kaggle)",
+    "dataset_url": "https://www.kaggle.com/datasets/pashupatigupta/startups-worldwide",
+    "total_startups": 42038,
+    "key_fields": ["name", "city", "tagline", "description"],
+    "coverage": "Global startups across all industries",
+    "purpose": "Real-world validation of technology trends and innovation mapping"
+  }
+}

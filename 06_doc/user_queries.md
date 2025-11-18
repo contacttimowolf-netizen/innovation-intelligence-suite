@@ -46,6 +46,8 @@ Out of Scope:
 
  Note: The quality of the Innovation Intelligence Suit depends on the data supply, quality and speed of processing. Therefore, to keep your knowledge base current, you should regularly ingest reports from the leading consulting firms, industry-specific publications, and the annual outlooks from major players in each field etc.
 
+ Note: Overview of data sources /01_data/rag_automotive_tech/metadata.json. Processing done via /03_notebooks/exploration_rag.ipynb
+
 **Startup Data**
 
 - Startup Worldwide (clean global startup dataset) - startup-name, location, tagline, description (14k entries)
@@ -81,3 +83,4 @@ https://www.kaggle.com/datasets/pashupatigupta/startups-worldwide?utm_source=cha
 
 - What will we use for technologies research and patents descriptions? -> Mert
 - Any additional information on Hype Cycle/TRL data needed to answer question 6? -> Mert
+- Does the data processing of the startups_worldwide.csv need additional filtering to seize down? -> Siri/Timo

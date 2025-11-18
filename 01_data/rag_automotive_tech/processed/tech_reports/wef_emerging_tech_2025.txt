@@ -1,0 +1,2938 @@
+TECH REPORT: wef_emerging_technologies_2025
+SOURCE: wef_emerging_technologies_2025.pdf
+============================================================
+
+## KEY SECTIONS ##
+
+### EXECUTIVE SUMMARY ###
+99. International Energy Agency (IEA). (2021). Executive summary. In Ammonia Technology Roadmap. 
+
+--------------------------------------------------
+
+### INTRODUCTION ###
+drives appropriately in the context of its own 
+sensors, and that also knows (thanks to connected 
+sensors on a traffic light hundreds of yards away) 
+
+--------------------------------------------------
+
+### TECHNOLOGY CATALOG ###
+Fax: +41 (0) 22 786 2744
+contact@weforum.org
+www.weforum.orgThe World Economic Forum, 
+committed to improving 
+the state of the world, is the 
+International Organization for 
+Public-Private Cooperation.
+
+The Forum engages the 
+foremost political, business 
+and other leaders of society 
+to shape global, regional 
+and industry agendas.
+
+--------------------------------------------------
+
+### STRATEGIC OUTLOOK ###
+provide a forward-looking perspective that bridges 
+scientific potential with practical implementation. 
+The most profound innovations are rarely obvious 
+at first glance. They emerge through persistent 
+observation, interdisciplinary collaboration and a 
+fundamental willingness to reimagine what’s possible.
+
+--------------------------------------------------
+
+### CONCLUSIONS ###
+https://www.iea.org/reports/ammonia-technology-roadmap/executive-summary. 
+100. Hussain, J., Mubarak, M., Boopathi, D., & Jayabal, R. (2025). A comprehensive review of production and utilisation of 
+ammonia as potential fuel for compression ignition engines. Next Sustainability, 5, 100116. 
+https://doi.org/10.1016/j.nxsust.2025.100116. 
+101. Adeniyi, A., Bello, I., Mukaila, T., Sarker, N., & Hammed, A. (2023). Trends in biological ammonia production. 
+Trends in Biological Ammonia Production, 12(2), 41. https://doi.org/10.20944/preprints202304.0543.v1. 
+102. Ibid.
+103. Spry, M., Westhead, O., Tort, R., Moss, B., et al. (2023). Water increases the faradaic selectivity of Li-mediated nitrogen 
+reduction. ACS Energy Letters, 8(2), pp. 1230-1235. https://doi.org/10.1021/acsenergylett.2c02792. 
+104. Fu, X. (2023). Lithium-mediated nitrogen reduction for electrochemical ammonia synthesis: From batch to flow reactor. 
+Materials Today Catalysis, 3, 100031. https://doi.org/10.1016/j.mtcata.2023.100031. 
+105. Zhou, Y., Fu, X., Chorkendorff, I., & Nørskov, J. K. (2024). Electrochemical Ammonia Synthesis: The energy efficiency 
+challenge. ACS Energy Letters, 10(1), pp. 128-132. https://doi.org/10.1021/acsenergylett.4c02954. 
+106. International Energy Agency (IEA). (n.d.). Critical Minerals. https://www.iea.org/topics/critical-minerals. 
+107. Masia, B., Yang, M., & Cozzani, V. (2024). Risk assessment of ammonia fueled ships: Consequences on human 
+health of ammonia releases from damaged fuel storage tanks. ACS Chemical Health & Safety, 31(6), pp. 503-520. 
+https://doi.org/10.1021/acs.chas.4c00044. 
+108. Wyer, K. E., Kelleghan, D. B., Blanes-Vidal, V., Schauberger, G., & Curran, T. P . (2022). Ammonia emissions from 
+agriculture and their contribution to fine particulate matter: A review of implications for human health. Journal of 
+Environmental Management, 323, 116285. https://doi.org/10.1016/j.jenvman.2022.116285. 
+109. International Energy Agency (IEA). (n.d.) Ammonia Technology Roadmap: Towards more sustainable nitrogen 
+fertilizer production. https://iea.blob.core.windows.net/assets/6ee41bb9-8e81-4b64-8701-2acc064ff6e4/
+
+--------------------------------------------------
+
+### FORESIGHT FRAMEWORK ###
+https://www.dubaifuture.ae/navigating-10-megatrends-shaping-our-future-in-2024.
+
+--------------------------------------------------
+
+### REFERENCES ###
+https://www.nifa.usda.gov/about-nifa/impacts/using-drones-agriculture-natural-resources. 
+134. Federal Communications Commission. (2024, 21 November). FCC ADOPTS ‘C-V2X’ AUTO SAFETY SPECTRUM 
+RULES. https://docs.fcc.gov/public/attachments/DOC-407683A1.pdf. 
+135. Armeni, I., He, Z.-Y., Zamir, A., Gwak, J., (2019). 3D scene graph: A structure for unified semantics, 3D space, and 
+camera. IEEE/CVF International Conference on Computer Vision (ICCV). https://doi.org/10.1109/iccv.2019.00576. 
+136. Cadena, C. et al. (2016). Past, Present, and Future of Simultaneous Localization and Mapping: Toward the Robust-Perception 
+Age. IEEE Transactions on Robotics, vol. 32, no. 6, pp. 1309-1332. https://ieeexplore.ieee.org/document/7747236. 
+137. Feng, D., et al. (2021). Deep Multi-Modal Object Detection and Semantic Segmentation for Autonomous Driving: 
+Datasets, Methods, and Challenges. IEEE Transactions on Intelligent Transportation Systems, vol. 22, no. 3, 
+pp. 1341-1360. https://ieeexplore.ieee.org/document/9000872. 
+138. Rajvanshi, A., et al. (2023). SayNav: Grounding Large Language Models for Dynamic Planning to Navigation 
+in New Environments. Cornell University. https://arxiv.org/abs/2309.04077. 
+
+--------------------------------------------------
+
+### ECOSYSTEM READINESS ###
+KEY ACTIONS TO ACHIEVE SCALE
+TechnologicalSocial
+EconomicEnvironmentalPolicy
+ Image: 
+
+--------------------------------------------------
+
+## FULL REPORT CONTENT ##
+
+In collaboration 
+with Frontiers
+FLAGSHIP REPORT
+JUNE 2025Top 10 Emerging 
+Technologies of 2025
+Contents
+Images: Midjourney, Studio Miko. All images in this 
+report were generated using artificial intelligence.
+© 2025 World Economic Forum. All rights 
+reserved. No part of this publication may 
+be reproduced or transmitted in any form 
+or by any means, including photocopying 
+and recording, or by any information 
+storage and retrieval system.Disclaimer 
+This document is published by the 
+World Economic Forum as a contribution 
+to a project, insight area or interaction. 
+The findings, interpretations and 
+conclusions expressed herein are a result 
+of a collaborative process facilitated and 
+endorsed by the World Economic Forum 
+but whose results do not necessarily 
+represent the views of the World Economic 
+Forum, nor the entirety of its Members, 
+Partners or other stakeholders.Foreword 03
+Building strategic foresight 04
+Introduction 05
+Methodology 06
+1 Structural battery composites 09
+2 Osmotic power systems 12
+3 Advanced nuclear technologies 15
+4 Engineered living therapeutics 18
+5 GLP-1s for neurodegenerative disease 21
+6 Autonomous biochemical sensing 24
+7 Green nitrogen fixation 27
+8 Nanozymes 30
+9 Collaborative sensing 33
+10 Generative watermarking 36
+From weak signals to societal transformation 39
+Contributors 40
+Endnotes 43
+Top 10 Emerging Technologies of 2025
+Foreword
+Every year, remarkable innovations emerge 
+from research labs around the world. Many hold 
+tremendous promise, yet too few successfully 
+make the critical leap from scientific discovery to 
+real-world application. For 13 years, the World 
+Economic Forum’s Top 10 Emerging Technologies 
+report has aimed to change that by shining a 
+spotlight on breakthrough technologies with the 
+potential not only to cross this threshold but also 
+to help societies adapt and thrive in the face of 
+complex challenges.
+This report serves a clear purpose: to catalyse 
+forward-looking dialogues and shape technology 
+agendas by connecting cutting-edge research 
+with those who can help advance it. By identifying 
+technologies at their turning point – where scientific 
+achievement meets practical potential – we provide 
+leaders in government, business and science with 
+the insights needed to make forward-thinking 
+decisions in a rapidly evolving landscape.
+Our work arrives at a pivotal moment. The 
+global innovation landscape continues to evolve, 
+with shifting trade relationships, supply chain 
+reconfigurations and regional dynamics creating 
+new strategic considerations. In this context, 
+the technologies highlighted in this report take 
+on additional dimensions of importance. Some 
+may offer pathways to greater self-sufficiency 
+and resilience; others could serve as bridges for 
+essential international collaboration despite broader 
+tensions. Many represent areas where shared global 
+interests matter more than short-term differences.
+Each technology in this report has been carefully 
+evaluated based on its novelty, development 
+progress and transformative potential. From 
+materials that store energy within their structure to 
+new treatments for neurodegenerative diseases, 
+these innovations have moved beyond theory and 
+demonstrated the capacity to strengthen society’s 
+ability to adapt and thrive.What makes this report valuable is that we look 
+beyond what these technologies are to envision 
+what they could create. Each entry includes a 
+strategic outlook that illustrates possible futures 
+if these innovations reach their full potential. 
+Developed in collaboration with the Dubai Future 
+Foundation, these forward-looking scenarios 
+help readers see transformative possibilities 
+and inspire the commitment needed to move 
+these technologies from promising concepts to 
+widespread implementation.
+The technologies in this edition reveal exciting 
+patterns: combining energy systems with advanced 
+materials, using biological approaches to improve 
+human health, reimagining industrial processes 
+for sustainability and creating new foundations for 
+trust in connected systems. Each represents not 
+just a technical advance, but a path towards more 
+resilient and sustainable societies.
+This work would not be possible without Mariette 
+DiChristina and Bernard Meyerson, co-chairs of 
+our Emerging Technologies Steering Committee. 
+Their leadership has been essential in shaping both 
+this report and the selection process behind it. 
+We are equally grateful to our steering committee 
+members, whose diverse expertise ensures we 
+identify truly groundbreaking technologies with the 
+potential to transform our world.
+As the report continues to evolve, this year we’ve 
+also introduced ecosystem readiness maps that 
+provide practical guidance on the specific actions 
+needed to scale these technologies from promise 
+to impact.
+We offer this report not as an endpoint, but as a call 
+to action – a catalyst for the collaboration essential 
+to help these technologies fulfil their promise. In an 
+era of unprecedented challenges and uncertainty, 
+these innovations give us powerful tools to adapt, 
+overcome and thrive. Frederick Fenter 
+Chief Executive Editor, 
+FrontiersJeremy Jurgens 
+Managing Director, 
+World Economic Forum
+Top 10 Emerging 
+Technologies of 2025
+June 2025
+Top 10 Emerging Technologies of 2025
+Building strategic 
+foresight
+Strategic foresight is the deliberate exploration 
+of possible futures to inform today’s decisions. 
+In an era of accelerating change, foresight enables 
+leaders to move beyond short-term thinking, 
+anticipate disruption and uncover opportunities 
+that lie beyond the immediate horizon.
+At its core, strategic foresight recognizes that 
+technological innovation cannot be understood 
+through a single, linear perspective. At the Dubai 
+Future Foundation (DFF), we assess emerging 
+technologies through three simultaneous and 
+interconnected lenses: Beyond merely predicting outcomes, strategic 
+foresight unpacks the various pathways through 
+which different possibilities might unfold, revealing 
+how innovations can transform our collective future.
+In exploring these technologies, we invite 
+readers to look beyond technical specifications. 
+Each innovation represents more than an 
+isolated advancement – it is a signal of broader 
+transformations taking shape across our global 
+systems. These are not just technologies, but 
+potential catalysts for reimagining how we address 
+complex global challenges.
+For those interested in a deeper exploration of 
+each technology’s potential, the strategic outlook 
+sections that follow each description offer a 
+comprehensive view of transformative possibilities 
+and strategic implications. To ground these 
+technologies in the context of global change, every 
+entry is tagged with two of the DFF megatrends that 
+are most likely to enable, and be enabled by, the 
+respective technology within the next decade.
+By connecting these emerging technologies to 
+wider contextual frameworks, we aim to provide a 
+comprehensive view that bridges technical potential 
+with human aspiration. Our goal is not to present 
+a definitive roadmap, but to spark imagination, 
+encourage dialogue and consider multiple futures 
+that might emerge from some of today’s most 
+promising innovations.H.E. Khalfan Belhoul 
+Chief Executive Officer, 
+Dubai Future Foundation
+As an assumption
+Technological progress will continue 
+to accelerate.
+As an uncertainty
+Technologies are shaped by complex constraints 
+– infrastructure limitations, energy demands, 
+policy shifts and societal readiness.
+As an enabler
+Technologies that underpin emerging megatrends 
+and future opportunities.
+Top 10 Emerging Technologies of 2025
+Introduction
+A message from the Top 10 Emerging 
+Technologies Steering Group Co-Chairs.
+Mariette DiChristina 
+Dean and Professor, 
+Practice in Journalism, 
+Boston University College 
+of CommunicationBernard S. Meyerson 
+Chief Innovation Officer 
+Emeritus, IBM
+The Fourth Industrial Revolution continues apace, 
+filling this year’s Top 10 Emerging Technologies 
+report with a striking array of integrative advances 
+that address global gaps and concerns. Our 
+selection reflects the diverse nature of technological 
+emergence – some technologies, like structural 
+battery composites, represent novel approaches 
+to longstanding challenges, while others, such as 
+GLP-1s (glucagon-like peptide-1) for neurodegenerative 
+diseases and advanced nuclear technologies, 
+demonstrate how established innovations can find 
+transformative new applications. Each represents a 
+critical inflection point where scientific achievement 
+meets practical potential for addressing global 
+needs. (For more on how the Fourth Industrial 
+Revolution sparks “waves of further breakthroughs”, 
+see the final chapter of this report, “From weak 
+signals to societal transformation”.)
+Take, for instance, the integration of energy 
+systems and materials, which provides dramatic 
+improvements in functionality and efficiency as seen 
+in this year’s list. In structural battery composites, 
+transport gets an upgrade with “massless” energy 
+systems that blend into the load-bearing elements. 
+Turning to other sources of energy, advances in 
+materials for semipermeable membranes enable 
+“salt power” in osmotic power systems. Finally, in 
+the search for non-carbon energy sources, new 
+designs for next-generation nuclear power plants 
+are coming online.
+Biotechnology also offers some striking additions 
+to human health in this year’s top 10. Biologically 
+based interventions are gaining momentum as both 
+treatment and monitoring solutions, moving beyond 
+traditional pharmaceutical approaches. Witness 
+engineered living therapeutics, microbes genetically 
+engineered into living factories that could produce medicines and other therapeutic substances as 
+needed by the body. A new class of drugs, called 
+GLP-1s, well-known in weight-loss medications 
+and management of type 2 diabetes, are now being 
+brought to bear on brain-related diseases such as 
+Alzheimer’s and Parkinson’s. It is anticipated that 
+autonomous biochemical sensing, where analytical 
+devices continuously monitor chemical or disease 
+markers, will soon replace single-use tests at scale.
+Core industrial processes are being fundamentally 
+reimagined for sustainability and efficiency. Examples 
+in this year’s top 10 include green nitrogen fixation, 
+in which atmospheric nitrogen is converted into 
+crop-feeding ammonia for fertilizer with a vastly 
+lowered carbon footprint. Meanwhile, nanozymes, 
+laboratory-produced nanomaterials with enzyme-
+like properties that act as catalysts in important 
+industrial processes, offer increased stability, lower 
+production costs and simpler synthesis processes.
+Trust and safety in connected systems are clearly 
+essential to our networked future. Collaborative 
+sensing, for example, will rely on that. Sensors 
+distributed in homes, vehicles and workspaces are 
+increasingly being connected to each other and 
+used by artificial intelligence (AI)-infused systems. 
+Last and not least, this year, the World Economic 
+Forum’s Global Risks Report 2025 again highlighted 
+misinformation and disinformation as key current 
+risks. Generative AI watermarking, which embeds 
+invisible markers to verify authenticity and origins, 
+may help offer a way forward.
+Applied collaboratively and wisely, as always, 
+emergent innovations inspire more confidence in 
+humanity’s ability to improve the state of the world. 
+We invite you to engage with this year’s list in detail 
+and welcome your feedback.
+Top 10 Emerging Technologies of 2025
+Methodology
+The 2025 emerging technologies were 
+selected through expert nominations, 
+AI analysis, readiness assessment and 
+strategic evaluation. 
+Technologies were nominated for the Top 10 
+Emerging Technologies of 2025 report through a 
+survey distributed to the World Economic Forum’s 
+Global Future Councils Network, the Frontiers 
+network of chief editors, comprised of editors from 
+top institutions worldwide, and the Top 10 Emerging 
+Technologies Steering Committee members.
+The report’s definition of “emerging technologies” 
+encompasses both entirely novel innovations 
+and established technologies being applied in 
+transformative new ways. This inclusive approach 
+recognizes that technological emergence occurs 
+through multiple pathways – whether through 
+groundbreaking new discoveries or through applying 
+existing technologies to solve different problems in 
+ways that could create significant new impact.
+Survey respondents, representing a global 
+community of trusted academics and researchers, 
+provided information about the technology 
+nominated, including the technology name, 
+description, key breakthroughs, case studies and 
+how it will impact economies, the environment and 
+society, as well as potential risks that accompany 
+the technology.
+In 2025, more than 250 valid technology 
+nominations were submitted by experts across 
+industry and academia. To screen these 
+submissions, the AI Trend Analyzer – developed 
+by Frontiers – mapped nominations to key 
+concepts and matched these concepts to their 
+frequency in academic articles over a rolling 
+10-year period. From this analysis, an average “trendiness” score was established, indicating each 
+technology’s growing presence and momentum 
+in research literature.
+Each technology was also evaluated using the 
+World Economic Forum Resilience Consortium’s 
+Resilience for Sustainable, Inclusive Growth (2022)
+framework, focusing on their potential to address 
+systemic challenges and contribute to building 
+adaptive capacity for future generations.
+The ranked technologies were then filtered by 
+removing those featured in previous editions of the 
+report. Business funding data was added to support 
+the analysis for each of the top 20 technologies, 
+providing insight into market confidence and 
+commercialization potential.
+This refined shortlist of 20 technologies was then 
+assessed by a steering committee of experts, who 
+applied the following selection criteria:
+ –Novelty: Early adoption is emerging, but 
+widespread use is not yet achieved.
+ –Impact: Potential for significant societal 
+and economic benefit.
+ –Depth: Developed across multiple entities, 
+with broad and sustained interest.
+This rigorous, multi-phase selection process 
+ensures a comprehensive and objective 
+assessment of each technology’s readiness 
+and transformative potential. 
+Top 10 Emerging Technologies of 2025
+Ecosystem readiness 
+This year introduces an ecosystem readiness 
+map for each technology. This analysis evaluates 
+how prepared the societal infrastructure is for 
+these technologies to scale and achieve their 
+projected impact.For each technology, insights were gathered 
+from the Top 10 Emerging Technologies Steering 
+Committee, Frontier’s network of chief editors 
+and futurists from the Dubai Future Foundation. 
+These experts evaluated readiness across five key 
+dimensions, commonly known as STEEP (social, 
+technological, environmental, economic and 
+political) analysis: 
+Each dimension was rated on a four-point scale 
+from “no readiness” to “high readiness”. The results 
+are displayed in radar charts (see Figure 1) in each 
+technology section, accompanied by key actions 
+required to achieve scale. These assessments help identify critical gaps that 
+must be addressed before technologies can reach 
+their full potential, providing valuable context for 
+decision-makers across sectors.
+Ecosystem readiness map FIGURE 1
+0.511.522.533.54Social
+Technological Policy
+Economic EnvironmentalBoxed Icons
+ Social: Public awareness, acceptance, education levels and cultural values 
+that support the technology
+Boxed Icons
+ Technological: Maturity of underlying technologies, research needs and supply 
+chain readiness
+Boxed Icons
+ Environmental: Access to required resources, sustainability of materials and alignment 
+with emission regulations
+Boxed Icons
+ Economic: Market demand, investment trends and business model viability
+ Policy: Regulatory frameworks, international policy alignment and trade barriers
+Top 10 Emerging Technologies of 2025
+Strategic outlooks
+The strategic outlooks in this report were developed 
+by the Dubai Future Foundation (DFF). For each 
+selected technology, inputs included academic 
+research literature, market analyses and an in-depth 
+foresight analysis of key drivers and implications. The 
+development process involved an initial assessment 
+of each technology’s transformative potential, 
+followed by a systematic analysis of cross-sector 
+applications and implementation barriers. Parameters 
+for evaluation included potential impact across 
+economic, social and environmental dimensions, 
+with particular attention to scaling requirements, 
+governance implications and system-level changes. 
+Each technology was also categorized according 
+to its relationship with two of DFF’s megatrends 
+framework categories to position these innovations 
+within broader evolutionary patterns. This methodical 
+approach ensures consistent evaluation across 
+diverse technological domains. Explore the maps hereTransformation maps
+To complement this year’s report, transformation 
+maps have been developed in partnership with 
+Frontiers’ chief editors. These digital tools visualize 
+how each technology connects to broader systems 
+and global priorities. Hosted on the Forum’s 
+Strategic Intelligence Platform, the maps illustrate 
+intersection points between emerging technologies 
+and related topics, providing curated content from 
+trusted sources. They offer decision-makers a 
+practical resource for exploring potential impacts, 
+understanding cross-domain relationships and 
+tracking ongoing developments. 
+Example: Green nitrogen fixation transformation map FIGURE 2
+Top 10 Emerging Technologies of 2025
+Structural battery composites
+Merging energy and engineering 
+in motion.01
+Structural battery composites (SBCs) integrate 
+load-bearing mechanical components and 
+rechargeable energy storage. This means structural 
+battery composites can store energy the same 
+way as traditional lithium-ion batteries, while 
+also being rigid components of the vehicle or 
+building that the battery is powering.1 In contrast, 
+the electrochemical components of a traditional 
+battery system are housed in a container that 
+adds weight without providing any structural 
+benefit. SBCs may include carbon fibre, epoxy 
+resin or other lightweight, high-strength materials 
+and can be 3D printed and optimized for 
+surface area and structural strength to enhance 
+efficiency.2 SBCs have uses in a wide variety of 
+applications, ranging from electric vehicles (EVs) 
+to aerospace technologies.
+The concept of structural battery composites 
+arose in the past couple of decades from 
+advances in material science, particularly in 
+the fields of composite materials, batteries and 
+electrochemistry.3 The technology is still in the 
+early stages of commercialization but has made 
+significant progress. EVs already use batteries as 
+part of the vehicle’s structure, but SBCs will take 
+that to the next level by enabling body panels of all 
+shapes and sizes to perform both functions. 
+In the future, SBCs could enable all rigid vehicle 
+body panels to similarly store energy. For example, 
+Airbus is experimenting with SBCs for use in 
+aircraft,4 whereas academic research continues to 
+explore new materials and methods to enhance 
+performance. Applications currently being explored 
+include energy-storing vehicle body panels 
+and drone frames, with some potential future 
+applications including aircraft fuselages.
+As transformative as its potential is, SBC 
+technology has yet to achieve widespread adoption 
+due to technical challenges such as achieving high 
+energy storage density, long-term stability, safety, 
+durability and cost-effectiveness.5 Regulatory 
+hurdles also remain. As structural battery composite 
+materials mature, a new set of safety regulations 
+and standards must be developed before wide-
+scale adoption is possible. Key milestones include 
+the integration of lightweight materials like carbon 
+fibre with battery technology, creating multilayer composites that can function as both structural 
+components and energy storage units.
+The impact of SBCs will be substantial. 
+Economically, they promise to cut manufacturing 
+costs by reducing the amount of structural materials, 
+which, in turn, can lower the overall weight of 
+vehicles and aircraft; lighter-weight vehicles require 
+less fuel to operate as well. Environmentally, SBCs 
+could lead to energy-efficient designs that reduce 
+material requirements, and make reuse, repurposing 
+and recycling faster and cheaper, if developed 
+appropriately. Their use in industries including 
+aviation and transport could contribute to more 
+reliable and sustainable operations.Doug Arent 
+Executive Director, National Renewable 
+Energy Laboratory Foundation
+Andrew Maynard
+Professor, School for the Future of Innovation 
+in Society, Arizona State University
+David Parekh
+Chief Executive Officer, SRI International
+Figure Icons
+Develop industry-specific demonstration 
+platforms – Collaborate with key transport 
+manufacturers (automotive, aerospace, 
+marine) to build functional prototypes that quantify 
+weight reduction, range improvement and structural 
+integrity benefits.Ecosystem readiness map
+Figure Icons
+Establish specialized manufacturing 
+capacity – Invest in pilot production 
+facilities that combine battery 
+manufacturing expertise with advanced 
+composite fabrication techniques to address 
+the unique production challenges of structural 
+battery components.KEY ACTIONS TO ACHIEVE SCALE
+TechnologicalSocial
+Policy
+Economic
+Environmental Image: 
+SBCs combine energy 
+storage and structural 
+strength, enabling 
+lighter, multifunctional 
+components for transport 
+and aerospace.
+Credit: Midjourney 
+and Studio Miko. 
+Prompt (abbreviated): 
+“Golden layered quantum 
+disks refining and filtering 
+organic data into a single 
+light stream.”
+Read more: 
+For more expert 
+analysis, visit the SBCs 
+transformation map. 
+Authored by: Lief Erik Asp, 
+Björn Johansson and 
+Johanna Xu.
+Top 10 Emerging Technologies of 2025
+Strategic outlook 
+Structural battery composites
+By Dubai Future Foundation
+The convergence of materials science and energy technology 
+through structural battery composites represents a 
+critical inflection point for global industries. Over the next 
+decade, these innovative materials have the potential 
+to fundamentally restructure how infrastructure, energy 
+storage and product design are conceived across 
+multiple sectors.
+With 85% of lithium currently refined by just three countries,6 
+the geopolitical landscape of critical minerals currently 
+stands at a pivotal moment. SBCs offer a strategic pathway 
+to diversify and decentralize energy material supply chains. 
+This technological shift could reshape global economic 
+dependencies, transforming how nations approach energy 
+infrastructure and technological sovereignty.
+Beyond supply chain impacts, transformative potential is 
+most evident in transport. In the automotive sector, a 10% 
+reduction in vehicle weight can improve fuel efficiency by 
+6-8% and increase EV range by 70%.7,8 Aviation presents 
+an equally compelling opportunity, with potential fuel 
+efficiency improvements of 15% over a 1,500 km flight.9 
+These are not merely incremental improvements, but 
+potential catalysts for systemic change in transport design 
+and energy consumption.
+To realize benefits at scale, strategic leaders must recognize 
+challenges that extend beyond technological innovation. 
+Existing regulatory frameworks do not fully account for 
+dual-function materials. Safety standards, testing protocols 
+and building codes will require comprehensive reimagining 
+to accommodate materials that simultaneously provide 
+structural integrity and energy storage.
+Sustainability is both a critical challenge and an opportunity. 
+Carbon fibre, while five times stronger than steel, currently 
+faces significant environmental constraints due to carbon-intensive production and recycling challenges.10,11 
+However, advances in AI-driven composite material 
+design suggest the emergence of more scalable, 
+bio-based alternatives.12
+The most forward-thinking organizations will view 
+this technology as more than a product improvement. 
+It represents a fundamental redesign of how material 
+functionality is conceived. In construction, this means 
+buildings that are not just shelters, but active energy 
+systems. In electronics, it translates to devices 
+that seamlessly integrate structural integrity and 
+power storage.
+Strategic decision-makers face a critical choice. 
+Those who proactively invest in understanding and 
+developing these technologies will be positioned to:
+Redesign entire product categories
+Reduce energy consumption across industrial sectors
+ Create more resilient and adaptive 
+infrastructural systems
+ Develop new economic models that challenge 
+existing technological paradigms
+The next decade will offer significant advantages to 
+organizations that look beyond incremental improvements 
+and recognize SBCs as a transformative technological 
+platform. Success will depend on unprecedented 
+collaboration across materials science, design, energy 
+systems and regulatory frameworks.
+ Related DFF megatrends: Materials and Energy Boundaries13
+Top 10 Emerging Technologies of 2025
+Osmotic power systems
+Channelling salt into energy.02
+Osmotic power systems use a variety of means 
+to generate energy from salinity (salt content) 
+differences in two sources of water. Such systems 
+are clean, renewable and low-impact – and they 
+provide a steady source of energy. In contrast, the 
+energy produced by renewables such as solar and 
+wind power may fluctuate greatly during the course 
+of a day, depending on weather conditions.
+Although the concept was first proposed in 1975,14 
+osmotic power systems could not be adopted at the 
+time due to limitations of membrane performance, 
+including inadequate flows through the membrane 
+and insufficient power produced even in larger area 
+systems.15 To address both issues, recent advances 
+have yielded new materials,16,17 and system designs18 
+that facilitate flow through membranes. 
+There are two general designs for osmotic power 
+systems. One, called pressure retarded osmosis 
+(PRO), uses a specially designed semipermeable 
+membrane that only allows water to move from a low- 
+to high-salinity environment. The increased amount 
+of water on one side of the membrane generates a 
+pressure difference that can be used to drive a turbine 
+that spins a generator to produce electricity. 
+Another type relies on reverse electrodialysis 
+(RED),19 which uses ion-exchange membranes 
+that selectively allow cations (positive charge) and 
+anions (negative charge) to move to opposite sides 
+of the membrane – the impetus to do so again 
+being differences in the salt content between two 
+sides of the membrane. That flow of charge in this 
+instance directly generates electricity. 
+These advances are both in lab trials and being 
+developed into commercial power plants. One 
+commercial effort, for instance, the OsmoRhône 
+1 by Sweetch Energy, began system installations 
+in 2024. A Danish company, SaltPower,20 
+founded in 2015, already generates power using 
+the super-concentrated salt solutions that well 
+up from geothermal sites. In a form of circular 
+economy, the Mega-ton Water System Project in 
+Fukuoka, Japan21 extracts energy from a seawater 
+desalination plant’s output of highly saline solution 
+left over after purified water is produced.22 In 
+addition to power generation, techniques such as 
+RED have been shown to potentially be relevant to producing purified water, and recovering lithium, 
+nitrogen and carbon dioxide (CO2) from the water 
+employed in the process.
+Remaining challenges to full emergence are 
+largely technical and economic in nature. Previous 
+generations of osmotic power stations suffered 
+from membrane fouling and high costs, although 
+recent advances have improved performance. 
+The technology is otherwise based on clear and 
+uncontroversial scientific principles for extracting 
+energy from differences in salinity. Beyond licensing 
+processes and effective environmental and social 
+impact assessments, there appear to be relatively 
+few hurdles to wide adoption once sufficient 
+financial investments are made into osmotic 
+power systems.Katherine Daniell 
+Director and Professor, School of Cybernetics, 
+Australian National University
+Alison Lewis 
+Dean of the Faculty of Engineering and 
+the Built Environment, University of Cape Town
+Boxed Icons
+Establish demonstration projects – 
+Create public-private partnerships to 
+build pilot osmotic power plants in diverse 
+geographic locations to validate the technology 
+across different environments.Ecosystem readiness map
+Boxed Icons
+Develop community engagement 
+programmes – Implement educational 
+initiatives in potential host communities 
+that clearly demonstrate osmotic power’s dual 
+benefits for clean energy generation and 
+water management.KEY ACTIONS TO ACHIEVE SCALE
+TechnologicalSocial
+Economic
+EnvironmentalPolicy
+ Image: 
+Osmotic power generates 
+steady, renewable energy 
+from salinity differences, 
+with advancing 
+membranes improving 
+efficiency and viability.
+Credit: Midjourney 
+and Studio Miko. 
+Prompt (abbreviated): 
+“Flow of energy between 
+two sources of water, 
+creating electricity.”
+Read more: 
+For more expert analysis, 
+visit the osmotic power 
+systems transformation 
+map. Authored by: Odne 
+Burheim.
+Top 10 Emerging Technologies of 2025
+Strategic outlook 
+Osmotic power systems
+By Dubai Future Foundation
+Osmotic power systems could offer a unique approach to 
+energy generation, with the potential to generate 5,177 
+terawatt-hours (TWh) annually – nearly a fifth of global 
+electricity needs.23,24 If developed at scale, this technology 
+might transform how societies manage water resources 
+while simultaneously creating new energy generation 
+capabilities across coastal and estuarine environments.
+The most compelling opportunity lies in the technology’s 
+ability to integrate energy production with water 
+management. Utility companies might develop hybrid 
+renewable systems that combine osmotic power with 
+wind, solar and hydro technologies, creating more adaptive 
+and resilient energy networks.25 Coastal and estuarine 
+communities could particularly benefit from decentralized 
+energy solutions that enhance local energy resilience.26
+As the technology matures, it could reshape global 
+approaches to resource management. The growing 
+research momentum – with 281 research papers published 
+between 2022 and 2024, compared to 263 between 1968 
+and 2010 – suggests a critical inflection point.27 Investments 
+like Sweetch Energy’s €25 million funding indicate 
+increasing confidence in the technology’s potential.28
+Equally transformative is the potential that extends beyond 
+energy generation to enable new approaches to water 
+treatment and resource recovery. Osmotic power technologies 
+could enable new approaches to desalination while 
+recovering critical resources like lithium during the process. 
+This could create interconnected systems where water management, energy production and resource extraction 
+become deeply integrated.29,30
+Imagine a future where water-intensive industries 
+view water not as a waste stream, but as a strategic 
+resource platform. Communities might develop economic 
+models that transform geographical constraints into 
+opportunities. These industries could reimagine their 
+infrastructure to generate multiple forms of value – energy, 
+purified water and recovered materials – from each 
+interaction with water.
+To realize benefits at scale, the most innovative 
+organizations will recognize osmotic power as more than 
+an energy technology – it represents a potential platform for 
+reimagining how water-intensive industries create economic 
+value. A desalination plant could evolve from a cost centre 
+to a multi-purpose resource generator, simultaneously 
+producing energy, purified water and recoverable minerals 
+– transforming infrastructure from a linear process to an 
+adaptive, value-creating ecosystem.
+By integrating osmotic power systems, societies could 
+develop more resilient, sustainable approaches to resource 
+management. This technology might help transform how 
+energy is generated, water is treated and economic value 
+is created – potentially enabling infrastructure that serves 
+multiple functions simultaneously across water management 
+and energy production.
+ Related DFF megatrends: Materials and Energy Boundaries31
+Top 10 Emerging Technologies of 2025
+Advanced nuclear technologies
+Bringing next-generation nuclear 
+to power progress.03
+Energy demand is rapidly increasing, driven by 
+the rise of electrified transport and emerging 
+technologies like AI and a push for decarbonization 
+to advance climate goals. Power grids globally must 
+grow to meet the increased loads while maintaining 
+reliability, resiliency and affordability. 
+A renewed wave of technological innovation in 
+nuclear energy is under way to address demands 
+for green power options. Generation III reactors are 
+primarily pressurized water-cooled reactors and 
+incorporate accident-tolerant fuels and improved 
+safety systems. In parallel, Generation IV reactors 
+propose alternative cooling fluids, such as molten 
+metals, molten salts or gases like helium. These 
+alternative coolants operate at higher temperatures 
+and lower pressures, simplify reactor designs, 
+improve safety and reduce costs. 
+There is also a growing trend towards reducing 
+the scale of power plants, with designs allowing 
+key components to be manufactured in a factory 
+and then transported to site. These small modular 
+reactors (SMRs) typically cover about one-third of 
+the generating capacity of traditional nuclear power 
+reactors.32 Deploying multiple identical SMRs to 
+achieve power outputs eliminates the high costs and 
+long design cycles of a bespoke reactor, making 
+SMRs attractive for distributed power generation.
+Nations are dedicating substantial public funds to 
+support large-scale SMRs and alternative cooling 
+designs.33 These investments extend to new fuel 
+fabrication facilities and enrichment plants, making 
+deployment possible by the end of this decade.34 
+Currently, only a few countries are heavily investing 
+in large reactors outside of Russia and China. Most 
+notably, South Korea has 26 nuclear reactors, 
+accounting for one-third of the country’s electricity,35 
+and the United Arab Emirates’ Clean Energy 
+Strategy involves investment of $163 billion by 2050 
+to have half of its electricity come from nuclear and 
+renewables.36 Two European Pressurised Reactors 
+(EPRs) and two AP1000s in the US37 have also 
+been brought online in recent years. 
+In the SMR arena, Russia and China already have 
+operational plants, while Western countries are 
+rapidly advancing in design, construction and 
+regulatory frameworks to establish a competitive 
+industry. In November 2024, in collaboration with 
+Accenture, the World Economic Forum published 
+A Collaborative Framework for Accelerating Advanced 
+Nuclear and Small Modular Reactor Deployment , which serves as a tool to align stakeholders on key 
+actions required to achieve the deployment of this 
+key technology.
+While the immediate future of nuclear deployment 
+lies in fission reactors, the long-term goal for many 
+is nuclear fusion, or the process of fusing hydrogen 
+atoms to form helium, which releases enormous 
+amounts of energy – the same mechanism that 
+powers the sun. Although no net power gain has 
+yet been achieved, there is high confidence that 
+within one to two decades, this near-limitless 
+source of clean energy will mature.
+This shift towards advanced nuclear technologies, 
+combined with enhanced renewable energy 
+strategies and improved energy storage solutions, 
+underscores the global urgency of transitioning 
+away from fossil fuels and securing a sustainable, 
+zero-carbon future.Doug Arent 
+Executive Director, National Renewable 
+Energy Laboratory Foundation
+Karen Hallberg 
+Principal Researcher, Bariloche 
+Atomic Center (CONICET)Bernard Meyerson 
+Chief Innovation Officer Emeritus, IBM
+Boxed Icons
+Launch community-focused 
+safety demonstrations – Develop 
+educational programmes showcasing 
+the enhanced safety features of new nuclear 
+designs through transparent demonstrations 
+and community engagement.Ecosystem readiness map
+Boxed Icons
+Accelerate prototype testing – Fund 
+comprehensive testing programmes 
+for next-generation nuclear designs, 
+particularly gas-cooled reactors, to validate 
+safety systems and operational efficiency 
+under various conditions.KEY ACTIONS TO ACHIEVE SCALE
+TechnologicalSocial
+EconomicEnvironmentalPolicy
+ Image: 
+Advanced nuclear 
+technologies support rising 
+clean energy demands 
+and decarbonization goals.
+Credit: Midjourney 
+and Studio Miko. 
+Prompt (abbreviated): 
+“Nuclear reaction creating 
+a swirl of energy.”
+Read more: 
+For more expert analysis, 
+visit the advanced nuclear 
+technologies transformation 
+map. Authored by: Sergei 
+Dudarev, Wenxi Tian.
+Top 10 Emerging Technologies of 2025
+Strategic outlook 
+Advanced nuclear technologies
+By Dubai Future Foundation
+Advanced nuclear technologies, particularly SMRs and 
+gas-cooled reactors, offer a promising path to clean, 
+reliable power. These technologies combine flexible siting 
+with enhanced safety compared to traditional nuclear 
+plants, positioning them as key enablers of a sustainable 
+energy future.
+By 2030, SMRs could redefine how power is delivered. 
+These factory-built units are capable of serving remote 
+communities or being added to existing industrial sites, 
+expanding access to steady, zero-carbon electricity. This 
+flexibility helps support the integration of variable renewable 
+energy sources, and their modular design boosts grid 
+stability. SMRs extend nuclear technology’s reach to areas 
+previously unreachable for traditional large-scale plants.38 
+In parallel with SMRs, gas-cooled reactors could redefine 
+how power is delivered. They represent a significant 
+opportunity to drive industrial decarbonization by providing 
+high-temperature process heat (600-950°C) for challenging 
+applications like hydrogen production and heavy industry. 
+With these sectors contributing approximately 15% of 
+global CO2 emissions,39,40 nuclear technology could help 
+address emissions considered among the most difficult 
+to abate. 
+Looking further ahead, global nuclear capacity could double 
+between 2020 and 2050 to support net-zero emissions 
+goals.41 While high initial capital costs remain a challenge, 
+the push for standardized reactor designs and economies 
+of scale 42 offers a pathway to more affordable deployment.For advanced nuclear technologies to scale effectively, 
+addressing supply chain and workforce challenges will be 
+pivotal. Stable, sustainable access to specialized materials 
+like radiation-resistant alloys, combined with overcoming 
+the decline in nuclear engineering talent – highlighted by a 
+25% decline in nuclear engineering graduates from 2012 
+to 202243 – will be essential for maintaining momentum in 
+reactor development and deployment.
+Widespread adoption of advanced nuclear technology 
+will hinge on rebuilding public trust through transparent 
+communication and demonstrating the safety of next-gen 
+reactors. Additionally, as plants become more digitalized, 
+strong cybersecurity will be crucial to protecting infrastructure 
+and ensuring secure, resilient power generation.
+Countries leading in SMR deployment, including China, the 
+UK and the US, are positioning themselves at the forefront 
+of a new technological paradigm.44 Leadership in nuclear is 
+now a marker of strategic technology capability.
+Advanced nuclear technologies will likely follow distinct 
+adoption pathways based on specific use cases rather 
+than a single deployment model. SMRs may first serve 
+remote communities and industrial facilities requiring reliable 
+power independent of grid infrastructure, while advanced 
+reactor designs may integrate into existing power grids as 
+replacements for retiring conventional plants. The greatest 
+value lies where nuclear intersects with renewables, 
+hydrogen and industrial decarbonization. 
+ Related DFF megatrends: Materials and Energy Boundaries45
+Top 10 Emerging Technologies of 2025
+Engineered living therapeutics
+Microbes designed to deliver 
+therapies on demand.04
+Engineered living therapeutics are advanced 
+probiotic systems – such as microbes, cells and 
+fungi associated with human health – that are being 
+developed to produce therapeutic substances 
+like drugs, enzymes and hormones in a controlled 
+and sustainable manner. To enable this, the 
+genetic code containing instructions for producing 
+therapeutics is introduced into the systems. An 
+important feature of this approach is the ability 
+to include biological control mechanisms that 
+regulate therapeutic production – either through 
+patient-managed triggers or in response to specific, 
+clinically recognized disease signals – ensuring 
+precise and safe activation.46
+Production within the patient promises to overcome 
+crucial shortcomings of conventional medications, 
+especially for high-cost biopharmaceuticals. These 
+drugs are currently produced in laboratory settings 
+using modified cell lines, followed by extensive 
+purification, processing and formulation. Producing 
+therapeutics directly in the body avoids the need for 
+these downstream steps, which typically account 
+for 70% of production costs.47 Further, for drugs 
+requiring frequent administration through injections, 
+sustained production within the patient would 
+ensure prolonged and stable drug supply and 
+increased patient adherence to treatment, where 
+crucial, as in the treatment of diabetes.
+These developments are made possible by 
+advances in synthetic biology and genetic 
+engineering, with ongoing research receiving 
+attention in the US, Europe and China. Several 
+companies are now developing this technology for 
+commercial use. For example, Chariot Bioscience in 
+the US is exploring microbial platforms that release 
+therapeutics into the bloodstream following a single 
+dose, significantly reducing the need for repeated 
+injections.48 Finnish company Aurealis Therapeutics 
+is conducting phase II clinical trials using modified 
+probiotic lactic acid bacteria to simultaneously 
+produce three therapeutic proteins in the treatment 
+of diabetic foot ulcers.49 NEC is conducting 
+clinical phase I/II trials using a weakened strain of 
+Salmonella bacteria to facilitate activation of the 
+patient’s immune system to fight cancer cells.50Importantly, safety is a central focus. Developers are 
+actively addressing concerns such as unintended 
+genetic transfer, immune responses and environmental 
+release.51 Promising approaches currently in the 
+research phase are metabolic and genetic programmes 
+that prevent growth or kill bacteria on command, or the 
+safe encapsulation into polymer-based containers.52 
+Beyond scientific and technological advancements, 
+regulatory frameworks – such as the Advanced Therapy 
+Medicinal Products in Europe – need to be developed 
+to enable health authorities to evaluate efficacy and 
+safety and ultimately grant market approval.Thomas Hartung 
+Professor, Doerenkamp Zbinden Chair for 
+Evidence-based Toxicology, Johns Hopkins 
+Bloomberg School of Public Health
+Sang-Yup Lee 
+Senior Vice-President, Research; 
+Distinguished Professor, Korea Advanced 
+Institute of Science and Technology (KAIST)Wilfried Weber 
+Scientific Director and Professor for New Materials, 
+Leibniz Institute for New Materials
+Create regulatory sandboxes – Establish 
+specialized regulatory frameworks that 
+allow for controlled testing of engineered 
+living therapeutics while developing permanent 
+safety guidelines.Ecosystem readiness map
+Boxed Icons
+Launch patient-centred communication 
+initiatives – Develop clear, accessible 
+information resources that explain 
+the science, benefits and safeguards of 
+genetically modified therapeutics to patients 
+and healthcare providers.KEY ACTIONS TO ACHIEVE SCALE
+TechnologicalSocial
+Economic
+EnvironmentalPolicy
+ Image: 
+Engineered living 
+therapeutics use 
+programmed microbes to 
+produce drugs inside the 
+body, reducing costs and 
+improving treatment.
+Credit: Midjourney 
+and Studio Miko. 
+Prompt (abbreviated): 
+“Web-like structure, 
+growing fungi and 
+living organisms.”
+Read more: 
+For more expert analysis, 
+visit the engineered living 
+therapeutics transformation 
+map. Authored by: Jean 
+Marie François.
+Top 10 Emerging Technologies of 2025
+Strategic outlook 
+Engineered living therapeutics
+By Dubai Future Foundation
+Engineered living therapeutics represent a promising 
+reimagining of medicine, not as a conventional treatment 
+but as a living system inside the body. This approach 
+could shift drug production from pharmaceutical facilities 
+to biological processes within patients, potentially opening 
+new frontiers in how and where healing occurs.
+For healthcare systems globally, this represents a potential 
+solution to persistent distribution challenges. As living 
+therapeutics enable localized, capsule-based or food-
+embedded treatments, traditional manufacturing and 
+distribution models will be redefined, prompting a shift to 
+decentralized production and the repurposing of existing 
+pharmaceutical infrastructure for broader accessibility in 
+areas previously deemed inaccessible.
+For patients, the transformation extends beyond convenience 
+to fundamentally alter the experience of managing chronic 
+conditions. The current paradigm could evolve towards 
+treatment approaches that operate seamlessly in the 
+background of daily life. The psychological burden of 
+constant health management could diminish as treatments 
+become more autonomous and adaptive, potentially 
+improving not just clinical outcomes but overall quality of life.
+The pharmaceutical landscape could undergo significant 
+transformation. Pharmaceutical corporations, biotechnology 
+firms and research universities are likely to lead the 
+development of living therapeutics, with new players such 
+as dairy and probiotics manufacturers possibly entering the 
+field. Mergers between non-traditional partners may emerge 
+as this field evolves, with some researchers exploring the 
+potential for carefully regulated probiotic-based platforms 
+to support future consumer health applications.
+The integration with wearable technologies could create 
+feedback loops between therapeutic organisms and external 
+monitoring systems. Wearable technologies may further 
+enhance this by enabling precise, real-time monitoring of 
+bacterial therapy, ensuring both safety and efficacy. Scaling 
+this technology will require advancements at the intersection 
+of AI, biotechnology and health technology. AI is expected 
+to support the safe and targeted design of bacterial 
+functions, helping optimize their therapeutic performance 
+and compatibility with the human body under tightly 
+controlled clinical conditions. The convergence of biology 
+and technology, both in bacterial production and real-time 
+product monitoring, will be key to living therapeutics.Strategic preparation requires addressing several critical 
+challenges. The ability to terminate microbial activity on 
+demand will be needed to mitigate risks of uncontrolled 
+replication or unintended genetic transfer. Researchers 
+are exploring innovative safety mechanisms, such as 
+externally activated, light-responsive bacterial systems,53 
+that may offer additional layers of control compared to 
+traditional ingestion-based shutdown methods. Regulatory 
+frameworks are a critical part of responsible development, 
+with structured sandbox environments offering a way to test 
+these innovations under defined conditions, while ensuring 
+robust ethical oversight and public accountability.
+Decision-makers face a pivotal moment in healthcare’s 
+evolution. Organizations that proactively invest in engineered 
+living therapeutics will be positioned to: 
+ Transform chronic disease management 
+from episodic treatment to continuous care
+ Redesign pharmaceutical supply chains 
+for enhanced accessibility and resilience 
+ Create localized production systems that reduce 
+dependence on centralized manufacturing
+ Develop new treatment modalities that respond 
+dynamically to individual patient physiology
+ Pioneer regulatory frameworks that balance 
+innovation with appropriate safeguards
+Over the next decade, healthcare organizations, 
+pharmaceutical companies and biotechnology firms 
+that engage with the development of engineered living 
+therapeutics may contribute to a meaningful evolution 
+in how medicine is delivered and experienced. 
+Progress would likely depend on collaboration across 
+synthetic biology, AI, clinical medicine, patient advocacy 
+and regulatory science to explore a future where treatments 
+might adapt to patients rather than patients adapting 
+to treatments.
+ Related DFF megatrends: Future Humanity and Advanced 
+Health and Nutrition54
+Top 10 Emerging Technologies of 2025
+GLP-1s for 
+neurodegenerative disease
+Activating brain pathways 
+for longer, healthier lives.05
+A recent class of drugs originally developed for type 
+2 diabetes and obesity management – technically 
+known as glucagon-like peptide-1 receptor agonists 
+(GLP-1RAs) – is now being explored for its potential 
+in treating neurodegenerative conditions such as 
+Alzheimer’s and Parkinson’s disease. Early research 
+suggests that these drugs may have neuroprotective 
+properties, including anti-inflammatory, antioxidant 
+and insulin-sensitizing effects that could slow or 
+modify disease progression.55
+GLP-1RAs, once administered, cross the blood-
+brain barrier and interact with the brain’s neurons 
+and glial cells. They have been shown to reduce 
+inflammation and promote the removal of toxic 
+proteins, both of which, if left untreated, are 
+linked to the development of Alzheimer’s and 
+Parkinson’s.56 This class of drugs has also been 
+shown to enhance brain cell longevity and energy 
+regulation, which may improve cognitive and motor 
+function. Newer formulations are being developed 
+to improve delivery to the brain, with the aim of 
+enhancing their potential therapeutic effects.57
+Preliminary observational data from use in the 
+general population58 have suggested possible 
+associations with improved outcomes in individuals 
+living with neurodegenerative conditions. Initial 
+clinical studies have shown mixed results, but 
+with promising signals. At present, the long-term 
+potential of GLP-1RAs remains optimistic, but 
+sophisticated, rigorous clinical trials are required, 
+and are now under way, to confirm this and 
+establish optimal protocols for drug use with 
+desired outcomes.
+If proven effective in treating Alzheimer’s and 
+Parkinson’s disease, GLP-1s could have 
+tremendous global economic impact. With over 
+55 million people living with dementia, the global 
+market for GLP-1 drugs is projected to grow to 
+$55.7 billion by 2031.59 Similarly, benefitting society, the emotional and monetary costs associated 
+with caring for and treating those living with these 
+diseases would drop dramatically.
+Regulatory approval remains a hurdle, as long-
+term clinical efficacy data are needed. Additionally, 
+high drug costs may limit access, requiring policy 
+interventions for affordability. Careful safety 
+monitoring is essential, particularly regarding weight 
+loss in frail patients. As advanced clinical trials 
+continue, GLP-1RAs are being closely studied for their 
+potential to improve outcomes in neurodegenerative 
+diseases. While early research is encouraging, future 
+impact will depend on the strength of emerging 
+evidence and continued collaboration across the 
+scientific, regulatory and healthcare communities.Thomas Hartung 
+Professor, Doerenkamp Zbinden Chair for 
+Evidence-based Toxicology, Johns Hopkins 
+Bloomberg School of Public Health
+Boxed Icons
+Expand specialized clinical trials – Design 
+and implement phase II/III clinical trials 
+specifically focused on neurodegenerative 
+applications of GLP-1RAs with longer duration to 
+capture disease modification effects.Ecosystem readiness map
+KEY ACTIONS TO ACHIEVE SCALE
+TechnologicalSocial
+EconomicEnvironmentalPolicy Image: 
+GLP-1RAs show promise 
+for treating Alzheimer’s 
+and Parkinson’s by 
+reducing inflammation and 
+improving brain health.
+Credit: Midjourney 
+and Studio Miko. 
+Prompt (abbreviated): 
+“Close-up of synapses 
+connecting with flowing, 
+orange energy.”
+Read more: 
+For more expert analysis, 
+visit the GLP-1s for 
+neurodegenerative 
+disease transformation 
+map. Authored by: Thomas 
+Hartung and Jeff M.P . Holley.
+Top 10 Emerging Technologies of 2025
+Strategic outlook 
+GLP-1s for neurodegenerative disease
+By Dubai Future Foundation
+The repurposing of GLP-1RAs for neurodegenerative 
+diseases could catalyse a significant shift in the approach to 
+conditions that have long defined late-life decline. As early-
+stage research explores the potential of these medications 
+for Alzheimer’s and Parkinson’s disease60,61 – affecting 
+nearly 50 million people globally62,63 – their future impact, 
+if validated, could extend beyond clinical outcomes to 
+influence approaches to healthcare delivery, eldercare and 
+societal expectations of ageing.
+Over the next decade, healthcare delivery systems could 
+begin a meaningful transition towards earlier intervention 
+and disease modification rather than symptom management 
+alone. This evolution could gradually reshape eldercare 
+infrastructure, potentially reducing demand for intensive 
+memory care while creating new care models focused 
+on maintaining function and independence. Healthcare 
+economics could shift as resources reallocate from late-stage 
+care towards prevention and early intervention, potentially 
+improving outcomes while creating new value pathways.
+The societal impact could be substantial. For patients in early 
+disease stages, even modest delays in progression could 
+translate to additional years of independence and family 
+engagement. If future treatments prove effective in slowing 
+disease progression, this could ease caregiving demands 
+and potentially support greater workforce participation and 
+financial stability for caregivers – who are often women. 
+This may also help older adults remain active and engaged 
+for longer, potentially supporting social continuity and 
+intergenerational connection within communities.
+Supply chains for this emerging class of drugs are 
+under pressure as demand grows.64,65 Several major pharmaceutical firms have announced large-scale 
+investments aimed at expanding manufacturing capacity 
+– reflecting interest in the potential of GLP-1 therapies 
+and the significant innovation required to meet evolving 
+production needs.
+Affordability remains a key challenge. With high costs and 
+limited reimbursement in many settings,66,67 GLP-1RAs 
+may present immediate cost tensions despite potential 
+long-term savings in care needs.68 This raises important 
+questions around pricing models that better balance 
+immediate expenses against future benefits, potentially 
+accelerating broader reforms in how healthcare systems 
+value preventive interventions.
+Given the promising but mixed results from recent clinical 
+trials,69 GLP-1RAs are being explored as a potential 
+component of future therapeutic strategies – pending 
+further clinical validation. Complementary approaches like 
+GIP (glucose-dependent insulinotropic polypeptide) receptor 
+agonists70 are also under investigation, contributing to a 
+potentially more personalized and stage-specific therapeutic 
+landscape as clinical understanding evolves.
+The potential of GLP-1RAs is currently being explored 
+for their role in shifting the treatment approach to 
+neurodegenerative diseases – from symptom management 
+towards possible disease modification. If future research 
+supports this direction, it could influence how healthcare 
+systems and societies approach ageing and cognitive 
+health, with broader implications for care models and 
+community support structures.
+ Related DFF megatrends: Future Humanity and Advanced 
+Health and Nutrition71
+Top 10 Emerging Technologies of 2025
+Autonomous biochemical sensing
+Wiring biological sensors 
+for real-time insight.06
+Autonomous biochemical sensors are analytical 
+devices that autonomously and continuously detect 
+and quantify specific biochemical parameters, such 
+as disease markers for patient-individualized health 
+management or chemical changes in soil or water 
+for environmental management.
+They detect the chemical of interest using tailored 
+physicochemical transducers or bio-based sensors 
+employing enzymes, antibodies or even engineered 
+living cells. These sensors are designed to operate 
+and report findings independently, without the 
+need for human intervention. They employ wireless 
+communication and energy harvesting, through self-
+sustaining power sources such as biofuel cells,72 
+to enable real-time continuous monitoring. As data 
+from these sensors can be retrieved remotely, 
+they are suitable for applications in difficult-to-
+reach areas or remote locations. This enables the 
+continuous monitoring of human health as well as 
+environmental conditions.
+While typical sensors, such as well-known 
+COVID-19 tests, are single-use, the challenge in 
+autonomous biochemical sensing is to achieve 
+continuous monitoring and electronic data 
+capture. Such technical limitations have restricted 
+autonomous biochemical sensors to very specific 
+applications. The most successful to date is the 
+wearable glucose sensor, which measures glucose 
+concentration in real time and communicates 
+with a smartphone73 that controls an insulin pump 
+to stabilize glucose levels. Some of the biggest 
+companies investing in the development and 
+manufacturing of such technologies include Abbott 
+Laboratories, Roche and DuPont. 
+Due to simultaneous advancements in materials 
+science, nanotechnologies, bio-mimetics and 
+wireless technologies, autonomous biochemical 
+sensing is emerging to address other targets 
+and applications. An example is the inclusion 
+of an active-reset function in a wearable sensor 
+for inflammation markers, enabling continuous 
+monitoring instead of a single use.74 US-based 
+Persperity Health is developing wearables for 
+continuous monitoring of female hormones for 
+ovulation tracking, fertility treatments and menopause 
+care. In ongoing development are microbial whole-
+cell biosensors, employing microbes that produce 
+or deplete an enzyme when they encounter what they are targeted to detect, that enzyme being 
+their means of signalling “detection”.
+These emerging forms of this technology have 
+the potential to transform the lives of many 
+people requiring continuous monitoring of specific 
+health conditions. Processes for food safety and 
+environmental monitoring, particularly for early 
+detection of contamination, could also lead to 
+significant social and environmental benefits.
+Many sensors still have short lifespans, requiring 
+regular replacement. However, new generations of 
+sensors are likely to see improvements that reduce 
+costs. Microbial whole-cell biosensors face additional 
+regulatory hurdles and ethical challenges compared 
+to conventional medical or environmental sensing 
+devices, as they are genetically engineered biological 
+organisms with the potential for environmental release.Katherine Daniell 
+Director and Professor, School of Cybernetics, 
+Australian National University
+Wilfried Weber 
+Scientific Director and Professor for New 
+Materials, Leibniz Institute for New Materials
+Establish ethical guidelines for biological 
+sensors – Develop clear industry standards 
+for privacy, data ownership and biological 
+safety in partnership with bioethics organizations 
+and regulatory bodies.Ecosystem readiness map
+Boxed Icons
+Conduct public demonstrations of 
+non-invasive applications – Showcase 
+environmental and agricultural 
+applications of biochemical sensing to build 
+public comfort with the technology before 
+expanding to healthcare use.KEY ACTIONS TO ACHIEVE SCALE
+TechnologicalSocial
+Economic EnvironmentalPolicy
+ Image: 
+Autonomous biochemical 
+sensors enable continuous, 
+remote health and 
+environmental monitoring 
+using self-powered, 
+wireless, bio-based 
+technologies.
+Credit: Midjourney 
+and Studio Miko. 
+Prompt (abbreviated): 
+“Microbe floating above a 
+micro piece of technology.”
+Read more: 
+For more expert analysis, 
+visit the autonomous 
+biochemical sensing 
+transformation map. 
+Authored by: Dermont 
+Diamond.
+Top 10 Emerging Technologies of 2025
+Strategic outlook 
+Autonomous biochemical sensing
+By Dubai Future Foundation
+Autonomous biochemical sensing could enhance the ability 
+to safeguard health across multiple scales – from individual 
+well-being to ecosystem vitality. These systems – evolving 
+from operator-dependent instruments into self-sufficient, 
+predictive networks75 – offer the potential to monitor 
+and respond to biological and chemical signals without 
+human intervention, creating more robust protection for 
+communities, food systems and natural environments.
+Self-operating sensing networks could fundamentally 
+reshape early warning systems across critical infrastructure. 
+Environmental protection agencies could transition from 
+periodic sampling to continuous, real-time detection networks 
+that identify pollutants, pathogens and toxins without human 
+intervention.76 This shift from reactive to proactive monitoring 
+could enable response systems that address contamination 
+events hours or days earlier, potentially preventing widespread 
+exposure rather than merely documenting it.
+Food safety systems stand to undergo a similar 
+transformation. With sensors capable of detecting food 
+toxins 1,000 times more sensitively in under 60 seconds,77 
+supply chains could implement continuous verification rather 
+than batch testing. This evolution would alter both regulatory 
+frameworks and production economics, potentially reducing 
+the scale and frequency of food recalls78 while enabling more 
+precise traceability throughout global distribution networks.
+Healthcare delivery models could experience significant 
+reconfiguration as biochemical sensing advances. The 
+decentralization of diagnostics through wearable and point-
+of-care biosensors would extend testing capabilities beyond 
+traditional healthcare facilities into homes and remote 
+communities.79 This distribution of diagnostic intelligence 
+could fundamentally alter care pathways, enabling earlier 
+intervention while generating vast streams of population-
+level health data.
+The technological challenges, while substantial, 
+are addressable. Balancing molecular-level sensitivity 
+with long-term stability remains difficult in natural environments where competing microbiomes affect 
+sensor performance.80,81 For example, engineered 
+bacterial sensors for TNT (trinitrotoluene) detection 
+maintain effectiveness for several weeks before declining 
+significantly.82 These biological constraints necessitate 
+innovations in sensor design that draw inspiration from 
+natural systems through biomimicry.83
+Beyond physical sensor design, data integration represents 
+another critical area of advancement. As autonomous 
+sensing networks generate continuous molecular 
+information across multiple domains, the resulting data 
+streams will require new analytical frameworks and 
+governance models. The privacy and security implications, 
+particularly for health-related sensing, demand regulatory 
+approaches that balance innovation with the protection of 
+sensitive information.84
+The convergence of continuous monitoring capabilities 
+across environmental, food safety and healthcare domains 
+suggests a future where molecular detection becomes 
+an integrated layer of everyday infrastructure rather than 
+a specialized function. Organizations that successfully 
+implement autonomous biochemical sensing will likely move 
+beyond applying these technologies to isolated problems 
+and instead develop interconnected monitoring networks 
+that share data across traditional boundaries. This integration 
+would create new capabilities: environmental contaminants 
+could be traced to their source and linked to potential 
+health impacts in real-time; foodborne pathogens might 
+be detected and contained before reaching consumers; 
+and early disease indicators could trigger preventive 
+interventions before symptoms appear. 
+The organizations that will lead in this space will be those that 
+address not just the technical challenges of sensor design 
+but also the complex data governance and cross-domain 
+collaboration requirements that enable these technologies 
+to function as a cohesive system rather than isolated tools.
+ Related DFF megatrends: Future Humanity and Advanced 
+Health and Nutrition85
+Top 10 Emerging Technologies of 2025
+Green nitrogen fixation
+Reimagining ammonia production 
+for a net-zero future.07
+Nitrogen fixation, a $200 billion market in the 
+US alone, converts atmospheric nitrogen into 
+ammonia at a scale of more than 150 million tonnes 
+per year, which is needed to produce fertilizer 
+supporting 50% of the world’s food production.86 
+Green nitrogen fixation now aims to reduce the 
+significant carbon footprint of conventional nitrogen 
+production, which currently accounts for 2% of 
+global energy consumption.87
+In nitrogen fixation, microorganisms convert 
+nitrogen in the atmosphere into forms that plants 
+and other organisms can use for nutrients, primarily 
+ammonia. The key challenge in nitrogen fixation 
+is breaking the extremely stable triple bond that 
+holds together the two nitrogen atoms that make 
+up atmospheric nitrogen (N2). In the state-of-
+the-art Haber-Bosch process, this step requires 
+temperatures of 400-500°C, pressures 130 to 
+150 times greater than that found in the Earth’s 
+atmosphere, and hydrogen primarily sourced from 
+natural gas88 in a CO2-generating reaction. 
+While the principle of alternative nitrogen fixation 
+was discovered in the 1930s, only recently has 
+there been considerable progress towards large-
+scale commercialization. For example, bio-based 
+approaches use engineered bacteria and enzymes 
+to fix nitrogen89 and sunlight, or green electricity can 
+provide energy and reduction equivalents. Bio-inspired 
+systems also show promising results, replicating 
+enzyme function by inorganic polyoxometalates or 
+anionic metal-oxide clusters.90 Further, electrochemical 
+technologies relying on lithium as mediators are at 
+the brink of commercial application.91 
+Green nitrogen fixation technologies are currently 
+being explored by both established and start-
+up companies. Australian Jupiter Ionics is 
+spearheading lithium-based nitrogen fixation 
+technology, whereas California-based Ammobia 
+is focusing on new, more efficient catalysts. 
+Such alternative technologies would also allow 
+decentralized production plants, enabling ammonia 
+to be generated using locally abundant renewable 
+energy, such as wind and solar. The ammonia 
+produced locally could then be efficiently stored 
+and/or processed into fertilizer on-site,92 saving 
+transport energy and costs.
+Progress in creating localized green ammonia 
+production would not only reduce ammonia 
+production’s carbon footprint but also would reduce related CO2 sources, such as in required 
+transport.93 Means of transport will also benefit, as 
+commercial vessels are already employing ammonia 
+as diesel fuel and estimates project that more than 
+30% of global marine fuel could be carbon-free 
+ammonia by 2050.94
+Next-gen technologies employing lithium chemistry 
+or biology-based approaches to nitrogen fixation are 
+being explored, but their commercial viability has yet 
+to be established.95 In contrast, ammonia production 
+plants using green hydrogen instead of natural gas 
+have proven viable and are currently being scaled 
+globally.96 The ammonia industry is in a transition,97 
+where increasing R&D efforts in green ammonia 
+fixation technology paired with an increasing demand 
+(as, for example, from the transport sector) will spark 
+additional innovation and investment towards net-
+zero carbon ammonia production.Javier Garcia-Martinez 
+Professor, Director of the Molecular 
+Nanotechnology Lab, University of Alicante
+Krishna Kumar 
+Chief Executive Officer, Cropin Sage Sang-Yup Lee 
+Senior Vice-President, Research; Distinguished 
+Professor, Korea Advanced Institute of Science 
+and Technology (KAIST)
+Wilfried Weber 
+Scientific Director and Professor for New 
+Materials, Leibniz Institute for New Materials
+Boxed Icons
+Build industry-agriculture partnerships 
+– Create focused collaborations between 
+green nitrogen technology developers 
+and major agricultural stakeholders to establish 
+pilot programmes demonstrating cost and 
+environmental benefits.Ecosystem readiness map
+Boxed Icons
+ Accelerate alternative process 
+technologies – Invest in targeted research 
+to improve lithium-mediated and biological 
+nitrogen fixation methods to provide viable 
+alternatives to traditional processes.KEY ACTIONS TO ACHIEVE SCALE
+TechnologicalSocial
+Economic EnvironmentalPolicy
+ Image: 
+Green nitrogen fixation 
+uses renewable energy 
+and biology to produce 
+ammonia sustainably, 
+reducing emissions and 
+enabling local production.
+Credit: Midjourney 
+and Studio Miko. 
+Prompt (abbreviated): 
+“Highly detailed green bio 
+fibres interweaving and 
+connecting.”
+Read more: 
+For more expert analysis, 
+visit the green nitrogen 
+fixation transformation map. 
+Authored by: Hailong Li 
+and Zequn Yang.
+Top 10 Emerging Technologies of 2025
+Strategic outlook 
+Green nitrogen fixation
+By Dubai Future Foundation
+The Haber-Bosch process, developed over a century ago, 
+fundamentally altered humanity’s relationship with food 
+production by enabling industrial-scale nitrogen fixation. 
+Now, lithium-mediated electrochemical processes could 
+present another significant advancement: the potential ability 
+to produce ammonia using only air, water and renewable 
+electricity. This technological shift might transform global 
+ammonia production from a centralized, carbon-intensive 
+industry into a more distributed, carbon-neutral network.
+The strategic significance extends far beyond 
+decarbonization. The current Haber-Bosch process 
+consumes 1-2% of global energy98 and emits 2.4 tons 
+of CO2 per ton of ammonia produced – nearly twice 
+that of steel production and four times that of cement 
+manufacturing.99 Green ammonia production represents 
+a critical opportunity to transform this carbon-intensive 
+foundation of global agriculture while simultaneously 
+enabling new energy applications.
+Agriculture stands to undergo the most profound 
+transformation. With nearly 80% of industrially produced 
+ammonia consumed in fertilizers,100 green nitrogen fixation 
+could catalyse a shift towards distributed, smaller-scale 
+production facilities that reduce transport vulnerabilities, 
+stabilize fertilizer prices101 and enhance food system 
+resilience. This distributed model could fundamentally 
+reshape agricultural supply chains and empower regions 
+currently dependent on imported fertilizers.
+Beyond agriculture, green ammonia emerges as a 
+versatile energy carrier with strategic advantages over 
+liquid hydrogen. With storage requirements up to 30 times 
+lower in cost than liquid hydrogen,102 ammonia presents 
+a more practical medium for hydrogen energy storage 
+and transport. The shipping industry has recognized this potential, with maritime regulations evolving to 
+accommodate ammonia-fuelled vessels, suggesting a 
+pathway towards decarbonizing global shipping networks.
+While offering advantages over hydrogen in the Haber-
+Bosch process, technical and resource challenges 
+remain significant but navigable. Recent advances have 
+demonstrated electrochemical conversion rates approaching 
+the efficiency of the Haber-Bosch process (60-75%),103,104,105 
+indicating technical viability. The dependence on lithium 
+– a critical mineral with demand expected to more than 
+double by 2030106 – presents a resource constraint that will 
+require strategic supply chain development. Environmental 
+considerations must also address ammonia’s toxicity107 and 
+potential PM2.5 (particulate matter) emissions impacts.108
+Strategically, the geopolitical landscape of ammonia 
+production currently stands at a pivotal moment. With China 
+currently accounting for 30% of global production and India 
+and Middle Eastern countries poised to expand capacity,109 
+green nitrogen fixation could reshape regional dependencies 
+and create new centres of agricultural and energy influence. 
+Those who develop scalable green ammonia production 
+capabilities may gain significant strategic advantages in 
+both food security and clean energy transitions.
+Over the next decade, leadership in green nitrogen fixation 
+would likely emerge from those who can integrate three 
+distinct strategic capabilities: advanced electrochemical 
+manufacturing, renewable energy infrastructure and 
+agricultural innovation ecosystems. The technology 
+represents a potential convergence where food security, 
+energy innovation and climate action might intersect in a 
+single transformative platform.
+ Related DFF megatrends: Evolving Ecosystems and Advanced 
+Health and Nutrition110
+Top 10 Emerging Technologies of 2025
+Nanozymes
+Replicating nature’s catalysts 
+for health and environmental 
+breakthroughs.08
+Nanozymes are laboratory-produced and 
+manufactured nanomaterials with enzyme-like 
+properties. Nanozymes, unlike enzymes, which 
+are produced by living organisms or chemically 
+synthesized at significant cost and complexity, 
+offer increased stability, lower production costs 
+and simpler synthesis processes.111 Composed 
+of nanoparticles of metals, metal oxides, carbon 
+and other materials, nanozymes act like catalysts 
+and promote the same chemical reactions 
+enzymes support.112 Their robust nature allows 
+them to function in far more diverse environments, 
+expanding their potential applications in biomedical, 
+environmental and industrial fields. Using advanced 
+nanoscale design and production techniques, it is 
+also possible to engineer multifunctional nanozymes. 
+Rapid advancements in nanozyme technology in 
+the last two decades have garnered significant 
+attention from major pharmaceutical companies, 
+resulting in a surge of investment in nanozyme 
+research and development. This increased funding 
+has accelerated the pace of innovation and 
+expanded the potential applications of nanozymes 
+across various medical fields. Therefore, numerous 
+clinical trials for nanozyme-based therapies are 
+currently in progress, with particularly promising 
+results emerging in the areas of cancer and 
+neurodegenerative disease treatment.113 In cancer 
+treatment, nanozymes have shown potential for 
+targeted drug delivery, enhancing the efficacy of 
+chemotherapy while reducing side effects. For 
+neurodegenerative diseases such as Alzheimer’s 
+and Parkinson’s, nanozymes are being explored 
+for their ability to mitigate oxidative stress and 
+reduce inflammation in the brain, potentially slowing 
+disease progression. The versatility of nanozymes 
+has also led to investigations in other medical 
+areas, including cardiovascular diseases, infectious 
+diseases and wound healing. 
+Several companies and start-ups are actively 
+working towards the commercialization of 
+nanozymes. Level Nine is developing nanozymes 
+for use in industrial biomanufacturing.114 Nanozyme, 
+Inc., a University of Florida spin-out, is developing 
+synthetic nanomachines programmed to enter 
+only targeted diseased cells, with the goal of 
+enabling targeted disease treatment with fewer 
+side effects.115 Though a work in progress, barring 
+unanticipated challenges, such programmes are 
+hoped to mature into commercial applications in 
+the coming years. 
+The impact of nanozymes extends well beyond 
+healthcare to environmental applications, including 
+water purification, potentially offering sustainable 
+solutions to a critical global challenge. In the food industry, they could enhance food safety through 
+the rapid detection of contaminants in on-shelf 
+packaged meats and other consumables.116 In 
+industrial catalysis, nanozymes may offer more 
+efficient and environmentally friendly alternatives 
+to traditional catalysts, potentially reducing energy 
+consumption and waste materials.117 
+The global nanozyme market, valued at $5.13 
+billion in 2024, is projected to grow at a compound 
+annual growth rate (CAGR) of 27.4% to reach 
+$57.95 billion by 2034.118 Key applications include 
+biosensing, environmental remediation and targeted 
+drug delivery. Nanozymes promise to revolutionize 
+diagnostics and therapeutics, particularly in areas 
+such as early disease detection and targeted drug 
+delivery. This convergence of nanotechnology 
+and enzyme mimicry has the potential to drive 
+innovation across multiple sectors, ultimately 
+contributing to improved quality of life. 
+As with all emergent technologies, nanozymes 
+face several challenges. Technical hurdles include 
+improving their selectivity and catalytic efficiency 
+to match or exceed natural enzymes. Ethical 
+considerations arise from their potential use in 
+biological systems, requiring thorough safety 
+evaluations. Finally, the regulatory framework 
+for nanozyme-based products is still evolving, 
+which could impact their commercialization and 
+widespread adoption.Javier Garcia-Martinez 
+Professor, Director of the Molecular Nanotechnology 
+Lab, University of AlicanteAndrew Maynard 
+Professor, School for the Future of Innovation 
+in Society, Arizona State University
+Boxed Icons
+Establish biocompatibility testing 
+frameworks – Create standardized 
+protocols for assessing the safety and 
+biological interaction of nanozymes across different 
+application environments to address ethical concerns.Ecosystem readiness map
+KEY ACTIONS TO ACHIEVE SCALE
+TechnologicalSocial
+EconomicEnvironmentalPolicy
+ Image: 
+Nanozymes are synthetic 
+enzyme-like nanomaterials 
+offering stable, low-cost 
+and versatile solutions 
+across medicine and 
+industry.
+Credit: Midjourney 
+and Studio Miko. 
+Prompt (abbreviated): 
+“Clusters of matte circles, 
+varying in sizes.”
+Read more: 
+For more expert analysis, 
+visit the nanozymes 
+transformation map. 
+Authored by: Sanjay Singh.
+Top 10 Emerging Technologies of 2025
+Strategic outlook 
+Nanozymes
+By Dubai Future Foundation
+Nanozymes offer engineered alternatives to natural enzymes 
+with distinct practical advantages: they can operate in 
+extreme pH (potential of hydrogen) conditions, withstand 
+high temperatures and maintain stability for extended 
+periods while costing significantly less to produce. With 
+demonstrated capabilities like detecting antioxidants at parts-
+per-billion concentrations and achieving up to 21 times the 
+catalytic efficiency of natural enzymes,119 these materials 
+can enable chemical reactions in environments where 
+biological enzymes would rapidly degrade. This combination 
+of performance and stability opens possibilities across 
+scientific and industrial applications that have previously 
+been limited by the fragility of natural enzyme systems.
+Healthcare and environmental applications demonstrate 
+the technology’s transformative potential. Smartphone-
+integrated diagnostic tools could expand medical 
+capabilities in resource-constrained regions,120 enabling 
+more sensitive biosensors for early disease detection.121 
+Wound care technologies offer targeted treatments against 
+drug-resistant bacteria, killing 99.99% of challenging 
+infections without triggering resistance mechanisms.122
+Beyond direct applications, secondary impact emerges 
+in the global research ecosystem. Nanozymes require 
+integrating AI, computational design and domain-specific 
+expertise,123 potentially dissolving traditional disciplinary 
+boundaries. International research networks might develop 
+collaborative models that transcend geographical and 
+institutional limitations, creating more adaptive approaches 
+to addressing complex global challenges.
+This collaborative potential could fundamentally alter how 
+countries approach technological innovation. Shared 
+research platforms might emerge, addressing critical global 
+issues through integrated, multidisciplinary strategies. 
+The technology’s capacity to reduce harmful chemical use124 suggests a new paradigm of environmentally 
+conscious scientific development, where research 
+simultaneously advances technological capabilities 
+and environmental sustainability.
+Significant challenges remain. Biocompatibility concerns 
+and the need for robust safety standards create critical 
+implementation hurdles.125,126 Developing comprehensive 
+regulatory frameworks will require coordinated global efforts 
+and a systematic approach to research and implementation. 
+To address these challenges, the International Organization 
+for Standardization’s (ISO) existing nanotechnology standards 
+provide a foundation for this collaborative approach.127 
+The development of nanozymes points towards a more 
+precise approach to catalysis where reaction specificity, 
+stability in diverse environments and recyclability become 
+standard features rather than compromises. Initial 
+applications in diagnostics, environmental remediation 
+and targeted therapeutics will likely provide the proving 
+grounds for these technologies, establishing performance 
+benchmarks and regulatory precedents. 
+The organizations best positioned for success will develop 
+specialized nanozyme designs optimized for specific 
+reaction environments – whether in industrial processes, 
+biomedical applications or environmental contexts. 
+Rather than competing with natural enzymes across all 
+applications, successful nanozyme development will focus 
+on addressing the specific limitations of biological catalysts: 
+their instability in harsh conditions, high production costs 
+and limited tunability. This targeted approach will create 
+practical value while navigating the biocompatibility 
+challenges and regulatory requirements that currently limit 
+broader deployment.
+ Related DFF megatrends: Materials and Advanced Health 
+and Nutrition128
+Top 10 Emerging Technologies of 2025
+Collaborative sensing
+Empowering connected systems 
+to make context-aware decisions.09
+Sensing devices are now ubiquitous in people’s 
+homes, vehicles and workplaces. Already useful in 
+isolation, these distributed sensors are increasingly 
+being connected to each other and integrated with AI-
+infused systems, paving the way for rapid advances 
+in collaborative sensing that can generate insights to 
+improve the capabilities of individual sensors. Beyond 
+autonomous urban mobility, promising applications for 
+collaborative sensing are diverse, including perceptive 
+mobile networks that combine communications and 
+sensing on the same network. Collaborative sensing 
+will reshape how cities operate and how organizations 
+use information to make decisions. 
+Promising applications for collaborative sensing 
+are diverse, including improving urban mobility. For 
+example, connected traffic lights can dynamically 
+adjust themselves based on traffic cameras 
+and environmental sensors to manage urban 
+congestion and emission levels. Other examples 
+for collaborative sensing include large-scale 
+autonomous mapping in mines,129 analysing storm 
+systems,130 drone swarms,131 internet-of-things-
+based structural health monitoring,132 environmental 
+monitoring and bringing more precision to 
+agriculture and natural resource management.133  
+Collaborative sensing pairs distributed sensors, 
+including those on satellites and underwater and 
+subterranean platforms, with reliable connectivity 
+and algorithmic processing at the network’s edge 
+to reduce transmitted data volumes. Autonomous 
+agents, such as robots, drones, intelligent vehicles 
+and IT systems, with semantic reasoning and dynamic 
+planning capabilities, will be equipped to navigate 
+unfamiliar environments and make collective decisions. 
+Research in sensor fusion, collaborative sensing 
+and collaborative autonomy has often been driven 
+by the defence industries’ need for real-time 
+decisions and actions. Increasingly, the civilian 
+benefits of these linked capabilities are becoming 
+apparent. Imagine an autonomous vehicle that 
+drives appropriately in the context of its own 
+sensors, and that also knows (thanks to connected 
+sensors on a traffic light hundreds of yards away) 
+that a speeding vehicle is approaching on a 
+collision course. The US Federal Communications 
+Commission’s (FCC) recent decision134 to adopt 
+the 5.9 gigahertz (GHz) band for cellular-vehicle-
+to-everything technology is a critical step towards 
+enabling such advances and will create new 
+opportunities to explore how collaborative sensing 
+might address infrastructure costs, reduce traffic 
+congestion and accidents and lower carbon 
+emissions. The European Commission and China’s 
+Ministry of Industry and Information Technology 
+have similarly enacted enabling legislation. Challenges remain. Most platforms on which sensors 
+are deployed have strict power and connectivity 
+constraints, requiring engineering approaches such 
+as compressing 3D scene classification methods,135 
+improved navigation136 in the absence of GPS and 
+improved low-power processing at the network 
+edge. Data-sharing security and privacy policies will 
+also need to evolve. 
+The key to unlocking the benefits of collaborative 
+sensing at scale and achieving true collaborative 
+autonomy, will be multi-modal algorithms137 that 
+can process numerous varieties of sensor data, 
+from LiDAR (light detection and ranging) to EO/
+IR (electro-optical/infra-red) cameras to radar and 
+beyond. Much of this work is currently focused 
+on balancing a shared information landscape and 
+operational picture with distributed processing, while 
+also minimizing bandwidth and power requirements. 
+Generative AI may play a role here. Recent research 
+demonstrates that large language models (LLMs) 
+may optimize simple collaborative navigation 
+tasks much more efficiently than traditional deep 
+reinforcement learning (DRL) approaches.138Daniel Dossenbach 
+Scientific Advisor in Innovation, State Secretariat 
+for Education, Research and Innovation Switzerland
+Karen Hallberg 
+Principal Researcher, Bariloche 
+Atomic Center (CONICET)David Parekh 
+Chief Executive Officer, SRI International
+Develop cross-industry data standards – 
+Establish common protocols for sensor 
+data sharing, security and interoperability 
+across industries to enable seamless integration of 
+distributed sensing networks.Ecosystem readiness map
+Boxed Icons
+Modernize critical infrastructure – Upgrade 
+telecommunications and connectivity 
+infrastructure in key urban environments 
+to support the bandwidth and reliability requirements 
+of collaborative sensing systems.KEY ACTIONS TO ACHIEVE SCALE
+TechnologicalSocial
+Economic EnvironmentalPolicy
+ Image: 
+Collaborative sensing 
+networks combine 
+distributed sensors with 
+AI to improve decision-
+making, urban systems 
+and autonomous 
+technologies.
+Credit: Midjourney 
+and Studio Miko. 
+Prompt (abbreviated): 
+“LiDAR scan of buildings, 
+cars, people and scenery.”
+Read more: 
+For more expert analysis, 
+visit the collaborative 
+sensing transformation 
+map. Authored by: 
+Mehrdad Dianati.
+Top 10 Emerging Technologies of 2025
+Strategic outlook 
+Collaborative sensing
+By Dubai Future Foundation
+Collaborative sensing could significantly reshape urban 
+systems, mobility and societal infrastructure. Powered by 
+vehicle-to-everything (V2X) technologies, 5G, AI and edge 
+computing, this approach may create intelligent urban 
+environments that perceive, respond and adapt to 
+complex environmental dynamics with greater precision 
+than current systems.
+The potential impact of collaborative sensing extends 
+beyond traditional traffic management, reshaping urban 
+resilience, supply chains and emergency response 
+capabilities. Cities could develop adaptive infrastructures 
+that respond in real time to changing conditions, enabling 
+more dynamic resource allocation during crises, optimized 
+delivery routes for critical supplies and coordinated 
+emergency vehicle deployment. With intelligent mobility 
+systems forming the foundation of these capabilities, urban 
+environments could serve citizens through seamlessly 
+integrated technological systems.139
+Among the most immediate and measurable outcomes 
+and initial use case is improved safety. In transport, V2X 
+technologies have demonstrated remarkable potential 
+for accident prevention. Automated emergency braking 
+systems showed 59% crash avoidance when only turning 
+vehicles were equipped, increasing to 77% with full 
+technology integration.140 Insurance research indicates up 
+to 78% decrease in collisions for vehicles with intelligent 
+sensing capabilities,141 signalling a potential shift in risk 
+assessment and urban mobility.
+Strategic benefits would also ripple across multiple 
+industries. Transport and logistics could gain significantly, 
+with truck platooning demonstrating a 5-10% fuel 
+consumption reduction.142 Telecommunications 
+infrastructure may undergo fundamental upgrades, with 5G improving location accuracy from over 1 metre to 
+0.1 metres with 99.9% reliability,143,144 enabling potentially 
+unprecedented levels of collective vehicle operation.
+Yet, the transformative potential of collaborative sensing at 
+scale is matched by complex challenges. With only 55% 
+of the global population currently having 5G access,145 
+expanding telecommunications infrastructure represents a 
+critical prerequisite. Additional barriers include developing 
+common data standards, establishing robust cybersecurity 
+frameworks, creating comprehensive liability models and 
+building public trust in collaborative technologies.
+The most strategic organizations would view collaborative 
+sensing as a potential platform for reimagining urban 
+systems. Success will depend on collaboration across 
+government, private sector and technological domains. 
+The core challenge lies in moving beyond mere 
+technological connection to creating adaptive urban 
+environments that can learn, respond and evolve.
+The next decade presents a critical window for 
+developing collaborative sensing ecosystems. Nations 
+and organizations that lead in establishing integrated 
+data standards, investing in robust telecommunications 
+infrastructure and designing interoperable sensing 
+networks might shape a future where cities become more 
+resilient, responsive and human-centred. As collaborative 
+sensing shifts from isolated, single-use applications 
+towards interconnected sensing networks, the potential 
+for transforming urban systems extends beyond efficiency 
+gains to a fundamental reimagining of how cities could 
+function, adapt and evolve.
+ Related DFF megatrends: Technological Vulnerabilities 
+and Digital Realities146
+Top 10 Emerging Technologies of 2025
+Generative watermarking
+Enhancing trust with invisible, 
+immutable markers.10
+Generative AI watermarking technologies embed 
+invisible markers in AI-generated content – including 
+text, images, audio and video – to verify authenticity 
+and help trace content origins. As AI-generated 
+content becomes increasingly hard to differentiate 
+from that created without AI, there has been a 
+surge in innovative watermarking technologies147 
+designed to help combat misinformation, protect 
+intellectual property, counter academic dishonesty 
+and promote trust in digital content.
+Watermarking techniques aim to subtly alter 
+generative AI outputs without noticeably impacting 
+their quality. Text-based watermark technologies, 
+such as Google DeepMind’s SynthID technology,148 
+take advantage of the fact that there are thousands 
+of words in a given language that can be randomly 
+substituted by others. They work by including a 
+narrow and specific subset of such words throughout 
+AI-generated text that seems natural but is distinct 
+from the more random word choices a human 
+writer might make. This results in an AI-specific 
+textual “fingerprint”. Image and video watermark 
+technologies include introducing imperceptible 
+changes at the pixel level that can survive edits 
+like resizing and compression – for instance by 
+subtly altering the values of individual pixels so that 
+a machine can see the changes, but the human 
+eye cannot, or embedding hidden patterns149 in 
+generated output that only a machine can extract. 
+Watermarking AI-generated content gained traction 
+in 2022, as models like ChatGPT and Stable 
+Diffusion gained popularity and widespread use. 
+By 2023, major AI companies, including OpenAI, 
+Google and Meta, committed to watermarking under 
+regulatory pressure.150 A breakthrough came in 2024 
+when Google DeepMind open-sourced SynthID. 
+Simultaneously, Meta introduced VideoSeal,151 a 
+watermarking system for AI-generated videos.
+Leading AI companies are now increasingly 
+integrating watermarking into their platforms. 
+Google, for instance, is embedding SynthID into 
+AI-generated images, text and videos across its 
+services. Meta is applying invisible watermarks 
+and metadata tags152 to AI-generated content on 
+Facebook, Instagram and Threads. AI companies 
+are partnering with organizations like Partnership on 
+AI153 to ensure “synthetic media transparency”. 
+Despite progress, though, widespread use of 
+AI watermarking faces challenges.154 Simple 
+modifications to AI-generated outputs can still 
+disrupt detection. Users can attempt to remove or 
+forge watermarks, either by cropping images and 
+video where watermarks are embedded in a specific 
+location, or by adjusting text (and even using AI-
+based watermark removers). Uneven adoption also 
+presents risks where, without universal industry 
+standards, inconsistent implementation may weaken effectiveness. There are also substantial 
+ethical concerns around misuse, such as falsely 
+labelling real content as AI-generated or false 
+positives, where erroneous accusations of covertly 
+using AI can have unintended consequences, 
+especially in cases related to academic integrity. 
+To be successful, these technologies will need to be 
+accompanied by equally sophisticated governance 
+and use guidelines. China has acted to regulate 
+generated content to require watermarking,155 and 
+other regions, such as the EU,156 are also developing 
+responses to manage the security and authenticity of 
+digital content. The Coalition for Content Provenance 
+and Authenticity (C2PA), a coalition of leading media 
+generators in the AI space, is also leading the 
+development of technical standards for certifying 
+the source of media content; an approach that 
+regulators would struggle to meaningfully produce. 
+Watermarking has proven a fertile area for start-ups 
+globally with different technological approaches. 
+Emerging generative AI watermarking technologies 
+are becoming a cornerstone of responsible AI 
+deployment as they help balance innovation with 
+accountability. While no single method is foolproof, 
+industry-wide adoption and regulatory alignment 
+will help determine the technology’s long-term utility 
+and success of AI-generated content.Katherine Daniell 
+Director and Professor, School of Cybernetics, 
+Australian National UniversityAndrew Maynard 
+Professor, School for the Future of Innovation 
+in Society, Arizona State University
+Boxed Icons
+Develop tamper-resistant watermarking 
+standards – Invest in advanced 
+watermarking technologies that can 
+withstand removal attempts and establish 
+industry-wide standards for their implementation. Ecosystem readiness map
+KEY ACTIONS TO ACHIEVE SCALE
+TechnologicalSocial
+EconomicEnvironmentalPolicy
+ Image: 
+Generative watermarking 
+embeds invisible 
+markers in content to 
+verify authenticity, trace 
+origins and promote 
+accountability.
+Credit: Midjourney 
+and Studio Miko. 
+Prompt (abbreviated): 
+“Digital fingerprint 
+constructed from 
+glowing binary code.”
+Read more: 
+For more expert 
+analysis, visit the 
+generative watermarking 
+transformation map. 
+Authored by: Sri Krishnan.Boxed Icons
+Create cross-platform verification systems 
+– Build independent verification systems that 
+can detect and authenticate watermarks 
+across different platforms and content types.
+Top 10 Emerging Technologies of 2025
+Strategic outlook 
+Generative watermarking
+By Dubai Future Foundation
+Over the next decade, generative watermarking technologies 
+could evolve from optional technical safeguards to important 
+components of digital trust infrastructure. As synthetic 
+content becomes increasingly prevalent, embedded 
+watermarks might form the foundation of a global 
+verification ecosystem that helps distinguish between 
+human and machine-created digital assets.
+The media and creative industries may experience 
+significant transformation. The converging regulatory 
+frameworks across California,157 China158 and the European 
+Union159 – with penalties reaching up to $38 million or 7% of 
+annual turnover160 – suggest an emerging global interest in 
+content provenance systems. Major platforms have already 
+begun positioning themselves in this space, with Adobe’s 
+content credentials,161 TikTok’s AI labelling standards162 and 
+Google’s SynthID representing early attempts to establish 
+market-defining protocols. 
+This signals something more than a compliance challenge. 
+It marks the early stages of a comprehensive governance 
+system for digital content that will create distinct competitive 
+advantages for early adopters while potentially marginalizing 
+non-compliant creators and platforms. Nations and 
+organizations that take the lead in setting watermarking 
+standards will shape the rules of the emerging synthetic 
+media economy.
+The implications could extend beyond creative sectors 
+to potentially reshape legal and financial systems. 
+Courts might eventually accept watermarked content 
+as evidence in intellectual property (IP) disputes and 
+defamation cases, while insurance companies could 
+consider developing tiered coverage models based on content authentication levels. For creators, the ability to 
+verify their work – whether human-made or AI-assisted – 
+may position them to command premium prices in markets 
+increasingly populated with synthetic alternatives. 
+Technical challenges remain significant but potentially 
+addressable. Currently, watermarking systems are being 
+implemented, but techniques to remove generative 
+watermarks remain, highlighting the gap between existing 
+capabilities and the need for tamper-resistant, cross-
+format watermarks that accurately identify 100% of 
+AI-generated content.163 The integration with blockchain 
+systems to create verifiable watermarks164 represents a 
+promising frontier that could establish better content identity 
+regardless of modification or distribution.
+Organizations might prepare strategically by investing in 
+interoperable standards rather than proprietary systems. 
+Those developing more sophisticated watermarking 
+techniques, particularly those resistant to removal and 
+compatible with emerging content formats, could establish 
+leadership in the evolving digital authentication ecosystem. 
+Nations and organizations that take the lead in setting 
+watermarking standards may influence the development of 
+the emerging synthetic media economy.
+Looking ahead, generative watermarking represents not just 
+another tool for content verification, but a potential reimagining 
+of how trust is established in an increasingly synthetic digital 
+landscape. Progress would depend on collaboration across 
+technology, policy and creative sectors to create systems 
+that balance innovation with appropriate safeguards.
+ Related DFF megatrends: Technological Vulnerabilities 
+and Future Humanity165
+Top 10 Emerging Technologies of 2025
+From weak signals to 
+societal transformation
+For over a decade, the World Economic Forum’s 
+Top 10 Emerging Technologies report has served 
+as a unique lens for understanding technological 
+transformation – tracking how early-stage 
+technologies evolve from tentative signals to 
+transformative solutions. Consider CRISPR-Cas9, first 
+highlighted in the 2015 report as a promising gene-
+editing technique. What seemed then like a theoretical 
+breakthrough has since revolutionized multiple 
+domains, from enabling precise vaccine development 
+during the COVID-19 pandemic to facilitating 
+groundbreaking xenotransplantation in 2024.
+This trajectory illustrates the core methodology: 
+identifying technologies not for their immediate 
+application, but for their potential to create systemic 
+change. The most profound innovations emerge not 
+in isolation, but through intricate convergences – 
+where synthetic biology meets AI, materials science 
+intersects with energy systems and biotechnology 
+converges with digital technologies.
+Each technology tracked represents more than a 
+standalone solution; they are signals of broader 
+transformations, capable of redesigning entire 
+systems. Green nitrogen fixation reimagines 
+agricultural supply chains, structural battery 
+composites transform understanding of material functionality and autonomous biochemical sensing 
+creates entirely new paradigms for health monitoring.
+This annual review reveals consistent patterns in 
+technological maturation. Breakthrough innovations 
+require more than technical brilliance – they demand 
+comprehensive ecosystem development. This 
+means navigating complex interactions between 
+social acceptance, technological capability, 
+environmental sustainability, economic viability 
+and regulatory frameworks.
+Looking back, the report has consistently 
+demonstrated its predictive power: identifying CRISPR 
+in 2015, anticipating mRNA vaccine platforms in 
+2017, exploring AI in drug discovery in 2020 and 
+now examining engineered living therapeutics. 
+These are not mere technological snapshots, but 
+waypoints in an ongoing journey of innovation.
+As the report continues to track emerging 
+technologies, the goal remains unchanged: to 
+provide a forward-looking perspective that bridges 
+scientific potential with practical implementation. 
+The most profound innovations are rarely obvious 
+at first glance. They emerge through persistent 
+observation, interdisciplinary collaboration and a 
+fundamental willingness to reimagine what’s possible.
+Scaling innovation: how emerging technologies become tomorrow’s foundations FIGURE 3
+CRISPr-CAS9
+Highlighted/uni00A0in Top 10 
+Emerging Technologies 
+of 2015
+mRNA vaccines
+Highlighted/uni00A0in Top 10 
+Emerging Technologies 
+of 2017AI-led molecular design
+Highlighted/uni00A0in Top 10 
+Emerging Technologies 
+of 2018Engineered living 
+therapeutics
+Highlighted/uni00A0in Top 10 
+Emerging Technologies 
+of 2025
+Technologies featured in the Top 10 Emerging Technologies reports, 
+demonstrate how breakthrough technologies build upon foundational 
+innovations, creating disruptions and redesigns of entire societal ecosystems.
+Top 10 Emerging Technologies of 2025
+Contributors
+World Economic Forum 
+Kimmy Bettinger
+Lead, Expert and Knowledge Communities 
+Centre for the Fourth Industrial Revolution
+Sebastian Buckup
+Managing Director, Centre for Nature and Climate
+Jeremy Jurgens
+Managing Director, Centre for the Fourth 
+Industrial Revolution
+Meredith McCleary
+Specialist, Strategic Impact, Centre for 
+the Fourth Industrial Revolution
+Strategic Intelligence Platform
+Bryonie Guthrie
+Lead, Foresight and Organizational Transformation
+Stephan Mergenthaler
+Chief Technology Officer
+Minji Sung
+Specialist, Content and Partnerships
+Astrid Wang
+Specialist, Foresight and Organizational 
+Transformation
+Frontiers
+Susan Debad
+Consultant
+Toby Dore
+Manager, Advanced Analytics
+Frederick Fenter
+Chief Executive Editor
+Anna Ondicova
+Specialist, Public Affairs
+George Thomas
+Lead, Strategic Partnerships
+Participating journals:
+Frontiers in Biotechnology and Bioengineering 
+Frontiers in Chemical Engineering 
+Frontiers in Chemistry 
+Frontiers in Endocrinology 
+Frontiers in Energy Research 
+Frontiers in Future Transportation 
+Frontiers in Manufacturing Technology Frontiers in Nuclear Engineering 
+Frontiers in Sensors 
+Frontiers in Signal Processing
+Dubai Future Foundation
+Fatma Abulhoul
+Head, Centre for the Fourth Industrial Revolution 
+United Arab Emirates
+Khalfan Belhoul
+Chief Executive Officer
+Heba Chehade
+Head, Foresight Research
+Saeed Al Falasi
+Director, Dubai Centre of Artificial Intelligence
+Abdulaziz Al Jaziri
+Deputy Chief Executive Officer and Chief 
+Operations Officer
+Aruba Khalid
+Associate Project Manager, Research
+Dhari Al Mawad
+Director, Strategy
+Yahya Mohammed
+Robotics Research Engineer, Dubai Future Labs
+Patrick Noack
+Executive Director, Dubai Future Institute
+Mohamed Qasem
+Dean, Dubai Future Academy
+Tarek Taha
+Director, Robotics Labs, Dubai Future Labs
+Biying Zhang
+Senior Strategy and Policy Manager, Sandbox Dubai
+Production
+Rose Chilvers
+Designer, Studio Miko
+Laurence Denmark
+Creative Director, Studio Miko
+Martha Howlett
+Lead Editor, Studio Miko
+Oliver Turner
+Designer, Studio Miko
+Top 10 Emerging Technologies of 2025
+Acknowledgements
+Steering Committee
+Co-Chairs
+Mariette DiChristina
+Dean and Professor, Practice in Journalism, 
+Boston University College of Communication
+Barnard S. Meyerson
+Chief Innovation Officer Emeritus, IBM
+Members
+Doug Arent
+Executive Director, National Renewable Energy 
+Laboratory Foundation
+Katherine Daniell
+Director and Professor, School of Cybernetics, 
+Australian National University
+Daniel Dossenbach
+Scientific Advisor in Innovation, State Secretariat 
+for Education, Research and Innovation (SERI) 
+of Switzerland
+Frederick Fenter
+Chief Executive Editor, Frontiers
+Olga Fink
+Professor, Intelligent Maintenance and Operations 
+Systems, EPFL (École Polytechnique Fédérale 
+de Lausanne)
+Javier Garcia-Martinez
+Professor, Director of the Molecular 
+Nanotechnology Lab, University of Alicante
+Karen Hallberg
+Principal Researcher, Bariloche Atomic Center 
+(CONICET)
+Thomas Hartung
+Professor, Doerenkamp Zbinden Chair for 
+Evidence-based Toxicology, Johns Hopkins 
+Bloomberg School of Public Health 
+Krishna Kumar
+Chief Executive Officer, Cropin Sage
+Sang-Yup Lee
+Senior Vice-President, Research; Distinguished 
+Professor, Korea Advanced Institute of Science 
+and Technology (KAIST)
+Alison Lewis
+Dean of the Faculty of Engineering and the Built 
+Environment, University of Cape TownAndrew Maynard
+Professor, School for the Future of Innovation 
+in Society, Arizona State University
+David Parekh
+Chief Executive Officer, SRI International
+Nayat Sanchez-Pi
+Chief Executive Officer, Inria Chile
+Wilfried Weber
+Scientific Director and Professor for New Materials, 
+Leibniz Institute for New Materials
+World Economic Forum
+Maria Alonso
+Lead, Autonomous Systems, Centre for the Fourth 
+Industrial Revolution
+Rachel Dooley
+Lead, Strategic Communications, 
+Centre for the Fourth Industrial Revolution
+Manju George
+Head, Strategic Impact and Integration, 
+Centre for the Fourth Industrial Revolution
+Alfredo Giron
+Head, Ocean and Nature Positive, Centre for Nature 
+and Climate
+Sarah Kanwar
+Project Fellow (Accenture), Centre for Energy 
+and Materials
+Jitka Kolarova
+Lead, Health and Healthcare Innovation, 
+Centre for Health and Healthcare
+Benjamin Larsen
+Lead, Artificial Intelligence and Machine Learning, 
+Centre for AI Excellence
+Michelle Mormont
+Lead, Innovator Communities, Centre for the Fourth 
+Industrial Revolution
+Kristen Panerali
+Head, Clean Power and Electrification, 
+Centre for Energy and Materials
+Arunima Sarkar
+Head, Frontier Technologies, Centre for the Fourth 
+Industrial Revolution
+Brynne Stanton
+Lead, Bioeconomy, Centre for the Fourth 
+Industrial Revolution
+Top 10 Emerging Technologies of 2025
+Other acknowledgements
+Leif Erik Asp
+Professor, Chalmers University of Technology
+Odne Burheim
+Professor, Norwegian University of Science 
+and Technology
+Alfredo Caro
+Research Professor, George Washington University
+Shirley Dent
+Head, Public Relations, Frontiers
+Dermont Diamond
+Professor Emeritus, Dublin City University
+Mehrdad Dianati
+Professor, University of Warwick
+Sergei Dudarev
+Senior Fellow, United Kingdom Atomic 
+Energy Authority
+Jean Marie François
+Professor, Institut Biotechnologique 
+de Toulouse (INSA)
+Jeff M.P . Holley
+Professor, University of BristolSri Krishnan
+Professor, Toronto Metropolitan University
+Stephan Kuster
+Director, External Affairs, Frontiers
+Björn Johansson
+Professor, Chalmers University of Technology 
+Hailong Li
+Professor, Central South University
+Kaitlyn Schmidt
+Senior Public Relations Specialist, Frontiers
+Sanjay Singh
+Scientist, National Institute of Animal Biotechnology
+Wenxi Tian
+Professor, Xi’an Jiaotong University 
+Johanna Xu
+Assistant Professor, Chalmers University 
+of Technology
+Zequn Yang
+Associate Professor, Central South University
+Top 10 Emerging Technologies of 2025
+Endnotes
+1. Imperial College London. (n.d.). Structural batteries. https://www.imperial.ac.uk/structural-power-composites/structural-batteries/. 
+2. Hopkins, B. J., Long, J. W., Rolison, D. R., & Parker, J. F. (2020). High-performance structural batteries. Joule, 4(11), 
+pp. 2240-2243. https://doi.org/10.1016/j.joule.2020.07.027. 
+3. Physics World. (n.d.). Structural Battery is world’s strongest, say researchers – physics world. https://physicsworld.com/a/
+structural-battery-is-worlds-strongest-say-researchers/. 
+4. Credence Research. (2024, 28 September). Structural Battery Market Size, growth and forecast 2032. 
+https://www.credenceresearch.com/report/structural-battery-market. 
+5. Jin, T., Singer, G., Liang, K., & Yang, Y. (2023). Structural batteries: Advances, challenges and perspectives. 
+Materials Today, 62, pp. 151-167. https://doi.org/10.1016/j.mattod.2022.12.001. 
+6. International Energy Agency (IEA). (2024). Global Critical Minerals Outlook 2024. https://www.iea.org/reports/global-
+critical-minerals-outlook-2024. 
+7. Energy.gov. (n.d.). Materials technologies. https://www.energy.gov/eere/vehicles/materials-technologies. 
+8. Nie, B., Lim, J., Liu, T., Kovalenko, I., et al. (2023). Multifunctional composite designs for structural energy storage. 
+Battery Energy, 2(6). https://doi.org/10.1002/bte2.20230023. 
+9. Karadotcheva, E., Nguyen, S.N., Greenhalgh, E.S., Shaffer, M.S., et al. (2021). Structural Power Performance Targets 
+for future electric aircraft. Energies, 14(19), 6006. https://doi.org/10.3390/en14196006. 
+10. Fairs, M. (n.d.). Could carbon fibres soon become free of fossil fuels?. World Economic Forum. https://www.weforum.org/
+stories/2021/07/scientists-bio-based-carbon-fibres/. 
+11. Ziemińska-Stolarska, A., Sobulska, M., Pietrzak, M., & Zbiciński, I. (2024). A review of end-of-life scenarios 
+for fibre-reinforced polymer materials. Energies, 17(15), 3713. https://doi.org/10.3390/en17153713. 
+12. Ibid.
+13. Dubai Future Foundation (DFF). (2024, 11 February). Navigating 10 megatrends shaping our future in 2024. 
+https://www.dubaifuture.ae/navigating-10-megatrends-shaping-our-future-in-2024. 
+14. Loeb S. & Norman R.S. (1975). Osmotic power plants. Science, 189(4203), pp.654-5.
+15. Aghapour Aktij S., Dadashi Firouzjaei M., Pilevar M., Asad A., et al. (2025). Enhancing sustainable energy production 
+through co-polyamide membranes for improved pressure-retarded osmosis performance and environmental impact: 
+synthesis and life cycle analysis. Green Chemistry, 27(3), pp. 586-606.
+16. Ibid.
+17. Paşaoğlu M.E., Koyuncu İ. (2021). Tubular PAN/CNC Thin Film Nanocomposite (TFN) Pressure Retarded Osmosis (PRO) 
+Membrane: Fabrication and Preliminary Evaluation in Desalination Process. Cellulose, 28(13), pp. 8653-70.
+18. Kim C., Lee J., Schmucker D., Fortner J.D. (2020). Highly Stable Superparamagnetic Iron Oxide Nanoparticles 
+as Functional Draw Solutes for Osmotically Driven Water Transport. NPJ Clean Water, 3(1).
+19. Gül T.F., Akalın M., Dönmezler E.N., Bolat A., et al. (2024). Review on reverse electrodialysis process-a pioneering 
+technology for energy generation by salinity gradient. Frontiers in Membrane Science and Technology, 3.
+20. SaltPower. (2025). What is SaltPower. https://saltpower.net/what-is-saltpower/.
+21. Kurihara M., Hanakawa M. (2013). Mega-ton Water System: Japanese national research and development project on 
+seawater desalination and wastewater reclamation. Desalination, 308, pp. 131-7.
+22. Hitachi News Release. (2015). Hitachi and Toray to Test “Mega-ton Water System,” a Large-scale, High Efficiency Seawater 
+Desalination System, in Saudi Arabia [Press release]. https://www.hitachi.com/New/cnews/month/2015/05/150520a.html.
+23. Cagney, D., & Gruet, R. (2019). Powering Homes Today, Powering Nations Tomorrow. Ocean Energy Europe. 
+https://www.oceanenergy-europe.eu/wp-content/uploads/2019/04/ETIP-Ocean-Integrated-Strategy-2019-LR.pdf. 
+24. International Energy Agency (IEA). (2025). Supply – Electricity 2025 – Analysis. 
+https://www.iea.org/reports/electricity-2025/supply. 
+25. Hassan, Q., Algburi, S., Sameen, A.Z., Salman, H.M., & Jaszczur, M. (2023). A review of hybrid renewable energy 
+systems: Solar and wind-powered solutions: Challenges, opportunities, and policy implications. Results in Engineering, 
+20, 101621. https://doi.org/10.1016/j.rineng.2023.101621. 
+26. International Renewable Energy Agency (IRENA). (2020). Innovation outlook: Ocean energy technologies.
+27. SCISPACE. (n.d.). Osmotic Power: Papers published on a yearly basis. https://typeset.io/topics/osmotic-power-2esx4hak/2023. 
+28. Sweetch Energy. (2023, 18 December). Sweetch Energy secures €25M to accelerate the global deployment of osmotic 
+energy. https://cdn.prod.website-files.com/6527b5a78159fe64a0eb7cdf/658048131232d2d65a376e14_121823%20
+PR%20SWEETCH%20ENERGY.pdf. 
+29. Hedin, J.T.L., Meli, F., & Narasimhan, K. (2023, 6 April). Method of using nanofiltration and reverse osmosis to remove 
+chemical contaminants. Google Patents. https://patents.google.com/patent/US20230109082A1/en. 
+Top 10 Emerging Technologies of 2025
+30. Feria-Díaz, J.J., Correa-Mahecha, F., López-Méndez, M.C., Rodríguez-Miranda, J.P ., & Barrera-Rojas, J. (2021). 
+Recent desalination technologies by hybridization and integration with reverse osmosis: A Review. Water, 13(10), 1369. 
+https://doi.org/10.3390/w13101369. 
+31. Dubai Future Foundation (DFF). (2024, 11 February). Navigating 10 megatrends shaping our future in 2024. 
+https://www.dubaifuture.ae/navigating-10-megatrends-shaping-our-future-in-2024. 
+32. Liou, J. (2023, 14 September). What are small modular reactors (SMRs)?. International Atomic Energy Agency (IAEA). 
+https://www.iaea.org/newscenter/news/what-are-small-modular-reactors-smrs. 
+33. Energy.gov. (2022, 23 August). X-energy completes $40 million project to further develop high-temperature gas reactor. 
+https://www.energy.gov/ne/articles/x-energy-completes-40-million-project-further-develop-high-temperature-gas-
+reactor#:~:text=X-energy%20received%20the%20Advanced,%20and%20TRISO-X%20particle%20fuel%20. 
+34. Martucci, B. (2024, 13 May). Small modular reactor startups Oklo and Nano Nuclear Energy Make Us Stock Market 
+debut. Utility Dive. https://www.utilitydive.com/news/small-modular-reactor-startups-oklo-nano-nuclear-energy-haleu-
+fuel/715911/. 
+35. World Nuclear Association. (2024, 3 May). Nuclear Power in South Korea. https://world-nuclear.org/information-library/
+country-profiles/countries-o-s/south-korea. 
+36. World Nuclear Association. (2024, 5 September). Nuclear Power in the United Arab Emirates. 
+https://world-nuclear.org/information-library/country-profiles/countries-t-z/united-arab-emirates. 
+37. Westinghouse Nuclear. (n.d.). Westinghouse celebrates Milestone Achievement as AP1000® Technology powers plant 
+vogtle unit 4 into Commercial Operation. https://info.westinghousenuclear.com/news/westinghouse-celebrates-milestone-
+achievement-as-ap1000-technology-powers-plant-vogtle-unit-4-into-commercial-operation. 
+38. Paul, S., Klimenka, M., Duarte, F., Crawford, C., et al. (2024). When Cities Go Nuclear: Exploring the applications of 
+nuclear batteries toward Energy Transformation. Urban Science, 8(4), 226. https://doi.org/10.3390/urbansci8040226. 
+39. Platonova, M. (2024, 14 February). Decarbonizing steel production with nuclear hydrogen. International Atomic Energy 
+Agency (IAEA). https://www.iaea.org/bulletin/decarbonizing-steel-production-with-nuclear-hydrogen. 
+40. Apel, F., Hoyt, J., Marques, F., Reiter, S. & Schulze, P . (2023, 6 October). Cementing your lead: The cement industry in 
+the net-zero transition. McKinsey & Company. https://www.mckinsey.com/industries/engineering-construction-and-
+buildingmaterials/our-insights/cementing-your-lead-the-cement-industry-in-the-net-zero-transition. 
+41. Fraser, P ., Wanner, B., Everhart, K. & Herzog, A. (2022). Nuclear Power and Secure Energy Transitions: 
+From today’s challenges to tomorrow’s clean energy systems. International Energy Agency (IEA).
+42. Hanna, B.N., Abou-Jaoude, A., Guaita, N., Talbot, P . & Lohse, C. (2024). Navigating economies of scale and multiples 
+for nuclear-powered data centers and other applications with high service availability needs. Energies, 17(20), 5073. 
+https://doi.org/10.3390/en17205073. 
+43. Fisher, M. (2024, 13 December). Accelerating advanced nuclear deployment: Meeting the Supply Chain Challenge. 
+International Atomic Energy Agency (IAEA). https://www.iaea.org/newscenter/news/accelerating-advanced-nuclear-
+deployment-meeting-the-supply-chain-challenge. 
+44. International Atomic Energy Agency (IAEA). (2024). Small Modular Reactors: Advances in SMR Developments 2024. 
+https://doi.org/10.61092/iaea.3o4h-svum. 
+45. Dubai Future Foundation (DFF). (2024, 11 February). Navigating 10 megatrends shaping our future in 2024. 
+https://www.dubaifuture.ae/navigating-10-megatrends-shaping-our-future-in-2024. 
+46. Cubillos-Ruiz, A., Guo, T., Sokolovska, A., Miller, P . F., et al. (2021). Engineering living therapeutics with synthetic biology. 
+Nature Reviews Drug Discovery, 20, pp. 941-960. https://doi.org/https://doi.org/10.1038/s41573-021-00285-3. 
+47. Khazem, A., Schmachtenberg, R., Weiand, A., Sankaran, S., & Weber, W. (2025). Engineered microbial 
+living matter for diagnostics, prevention, and therapy. Current Opinion in Biotechnology, 92, 103269. 
+https://doi.org/10.1016/j.copbio.2025.103269. 
+48. Chariot Biosciences. (n.d.). Innovative Therapeutics Pipeline. https://www.chariot-bio.com/pipeline/. 
+49. Aurealis Therapeutics. (2024, 25 November). Pipeline and science. https://aurealistherapeutics.com/pipeline-and-
+science/#pipeline. 
+50. NEC. (2024, 12 December). NEC Announces Interim Results from Phase 1 Clinical Trial of NECVAX-NEO1, 
+an AI-Driven Personalized Oral Cancer Vaccine, at ESMO Immuno-Oncology Congress 2024 [Press release]. 
+https://www.nec.com/en/press/202412/global_20241212_01.html. 
+51. Zalatan, J.G., Petrini, L., & Geiger, R. (2024). Engineering bacteria for cancer immunotherapy. Current Opinion 
+in Biotechnology, 85, 103061. https://doi.org/https://doi.org/10.1016/j.copbio.2023.103061. 
+52. Dey, S., & Sankaran, S. (2024). Engineered bacterial therapeutics with material solutions. Trends in Biotechnology, 42(12), 
+pp. 1663-1676. https://doi.org/10.1016/j.tibtech.2024.06.011. 
+53. Zou, Z.-P ., Zhang, X.-P ., Zhang, Q., Yin, B.-C., et al. (2024). Genetically engineered bacteria 
+as inflammatory bowel disease therapeutics. Engineering Microbiology, 4(4), 100167. 
+https://doi.org/10.1016/j.engmic.2024.100167. 
+54. Dubai Future Foundation (DFF). (2024, 11 February). Navigating 10 megatrends shaping our future in 2024. 
+https://www.dubaifuture.ae/navigating-10-megatrends-shaping-our-future-in-2024. 
+55. Kalinderi, K., Papaliagkas, V., & Fidani, L. (2024). GLP-1 receptor agonists: A new treatment in parkinson’s disease. 
+International Journal of Molecular Sciences, 25(7), 3812. https://doi.org/10.3390/ijms25073812. 
+Top 10 Emerging Technologies of 2025
+56. Fessel, J. (2024). All GLP-1 agonists should, theoretically, cure alzheimer’s dementia but dulaglutide might be more 
+effective than the others. Journal of Clinical Medicine, 13(13), 3729. https://doi.org/10.3390/jcm13133729. 
+57. Monti, G., Gomes Moreira, D., Richner, M., Mutsaers, H.A.M. (2022). GLP-1 Receptor Agonists in Neurodegeneration: 
+Neurovascular Unit in the Spotlight. Cells, 11(13):2023. doi: 10.3390/cells11132023. 
+58. Novo Nordisk. (2024). Semaglutide in early Alzheimer’s: EVOKE and EVOKE+ clinical trials. 
+https://clinicaltrials.gov/study/NCT04777396. 
+59. BioSpace. (2024, 20 November). GLP-1 Receptor Agonist Market worth $55.70 Billion by 2031, Coherent Market Insights 
+[Press release].https://www.biospace.com/press-releases/glp-1-receptor-agonist-market-worth-55-70-billion-by-2031-
+coherent-market-insights. 
+60. Kopp, K.O., Glotfelty, E.J., Li, Y., & Greig, N.H. (2022). Glucagon-like peptide-1 (GLP-1) receptor agonists 
+and neuroinflammation: Implications for neurodegenerative disease treatment. Pharmacological Research, 
+186, 106550. https://doi.org/10.1016/j.phrs.2022.106550.
+61. Pyka, P ., Garbo, S., Fioravanti, R., Jacob, C., et al. (2024). Selenium-containing compounds: A new hope for 
+innovative treatments in alzheimer’s disease and parkinson’s disease. Drug Discovery Today, 29(8), 104062. 
+https://doi.org/10.1016/j.drudis.2024.104062. 
+62. Lobo, A. (2024, 17 September). In parkinson’s disease, healthcare expenses among largest part of cost. Parkinson’s 
+News Today. https://parkinsonsnewstoday.com/news/parkinsons-disease-healthcare-expenses-largest-part-cost/. 
+63. Mayo Foundation for Medical Education and Research. (2024, 8 November). Alzheimer’s disease. 
+https://www.mayoclinic.org/diseases-conditions/alzheimers-disease/symptoms-causes/syc-20350447. 
+64. U.S. Food and Drug Administration (FDA). (2025, 5 March). FDA clarifies policies for compounders as national GLP-1 
+supply begins to stabailize [Press release]. https://www.fda.gov/drugs/drug-safety-and-availability/fda-clarifies-policies-
+compounders-national-glp-1-supply-begins-stabilize. 
+65. Don Tracy, A.E. (2024, 25 June). Novo Nordisk to invest $4.1 billion in expanding manufacturing capabilities in the United 
+States. PharmExec. https://www.pharmexec.com/view/novo-nordisk-invest-4-1-billion-expanding-manufacturing-
+capabilities-united-states. 
+66. Klein, H.E. (2024, 16 May). Most insured adults still have to pay at least part of the cost of GLP-1 drugs. AJMC. 
+https://www.ajmc.com/view/most-insured-adults-still-have-to-pay-at-least-part-of-the-cost-of-glp-1-drugs. 
+67. National Conference of State Legislature. (n.d.). Growth, volume, price: The skinny on GLP-1 medications - national 
+conference of state legislatures. https://www.ncsl.org/state-legislatures-news/details/growth-volume-price-the-skinny-on-
+glp-1-medications. 
+68. Azam, S., Haque, Md. E., Balakrishnan, R., Kim, I.-S., & Choi, D.-K. (2021). The ageing brain: Molecular and cellular 
+basis of neurodegeneration. Frontiers in Cell and Developmental Biology, 9. https://doi.org/10.3389/fcell.2021.683459. 
+69. Meissner, W.G., Remy, P ., Giordana, C., Maltête, et al. (2024). Trial of lixisenatide in early parkinson’s disease. 
+New England Journal of Medicine, 390(13), pp. 1176-1185. https://doi.org/10.1056/nejmoa2312323. 
+70. BioSpace. (2024, 9 December). Evidence mounts for potential of glp-1s in alzheimer’s disease. 
+https://www.biospace.com/drug-development/evidence-mounts-for-potential-of-glp-1s-in-alzheimers-disease. 
+71. Dubai Future Foundation (DFF). (2024, 11 February) Navigating 10 megatrends shaping our future in 2024. 
+https://www.dubaifuture.ae/navigating-10-megatrends-shaping-our-future-in-2024. 
+72. Maity, D., Guha Ray, P ., Buchmann, P ., Mansouri, M., & Fussenegger, M. (2023). Blood-glucose-powered metabolic fuel 
+cell for self-sufficient bioelectronics. Advanced Materials, 35(21). https://doi.org/10.1002/adma.202300890. 
+73. National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK). (2024, 28 December). Continuous glucose monitoring. 
+https://www.niddk.nih.gov/health-information/diabetes/overview/managing-diabetes/continuous-glucose-monitoring. 
+74. Zargartalebi, H., Mirzaie, S., GhavamiNejad, A., Ahmed, S. U., et al. (2024). Active-reset protein sensors enable continuous 
+in vivo monitoring of inflammation. Science, 386(6726), pp. 1146-1153. https://doi.org/10.1126/science.adn2600. 
+75. Florea, L., & Diamond, D. (2022). Sensors and “The internet of biochemical things”. Frontiers in Sensors, 3. 
+https://doi.org/10.3389/fsens.2022.1010212. 
+76. Huang, C.-W., Lin, C., Nguyen, M.K., Hussain, A., et al. (2023). A review of Biosensor for environmental monitoring: 
+Principle, application, and corresponding achievement of Sustainable Development Goals. Bioengineered, 14(1), 
+pp. 58-80. https://doi.org/10.1080/21655979.2022.2095089. 
+77. Albu, C., Chira, A., Radu, G.-L., & Eremia, S.A. (2025). Advances in cost-effective chemosensors for sustainable 
+monitoring in food safety and processing. Chemosensors, 13(3), 113. https://doi.org/10.3390/chemosensors13030113. 
+78. Institute of Medicine and National Research Council Committee to Ensure Safe Food from Production to Consumption. 
+(1998). The Changing Nature of Food Hazards: Cause for Increasing Concern in Ensuring Safe Food: From Production to 
+Consumption. https://www.ncbi.nlm.nih.gov/books/NBK209107/. 
+79. Lino, C., Barrias, S., Chaves, R., Adega, F. et al. (2022). Biosensors as diagnostic tools in clinical applications. Biochimica 
+et Biophysica Acta (BBA) - Reviews on Cancer, 1877(3), 188726. https://doi.org/10.1016/j.bbcan.2022.188726. 
+80. Florea, L., & Diamond, D. (2022). Sensors and “The internet of biochemical things”. Frontiers in Sensors, 3. 
+ https://doi.org/10.3389/fsens.2022.1010212.
+81. Essington, E. A., Vezeau, G. E., Cetnar, D. P ., Grandinette, E. (2024). An autonomous microbial sensor 
+enables long-term detection of TNT explosive in natural soil. Nature Communications, 15, 10471. 
+https://doi.org/10.1101/2024.10.08.617249. 
+Top 10 Emerging Technologies of 2025
+82. Ibid.
+83. Florea, L., & Diamond, D. (2022). Sensors and “The internet of biochemical things”. Frontiers in Sensors, 3. 
+https://doi.org/10.3389/fsens.2022.1010212.
+84. Ibid.
+85. Dubai Future Foundation (DFF). (2024, 11 February). Navigating 10 megatrends shaping our future in 2024. 
+https://www.dubaifuture.ae/navigating-10-megatrends-shaping-our-future-in-2024. 
+86. Krietsch Boerner, L. (2019, 15 November). Industrial Ammonia production emits more CO2 than any other chemical-making 
+reaction. chemists want to change that. Chemical & Engineering News. https://cen.acs.org/environment/green-chemistry/
+Industrial-ammonia-production-emits-CO2/97/i24. 
+87. Lehigh University. (2018, 9 July). Electrochemically-produced ammonia could revolutionize food production. Phys.org. 
+https://phys.org/news/2018-07-electrochemically-produced-ammonia-revolutionize-food-production.html. 
+88. Ahmed, M. I., Assafiri, A., Hibbert, D. B., & Zhao, C. (2023). Li-mediated electrochemical nitrogen fixation: 
+Key advances and future perspectives. Small, 19(52). https://doi.org/10.1002/smll.202305616. 
+89. Koh, S., Choi, Y., Lee, I., Kim, G.-M. et al. (2022). Light-driven ammonia production by azotobacter vinelandii 
+cultured in medium containing colloidal quantum dots. Journal of the American Chemical Society, 144(24), 
+pp. 10798-10808. https://doi.org/10.1021/jacs.2c01886. 
+90. Jiang, Y., Chen, C.-J., Li, K., Cui, L.-P ., & Chen, J.-J. (2025). Polyoxometalates for the catalytic reduction of nitrogen 
+oxide and its derivatives: From novel structures to functional applications. Chemical Communications, 61(26), 
+pp. 4881-4896. https://doi.org/10.1039/d5cc00632e. 
+91. Ahmed, M. I., Assafiri, A., Hibbert, D. B., & Zhao, C. (2023). Li-mediated electrochemical nitrogen fixation: 
+Key advances and future perspectives. Small, 19(52). https://doi.org/10.1002/smll.202305616. 
+92. Tonelli, D., Rosa, L., Gabrielli, P ., Parente, A., & Contino, F. (2024). Cost-competitive decentralized ammonia fertilizer 
+production can increase food security. Nature Food, 5(6), pp. 469-479. https://doi.org/10.1038/s43016-024-00979-y. 
+93. Gallucci, M. (2021). The ammonia solution: Ammonia engines and fuel cells in cargo ships could slash 
+their carbon emissions. IEEE Spectrum, 58(3), pp. 44-50. https://doi.org/10.1109/mspec.2021.9370109. 
+94. Ibid.
+95. Izelaar, B., Ramdin, M., Vlierboom, A., Perez-Fortes, M. et al. (2024). Techno-economic assessment of 
+different smallscale electrochemical NH3 production plants. Energy & Environmental Science, 17, 7983. 
+https://doi.org/https://doi.org/10.1039/d4ee03299c. 
+96. Blain, L. (2022, 30 November). World’s largest green ammonia projects could clean up half the market. New Atlas. 
+https://newatlas.com/energy/largest-green-ammonia-projects/. 
+97. World Economic Forum. (2023). Ammonia Industry. In Net-Zero Industry Tracker 2023. https://www.weforum.org/
+publications/net-zero-industry-tracker-2023/ammonia-industry-eaee0d0381/. 
+98. Lehigh University. (2018, July 9). Electrochemically-produced ammonia could revolutionize food production. Phys.org. 
+https://phys.org/news/2018-07-electrochemically-produced-ammonia-revolutionize-food-production.html. 
+99. International Energy Agency (IEA). (2021). Executive summary. In Ammonia Technology Roadmap. 
+https://www.iea.org/reports/ammonia-technology-roadmap/executive-summary. 
+100. Hussain, J., Mubarak, M., Boopathi, D., & Jayabal, R. (2025). A comprehensive review of production and utilisation of 
+ammonia as potential fuel for compression ignition engines. Next Sustainability, 5, 100116. 
+https://doi.org/10.1016/j.nxsust.2025.100116. 
+101. Adeniyi, A., Bello, I., Mukaila, T., Sarker, N., & Hammed, A. (2023). Trends in biological ammonia production. 
+Trends in Biological Ammonia Production, 12(2), 41. https://doi.org/10.20944/preprints202304.0543.v1. 
+102. Ibid.
+103. Spry, M., Westhead, O., Tort, R., Moss, B., et al. (2023). Water increases the faradaic selectivity of Li-mediated nitrogen 
+reduction. ACS Energy Letters, 8(2), pp. 1230-1235. https://doi.org/10.1021/acsenergylett.2c02792. 
+104. Fu, X. (2023). Lithium-mediated nitrogen reduction for electrochemical ammonia synthesis: From batch to flow reactor. 
+Materials Today Catalysis, 3, 100031. https://doi.org/10.1016/j.mtcata.2023.100031. 
+105. Zhou, Y., Fu, X., Chorkendorff, I., & Nørskov, J. K. (2024). Electrochemical Ammonia Synthesis: The energy efficiency 
+challenge. ACS Energy Letters, 10(1), pp. 128-132. https://doi.org/10.1021/acsenergylett.4c02954. 
+106. International Energy Agency (IEA). (n.d.). Critical Minerals. https://www.iea.org/topics/critical-minerals. 
+107. Masia, B., Yang, M., & Cozzani, V. (2024). Risk assessment of ammonia fueled ships: Consequences on human 
+health of ammonia releases from damaged fuel storage tanks. ACS Chemical Health & Safety, 31(6), pp. 503-520. 
+https://doi.org/10.1021/acs.chas.4c00044. 
+108. Wyer, K. E., Kelleghan, D. B., Blanes-Vidal, V., Schauberger, G., & Curran, T. P . (2022). Ammonia emissions from 
+agriculture and their contribution to fine particulate matter: A review of implications for human health. Journal of 
+Environmental Management, 323, 116285. https://doi.org/10.1016/j.jenvman.2022.116285. 
+109. International Energy Agency (IEA). (n.d.) Ammonia Technology Roadmap: Towards more sustainable nitrogen 
+fertilizer production. https://iea.blob.core.windows.net/assets/6ee41bb9-8e81-4b64-8701-2acc064ff6e4/
+AmmoniaTechnologyRoadmap.pdf. 
+Top 10 Emerging Technologies of 2025
+110. Dubai Future Foundation (DFF). (2024, 11 February). Navigating 10 megatrends shaping our future in 2024. 
+https://www.dubaifuture.ae/navigating-10-megatrends-shaping-our-future-in-2024. 
+111. Sen, A., Oswalia, J., Yadav, S., Vachher, M., & Nigam, A. (2024). Recent trends in nanozyme research and their potential 
+therapeutic applications. Current Research in Biotechnology, 7, 100205. https://doi.org/10.1016/j.crbiot.2024.100205. 
+112. Bilal, M., Khaliq, N., Ashraf, M., Hussain, N., (2023). Enzyme mimic nanomaterials as nanozymes with catalytic attributes. 
+Colloids and Surfaces B: Biointerfaces, 221, 112950. https://doi.org/10.1016/j.colsurfb.2022.112950. 
+113. Sen, A., Oswalia, J., Yadav, S., Vachher, M., & Nigam, A. (2024). Recent trends in nanozyme research and their potential 
+therapeutic applications. Current Research in Biotechnology, 7, 100205. https://doi.org/10.1016/j.crbiot.2024.100205. 
+114. Level Nine. (n.d.). Next-generationcatalysts, inspired by nature. https://www.levelninelabs.com/. 
+115. Gust. (n.d.). Nanozyme, Inc. https://gust.com/companies/nanozyme. 
+116. Wang, T., Lai, L., Huang, Y., & Su, E. (2024). Nanozyme: An emerging tool for food packaging. Food Control, 
+155, 110104. https://doi.org/10.1016/j.foodcont.2023.110104. 
+117. Sen, A., Oswalia, J., Yadav, S., Vachher, M., & Nigam, A. (2024). Recent trends in nanozyme research and their potential 
+therapeutic applications. Current Research in Biotechnology, 7, 100205. https://doi.org/10.1016/j.crbiot.2024.100205. 
+118. Market Research Future. (n.d.). Nanozyme market size, share, outlook insights 2034. 
+https://www.marketresearchfuture.com/reports/nanozyme-market-30279. 
+119. Cao, X., Liu, T., Wang, X., Yu, Y., et al. (2024). Recent advances in nanozyme-based sensing technology 
+for antioxidant detection. Sensors, 24(20), 6616. https://doi.org/10.3390/s24206616. 
+120. Ibid.
+121. Tagaras, N., Song, H., Sahar, S., Tong, W., et al. (2024). Safety landscape of therapeutic nanozymes and future research 
+directions. Advanced Science, 11(46). https://doi.org/10.1002/advs.202407816. 
+122. Zhang, Y., Hu, X., Shang, J., Shao, W., et al. (2022). Emerging nanozyme-based multimodal synergistic therapies in 
+combating bacterial infections. Theranostics, 12(13), pp. 5995-6020. https://doi.org/10.7150/thno.73681. 
+123. Cao, X., Liu, T., Wang, X., Yu, Y., et al. (2024). Recent advances in nanozyme-based sensing technology for antioxidant 
+detection. Sensors, 24(20), 6616. https://doi.org/10.3390/s24206616. 
+124. Ibid.
+125. Ibid.
+126. Wang, P ., Wang, T., Hong, J., Yan, X., & Liang, M. (2020). Nanozymes: A new disease imaging strategy. 
+Frontiers in Bioengineering and Biotechnology, 8. https://doi.org/10.3389/fbioe.2020.00015. 
+127. American National Standards Institute. (2021, 8 October). With standards, the potential of nanotechnology keeps growing. 
+https://www.ansi.org/standards-news/all-news/2021/10/10-8-21-with-standards-the-potential-for-nanotechnology-
+keeps-growing. 
+128. Dubai Future Foundation (DFF). (2024, 11 February). Navigating 10 megatrends shaping our future in 2024. 
+https://www.dubaifuture.ae/navigating-10-megatrends-shaping-our-future-in-2024. 
+129. Ebadi, K., Chang, Y., Palieri, M., Stephens, A., et al. (2020). Lamp: Large-scale autonomous mapping and positioning 
+for exploration of perceptually-degraded subterranean environments. IEEE International Conference 
+on Robotics and Automation (ICRA), pp. 80-86. https://doi.org/10.1109/icra40945.2020.9197082. 
+130. Williams, L.C. (2024, 9 April). Drones, maps, and storm-tracking in the Pacific. Defense One. 
+https://www.defenseone.com/defense-systems/2024/04/drones-maps-and-storm-tracking-pacific/395574/?oref=d1-
+category-lander-river . 
+131. Naratek. (2019, 22 November). Researchers develop robotic ants with Swarm Intelligence. https://www.naratek.com/
+en/2019/researchers-develop-robotic-ants-swarm-intelligence. 
+132. Yi, L., Deng, X., Yang, L. T., Wu, H., et al. (2021). Reinforcement-learning-enabled partial confident information 
+coverage for IOT-based Bridge Structural Health Monitoring. IEEE Internet of Things Journal, 8(5), pp. 3108-3119. 
+https://doi.org/10.1109/jiot.2020.3028325. 
+133. Delheimer, S. (n.d.). Using drones in agriculture and Natural Resources. National Institute of Food and Agriculture. 
+https://www.nifa.usda.gov/about-nifa/impacts/using-drones-agriculture-natural-resources. 
+134. Federal Communications Commission. (2024, 21 November). FCC ADOPTS ‘C-V2X’ AUTO SAFETY SPECTRUM 
+RULES. https://docs.fcc.gov/public/attachments/DOC-407683A1.pdf. 
+135. Armeni, I., He, Z.-Y., Zamir, A., Gwak, J., (2019). 3D scene graph: A structure for unified semantics, 3D space, and 
+camera. IEEE/CVF International Conference on Computer Vision (ICCV). https://doi.org/10.1109/iccv.2019.00576. 
+136. Cadena, C. et al. (2016). Past, Present, and Future of Simultaneous Localization and Mapping: Toward the Robust-Perception 
+Age. IEEE Transactions on Robotics, vol. 32, no. 6, pp. 1309-1332. https://ieeexplore.ieee.org/document/7747236. 
+137. Feng, D., et al. (2021). Deep Multi-Modal Object Detection and Semantic Segmentation for Autonomous Driving: 
+Datasets, Methods, and Challenges. IEEE Transactions on Intelligent Transportation Systems, vol. 22, no. 3, 
+pp. 1341-1360. https://ieeexplore.ieee.org/document/9000872. 
+138. Rajvanshi, A., et al. (2023). SayNav: Grounding Large Language Models for Dynamic Planning to Navigation 
+in New Environments. Cornell University. https://arxiv.org/abs/2309.04077. 
+Top 10 Emerging Technologies of 2025
+139. Pawar, V., Zade, N., Vora, D., Khairnar, V., et al. (2024). Intelligent Transportation System with 5G vehicle-to-everything 
+(V2X): Architectures, vehicular use cases, emergency vehicles, current challenges, and Future Directions. IEEE Access, 
+12, 183937-183960. https://doi.org/10.1109/access.2024.3506815. 
+140. Adnan Yusuf, S., Khan, A., & Souissi, R. (2024). Vehicle-to-everything (V2X) in the Autonomous Vehicles Domain – 
+A Technical Review of Communication, sensor, and AI Technologies for Road User Safety. Transportation Research 
+Interdisciplinary Perspectives, 23, 100980. https://doi.org/10.1016/j.trip.2023.100980. 
+141. Stone, T. (2020, 19 November). White Paper: Australian research reveals V2x could reduce crashes by 78%. 
+Traffic Technology Today. https://www.traffictechnologytoday.com/news/connected-vehicles-infrastructure/white-paper-
+australian-research-reveals-connected-talking-cars-could-save-lives.html. 
+142. National Renewable Energy Laboratory (NREL). (n.d.). Connected and automated trucks: Transportation 
+and Mobility Research. https://www.nrel.gov/transportation/connected-automated-trucks.html. 
+143. Adnan Yusuf, S., Khan, A., & Souissi, R. (2024). Vehicle-to-everything (V2X) in the Autonomous Vehicles Domain – 
+A Technical Review of Communication, sensor, and AI Technologies for Road User Safety. Transportation Research 
+Interdisciplinary Perspectives, 23, 100980. https://doi.org/10.1016/j.trip.2023.100980.
+144. Pawar, V., Zade, N., Vora, D., Khairnar, V., et al. (2024). Intelligent Transportation System with 5G vehicle-to-everything 
+(V2X): Architectures, vehicular use cases, emergency vehicles, current challenges, and Future Directions. IEEE Access, 
+12, 183937-183960. https://doi.org/10.1109/access.2024.3506815.
+145. Ericsson. (n.d.). 5G network coverage outlook. https://www.ericsson.com/en/reports-and-papers/mobility-report/
+dataforecasts/network-coverage. 
+146. Dubai Future Foundation (DFF). (2024, 11 February). Navigating 10 megatrends shaping our future in 2024. 
+https://www.dubaifuture.ae/navigating-10-megatrends-shaping-our-future-in-2024. 
+147. Zhao, X., Gunn, S., Christ, M., Fairoze, J., et al. (n.d.). SoK: Watermarking for AI-Generated Content. arxiv. 
+https://arxiv.org/html/2411.18479v2. 
+148. Google DeepMind. (n.d.). SynthID. https://deepmind.google/technologies/synthid/. 
+149. Fernandez, P ., Elsahar, H., Yalniz, I. Z., & Mourachko, A. (n.d.). Video Seal: Open and Efficient Video Watermarking. arvix. 
+https://doi.org/https://doi.org/10.48550/arXiv.2412.09492. 
+150. Bartz, D., & Hu, K. (2023, 21 July). OpenAI, Google, others pledge to watermark AI content for safety, White House 
+says. Reuters. https://www.reuters.com/technology/openai-google-others-pledge-watermark-ai-content-safety-white-
+house-2023-07-21/. 
+151. Fernandez, P . et al. (2024, 11 December). Video Seal: Open and Efficient Video Watermarking. Meta. 
+https://ai.meta.com/research/publications/video-seal-open-and-efficient-video-watermarking/. 
+152. Clegg, N. (2024, 6 February). Labeling AI-generated images on Facebook, Instagram and threads. Meta. 
+https://about.fb.com/news/2024/02/labeling-ai-generated-images-on-facebook-instagram-and-threads/. 
+153. Partnership on AI. (2024, 19 November). Partnership on AI Unveils New Case Studies from Supporters of Synthetic Media 
+Framework: Meta, Microsoft, Thorn, and Truepic. https://partnershiponai.org/nov-2024-synthetic-media-case-studies-
+announcement/. 
+154. Heitzenrater, C. (2024, 17 January). The case for and against AI Watermarking. Rand. https://www.rand.org/pubs/
+commentary/2024/01/the-case-for-and-against-ai-watermarking.html. 
+155. Cyberspace Administration of China. (2022). Provisions on the Management of Deep Synthesis of Internet Information 
+Services. https://www.cac.gov.cn/2022-12/11/c_1672221949354811.htm. 
+156. European Parliament. (2023, 13 December). Generative AI and watermarking. https://www.europarl.europa.eu/thinktank/
+en/document/EPRS_BRI(2023)757583. 
+157. California Legislative Information. (2024). SB-942 California AI Transparency Act. (2023-2024). 
+https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240SB942. 
+158. Wu, D. (2025, 14 March). China announces generative ai labeling to cull disinformation. Bloomberg. 
+https://www.bloomberg.com/news/articles/2025-03-14/china-announces-generative-ai-labeling-to-cull-disinformation. 
+159. EU Artificial Intelligence Act. (n.d.). The EU Artificial Intelligence Act. https://artificialintelligenceact.eu/. 
+160. EU Artificial Intelligence Act. (2025). Article 99: Penalties. https://artificialintelligenceact.eu/article/99/. 
+161. Adobe. Content Credentials overview. (2025, 22 January). https://helpx.adobe.com/creative-cloud/help/content-
+credentials.html. 
+162. DiBenedetto, C. (2024, 9 May). TikTok’s ai-generated content is getting watermarked. Mashable. 
+https://mashable.com/article/tiktok-watermarking-ai-generated-content. 
+163. Ai watermarking must be watertight to be effective. (2024). Nature, 634(8035), 753–753. https://doi.org/10.1038/
+d41586-024-03418-x 
+164. Evsutin, O., & Meshcheryakov, Y. (2020). The use of the blockchain technology and digital watermarking to provide data 
+authenticity on a mining enterprise. Sensors, 20(12), 3443. https://doi.org/10.3390/s20123443. 
+165. Dubai Future Foundation (DFF). (2024, 11 February). Navigating 10 megatrends shaping our future in 2024. 
+https://www.dubaifuture.ae/navigating-10-megatrends-shaping-our-future-in-2024.
+Top 10 Emerging Technologies of 2025
+World Economic Forum
+91–93 route de la Capite
+CH-1223 Cologny/Geneva
+Switzerland 
+Tel.: +41 (0) 22 869 1212
+Fax: +41 (0) 22 786 2744
+contact@weforum.org
+www.weforum.orgThe World Economic Forum, 
+committed to improving 
+the state of the world, is the 
+International Organization for 
+Public-Private Cooperation.
+
+The Forum engages the 
+foremost political, business 
+and other leaders of society 
+to shape global, regional 
+and industry agendas.
