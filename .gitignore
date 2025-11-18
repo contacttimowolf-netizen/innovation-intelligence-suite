@@ -1,0 +1,8 @@
+data/rag_automotive_tech/raw_sources
+data/rag_automotive_tech/processed/*.pdf
+models/vector_index/
+models/saved_model/
+.env
+*.key
+*.ckpt
+*.bin
