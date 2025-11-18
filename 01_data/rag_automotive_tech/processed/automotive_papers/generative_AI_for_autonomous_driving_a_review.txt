@@ -1,0 +1,3204 @@
+TECH REPORT: generative_AI_for_autonomous_driving_a_review
+SOURCE: generative_AI_for_autonomous_driving_a_review.pdf
+============================================================
+
+## KEY SECTIONS ##
+
+### EXECUTIVE SUMMARY ###
+A Comprehensive Overview and Field Guide for Future
+Research Directions,” 2024, arXiv:2112.11561.
+[299] J. Xu, Z. Li, W. Chen, et al. , “On-Device Language Models:
+A Comprehensive Review,” 2024, arXiv: 2409.00088.
+[300] Y . Gu, L. Dong, F. Wei, and M. Huang, “MiniLLM: Knowl-
+edge Distillation of Large Language Models,” in The Twelfth
+Int. Conf. on Learn. Represent. , 2024.
+[301] S. Gode, A. Nayak, and W. Burgard, “FlowNav: Learning
+Efficient Navigation Policies via Conditional Flow Match-
+ing,” arXiv:2411.09524 , 2024.
+[302] P. Tang, Z. Wang, G. Wang, et al. , “SparseOcc: Rethinking
+Sparse Latent Representation for Vision-Based Semantic
+Occupancy Prediction,” 2024, arXiv:2404.09502.
+[303] M. Davies, A. Wild, G. Orchard, et al. , “Advancing Neu-
+romorphic Computing With Loihi: A Survey of Results and
+Outlook,” Proc. IEEE , 2021.
+PREPRINT 24
+X. B IOGRAPHY SECTION
+Katharina Winter is pursuing her Ph.D. at Munich
+University of Applied Sciences in the Intelligent
+Vehicles Lab. She earned her M.Sc. in Media In-
+formatics at LMU Munich.
+Abhishek Vivekanandan earned his M.Sc. from TU
+Chemnitz and is currently working as a researcher
+at FZI Forschungszentrum Informatik while simul-
+taneously pursuing his PhD from KIT.
+Rupert Polley earned his M.Sc. degree at KIT,
+focusing on machine learning. Since 2021, he has
+been working as a researcher and is pursuing his
+PhD at FZI, specializing in HD maps.
+Yinzhe Shen earned his M.Sc. from University of
+Stuttgart and has been pursuing his Ph.D. at KIT
+since 2023.
+Christian Schlauch is a Researcher at Continental
+Automotive GmbH and a Ph.D. candidate at KIT. He
+holds a B.Sc. and a M.Sc. in Systems Engineering
+and Technical Cybernetics from Otto-von-Guericke
+University Magdeburg.
+Mohamed-Khalil Bouzidi is a Researcher at Con-
+tinental Automotive GmbH and a Ph.D. candidate
+at Freie Universität Berlin. He holds a B.Sc. and a
+M.Sc. from KIT. He also pursued a visiting research
+stay at the University of Alberta.
+Bojan Derajic earned his M.Sc. degree from the
+University of Belgrade in 2022. Since 2023, he is a
+Researcher at Continental Automotive GmbH and a
+Ph.D. candidate at TU Berlin.
+Natalie Grabowsky is pursuing a PhD at TU Berlin
+since 2024. She holds a B. of app.Sc. in Mathematics
+& Physics and a M.Sc. in Technomathematics from
+University of Wuppertal.
+Annajoyce Mariani is pursuing a Ph.D. at TU
+Berlin since 2024. She holds a B.Sc. and a M.Sc.
+in Engineering Physics from Politecnico di Milano.
+Dennis Rochau has been pursuing a Ph.D. at TU
+Berlin since 2024. He holds a B.Sc. in Mathematics
+from Universität Paderborn and an M.Sc. in Mathe-
+matics from TU Berlin.
+Giovanni Lucente is pursuing a PhD at TU Berlin
+while working as a researcher at the German
+Aerospace Center (DLR).
+Harsh Yadav has completed a Dual Degree (B.Tech.
++ M.Tech.) from IIT Bombay. He also earned an
+M.Sc. from the University of Lübeck. Currently, he
+is a researcher at Aptiv and a PhD candidate at the
+University of Wuppertal.
+Firas Mualla earned a M.Sc. degree in Compu-
+tational Engineering and a Ph.D. from Erlangen-
+Nürnberg University. Currently, he is working as a
+senior artificial intelligence engineer at the AI Lab,
+ZF Friedrichshafen.
+Adam Molin earned his Dr.-Ing. from TU München
+in 2014. He is Technical Manager in Software R&D
+at DENSO AUTOMOTIVE Deutschland GmbH, fo-
+cusing on safety verification & validation of au-
+tonomous driving.
+Sebastian Bernhard earned his Dr.-Ing. from TU
+Darmstadt in 2020. He is a technical lead for AI-
+based autonomous systems at the Continental AI Lab
+Berlin, currently focusing on end-to-end learning for
+autonomous driving.
+Christian Wirth earned his Ph.D. from TU Darm-
+stadt in 2017. Since 2018, he works for the Conti-
+nental Automotive GmbH, focusing on uncertainty
+estimation and informed machine learning methods.
+Ömer ¸ Sahin Ta¸ s earned his B.Sc. degree from
+Istanbul Technical University, followed by M.Sc.
+and Ph.D. degrees from KIT and held a visiting re-
+searcher position at the University of Toronto. He is
+leading the Mobile Perception Systems department
+at FZI Forschungszentrum Informatik since 2017.
+Nadja Klein is professor at KIT, and Emmy Noether
+Group Leader. After her PhD in Mathematics, she
+was postdoc at University of Melbourne as Feodor-
+Lynen fellow, and professor at Humboldt-Universität
+zu Berlin before joining KIT. She was awarded with
+the COPSS Emerging Leader Award.
+Fabian B. Flohr earned his M.Sc (2012, KIT)
+and Ph.D. (2018, University of Amsterdam) and
+worked at Mercedes-Benz as Function Owner for
+AD (2012–2022). Since 2022 he is Professor of
+Machine Learning at Munich University of Applied
+Sciences where he leads the Intelligent Vehicles Lab.
+Hanno Gottschalk obtained his PhD in mathemati-
+cal physics in 1999 at Ruhr University Bochum and
+habilitated in 2003 in mathematics at Bonn Univer-
+sity. In 2011, he received a permanent professorship
+in stochastics at the University of Wuppertal. Since
+2023 he holds the chair for Mathematical Modeling
+of Industrial Life Cycles at TU Berlin.
+
+--------------------------------------------------
+
+### METHODOLOGY ###
+to-sequence approach to warm start an optimization-based
+motion planner,” in IEEE/RSJ Int. Conf. on Intell. Robots
+Syst., 2021.
+[222] X. Xiao, T. Zhang, K. Choromanski, et al. , “Learning Model
+Predictive Controllers with Real-Time Attention for Real-
+World Navigation,” 2022, arXiv: 2209.10780.
+[223] R. Burnwal, A. Santara, N. P. Bhatt, B. Ravindran, and
+G. Aggarwal, “GAN-MPC: Training Model Predictive Con-
+trollers with Parameterized Cost Functions using Demonstra-
+tions from Non-identical Experts,” 2023, arXiv: 2305.19111.
+[224] H. Sha, Y . Mu, Y . Jiang, et al. , “LanguageMPC: Large Lan-
+guage Models as Decision Makers for Autonomous Driving,”
+2023, arXiv:2310.03026.
+[225] F. Lotfi, K. Virji, F. Faraji, et al. , “Uncertainty-aware hybrid
+paradigm of nonlinear MPC and model-based RL for offroad
+navigation: Exploration of transformers in the predictive
+model,” in 2024 IEEE Int. Conf. on Robotics Autom. , 2024.
+[226] F. Djeumou, T. J. Lew, N. Ding, et al. , “One Model to Drift
+Them All: Physics-Informed Conditional Diffusion Model
+for Driving at the Limits,” in Proc. The 8th Conf. on Robot
+Learn. , 2025.
+[227] G. Zhou, S. Swaminathan, R. V . Raju, et al. , “Diffusion
+Model Predictive Control,” 2024, arXiv:2410.05364.
+[228] N. Ma, J. Wang, J. Liu, and M. Q.-H. Meng, “Conditional
+Generative Adversarial Networks for Optimal Path Plan-
+ning,” IEEE Trans. on Cogn. Dev. Syst. , 2022.
+[229] G. Rabenstein, L. Ullrich, and K. Graichen, “Sampling
+for Model Predictive Trajectory Planning in Autonomous
+Driving using Normalizing Flows,” in 2024 IEEE Intell. Veh.
+Symp. (IV) , 2024.
+[230] Y . Wang, R. Jiao, S. S. Zhan, et al. , “Empowering Au-
+tonomous Driving with Large Language Models: A Safety
+Perspective,” in Int. Conf. on Learn. Represent. 2024 Work-
+shop LLMAgent , 2024.
+[231] K. Mizuta and K. Leung, “CoBL-Diffusion: Diffusion-
+Based Conditional Robot Planning in Dynamic Environ-
+ments Using Control Barrier and Lyapunov Functions,”
+2024, arXiv:2406.05309.
+[232] W. Xiao, T.-H. Wang, C. Gan, and D. Rus, “SafeDiffuser:
+Safe Planning with Diffusion Probabilistic Models,” 2023,
+arXiv:2306.00148.
+[233] X. Tian, J. Gu, B. Li, et al. , “DriveVLM: The Convergence
+of Autonomous Driving and Large Vision-Language Mod-
+els,” 2024, arXiv:2402.12289.
+[234] S. Meng, Y . Wang, C.-F. Yang, N. Peng, and K.-W. Chang,
+“LLM-A*: Large Language Model Enhanced Incremental
+Heuristic Search on Path Planning,” in Conf. on Empir.
+Methods Nat. Lang. Process. , 2024.
+[235] J. Levinson, J. Askeland, J. Becker, et al. , “Towards fully
+autonomous driving: Systems and algorithms,” in 2011 IEEE
+Intell. Veh. Symp. , 2011.
+[236] S. Behere and M. Törngren, “A functional reference archi-
+tecture for autonomous driving,” Inf. Softw. Technol. , 2016.
+[237] F. Munir, S. Azam, M. I. Hussain, A. M. Sheri, and M.
+Jeon, “Autonomous Vehicle: The Architecture Aspect of
+Self Driving Car,” in Int. Conf. on Sensors, Signal Image
+Process. , 2018.[238] O. S. Tas, S. Hormann, B. Schaufele, and F. Kuhnt, “Auto-
+mated vehicle system architecture with performance assess-
+ment,” in 2017 IEEE 20th Int. Conf. on Intell. Transp. Syst. ,
+2017.
+[239] A. Tampuu, T. Matiisen, M. Semikin, D. Fishman, and
+N. Muhammad, “A Survey of End-to-End Driving: Archi-
+tectures and Training Methods,” IEEE Trans. on Neural
+Networks Learn. Syst. , 2022.
+[240] B. Jiang, S. Chen, B. Liao, et al. , “Senna: Bridging Large
+Vision-Language Models and End-to-End Autonomous Driv-
+ing,” 2024, arXiv:2410.22313.
+[241] P. S. Chib and P. Singh, “Recent Advancements in End-to-
+End Autonomous Driving using Deep Learning: A Survey,”
+2023, arXiv:2307.04370.
+[242] L. Chen, P. Wu, K. Chitta, B. Jaeger, A. Geiger, and
+H. Li, “End-to-End Autonomous Driving: Challenges and
+Frontiers,” IEEE Trans. on Pattern Anal. Mach. Intell. , 2024.
+[243] Y . Hu, J. Yang, L. Chen, et al. , “Planning-oriented Au-
+tonomous Driving,” 2023, arXiv:2212.10156.
+[244] W. Sun, X. Lin, Y . Shi, C. Zhang, H. Wu, and S. Zheng,
+“SparseDrive: End-to-End Autonomous Driving via Sparse
+Scene Representation,” 2024, arXiv:2405.19620.
+[245] B. Yang, H. Su, N. Gkanatsios, et al. , “Diffusion-ES:
+Gradient-free Planning with Diffusion for Autonomous
+Driving and Zero-Shot Instruction Following,” 2024,
+arXiv:2402.06559.
+[246] B. Liao, S. Chen, H. Yin, et al. , “DiffusionDrive: Truncated
+Diffusion Model for End-to-End Autonomous Driving,”
+2024, arXiv:2411.15139.
+[247] X. Weng, B. Ivanovic, Y . Wang, Y . Wang, and M. Pavone,
+“PARA-Drive: Parallelized Architecture for Real-Time Au-
+tonomous Driving,” in 2024 IEEE/CVF Conf. on Comput.
+Vis. Pattern Recognit. , 2024.
+[248] S. Chen, B. Jiang, H. Gao, et al. , “V ADv2: End-to-End
+Vectorized Autonomous Driving via Probabilistic Planning,”
+2024, arXiv:2402.13243.
+[249] Z. Li, K. Li, S. Wang, et al. , “Hydra-MDP: End-to-end
+Multimodal Planning with Multi-target Hydra-Distillation,”
+2024, arXiv:2406.06978.
+[250] C. Yuan, Z. Zhang, J. Sun, et al. , “DRAMA: An Efficient
+End-to-end Motion Planner for Autonomous Driving with
+Mamba,” 2024, arXiv:2408.03601.
+[251] Z. Xu, Y . Zhang, E. Xie, et al. , “DriveGPT4: Inter-
+pretable End-to-end Autonomous Driving via Large Lan-
+guage Model,” in IEEE Robotics Autom. Lett. , 2024.
+[252] S. Wang, Z. Yu, X. Jiang, et al. , “OmniDrive: A
+Holistic LLM-Agent Framework for Autonomous Driv-
+ing with 3D Perception, Reasoning and Planning,” 2024,
+arXiv:2405.01533.
+[253] K. Renz, L. Chen, A.-M. Marcu, et al. , “CarLLaV A: Vision
+language models for camera-only closed-loop driving,” 2024,
+arXiv:2406.10165.
+[254] J.-J. Hwang, R. Xu, H. Lin, et al. , “EMMA: End-to-
+End Multimodal Model for Autonomous Driving,” 2024,
+arXiv:2410.23262.
+[255] G. Team, R. Anil, S. Borgeaud, et al. , “Gemini: A
+Family of Highly Capable Multimodal Models,” 2024,
+arXiv:2312.11805.
+[256] K. Winter, M. Azer, and F. B. Flohr, “BEVDriver: Leverag-
+ing BEV Maps in LLMs for Robust Closed-Loop Driving,”
+2025, arXiv:2503.03074 [cs].
+[257] L. Espeholt, H. Soyer, R. Munos, et al. , “IMPALA: Scal-
+able Distributed Deep-RL with Importance Weighted Actor-
+Learner Architectures,” 2018, arXiv:1802.01561.
+[258] E. Ma, L. Zhou, T. Tang, et al. , “Unleashing Generalization
+of End-to-End Autonomous Driving with Controllable Long
+Video Generation,” 2024, arXiv:2406.01349.
+PREPRINT 23
+[259] D. Dauner, M. Hallgarten, A. Geiger, and K. Chitta, “Parting
+with Misconceptions about Learning-based Vehicle Motion
+Planning,” 2023, arXiv:2306.07962.
+[260] D. Dauner, M. Hallgarten, T. Li, et al. , “NA VSIM: Data-
+Driven Non-Reactive Autonomous Vehicle Simulation and
+Benchmarking,” 2024, arXiv:2406.15349.
+[261] X. Yang, L. Wen, Y . Ma, et al. , “DriveArena: A Closed-loop
+Generative Simulation Platform for Autonomous Driving,”
+2024, arXiv:2408.00415.
+[262] H. Zhou, L. Lin, J. Wang, et al. , “HUGSIM: A Real-Time,
+Photo-Realistic and Closed-Loop Simulator for Autonomous
+Driving,” 2024, arXiv:2412.01718.
+[263] B. Wilson, W. Qi, T. Agarwal, et al. , “Argoverse 2: Next
+Generation Datasets for Self-Driving Perception and Fore-
+casting,” 2023, arXiv:2301.00493.
+[264] M.-F. Chang, J. Lambert, P. Sangkloy, et al. , “Argov-
+erse: 3D Tracking and Forecasting with Rich Maps,” 2019,
+arXiv:1911.02620.
+[265] W. Zhan, L. Sun, D. Wang, et al. , “INTERACTION Dataset:
+An INTERnational, Adversarial and Cooperative moTION
+Dataset in Interactive Driving Scenarios with Semantic
+Maps,” 2019, arXiv:1910.03088.
+[266] J. Houston, G. Zuidhof, L. Bergamini, et al. , “One Thousand
+and One Hours: Self-driving Motion Prediction Dataset,”
+2020, arXiv:2006.14480.
+[267] S. Ettinger, S. Cheng, B. Caine, et al. , “Large Scale Inter-
+active Motion Forecasting for Autonomous Driving : The
+Waymo Open Motion Dataset,” 2021, arXiv:2104.10133.
+[268] A. Malinin, N. Band, Ganshin, et al. , “Shifts: A Dataset
+of Real Distributional Shift Across Multiple Large-Scale
+Tasks,” 2022, arXiv:2107.07455.
+[269] “Unreal Engine,” 2014, https://www.unrealengine.com/de,
+Citation Key: games_epic_unreal_2014.
+[270] D. Bassermann, “Asam,” 2025, https://www.asam.net/.
+[271] J. Hossain, “Autonomous Driving with Deep Reinforcement
+Learning in CARLA Simulation,” 2023, arXiv:2306.11217.
+[272] Q. Sun, X. Huang, B. C. Williams, and H. Zhao, “P4P:
+Conflict-Aware Motion Prediction for Planning in Au-
+tonomous Driving,” 2022, arXiv:2211.01634.
+[273] P. Wu, X. Jia, L. Chen, J. Yan, H. Li, and Y . Qiao,
+“Trajectory-guided Control Prediction for End-to-end Au-
+tonomous Driving: A Simple yet Strong Baseline,” 2022,
+arXiv:2206.08129.
+[274] J. Roh, C. Mavrogiannis, R. Madan, D. Fox, and S. S.
+Srinivasa, “Multimodal Trajectory Prediction via Topological
+Invariance for Navigation at Uncontrolled Intersections,”
+2020, arXiv:2011.03894.
+[275] P. A. Lopez, M. Behrisch, L. Bieker-Walz, et al. , “Micro-
+scopic Traffic Simulation using SUMO,” in 2018 21st Int.
+Conf. on Intell. Transp. Syst. , 2018.
+[276] R. Markowski and J. Trumpold, “Interfacing a Traffic Light
+Controller with SUMO for Hardware-in-the-Loop Testing,”
+inSUMO User Conf. , 2024.
+[277] M. A. Naeem, X. Jia, M. A. Saleem, et al. , “Vehicle
+to Everything (V2X) Communication Protocol by Using
+Vehicular AD-HOC Network,” in 2020 17th Int. Comput.
+Conf. on Wavelet Active Media Technol. Inf. Process. , 2020.
+[278] “Planet OSM,” 2012, https://planet.openstreetmap.org/.
+[279] Y . Xu, “Deep reinforcement learning for traffic light control
+optimization in multi-modal simulation of SUMO,” Ph.D.
+dissertation, TU Delft, Delft, Nederlands, 2024.
+[280] K. Makantasis, M. Kontorinaki, and I. Nikolos, “Deep
+reinforcement-learning-based driving policy for autonomous
+road vehicles,” IET Intell. Transp. Syst. , 2020.
+[281] M. Klischat, O. Dragoi, M. Eissa, and M. Althoff, “Coupling
+SUMO with a Motion Planning Framework for Automated
+Vehicles,” in SUMO User Conf. 2019 .
+[282] A. Artuñedo, “Motion Prediction and Manoeuvre Planning,”
+inDecis. Strateg. for Autom. Driv. Urban Environ. 2020.[283] M. Gu, Y . Su, C. Wang, and Y . Guo, “Trajectory Planning
+for Automated Merging Vehicles on Freeway Acceleration
+Lane,” IEEE Trans. Veh. Technol. , 2024.
+[284] E. Espié, C. Guionneau, B. Wymann, C. Dimitrakakis, R.
+Coulom, and A. Sumner, “TORCS, The Open Racing Car
+Simulator,” in Semantic Scholar , 2005.
+[285] D. Loiacono, A. Prete, P. L. Lanzi, and L. Cardamone,
+“Learning to overtake in TORCS using simple reinforcement
+learning,” in IEEE Congr. on Evol. Comput. , 2010.
+[286] S. Wang, D. Jia, and X. Weng, “Deep Reinforcement Learn-
+ing for Autonomous Driving,” 2019, arXiv:1811.11329.
+[287] I. Iso, “Pas 21448-road vehicles-safety of the intended func-
+tionality,” Int. Organ. for Stand. , 2019.
+[288] C. Xie, Z. Zhang, Y . Zhou, et al. , “Improving Transferability
+of Adversarial Examples With Input Diversity,” in 2019
+IEEE/CVF Conf. on Comput. Vis. Pattern Recognit. , 2019.
+[289] Y . Carmon, A. Raghunathan, L. Schmidt, J. C. Duchi,
+and P. S. Liang, “Unlabeled Data Improves Adversarial
+Robustness,” in Adv. Neural Inf. Process. Syst. , 2019.
+[290] J. Wörmann, D. Bogdoll, C. Brunner, et al. , “Knowledge
+Augmented Machine Learning with Applications in Au-
+tonomous Driving: A Survey,” 2023, arXiv:2205.04712.
+[291] A. Vivekanandan, N. Maier, and J. M. Zoellner, “Plausibility
+Verification For 3D Object Detectors Using Energy-Based
+Optimization,” 2022, arXiv:2211.05233.
+[292] M. Chen and C. J. Tomlin, “Hamilton–Jacobi Reachabil-
+ity: Some Recent Theoretical Advances and Applications
+in Unmanned Airspace Management,” Annu. Rev. Control.
+Robotics, Auton. Syst. , 2018.
+[293] K. P. Wabersich, A. J. Taylor, J. J. Choi, et al. , “Data-Driven
+Safety Filters: Hamilton-Jacobi Reachability, Control Barrier
+Functions, and Predictive Methods for Uncertain Systems,”
+IEEE Control. Syst. Mag. , 2023.
+[294] K.-C. Hsu, H. Hu, and J. F. Fisac, “The Safety Filter:
+A Unified View of Safety-Critical Control in Autonomous
+Systems,” 2023, arXiv:2309.05837.
+[295] K. P. Wabersich and M. N. Zeilinger, “Predictive control
+barrier functions: Enhanced safety mechanisms for learning-
+based control,” 2022, arXiv:2105.10241.
+[296] B. Deraji ´c, M.-K. Bouzidi, S. Bernhard, and W. Hönig,
+“Learning Maximal Safe Sets Using Hypernetworks for
+MPC-based Local Trajectory Planning in Unknown Envi-
+ronments,” 2025, arXiv:2410.20267.
+[297] L. Bereska and E. Gavves, “Mechanistic Interpretability for
+AI Safety – A Review,” 2024, arXiv:2404.14082.
+[298] S. Atakishiyev, M. Salameh, H. Yao, and R. Goebel, “Ex-
+plainable Artificial Intelligence for Autonomous Driving:
+
+--------------------------------------------------
+
+### INTRODUCTION ###
+“Context-Aware Scene Prediction Network (CASPNet),” in
+2022 IEEE 25th Int. Conf. on Intell. Transp. Syst. , 2022.
+[108] Z. Zhou, J. Wang, Y .-H. Li, and Y .-K. Huang, “Query-
+Centric Trajectory Prediction,” in Proc. IEEE/CVF Conf. on
+Comput. Vis. Pattern Recognit. , 2023.
+[109] Q. Sun, X. Huang, J. Gu, B. C. Williams, and H. Zhao,
+“M2I: From Factored Marginal Trajectory Prediction to
+Interactive Prediction,” in Proc. IEEE/CVF Conf. on Comput.
+Vis. Pattern Recognit. , 2022.
+[110] E. Tolstaya, R. Mahjourian, C. Downey, B. Vadarajan, B.
+Sapp, and D. Anguelov, “Identifying Driver Interactions via
+Conditional Behavior Prediction,” in 2021 IEEE Int. Conf.
+on Robotics Autom. , 2021.
+[111] D. Park, H. Ryu, Y . Yang, J. Cho, J. Kim, and K. J. Yoon,
+“Leveraging Future Relationship Reasoning for Vehicle Tra-
+jectory Prediction,” in Int. Conf. on Learn. Represent. , 2023.
+[112] W. Luo, C. Park, A. Cornman, B. Sapp, and D. Anguelov,
+“JFP: Joint Future Prediction with Interactive Multi-Agent
+Modeling for Autonomous Driving,” in Proc. The 6th Conf.
+on Robot Learn. , 2023.[113] Z. Zhou, L. Ye, J. Wang, K. Wu, and K. Lu, “HiVT:
+Hierarchical Vector Transformer for Multi-Agent Motion
+Prediction,” in Proc. IEEE/CVF Conf. on Comput. Vis.
+Pattern Recognit. , 2022.
+[114] S. Casas, C. Gulino, S. Suo, K. Luo, R. Liao, and R. Ur-
+tasun, “Implicit Latent Variable Model for Scene-Consistent
+Motion Forecasting,” in Eur. Conf. on Comput. Vis. , 2020.
+[115] A. Cui, S. Casas, A. Sadat, R. Liao, and R. Urtasun,
+“LookOut: Diverse Multi-Future Prediction and Planning for
+Self-Driving,” in Proc. IEEE/CVF Int. Conf. on Comput. Vis. ,
+2021.
+[116] R. Girgis, F. Golemo, F. Codevilla, et al. , “Latent Variable
+Sequential Set Transformers For Joint Multi-Agent Motion
+Prediction,” 2022, arXiv:2104.00563.
+[117] S. Ulbrich, T. Menzel, A. Reschka, F. Schuldt, and M. Mau-
+rer, “Defining and Substantiating the Terms Scene, Situation,
+and Scenario for Automated Driving,” in IEEE Int. Conf. on
+Intell. Transp. Syst. , 2015.
+[118] R. Liu, J. Wang, and B. Zhang, “High Definition Map
+
+--------------------------------------------------
+
+### REFERENCES ###
+REFERENCES
+[1] M. Cordts, M. Omran, S. Ramos, et al. , “The cityscapes
+dataset for semantic urban scene understanding,” in Proc.
+IEEE Conf. on Comput. Vis. Pattern Recognit. , 2016.
+[2] A. Geiger, P. Lenz, C. Stiller, and R. Urtasun, “Vision meets
+robotics: The kitti dataset,” Int. J. Robot. Res. , 2013.
+[3] F. Yu, W. Xian, Y . Chen, et al. , “Bdd100k: A diverse
+driving video database with scalable annotation tooling,”
+2018, arXiv:1805.04687.
+[4] J. Niemeijer, M. Schwonberg, J.-A. Termöhlen, N. M.
+Schmidt, and T. Fingscheidt, “Generalization by adaptation:
+Diffusion-based domain extension for domain-generalized
+semantic segmentation,” in IEEE / CVF Comput. Vis. Pattern
+Recognit. Conf. Workshop , 2024.
+PREPRINT 17
+[5] M. Schwonberg, J. Niemeijer, J.-A. Termöhlen, N. M.
+Schmidt, H. Gottschalk, T. Fingscheidt, et al. , “Survey on
+unsupervised domain adaptation for semantic segmentation
+for visual perception in automated driving,” IEEE Access ,
+2023.
+[6] A. Hu, L. Russell, H. Yeo, et al. , “GAIA-1: A Gen-
+erative World Model for Autonomous Driving,” 2023,
+arXiv:2309.17080.
+[7] L. Zhang, A. Rao, and M. Agrawala, “Adding condi-
+tional control to text-to-image diffusion models,” in Proc.
+IEEE/CVF Int. Conf. on Comput. Vis. , 2023.
+[8] A. Mütze, M. Rottmann, and H. Gottschalk, “Semi-
+Supervised Domain Adaptation with CycleGAN Guided by
+Downstream Task Awareness.,” in Int. Conf. on Comput. Vis.
+Theory Appl. , 2023.
+[9] H. Gao, Z. Wang, Y . Li, K. Long, M. Yang, and Y . Shen,
+“A Survey for Foundation Models in Autonomous Driving,”
+2024, arXiv:2402.01105.
+[10] J. Wu, B. Gao, J. Gao, et al. , “Prospective Role of Foun-
+dation Models in Advancing Autonomous Vehicles,” 2024,
+arXiv:2405.02288.
+[11] Z. Yang, X. Jia, H. Li, and J. Yan, “LLM4Drive: A Survey
+of Large Language Models for Autonomous Driving,” 2024,
+arXiv:2311.01043.
+[12] Y . Li, K. Katsumata, E. Javanmardi, and M. Tsukada, “Large
+Language Models for Human-like Autonomous Driving: A
+Survey,” 2024, arXiv:2407.19280.
+[13] W. Ding, C. Xu, M. Arief, H. Lin, B. Li, and D. Zhao, “A
+Survey on Safety-Critical Driving Scenario Generation—A
+Methodological Perspective,” IEEE Trans. on Intell. Transp.
+Syst., 2023.
+[14] Z. Wang, J. Ma, and E. M.-K. Lai, “A Survey of Scenario
+Generation for Automated Vehicle Testing and Validation,”
+Future Internet , 2024.
+[15] H. Yan and Y . Li, “A Survey of Generative AI for Intelligent
+Transportation Systems: Road Transportation Perspective,”
+2024, arXiv:2312.08248.
+[16] Y . Cai and L.-H. Lim, “Distances Between Probability
+Distributions of Different Dimensions,” IEEE Trans. on Inf.
+Theory , 2022.
+[17] I. Kobyzev, S. J. Prince, and M. A. Brubaker, “Normalizing
+
+--------------------------------------------------
+
+## FULL REPORT CONTENT ##
+
+arXiv:2505.15863v1 [cs.CV] 21 May 2025PREPRINT 1
+Generative AI for Autonomous Driving: A Review
+Katharina Winter1, Abhishek Vivekanandan2, Rupert Polley2, Yinzhe Shen2, Christian Schlauch3,
+Mohamed-Khalil Bouzidi3, Bojan Derajic3, Natalie Grabowsky4, Annajoyce Mariani4, Dennis Rochau4,
+Giovanni Lucente5, Harsh Yadav6, Firas Mualla7, Adam Molin8, Sebastian Bernhard3, Christian Wirth3,
+Ömer ¸ Sahin Ta¸ s2, Nadja Klein9, Fabian B. Flohr1and Hanno Gottschalk4
+Abstract —Generative AI (GenAI) is rapidly advancing the
+field of Autonomous Driving (AD), extending beyond traditional
+applications in text, image, and video generation. We explore
+how generative models can enhance automotive tasks, such as
+static map creation, dynamic scenario generation, trajectory
+forecasting, and vehicle motion planning. By examining multiple
+generative approaches ranging from Variational Autoencoder
+(V AEs) over Generative Adversarial Networks (GANs) and In-
+vertible Neural Networks (INNs) to Generative Transformers
+(GTs) and Diffusion Models (DMs), we highlight and compare
+their capabilities and limitations for AD-specific applications.
+Additionally, we discuss hybrid methods integrating conven-
+tional techniques with generative approaches, and emphasize
+their improved adaptability and robustness. We also identify
+relevant datasets and outline open research questions to guide
+future developments in GenAI. Finally, we discuss three core
+challenges: safety, interpretability, and realtime capabilities, and
+present recommendations for image generation, dynamic scenario
+generation, and planning.
+Index Terms —End-to-End Learning, Scene and Scenario Gen-
+eration, Motion Planning, Trajectory Prediction
+I. I NTRODUCTION
+Generative AI (GenAI) has shown significant success in the
+context of text, image, and video generation. Nevertheless,
+the principles of generative learning extend beyond these
+applications. Generative learning describes algorithms that
+process data from a predefined source and learn to generate
+new data from a distribution that closely follows the source
+distribution. In automotive applications, this capability enables
+addressing problems ranging from map and scenario genera-
+tion to reasoning and planning.
+The automotive industry has long played a leading role in
+developing and applying AI based methods, particularly in
+1Munich University of Applied Sciences, Intelligent Vehicles Lab (IVL),
+80335 Munich, Germany (e-mail: intelligent-vehicles@hm.edu)2FZI Re-
+search Center for Information Technology, 76131 Karlsruhe, Germany
+3Continental Automotive Technologies GmbH, Guericke Str.7, 60488 Frank-
+furt a. M., Germany4Technical University of Berlin, Institute of Mathematics,
+Straße des 17.Juni 136, 10587 Berlin, Germany5German Aerospace Center
+(DLR), Institute of Transportation Systems, Lilienthalplatz 7, 38108 Braun-
+schweig, Germany6Aptiv Services Deutschland GmbH, Am Technologiepark
+1, 42119 Wuppertal, Germany7AI Lab, ZF Friedrichshafen AG, Uni-Campus
+D 5 1, 66123 Saarbruecken, Germany8DENSO AUTOMOTIVE Deutschland
+GmbH, Freisinger Str. 21, 85386 Eching, Germany9Karlsruhe Institute of
+Technology, Scientific Computing Center, Zirkel 2, 76131 Karlsruhe, Germany
+This work was funded by the federal Ministry for Economic Affairs and
+Climate Action (BMWK) of the Federal Republic of Germany on the basis
+of a decision by the Bundestag via the nxtAIM project under the grant
+numbers 19A23014A, 19A23014F, 19A23014J, 19A23014M, 19A23014Q,
+19A23014U.computer vision tasks. While this stems in part from large-
+scale street scenes datasets [1]–[3], an Autonomous Driving
+(AD) system fundamentally relies on its ability to perceive
+and understand its surroundings. This involves creating an
+efficient environmental model that captures key details of the
+static context (e.g., roads, lanes, ...) as well as the dynamic
+context, which includes information about various agent types
+(e.g., vehicles, pedestrians, and cyclists). Such a model can
+define a static scene, in which the ego vehicle is situated.
+Understanding the temporal evolution of agents’ intentions and
+movements allows the transformation into dynamic scenarios.
+Building this environmental model in latent space, generative
+models enable a range of applications, from accelerating
+map generation for traditional traffic simulations to creating
+detailed static scenes and complex dynamic scenarios. Beyond
+obvious use cases such as generating new image and video
+sensor data, GenAI can bridge the domain gap between
+synthetic and real data [4], [5] and either replace [6], [7] or
+improve [8] classical driving simulation.
+Beyond scene and scenario generation, GenAI also sig-
+nificantly contributes to motion forecasting and planning
+tasks. Unlike conventional methods, GenAI-based forecasting
+methods can sample from the distribution of possible agent
+behaviors, capturing less likely trajectories, improving safety
+assessment.
+Similarly, generative techniques are also applicable to mo-
+tion planning task, where the generated data corresponds to
+trajectories and actions of the ego vehicle. However, while
+offline applications allow flexibility regarding computational
+resources, real-time forecasting and planning impose stricter
+constraints, limiting generative model choices based on exe-
+cution speed and hardware capabilities.
+For all of the aforementioned applications, established meth-
+ods, machine learning approaches such as Imitation Learning
+(IL) for scenario generation and Reinforcement Learning (RL)
+for vehicle control already exist. Thus, evaluating new genera-
+tive solutions alongside these established methods is essential
+to clearly understand their strengths and limitations. Such an
+analysis could facilitate the development of hybrid solutions
+that combine the strengths of individual methods.
+While GenAI opens many possible directions, the automo-
+tive domain imposes unique requirements that conventional
+GenAI methods do not always meet. Physical, regulatory,
+and cultural constraints require that generated data remain
+consistent with real-world requirements. Equally important are
+PREPRINT 2
+safety concerns, as failures in assisted or AD can lead to
+substantial costs or bodily harm. Therefore, automotive GenAI
+must also address rare but potentially hazardous scenarios.
+Finally, automotive GenAI applications often operate on low-
+performance systems such as embedded or edge devices. As
+conventional GenAI methods typically do not meet the consis-
+tency, safety or runtime requirements, specialized automotive-
+specific generative methods are required.
+In this survey, we provide a structured overview of available
+automotive GenAI methods. Existing surveys explore GenAI
+applications in AD, focusing on specific aspects. Gao et al.
+[9] categorize Foundation Models (FMs) across tasks like
+planning and prediction. Wu et al. [10] highlight cross-modal
+learning, while Yang et al. [11] focus on Large Language
+Models (LLMs) for decision-making. Li et al. [12] explore
+LLMs for human-like driving. Ding et al. [13] and Wang
+et al. [14] focus on safety-critical scenarios and scenario
+diversity, respectively. Yan and Li [15] discuss GenAI in traffic
+modeling. In contrast to these works, we provide a more com-
+prehensive analysis that emphasizes the dual role of GenAI
+in AD: traffic scene & scenario generation and AD motion
+prediction and planning. Additionally, we provide necessary
+fundamentals and review various generative methods, their
+applications, and potential in AD development, along with an
+overview of key motion datasets.
+In Chapter II, we summarize the basic building blocks
+of GenAI, providing a clear overview of important core
+concepts. Chapter III introduces the generic AD stack, its
+relation to GenAI and relevant categorizations for GenAI
+in AD. Methods focusing on static and dynamic scene and
+scenario generation are covered in Chapter IV. Chapters V
+and VI consider applications for trajectory prediction and ego
+motion planning, whereas Chapter VII focuses on end-to-end
+approaches. Chapter VIII introduces related datasets. Open
+research questions are highlighted in Chapter IX.
+II. F UNDAMENTALS
+Generative models are designed to approximate an unknown
+data-generating process. This approximation process can be
+explicit, as in Normalizing Flows (NFs), or implicit, as in
+Generative Adversarial Networks (GANs). Generative models
+typically minimize one or more loss functions that measure
+how closely their generated distribution aligns with the true
+data distribution, typically in the form of divergence met-
+rics like Kullback-Leibler or Jensen-Shannon [16]. Directly
+minimizing these divergences can lead to instabilities like
+mode collapse, where the model falls in a local minimum
+of the loss function, resulting in generated data with limited
+diversity. To address these challenges, many modern GenAI
+methods use auxiliary objectives. Additionally, divergence
+metrics often pose computational challenges. To address this,
+surrogate metrics can be used to evaluate model performance,
+by focusing on the quality and diversity rather than precise
+distance measurements. Finally, classical learning strategies,
+such as Supervised Learning (SL) or Reinforcement Learning
+(RL), can be used to stabilize and guide the training process
+of generative models. Specifically, SL for pre-training or RL
+for optimizing long-term objectives.A. Methods
+We provide a brief overview of key generative models
+relevant to this survey, and categorize them into the following
+two clusters:
+Reversible Generative Models like Normalizing Flows
+(NFs), Invertible Neural Networks (INNs) and Neural Ordi-
+nary Differential Equations (NODEs) provide exact density es-
+timation and sampling, making them particularly valuable for
+structured probabilistic modeling tasks where precise control
+over distributions is required. These methods are often slow
+and require meticulous architectural design. However, precise
+density estimation and sampling enable them to excel in
+domains where accurate representations of high-dimensional
+data are essential.
+Implicit Generative Models such as Variational Autoencoder
+(V AEs), Generative Adversarial Networks (GANs), Diffusion
+Models (DMs) and Energy Based Models (EBMs) focus on
+learning rich latent representations or implicit distributions.
+They are naturally suited for tasks such as image generation
+due to their effectiveness in modeling and refining latent
+spaces. However, these models rely on approximations and do
+not provide exact likelihood estimates, making their training
+process prone to instabilities such as mode collapse.
+Generative Transformers (GTs) can be combined with
+both implicit and reversible generative models and excel at
+capturing sequential or graph-structured dependencies. This
+makes them powerful for modeling complex spatial and
+temporal relationships in data.
+a) Normalizing Flows (NFs) and Invertible Neural Net-
+works (INNs): NFs are generative models that learn invertible
+mappings between a simple source distribution (typically
+Gaussian) and a complex target distribution using only target
+samples [17], [18]. Unlike V AEs, GANs, and DMs, NFs
+enable exact likelihood computation and efficient sampling.
+However, their training can be more challenging compared
+to other generative models [19]. Invertible Neural Networks
+(INNs) combine affine transformations with nonlinear invert-
+ible activation functions, forming a special class of NFs
+when differentiable activations are used. Thus, INNs leverage
+the generative capabilities of NFs, while also inheriting the
+expressive power of neural networks [20]. As a result, they
+can efficiently learn transformations between distributions,
+combining expressiveness with the reversibility required for
+exact density estimation and data generation.
+b) Neural Ordinary Differential Equations (NODEs):
+ResNet [21], inspired by Ordinary Differential Equations
+(ODEs) discretization, applies iterative transformations. Neu-
+ral Ordinary Differential Equations (NODEs) [22] extends
+this by directly parameterizing the right-hand side of the
+ODEs and solving it continuously. Building on this framework,
+Chen et al. [22] introduced Continuous Normalizing Flows
+(CNFs), which model transformations of probability distri-
+butions as solutions of ODEs. Unlike discrete Normalizing
+Flows (NFs), which apply transformations in discrete steps,
+CNFs continuously transform distributions over a defined
+time horizon. CNFs address a key limitation of traditional
+NFs: the computational expense of calculating the Jacobian
+PREPRINT 3
+determinant for the change of variables. By operating in a
+continuous setting, CNFs improve computational efficiency,
+enabling scalable distribution transformations. Modern CNFs
+approaches, such as Flow Matching, leverage this advantage
+[23].
+c) Variational Autoencoder (VAEs): Variational Autoen-
+coder (V AEs) [24], are based on autoencoders and consist of
+an encoder and a decoder. The encoder maps input data into a
+latent space, in order to capture the underlying distribution
+of the data, while the decoder reconstructs the input data
+from this latent space. Unlike standard autoencoders that
+minimize only the reconstruction loss, which means that the
+points in the latent space that encode real data will result
+in highly accurate output data when decoded whereas many
+other samples will yield meaningless output, V AEs addition-
+ally minimize the Kullback-Leibler divergence between the
+latent space and a predefined distribution. This regularizes the
+latent space,enabling sampling of diverse and realistic outputs.
+However, data generated by V AEss often lack fidelity, since
+the most complex aspects of the training data distribution may
+not be fully captured during encoding.
+d) Generative Adversarial Networks (GANs): Generative
+Adversarial Networks (GANs) [25] use a dual-network ar-
+chitecture of a generator and a discriminator. The generator
+creates data from noise and aims to fool the discriminator,
+which is trained to distinguish between real data from the
+training set and fake data produced by the generator. When
+the discriminator correctly recognizes the generated data as
+fake, the generator gets updated; if the generator manages to
+fool the discriminator, the discriminator gets updated instead.
+On one hand GANs yield very high-fidelity results [26].
+The absence of a tractable loss function leads to instability
+and convergence problems in training. Mode Collapse occurs
+when the generator produces a limited set of highly realistic
+data and ceases exploring diverse outputs, focusing solely
+on deceiving the discriminator. That is why data generated
+via GANs generally present a lower diversity than the ones
+produced by V AEs and DMs [27].
+e) Diffusion Models (DMs): Diffusion Models (DMs)
+[28], adapt the notion of diffusion from physics to the problem
+of generative learning. The model consists of two steps:
+forward diffusion and reverse diffusion. During the forward
+diffusion process, a noise distribution is incrementally added
+to the input data until it resembles a random noise distribution.
+Gaussian noise is typically used, but other distributions have
+been shown to reproduce the effect [29]. During reverse
+diffusion, the model learns to reverse the diffusion process,
+effectively restoring the original data from the noise. The
+trained model is eventually able to generate realistic data from
+random noise. Since DMs aim to recover the distribution of
+the training data, the generated outputs mostly feature high
+fidelity and high diversity. However, this comes at the cost of
+slow and computationally heavy training [30].
+f) Generative Transformers (GTs): Transformers are AI
+models that leverage self-attention mechanisms to process
+input sequences. Unlike Recurrent Neural Networks (RNNs),
+which handle data sequentially, self-attentive models analyze
+the entire input simultaneously, capturing long-range depen-dencies more effectively [31]. The self-attention mechanism is
+a series of linear transformations applied to the input sequence
+to evaluate the so-called attention scores, i.e., a relative mea-
+sure of the importance of element. [31] Normalized attention
+scores are then used to aggregate information from the previ-
+ous part of the sequence into context-rich representations. It
+can be tailored for discriminative tasks like text classification
+or generative tasks such as sequence prediction, where models
+like GPT predict autoregressively based on prior context.
+g) Energy Based Models (EBMs): Energy Based Models
+(EBMs) represent data through an energy function, which as-
+signs a scalar “energy” value to each data configuration. Likely
+configurations correspond to lower energy values, while un-
+likely ones have higher values. This framework allows EBMs
+to model highly flexible, multimodal distributions, making
+them particularly useful for tasks where explicit probabilities
+are not necessary [32]. However, directly optimizing EBMs
+can be computationally challenging due to the intractability
+of the partition function. Methods like Contrastive Divergence
+[33], Score Matching [34], and Langevin Dynamics for sam-
+pling [35] address these difficulties. In recent years, there
+has been renewed interest in EBMs, with modern adaptations
+leveraging Deep Neural Networks (DNNs) for more expressive
+energy functions and improved scalability [36]. EBMs also
+show promise in integration with other generative modeling
+frameworks, such as hybrid approaches combining energy
+functions with diffusion [37] or flow-based techniques [38],
+whereas Hoover et al. [39] show a combination of Transform-
+ers with energy-based learning. For an overview of EBMs and
+its connections to generative models, see Carbone [40].
+B. Classical learning strategies for generative models
+Classical learning strategies, i.e., Supervised Learning (SL),
+Unsupervised Learning (USL), Reinforcement Learning (RL),
+and Imitation Learning (IL), mitigate training instabilities in
+generative models while improving divergence approximation
+efficiency and precision through auxiliary objectives. This
+section briefly overviews these techniques to support under-
+standing of modern generative methods in AD.
+a) Supervised Learning (SL): Each sample in a SL
+dataset consists of input features, along with either a discrete
+or continuous label. The goal of a SL task is to learn a function
+that maps input data to its corresponding label. A well-trained
+SL model generalizes effectively to unseen data. However,
+models can suffer from two common issues: overfitting, where
+the model performs well on training data but poorly on new
+data due to poor generalization, and underfitting, where the
+model fails to learn meaningful patterns, resulting in poor
+performance on both training and new data. SL is used
+to train generative models by providing explicit supervision
+for structured output generation. It serves as a pre-training
+mechanism for encoder-decoder architectures and aids in con-
+ditional generation tasks, such as text-to-image synthesis, as
+demonstrated in models like DALL·E.
+b) Unsupervised Learning (USL): Unsupervised Learn-
+ing (USL) involves the modeling of data without providing
+corresponding labels. The objective is to identify inherent
+PREPRINT 4
+structures, patterns, or distributions within the dataset. Success
+in USL relies on extracting meaningful and generalizable
+insights, though it is inherently challenging to evaluate due
+to the absence of predefined labels. Variants of USL include
+self-supervised learning, which generates pseudo-labels from
+the data itself, often as a precursor to supervised tasks. Semi-
+supervised learning, by contrast, combines a small amount of
+labeled data with a larger set of unlabeled data, leveraging both
+to achieve improved performance when fully labeled datasets
+are scarce. These approaches bridge the gap between unsuper-
+vised and supervised paradigms, offering practical advantages
+in real-world applications with limited labeled data.
+USL strategies are the foundation of deep generative models
+such as V AEs and GANs, which self-organize features crucial
+for high-quality sample generation. Self-supervision extracts
+meaningful representations from sequential data, essential for
+training large-scale generative and foundation models.
+c) Reinforcement Learning (RL): RL [41] is a machine
+learning framework in which an agent learns to take actions
+that maximize a reward signal while interacting with an
+unknown environment. RL tasks are typically modeled as
+Markov Decision Processes (MDPs), which define an agent’s
+interaction in a stochastic environment where the next state
+and reward depend only on the current state and action. An
+MDP consists of a state space representing information about
+the environment, an action space defining possible decisions,
+an unknown transition function governing state changes, and a
+reward function providing feedback for actions taken. A policy
+maps states to probability distributions over actions and defines
+the agent’s behavior. The goal of RL is to find an optimal
+policy that maximizes the expected discounted cumulative
+reward, where future rewards are discounted to prioritize
+immediate rewards and stabilize learning. RL algorithms [42]
+are categorized as model-based if they rely on an explicit
+model of the environment and model-free if they learn directly
+from interactions [43].
+RL optimizes generative models by refining generation
+policies via reward-based feedback, commonly used for fine-
+tuning language models and reinforcement-driven sampling.
+d) Imitation Learning (IL): Designing reward functions
+for optimal behavior in complex environments, such as AD, is
+often impractical due to the diversity of scenarios. Imitation
+Learning (IL) provides a viable alternative by training agents
+to mimic expert behavior directly from demonstrations [44].
+This section highlights three main IL paradigms. Behavior
+Cloning (BC) employs Supervised Learning (SL) to map states
+to actions. BC can suffer from the covariate shift problem ,
+where differences between training and testing distributions
+lead to compounding errors [44], [45]. It is also prone to
+causal confusion , learning spurious correlations that result
+in irrational behaviors [45]. Inverse Reinforcement Learning
+(IRL) infers the reward function of an agent by observing
+expert behavior, which is then used to optimize the agent’s
+policy via RL. This ensures consistency between training
+and testing state distributions, addressing covariate shift [44].
+However, IRL is computationally intensive and struggles with
+reward ambiguity [46]. Adversarial Imitation Learning (AIM)
+frames IL as a game between an agent and a discriminator,bypassing reward inference to reduce computational cost [44].
+AIM excels in mimicking expert behavior but struggles with
+generalizing to unseen scenarios [47].
+IL and its variants enhance generative models by using
+expert demonstrations for structured generation, aiding con-
+trollable generation and refining multi-modal models.
+C. Conditioning, Prompting, Guidance
+Unconditional generative models aim to generate samples
+from a marginal distribution p(x)that most closely resembles
+the distribution of the training data. However, it is often more
+desirable to generate samples from specific subsets of the
+training data to enable targeted simulation. [48]. Conditional
+generative models introduce conditions to control the gen-
+eration process. During inference, the model is enabled to
+generate samples from the conditional distributions p(x|y)
+with respect to provided conditions y.
+Conditions for predictive AD systems are based on diverse
+modalities. Sensor-based models typically leverage sensor
+inputs like images and control actions like steering [6], [49],
+[50], while others rely on abstract representations of trajec-
+tories or agent dynamics as waypoints and traffic signals
+as constraining map elements [51]–[53]. Alongside abstract
+representations, some methods condition the generation on
+handcrafted logic rules [51] and cost functions [52], [54],
+[55]. Frequently, text prompts provide context [6] or driving
+instructions [50], [56]. Generative models are typically con-
+ditioned during the training process or in a subsequent fine-
+tuning stage. A diverse set of methods leverage and mix of
+different approaches for conditional GANs [57], V AEs [58],
+NFs [59], DMs [52], [54], [55] and autoregressive models [60].
+A complementary approach for controlling the generation
+process can be achieved via online gradient-based guidance.
+Instead of introducing the conditioning mechanism during
+learning, this method guides the generation iteratively at the
+inference stage. This allows to define the desired behavior
+as an objective function [52], [54], [55], or a temporal logic
+formula [51], without the need of additional training.
+D. Modeling Uncertainty
+Modeling the data generating process involves two funda-
+mental sources of uncertainty [61]. Aleatoric uncertainty arises
+from inherent ambiguities in the data, like measurement noise,
+whereas epistemic uncertainty stems from the model’s inherent
+limitations. Quantifying these uncertainties is an essential part
+of AD systems, since they affect the decision-making process
+of the AD system [62], [63]. Methods in uncertainty quantifi-
+cation typically focus on the compute-efficient estimation of
+the predictive uncertainty, following conformal prediction [64]
+or Bayesian inference [65] approaches. Recent methods addi-
+tionally emphasize the robust disentanglement of uncertainty
+into aleatoric and epistemic components [66]. These methods
+include, for example, sampling-based techniques, such as deep
+ensembles [65], Monte Carlo (MC) Dropout [67], Stochastic
+Weight Averaging Gaussian (SWAG) [68], Laplace [69] or
+variational approximations of Bayesian neural networks [70],
+and deterministic uncertainty estimators [71], [72], such as
+PREPRINT 5
+spectral normalized Gaussian processes [73]. In this context,
+generative models have been used to explicitly model epis-
+temic uncertainty as a distribution of latent variables [74]–[76].
+First research also stresses the importance of tailoring
+uncertainty quantification to the generative modeling itself
+to characterize the reliability of generations. Consequently,
+methods for V AEs [77], DMs [78] and GTs [79]–[81] are
+used to delineate whether hallucinations, inconsistencies or
+reproduction errors can be attributed to model limitations or
+inherent ambiguity in provided conditions.
+III. T HEAUTONOMOUS DRIVING STACK
+A. Components of an AD Stack
+A typical AD stack usually consists of three modules (see
+Fig. 1): perception, prediction and planning [82], [83]. In
+addition to these modules, the AD stack relies on two hardware
+modules: sensors that collect raw data (cf. III-B1), and control
+that refers to the actuation of the car.
+a) Perception module: Perception is about turning the
+raw sensor data into an intermediate representation of a higher
+abstraction level, such as occupancy grids, bounding boxes etc.
+GenAI can be used here to create virtual scenes or scenarios
+(Sec. IV), represented by either sensor information (e.g. im-
+ages or videos), or directly as intermediate representation.
+b) Prediction module: This module predicts the future
+states of traffic participants based on the intermediate rep-
+resentation. This usually means forecasting trajectories, but
+auto-regressive approaches using static scene forecast are also
+viable. GenAI can serve as a proposal generator (Sec. V).
+Additionally, a self-localization and/or mapping step may be
+integrated into prediction if the system relies on an (external)
+map.
+c) Planning module: This module computes a feasible
+trajectory for the ego vehicle, based on the current scenario
+and the expected trajectories of other participants (Sec. VI).
+In addition to using GenAI as a trajectory proposal generator
+for conventional planning methods, it is also possible to use
+GenAI as a planner directly, considering the scenario and
+trajectories as a form of conditioning.
+d) End-to-end driving: Instead of designing independent
+modules, it is also possible to use a single system (Sec. VII).
+This means, the ego motion is directly computed, based on
+raw sensor data. This system can also designed in a modular
+fashion, with a module for each sub task, but still as a network.
+B. Definition of Categories
+In the following, we shortly discuss some relevant dimen-
+sions to differentiate GenAI approaches for AD.
+1) Input Modalities: Generative models for AD often rely
+on a variety of sensors to perceive the vehicle’s surroundings
+or an abstract representation of them. While RGB camera
+images are commonly used, combining them with other modal-
+ities – such as LiDAR or radar point clouds – provides
+robust, multimodal data for enhanced perception [84], [85].
+The integration of GPS coordinates and motion and orientation
+information from the IMU can further enhance navigation and
+pose estimation [86], [87].Strategies to fuse these modalities are classified into early,
+late, or mid fusion. Late fusion processes input modalities sep-
+arately before merging, enabling tailored processing for each.
+Early fusion concatenates raw inputs or extracted features into
+a joint representation, fostering cross-modal correlations. Mid
+fusion combines elements of both, merging modalities at an
+intermediate stage [88], [89].
+Additional rich context from static and dynamic sources,
+such as High Definition (HD)-Maps and occupancy grids, can
+be incorporated to further refine the model’s understanding
+of the environment. HD-Maps provide precise geometric and
+semantic data to support vehicle localization, perception, and
+navigation [90]. Annotated with attributes like lane topol-
+ogy, they offer rich static information on street networks
+and environments, often including instance embeddings [91],
+[92]. Vectorized scene representations, unlike rasterized maps,
+enhance computational efficiency and include geometric street
+topology, instance-level details [93]–[95], and dynamic objects
+[93], [96]. 3D Occupancy Grids capture the volumetric state of
+the environment, classifying each voxel as free, occupied, or
+unobserved, with occupied voxels optionally carrying semantic
+labels [97], [98]. Birds-Eye-View (BEV) maps are a uni-
+fied top-down representation of the surrounding environment,
+partially addressing the challenges resulting from occlusions
+[99]. Natural language can serve as an additional input for
+contextual guidance by enhancing interpretability and enabling
+more flexible interactions with AD systems [100], [101]. Past
+driving experiences from memory can extend the inputs in
+a temporal dimension. The input data are mapped into a
+latent space directly or encoded into a format with reduced
+dimensionality by models like Vision Transformer (ViT) [102]
+for image-based data, PointNet [103] for LiDAR pointclouds,
+or the Q-Former [104] for a joint representation of both image
+and text data.
+2) Static and Dynamic Contexts: In AD, the surrounding
+context is divided into two categories i.e.: static and dynamic
+contexts. The static context comprises the surrounding ele-
+ments which are static across time. Such elements include road
+maps, parked vehicles, lane boundaries, pedestrian crossings,
+construction sites, traffic signs etc. The dynamic context, takes
+into account the scene elements that are not static and change
+their location or state. Road traffic including moving vehicles,
+pedestrians, bicycles etc. falls under this category. Traffic lights
+are also considered as dynamic contexts [105], [106].
+3) Marginal vs Conditional vs Joint Motion Prediction:
+The motion prediction task (c.f. V) can be subdivided into
+three categories: Marginal, conditional, and joint, based on
+the interaction modeling of the agents in the scene. Marginal
+motion prediction [101], [105], [107], [108], also referred to
+as marginal distribution, proposes multi-modal trajectories for
+every agent in the scene based on the static and dynamic
+context information in the previous time steps. In marginal
+motion prediction, the interactions that might arise among
+neighboring agents are ignored. A workaround to this issue
+is to generate conditional motion prediction only for the
+ego vehicle by assuming fixed trajectories of the neighboring
+agents [109], [110]. This assumption does not hold in the
+case of highly dynamic traffic situations, where the motions of
+PREPRINT 6
+Fig. 1: The Autonomous Driving (AD) stack.
+neighboring agents affect each other. To this end, joint motion
+prediction is necessary, where the interaction among multi-
+modal proposed trajectories of all the agents in a scene is
+modeled for future time steps.
+Several approaches have been proposed in recent years
+to model the interaction among future time steps for joint
+motion prediction. The work by Park et al. [111] models
+such interactions by leveraging the ground truth trajectories
+information as a part of training input. The drawback of
+such an approach is that ground truth information is not
+present during inference, which increases the probability of
+out-of-distribution inputs during inference. A study conducted
+by Luo et al. [112] models joint distribution by computing
+the pair-wise interaction among all agents in the scene via
+graph attention. A limitation of this approach is that it is
+computationally expensive in dense traffic environments, as
+the number of pair-wise interactions increases exponentially
+with the number of agents in the scene. The work by Zhou
+et al. [113] aims to reduce the computational cost in pair-
+wise interaction through a hierarchical attention mechanism
+by decomposing the scene into local regions. An alternative
+body of work [114], [115] proposes an implicit latent variable
+model for characterizing joint distribution over future trajec-
+tories. The approach encodes the dynamic scene into a latent
+space and samples multiple futures in parallel. The authors
+claim that such latent space encoding captures the unobserved
+scene dynamics and effectively models the joint distribution.
+Another approach by Nigam et al. [106] takes inspiration from
+Transformer architecture [31] and models the joint distribution
+in a factorized manner across time and agents through a Multi-
+headed attention mechanism. Similarly, Girgis et al. [116]
+combine the idea of Transformer [31] with latent variable
+model [114] for joint motion prediction. A generalized idea
+of the presenting marginal, conditional and joint prediction is
+shown in Figure 2.
+IV. S CENE AND SCENARIO GENERATION
+Scene and scenario generation is a key enabler for devel-
+oping and validating AD systems. The size of the scenescan vary significantly, ranging from larger environments such
+as virtual cities to the immediate surroundings of an ego
+vehicle. Moreover, effectively modeling road users in terms of
+their intentions and motion is critical for transforming static
+environments into realistic, time-evolving scenarios. A sce-
+nario specifically describes the temporal development between
+multiple scenes, where each scene provides a snapshot of the
+environment at a given time. Every scenario begins with an
+initial scene, and its progression can be guided by specified
+actions, events, goals, and values. This temporal aspect dis-
+tinguishes a scenario, which spans a period of time, from
+a scene, which describes a single point in time or a limited
+snapshot [117]. This section addresses three core dimensions
+of generative scene and scenario creation. First, we explore
+methods for producing highly detailed static maps of road
+networks and infrastructure. Second, we consider temporal
+and dynamic aspects, focusing on multi-agent interactions
+and realistic behavior over time. Finally, we examine world
+models, which integrate both static and dynamic elements into
+a predictive framework of how the environment evolves.
+A. Static Map Generation
+Static maps serve as a foundational layer of information,
+detailing the structural aspects of road networks, landmarks,
+and other environmental features. They provide essential con-
+text for autonomous vehicles and advanced driver assistance
+systems. They include information such as road geometry,
+lane markings, traffic signs, intersections, and other perma-
+nent or semi-permanent features. As they are more accurate
+and contain more information than typical maps, they are
+often referred to as HD-Maps [118], [119]. Typically, HD-
+Maps have been generated using mapping sensor suites like
+LiDAR [120], camera [121], radar [122], aerial imagery [123],
+and also through manual annotation [124]. However, these
+approaches typically require significant labor resources and
+involve substantial costs. Recent research also explores models
+that generate maps of the current environment in real-time,
+conditioned on live sensor data, to ensure that the maps
+PREPRINT 7
+(a) Marginal prediction
+ (b) Conditional prediction
+ (c) Joint prediction
+Fig. 2: Comparison of prediction types in a traffic intersection scenario. Blue and orange colors represent different prediction
+modes. The subfigure (a) shows marginal prediction for the red vehicle, (b) illustrates the conditional prediction of the red
+vehicle dependent on the ego vehicle (shown in blue), and (c) shows joint prediction, where blue and orange colors represent
+an entire scene independently.
+remain up-to-date and accurately reflect the current state of
+the environment [93], [125].
+Static maps are also integral to creating realistic city model-
+ing and simulation environments for testing and validation of
+AD functions. Such simulations rely on these maps to replicate
+real-world conditions. While these maps need to be highly
+detailed, they do not need to correspond to actual locations in
+the real world. They only need to be plausible and sufficiently
+detailed in a data-driven manner. This differs significantly from
+HD-Maps used by autonomous systems, which are required to
+precisely represent real-world conditions.
+Generally, the application of generative models to generate
+maps in the automotive context can be divided into three
+separate tasks: road layout generation, HD-Map generation,
+and HD-Map generation conditioned on explicit sensory input.
+Road topology generation involves creating structured rep-
+resentations of road networks, capturing their layout and
+connectivity. Some works extract road topologies from aerial
+images [126], [127], but these approaches are constrained by
+the spatial resolution of aerial images and cannot generate new
+topologies conditioned on existing city styles. To overcome
+these limitations, Chu et al [128] propose Neural Turtle
+Graphics, a sequential generative model that iteratively creates
+new nodes and edges that are connected on a graph to generate
+a plausible city road layout. This method is used to generate
+natural road layouts based on existing or completely novel city
+styles. Previous methods focus on generating plausible road
+layouts, other methods extend this to the generation of detailed
+HD-Maps. In [129], the authors introduce HDMapGen, a set of
+autoregressive models that generate high-quality and diverse
+HD-Maps in a data-driven manner. They explore sequence-
+based, plain graph, and hierarchical graph representations,
+finding that the hierarchical approach best preserves the nat-
+ural structure of HD-Maps. This two-level model includes a
+global and a local graph decoder, employing recurrent Graph
+Attention Networks and multi-layer perceptrons to produce
+two separate graphs. Evaluation focuses on topology fidelity,
+geometry fidelity, urban planning features, and diversity.
+The method of generating lane graphs from HD-Maps
+can also be directly integrated into end-to-end driving sim-ulators. For example, SLEDGE [130] generates lane graphs
+and improves on the quality and scalability of HDMapGen.
+In addition, agents are jointly and in parallel generated to
+directly simulate traffic behavior on the generated lane graph.
+A scene is first rasterized and encoded into a state image.
+Afterwards, a learned raster-to-vector autoencoder is used to
+represent the scene as a rasterized latent map. Subsequently,
+a latent DMs is used to generate either a novel scene or
+extrapolate existing scenes via inpainting [131] by diffusing
+on only a subset of input tokens. Finally, traffic participants
+on the generated scene are simulated using the Intelligent
+Driver Model [132]. Similarly, DriveSceneGen [133] generates
+and simulates both static map elements and dynamic traffic
+participants in a two-stage model. It uses an image-space
+DMs to generate a rasterized BEV representation of a scene.
+Following, a graph-based vectorization algorithm transforms
+the representation into a vector format. In the second stage,
+agents are simulated and multi-model behaviors are predicted
+with the Motion Transformer Model [134].
+Diffusion Methods have been successfully employed in
+generative modeling of diverse domains like images, video and
+LiDAR pointclouds. Techniques like SLEDGE or DriveSce-
+neGen rasterize scenes to leverage established diffusion tech-
+niques in 2D image space and demonstrate, that generative
+models can be used to generate new static scenes for simula-
+tion purposes. PolyDiffuse [135] shows that DMs can be also
+used for a structured reconstruction task of set elements like
+polylines and polygons. With a Guided Set DMs vectorized
+HD-Maps are created through a generation process condi-
+tioned on visual sensor data. Guidance networks are introduced
+to control the noise injection to prevent the permutation of the
+set elements from getting lost in the diffusion process. In the
+standard diffusion process, different permutations of a sample
+gradually become indistinguishable as the process progresses.
+Therefore, specific noise is injected at the element level with
+Guidance Networks. The reverse diffusion process denoises
+an initial proposal which is either from a human annotator or
+a task-specific method like MapTR [93], [136] to reconstruct
+and refine a HD-Map conditioned on visual sensor data.
+The development of generative models for static map gener-
+PREPRINT 8
+ation has significantly advanced beyond traditional methods.
+However, the field remains in its early stages, with limited
+models addressing the diverse challenges of HD-Map genera-
+tion for both simulation and real-time AD applications. Further
+research is essential to improve scalability, enhance real-time
+capabilities, and condition map generation conditioned on
+diverse inputs.
+B. Generation of Temporal and Dynamic Aspects
+Recently, various methods have been developed to generate
+and modify the dynamic aspects of driving scenarios, offering
+different levels of control and realism.
+In TrafficGen [137], scenarios are generated using an
+encoder-decoder architecture that represents driving scenarios
+in a vectorized format. This allows for both the creation of new
+scenarios and the modification of existing ones by adding new
+agents or altering the trajectories of current ones. However,
+this method has limitations, as the user lacks control over
+the quality or specific properties of the generated scenarios,
+which is a common issue with auto-encoding of training
+data. In this respect, RealGen [138] (cf. Figure 3) goes one
+step further by generating scenarios that closely resemble a
+query scenario (e.g., U-turn or lane change). Additionally,
+it employs Retrieval-Augmented-Generation (RAG), ensuring
+that the generated scenario is not only similar to the query
+but also to the K-nearest Neighbors (KNN) of the query in
+external datasets, which were not seen during training. The
+highest level of control over scenario generation is achieved
+with approaches like LCTGen [139]. Here, users can generate
+a new scenario (cf. Figure 4) or modify an existing one
+using a text prompt. The crux of the approach is leveraging
+LLMs through advanced prompt engineering to convert textual
+descriptions into a representation where each agent and the
+map are described by a few parameters. Specifically, each
+agent is characterized by parameters that model its position
+and direction relative to the ego-vehicle as well as its future
+actions. Similarly, the map is defined by numbers that describe
+the number of lanes and their positions relative to the ego-
+vehicle.
+(a) Initial position: left-hand side
+image. Tag: U-Turn
+(b) Initial position: left-hand side
+image. Tag: Lane change
+Fig. 3: Demonstration of scenario generation starting from an
+initial position and a tag. Images were taken from [138].
+C. World Models
+Maps and bounding boxes are handcrafted abstractions
+of driving scenarios. The generation of comprehensive and
+detailed scenarios necessitates world models. The concept
+of world models can be traced back to various disciplines,
+Fig. 4: Demonstration of text-prompt to scenario generation:
+image was taken from [139]. Prompt: The scene is very dense.
+There are only vehicles on the left side of the center car. Most
+cars are moving in fast speed. The ego-vehicle turns right.
+e.g., mental models [140], [141] in psychology, forward mod-
+els [142] in control theory, and environment models [143] in
+model-based RL. Ha and Schmidhuber pioneered integrating
+these concepts by training an AI agent to play video games
+[144], which is widely regarded as the seminal paper that
+directly references the concept of the world model.
+Although world models have recently been applied to
+various tasks, such as video generation [6], occupancy pre-
+diction [145], and motion planning [146], the definition of
+world models remains unclear. Generally, a world model is
+characterized by the following: first, it serves as a latent
+representation of the environment in which the agent operates.
+For autonomous vehicles, the “world” refers to the real world,
+while for video game agents, it refers to the virtual universe
+of the respective game. Second, the latent representation can
+evolve. In other words, a world model is capable of inferring
+the next state of the world based on current and past latent
+states. It is commonly referred to as forecasting or prediction.
+World models can also be designed to forecast under various
+conditions, such as ego actions and natural language descrip-
+tions, being tailored to different application scenarios. Some
+researchers have set higher expectations for world models.
+Yann LeCun believes that a world model should grasp common
+sense in the world, such as the fact that objects do not
+spontaneously appear or disappear and that the movement of
+objects adheres to the laws of physics [147]. These common-
+sense principles collectively define how the world works. It
+can be seen as a crucial distinction between ordinary predictive
+models and world models.
+Early world model studies [144], [148], [149] focus on
+RL in simulations and video games, typically using Con-
+volutional Neural Networks (CNNs)-based autoencoders for
+environmental representation. The seminal work [144] em-
+ploys an RNN to predict the next latent state based on
+actions, enabling recursive forecasting without real-world in-
+teraction, while incorporating a Mixture Density Network to
+model uncertainty. PlaNet [149] introduces the recurrent state-
+space model (RSSM) to separate stochastic and deterministic
+components, improving long-term prediction. The Dreamer
+PREPRINT 9
+series [148], [150] advances these models, training action and
+value functions in the latent space with high sample efficiency.
+In AD, the observation of the world can be multi-modal,
+e.g., images, point clouds, text, and annotations. GAIA-1 [6]
+employs USL with images and text as the input to the world
+model. It suggests that learning high-level abstract instead of
+low-level textures of the image is important to model the
+world. It distills an image tokenizer from DINO [151] to
+ensure a meaningful image representation. The image tokens
+can further fuse with text and action tokens and predict
+the future auto-regressively using Transformers. A concurrent
+work DriveDreamer [152] additionally uses annotated bound-
+ing boxes and HDmaps as inputs, which lightens the need
+for training data amount. Followups improve DriveDreamer in
+multi-view video generation, scene manipulation, and recon-
+struction [56], [153]. ADriver-I [154] adopts similar concept
+of GAIA-1, but trains a multi-modal LLMs on a private dataset
+to encode the image and text inputs. Comparing with GAIA-1,
+ADriver-I explicitly outputs the control signal accompany with
+the future video, enabling motion planning. Think2Drive [155]
+applies the model-based RL method DreamerV3 [150] to AD
+in the simulator CARLA [156]. Drive-WM [146] employs
+world models to forecast the future with diverse ego maneu-
+vers, resulting in a decision tree. It samples the action with
+the highest reward, which aims to keep a safe distance to
+other objects and drive within lanes. Section VI provides more
+planning related literature. LAW [157] supervises the world
+model in the latent space. Similar to JEPA [147], LAW predicts
+the next latent state of the world and compares it with the real
+embedding at the same timestep. Some other works [158],
+[159] represent the latent world in a 2D space to facilitate
+learning spatial information, where BEVWorld [158] predicts
+multiple timesteps in parallel instead of auto-regression. 3D
+occupancy is another representation of the world, which sim-
+plifies the world and retain only semantic and geometric infor-
+mation. Training occupancy world models require less learning
+efforts than image ones, e.g., OccWorld [145] and Drive-
+OccWorld [160] are trained with 8 GPUs on the nuScenes
+dataset [161]. In contrast, image world models requires 32
+or even more GPUs, and larger dataset (usually private) than
+nuScenes. Occupancy can also be combined with other input
+modalities, such as text [162]. However, the fidelity of an
+occupancy world model relies on the quality in converting
+sensor data to occupancy voxels. World models open new pos-
+sibilities for AD, including generating realistic training data,
+discovering rare scenarios and corner cases, and providing a
+unified approach to prediction and planning. However, key
+challenges remain, such as assessing the validity of generated
+scenarios for training AD models, measuring the accuracy
+of the modeled world, and improving the data efficiency of
+training world models.
+V. T RAJECTORY PREDICTION AND FORECASTING
+The actions of a self-driving vehicle are interdependent with
+the predicted future states of surrounding traffic participants,
+creating a causal influence where each agent’s decisions and
+movements are contingent upon the anticipated maneuversof others in the shared environment. There are various ap-
+proaches to address this problem. Some methods focus on
+trajectory forecasting of a single agent, also known as marginal
+prediction. In contrast, joint prediction aims to predict the
+trajectories of multiple participants in a mutually consistent
+manner(see Section III-B3 for details). Modeling the forecast-
+ing involves predicting klikely future maneuvers for a given
+scenario, along with their associated probabilities.
+A. Prediction as a Joint Motion Forecasting Task
+a) Transformer-based Approaches: Models such as Way-
+former [163], Actionformer [164], RedMotion [165] and Joint-
+Motion [166] can process entire traffic scenes, including lane
+geometry, past actor observations, and traffic modalities (e.g.,
+traffic light status), through their factorized attention methods
+to predict trajectories. While traditional methods use marginal
+probabilities to predict trajectories for the target actor, it
+has been shown that joint probability prediction is more
+effective for motion prediction tasks, as it avoids trajectories
+that result in collisions between actors. In [167], interactions,
+map information, and vehicle data, encoded as numerical
+codes from natural language descriptions, are embedded in
+a feature extraction module. These features are aggregated
+through multi-head cross-attention operations to fuse the map
+and interaction features into vehicle features, which are sub-
+sequently used for trajectory generation. In [168], a multi-
+head cross-attention mechanism is used to extract interactive
+information for highway scenarios. The simple topology of
+highways allows for the omission of map features. Long Short-
+Term Memory (LSTM) networks encode the information for
+each group of vehicles in each lane. In the cross-attention
+mechanism, the target vehicle information is contained in
+the query, while key and value represent the information
+of the surrounding vehicles. In general, the cross-attention
+mechanism is a common framework for modeling interactions
+in the literature, as shown in the two works mentioned above.
+b) Autoregressive Modelling: Autoregressive modelling
+approaches factorize the distribution over past motion se-
+quences as a product of conditionals. This factorization pre-
+serves the natural temporal causality found in motion se-
+quences and allows to model the interaction between agents
+and environmental elements (e.g. traffic lights) at every step
+of the conditional roll-out. Early pioneering works, such as
+SocialLSTM [169], MFP [170] and Wavenet [171] adapted this
+approach with RNNs. However, their adaptation slowed due to
+training instabilities. The necessarily sequential roll-outs lead
+to cumulative errors, which made it difficult to capture long-
+term dependencies, and resulted in high sampling latencies.
+The success of autoregressive Transformers architectures
+in the Natural Language Process (NLP) domain sparked
+a renewed interest. Drawing inspiration from sequence-to-
+sequence architectures in the NLP domain, multiple autore-
+gressive Transformer encoder-decoder architectures have been
+proposed, including LatentFormer [172], StateTransformer
+[173], MotionLM [60] and AMP [174]. These models combine
+domain-specific encoding strategies, e.g. from other state-
+of-the-art models such as Wayformer [163] or MTR [175],
+PREPRINT 10
+with decoding strategies from the NLP domain. The use of
+tokenization allows the representation of input and output in
+a unified space and the advances from the NLP domain in
+the design of attention mechanisms, training objectives and
+sampling techniques lead to direct improvements in training
+stability and sampling latencies. Trajeglish [176] discretizes
+trajectories into GPT-like small vocabulary token set, which
+are then autoregressively predicted using discrete sequence
+modeling methods. It depicts that language like encoding can
+be extended for application in motion prediction domain. Apart
+from using language like tokenizers, motion tokens as words
+in natural language can be used to make motion forecasting
+model’s hidden states interpretable, and to control the motion
+forecasts [177]. Finally, [178] proposes a unified framework
+based on mixture models to predict or generate traffic behavior,
+including continuous models and discrete GPT-like models as
+special cases. [179] uses the motion tokens collected from
+multiple datasets to train a causal-decoder transformer to pre-
+dict the next tokens showcases the inference effectiveness of
+these models without comprimising on the model performance
+reiterating the effectives of GPT like causal decoder models.
+The unified framework is used to explain the causes for the
+performance gains of GPT-like models, and transfers these
+insights to other models within the unified framework.
+c) Diffusion Models (DMs): Recent research has ex-
+plored the capabilities of DMs in trajectory prediction and
+generation, highlighting their versatility and effectiveness.
+Various DMs with distinct objectives have been introduced
+to cater to specific needs within these domains.
+One straightforward approach proposed in MotionDiffuser
+[52] and DICE [180], involves adding positional noise to
+trajectories. These models comprise two main components:
+the encoder and the denoiser (decoder). The encoder processes
+the environmental context into encoded information that condi-
+tions the denoiser. The denoiser then estimates the noise level
+present in a noised future trajectory and works to remove this
+noise, effectively predicting the trajectory. Building on the idea
+of "stable diffusion" [181], [182] employs an autoencoder to
+reconstruct traffic scenes. It utilizes a stable DMs to denoise
+the encoded environmental information in the latent space.
+The model can effectively sample Gaussian-distributed noise
+during inference, iteratively denoise the samples, and recon-
+struct accurate trajectories. In another work, [51] represents
+trajectories as sequences of actions and states. It employs DMs
+to denoise the actions, thereby reconstructing the trajectory.
+This method underscores the flexibility of DMs in handling
+different representations of data for trajectory prediction.
+The aforementioned works [52] and [51] outline another
+benefit of DMs with respect to control of the trajectory gener-
+ation process. Besides conditioning on the scene representation
+in order to produce scene-consistent trajectories, these works
+make use of an online gradient-based guidance mechanism
+during the diffusion process for controllable trajectory gen-
+eration. Originating from Diffuser [183], the key idea is to
+use the gradient method during the denoising process in order
+to meet high-level specifications for the generated trajectories.
+While [51] introduces guidance to meet safety and traffic rules
+specified by Signal Temporal Logic (STL) formulas [184], thework in [52] provides a framework for performing controlled
+trajectory sampling based on attractor or repeller functions on
+the goal position. Another work in [55] develops a method to
+enhance diversity of traffic scenarios for AD. Among others,
+it proposes a pursuit-evasion game in the guidance policy
+in order to generate safety-critical multi-agent trajectories.
+In [185], an attention-based diffusion network is proposed.
+Interactions are incorporated into the denoising process using
+cross-attention across all agents at each decoder layer. The
+Multi-Agent Diffuser, proposed by [186], integrates DMs for
+generating multi-agent scenarios. Interactions are included in
+the diffusion process by incorporating information about other
+agents’ decisions into each agent’s trajectory vector.
+Based on advances in Flow Matching (FM) in [187], [188]
+has shown that conditional FM is a viable alternative to DMs
+for trajectory prediction greatly reducing computation time.
+These advances illustrate the potential of DMs in improving
+the accuracy and reliability of trajectory prediction and gener-
+ation, making them invaluable tools in fields requiring precise
+motion forecasting and environmental understanding.
+d) Energy Based Models (EBMs): With regard to auto-
+mated driving prediction tasks, EBMs have been successfully
+applied to pedestrian motion prediction. [189] introduces an
+approach for predicting human trajectories using EBMs. The
+authors present a latent belief mechanism that captures uncer-
+tainty and interactions among agents. In [190], the Sequence
+Entropy Energy-based Model (SEEM) is proposed that is
+composed of a LSTM-based generator network and an energy
+network to determine the most representative trajectory. The
+more recent paper [191] addresses the challenge of predicting
+pedestrian trajectories in uncertain environments taking a
+hybrid approach combining DMs and EBMs. The method
+includes the use of EBMs to represent potential future trajecto-
+ries and a denoising strategy that refines these predictions. The
+energy plan denoising technique helps to filter out less likely
+trajectory options, resulting in more accurate predictions.
+VI. M OTION PLANNING
+In this section, we discuss state-of-the-art motion planning
+methods and examine how generative models can enhance
+them within the traditional AD stack taking the abstract data
+input from the perception and prediction module. This section
+focuses solely on methods for the traditional AD stack while
+the following section (VII) discusses End-To-End architectures
+and the challenges they address within the traditional stack.
+The goal of planning is to determine an appropriate behavior
+for an autonomous vehicle considering the current state of
+the vehicle and the environment and key criteria such as
+comfort, safety and feasibility. The inherent uncertainty in the
+environment representation requires receding-horizon planning
+that continuously recalculates the motion plan with updated
+information making it essential that planning approaches are
+able to run in real-time.
+A. Overcoming Conventional Planner Challenges
+In recent years, traditional planning methodologies have
+been widely adopted, which can be broadly classified into
+PREPRINT 11
+two approaches. On one side are the optimization-centric
+methods, predominantly featuring Model Predictive Control
+(MPC) techniques [192]–[194]. On the other side are search
+and sampling-oriented approaches, which include various al-
+gorithms such as A*-based, lattice-based planners, Monte
+Carlo Tree Search, and Rapidly-exploring Random Tree-based
+(RRT) planning systems [195]–[197]. This is due to their
+ability to comprehensively account for constraint satisfaction,
+such as collision avoidance. However, their performance is
+significantly constrained by their necessary computing time.
+Thus, these approaches are based on many simplifications
+which causes limited performance e.g. due to modeling errors
+and limited planning horizons. Additionally, they are limited
+to using local optimizers, possibly resulting in undesired local
+optima, such as impractical maneuvers in dense traffic [198].
+Search- and sampling-based methods, on the other hand,
+typically sample the action space and time steps coarsely,
+causing sub-optimal solutions hindering their suitability for
+dealing with highly dynamic environments [62], [199]. Al-
+though there have been efforts to incorporate model continuity
+into the sampling process [200], most methods remain either
+inefficient or suitable only for simple scenarios. One typical
+simplification in the modeling is ignoring the interactions in
+traffic by decoupling prediction from planning[201], [202].
+This approach can cause autonomous agents to behave in a
+reactive manner and excessively cautiously or even to freeze
+altogether—known as the "frozen robot problem"—in envi-
+ronments with high interaction and uncertainty. Here, on the
+other hand, learning-based methods excel due to their ability
+to integrate the complex and uncertain nature of other traffic
+participants’ behavior into the motion planning.
+Existing learning-based methods for planning [203]–[205]
+leveraging RL and IL are time efficient during inference and
+can adapt to complex environments (which would require com-
+plex models). However, they need an exhaustive exploration
+of the state space during learning to perform reliably. As a
+result, these methods struggle with the "long-tail" scenarios
+outside their training data, where a lack of generalization can
+undermine reliability. The lack of generalization capabilities,
+safety guarantees and interpretability of current learning-based
+approaches is a concern in such safety-critical applications.
+Furthermore, integrating human priors into conventional sys-
+tems remains challenging, as human knowledge and reasoning
+are expressed in language-based representations, whereas these
+systems primarily process numerical sensory data [206], [207].
+Generative models offer promising solutions to these lim-
+itations by providing a deeper contextual understanding and
+robust generalization capabilities [208]. These models can
+incorporate multimodal knowledge, allowing them to inter-
+pret complex, dynamic environments more holistically and to
+generate "what-if" scenarios that support informed decision-
+making in uncertain conditions. Unlike conventional systems
+limited to numeric inputs, generative models can represent
+human-like priors and reasoning, enabling planning and deci-
+sions that resemble human intuition and foresight [207]–[209].
+This capability allows generative models to learn complex,
+multimodal behavior distributions of multiple agents, making
+them well-suited for interactive scenarios typical in AD. Asa result, generative models address many of the fundamental
+shortcomings of traditional and current learning-based meth-
+ods, that could bring autonomous systems closer to human-
+level driving in complex environments.
+B. Hybrid Methods
+Due to the complementary advantages and disadvantages
+of classical planning methods and learning-based methods
+which were mentioned in the previous subsection VI-A, there
+have been several methods proposing how to combine these
+approaches, resulting in hybrid motion planning systems.
+These can be broadly categorized into two groups, i.e., into
+two general ideas how to combine the benefits from both
+worlds. The first group employs a learning-based system to
+substitute or enhance components of the classical planner.
+Approaches learn the weights of the cost function [210],
+[211] or further shape it [212], [213], as the cost significantly
+impact the planner performance e.g. in finding good long-
+term goals and can be challenging to tune manually. Other
+methods learn the state-space model’s dynamics or parts of
+it [214]–[216] to handle unknown or complex dynamics. The
+second group learns high-level policies, where the trajectory
+is further refined with low-level model-based planner such as
+MPC. Methods such as [217], [218] provide high-level plans as
+a reference to the MPC. Similarly, safety filters [219], [220]
+assess constraint satisfaction in the trajectory of the learned
+system, potentially generating an output that minimizes the
+discrepancy from the trajectory while adhering to constraints.
+Learning-based warmstart of an MPC planner [198], [221] also
+falls into this group, where the learned model provides an
+initial guess, which is then further optimized.
+Consequently, works on hybrid motion planning methods
+that combine GenAI and classical approaches, have been
+explored in recent years.
+a) Generative Methods for Planner Subcomponents:
+Performer-MPC [222] uses a learned MPC cost function
+parametrized by vision context embeddings provided by Per-
+formers — a low-rank implicit-attention Transformer. This
+work combines the benefits of IL with robust handling of sys-
+tem constraints in MPC. Similarly, GANs-MPC [223] employs
+a GAN to minimize the Jensen-Shannon divergence between
+the state-trajectory distributions of the demonstrator and the
+imitator. This method does not require the demonstrator and
+the imitator to share the same dynamics, and their state spaces
+may have a partial overlap. In [224], LanguageMPC proposes
+using LLMs to generate weight matrices, observation matrices,
+and action biases for MPC based on textual decisions. The
+weights shape the cost function of the MPC. The observation
+matrix provides the vehicles that need to be considered as ob-
+stacle constraints in the MPC. The action bias corresponds to
+the action directive of the LLMs (e.g., stop) and is incorporated
+as an additional bias to the output of the MPC.
+GenAI models the environment, within an MPC controller
+in [225], where the authors substituted an LSTM-based
+network from the BADGR method (Berkeley Autonomous
+Driving Ground Robot) with a Transformer model, resulting
+in significant performance improvement. Recent work [226]
+PREPRINT 12
+proposed a diffusion-based approach to learning a physics-
+informed state-space model for MPC. The method employs
+a conditional DMs to capture the multimodal distribution of
+vehicle dynamics, enabling high-performance driving under
+uncertainty, thereby enhancing safety. By conditioning on
+current state measurements, the DMs outputs the parameters
+of a physics-informed neural stochastic differential equation,
+which is used as the state-space model within the MPC.
+A DMs is used in [227] to improve MPC performance by
+learning both the dynamic model (or world model) of the MPC
+and an initial guess for the optimization procedure in the MPC
+tackling two major challenges in MPC. Thus, the trajectory of
+the diffusion-based planner output is then further refined by
+the MPC, considering the respective constraints and outputting
+a feasible trajectory.
+Few works have explored the synergy of generative models
+and search or sampling-oriented planning approaches in the
+robotics field [228], [229]. CGAN-RRT* [228] combines Con-
+ditional Generative Adversarial Networks (CGANs) with the
+RRT* algorithm. The CGAN model generates a distribution
+of feasible paths conditioned on the input map, which guides
+the sampling process of RRT* to accelerate convergence
+to an optimal path. Similarly, [229] leverages NFs to learn
+a distribution to sample control inputs of the autonomous
+vehicle. This is used for Model Predictive Path Integral Control
+to find the optimal rollout using importance sampling.
+b) Generative Methods for Trajectory Proposals: Fo-
+cusing on highway driving, Wang et al. [230] combines
+MPC with an LLMs.The OpenAI GPT-4 API is used as the
+driver agent and takes as input the environment state as a
+textual description. The LLM outputs the desired lane, serving
+as input for the low-level MPC. By checking whether the
+trajectory is feasible, the MPC serves as a safety verifier. The
+work is further extended for interactive planning by integrating
+a state machine, which provides a rule-based framework
+for guiding the LLM and the prediction of the surrounding
+vehicles categorizing behaviors as cooperative or aggressive.
+This enhances safety and interpretability with which better
+understanding and interaction with other vehicles is possible.
+CoBL-Diffusion [231] and SafeDiffuser [232] utilize the
+concept of Control Barrier Functions (CBFs) as a safety
+filter for diffusion-based planners. They refine the trajectories
+through a guided diffusion process while still enforcing safety
+constraints through the CBFs, integrating it into the denoising
+process, which helps predict dynamically feasible paths by,
+e.g., minimizing collision risks with moving obstacles. Simi-
+larly, DDM-Lag [78] adopts a Lagrangian-based constrained
+optimization step to integrate safe collision avoidance into the
+reinforcement-guided diffusion policy learning.
+A two-stage hybrid planner is also introduced in [208]
+that combines an LLM with a rule-based planner. In the first
+stage, the LLMs planner processes a natural language prompt
+containing task instructions, perception context, ego states, and
+route information to select a suitable driving behavior, such as
+lane following, or overtaking obstacles. The selected behavior
+is then passed to the Predictive Driver Model Predictive Driver
+Models (PDMs), which is an extension of the Intelligent Driver
+Model. This PDMs is responsible for refining the high-levelmaneuver by sampling trajectories and selecting the best one
+based on a minimum cost. The authors conclude in their work
+that this combination is able to outperform purely LLM-based
+and purely rule-based planners.
+DriveVLM [233] enhances trajectory prediction via chain-
+of-thought reasoning, combining scene description, analysis,
+and hierarchical planning. Detected objects’ 3D bounding
+boxes are converted into language prompts to boost spatial un-
+derstanding. A two-stage hybrid planner refines low-frequency
+generative trajectories in real-time using a traditional planner.
+LLM-A* [234] combines an LLM with the traditional A*
+algorithm for the planning task. The LLM provides sub-goals
+(high-level goals) for guiding the search based on the start
+state, goal state, and obstacles. The A* planner then plans a
+trajectory in between these subgoals, ensuring optimality and
+validity. On the other hand, the generative model significantly
+reduces the number of states explored, leading to lower com-
+putational requirements, which is the case for the A* method.
+VII. E ND-TO-ENDDRIVING
+This section explores how end-to-end models address lim-
+itations of traditional modular motion planning in AD. We
+categorize recent generative end-to-end approaches by DMs,
+V AEs, Transformers and LLMs, and discuss key challenges
+and open issues in real-world deployment.
+Conventional AD architectures consist of modular pipelines
+with task-specific components for perception, prediction, and
+planning (cf. Fig. 1), where outputs feed sequentially into
+subsequent modules [235]–[237]. These systems are inter-
+pretable, easier to verify, and allow for failure tracing and
+module adjustments [238], [239]. However, modular designs
+are hindered by abstract, hand-crafted interfaces, limiting their
+ability to generalize across diverse scenarios and producing
+outputs like 3D bounding boxes that may be insufficient
+for decision-making in complex AD scenarios [156], [239],
+[240]. Additionally, error propagation from upstream modules,
+such as missed objects in detection, compromises downstream
+planning [156]. Lastly, these architectures struggle to account
+for interactions between the ego-vehicle and other agents, as
+the downstream propagation of information prevents direct
+integration of ego motion in prediction.
+End-to-end AD refers to a streamlined motion planning
+approach that uses a DNNs to process sensor data and out-
+put low-level control signals like steering and acceleration.
+The model directly learns the driving task, with intermediate
+feature representations trained jointly, eliminating the need for
+complex module interfaces [239]–[242]. While most end-to-
+end systems use a single large network, they can also include
+submodules optimized jointly for the driving task [242]. Addi-
+tionally, related tasks like detection, tracking, prediction, and
+planning are often addressed simultaneously [243], [244].
+End-to-end models are considered less complex than modu-
+lar pipelines, as they feature fewer intermediate representations
+and a streamlined architecture. These models are more robust
+in handling diverse scenarios, learning implicit patterns that
+predefined module chains may overlook. Additionally, end-
+to-end models are computationally efficient, benefiting from
+PREPRINT 13
+the elimination of redundant computations and the use of a
+shared backbone [241], [242]. Unlike rule-based approaches,
+these data-driven models scale effectively with increased data
+and training resources, enhancing their adaptability and per-
+formance [242].
+A. Current Methods
+State-of-the-art end-to-end architectures for AD typically
+employ generative DNN backbones, often vision-centric or
+incorporating Transformers for attention-based spatial and
+temporal reasoning.
+a) Diffusion Models (DMs): Recently, a number of
+diffusion-based methods has emerged, focusing on opti-
+mizing the sampling process from a multi-mode trajectory
+distribution. Diffusion-ES [245] optimizes black-box, non-
+differentiable objectives by leveraging a DMs to generate
+initial trajectories, which are evaluated using a reward func-
+tion. The top-performing samples are then mutated through a
+truncated diffuse-denoise process, facilitating an evolutionary
+search while ensuring that the modified trajectories remain
+within the data manifold. DiffusionDrive [246] adopts a
+truncated diffusion policy to generate a multi-mode action
+distribution from a prior anchored Gaussian distribution of
+trajectories, effectively streamlining the denoising process and
+enhancing real-time performance.
+b) VAEs: GenAD [53] is a video prediction model based
+on a latent diffusion framework, designed to learn compre-
+hensive representations of driving scenarios. It incorporates a
+V AEs and Transformer blocks with temporal and spatial at-
+tention layers, enabling effective reasoning over visual inputs.
+For motion planning, GenAD utilizes its learned world model
+to predict waypoints.
+c) Transformer-based Models: Transformer-based meth-
+ods for ego-motion planning leverage attention mechanisms to
+enhance the model’s ability to reason over complex spatial and
+temporal relationships in driving environments. UniAD [243]
+integrates a perception-prediction-planning pipeline, jointly
+optimized for the planning task. Its perception and prediction
+modules are implemented as transformer decoders, which
+propagate planning-optimized features to an attention-based
+waypoint predictor. SparseDrive [244] employs a parallelized
+approach for perception and ego-motion planning, speeding
+up training and runtime efficiency. PARA-Drive [247] like-
+wise parallelizes the training of online mapping, prediction,
+and planning, with the planning module capable of oper-
+ating independently during inference, improving efficiency.
+V ADv2 [248] is a Transformer-based planner that uses a
+discretized planning vocabulary to query environmental token
+embeddings that besides tokens for map and other agents
+explicitly include tokens for traffic lights and stop signs. It
+generates a probabilistic action distribution, sampled through
+learned priors derived from driving demonstrations and scene
+constraints. HydraMDP [249] is a Transformer-based multi-
+modal planner learning through student-teacher distillation,
+where a perception-based student model learns from rule-
+based and human teachers. DRAMA [250] employs a Mamba
+Fusion module to fuse features from camera and LiDAR BEVimages and a Mamba-Transformer to decode ego-trajectories
+for effectively handling long sequence inputs.
+d) LLM-based Models: The advanced reasoning skills
+and contextual understanding of LLMs suit these models for
+decision making and planning units. Furthermore, by leverag-
+ing their natural language understanding capabilities, LLMs
+can offer explainability, addressing the broader challenge of
+interpretability in end-to-end models. However, it is an ongo-
+ing research problem to improve their spatial understanding
+and real-time feasibility. DriveGPT4 [251] adopts LLama-
+2 for end-to-end planning, demonstrating high predictive
+performance and interpretability through action descriptions
+and justifications using natural language. OmniDrive [252]
+utilizes a Q-Former3D for perception tasks leveraging 2D
+pretrained knowledge. CarLLaVa [253] leverages a VLM
+optimized for closed-loop driving, integrating spatially aligned
+front-view image features into a TinyLLaMA decoder with
+50M parameters. It efficiently generates paths and waypoints
+for improved control, demonstrating outstanding performance.
+DriveLM [233] uses Graph Visual Question Answering, a
+technique that mimics a human decision making process in
+driving by linking different reasoning steps, such as percep-
+tion, prediction, planning, behavior and motion, into a graph-
+based logical chain. EMMA [254] yields competitive perfor-
+mance in the NuScenes and Waymo Open Motion benchmarks
+by using Gemini’s [255] world knowledge and applying Chain-
+Of-Thought prompting. Senna [240] combines a Large VLM
+with an end-to-end framework based on V ADv2 [248], which
+generates meta-actions using reasoning and driving knowledge
+to guide the end-to-end model in producing precise trajectory
+predictions. BEVDriver [256] feeds latent BEV maps from Li-
+DAR and multi-view images as efficient spatial representation
+to an LLM, which generates future waypoints that incorporate
+high level decisions.
+B. Current Challenges and Directions
+End-to-end approaches typically rely on IL with large
+expert-labeled datasets. However, the closed-loop nature of
+motion planning in AD raises concerns about the suitability of
+these training methods. RL methods are becoming increasingly
+scalable, efficient, and robust across domains [150], [257].
+However, they face challenges such as sparse rewards and
+weak gradient signals for training deep networks within end-
+to-end stacks [242]. To address this, some integrate cost
+functions alongside IL [249]. Model-based RL approaches,
+like Think2Drive [155], mitigate these issues by learning
+latent world models of environment transitions, used both for
+RL training and expert data generation to support end-to-end
+learning. Ma, Zhou et al. [258] illustrate that incorporating
+a world model significantly enhances the performance of the
+planning model UniAD [243]. There is an increasing number
+of world model planners that are end-to-end models generating
+driving decisions based on self-generated imagined futures
+[145], [146], [152], [154], [155].
+Furthermore, significant challenges persist that hinder the
+effective deployment of end-to-end methods and generative
+motion planning approachees as described in section VI in
+PREPRINT 14
+real-world applications. End-to-end motion planner evalua-
+tions rely on benchmarks for both open- and closed-loop
+settings, yet existing benchmarks face limitations, especially in
+effectively comparing learned methods to rule-based planners.
+Open-loop evaluation compares a motion planner’s output
+to expert ground truth without considering vehicle or agent
+effects, whereas closed-loop evaluation includes dynamics and
+interactions, directly giving feedback on the driving behavior
+[208]. The failure of open-loop ego-forecasting to enhance
+driving performance reveals misaligned objectives of current
+learning-based planners [259]. A large number of state-of-
+the-art generative motion planning models are optimized for
+open-loop driving [53], [233], [244], [247], while the re-
+search community widely recognizes the need for closed-loop
+optimization to ensure effective evaluation. Imitation-based
+planners generally perform well in open-loop but lack the
+robust generalization of rule-based methods in closed-loop
+evaluation [259]. End-to-end models rarely benchmark against
+traditional approaches [243], [244], [246], [254] and often fail
+to outperform simpler methods in closed-loop settings [260].
+Furthermore, closed-loop evaluation is limited by a lack of
+realistic, scalable simulators. While CARLA offers control, it
+struggles with sim-to-real gaps. NA VSIM lacks reactivity and
+long-term realism [260]. DriveArena improves scenario diver-
+sity but inhibits practical limitations [261]. HUGSIM [262]
+provides photorealistic evaluation across 70 sequences, yet
+faces challenges in rendering fidelity and dynamic elements
+like pedestrians. However, ongoing research addresses these
+challenges through rapid cycles of development, continuously
+improving simulators and models to push the limits of existing
+benchmarks.
+VIII. D ATASETS AND SIMULATORS
+This section provides an overview of datasets that can be
+used for trajectory prediction and motion planning. We will
+first introduce some real-world datasets and then discuss some
+commonly used driving simulators that can be used to record
+synthetic datasets or for experiments in RL.
+A. Datasets usable for above categories
+Datasets with agent motion, often connected to sensor data,
+are of foundational for GenAI. On one hand, they are used for
+directly training GenAI models. On the other hand, they serve
+for pre-training purposes and extraction of meaningful repre-
+sentations of street scenes. Table I presents an overview of
+different motion datasets for motion forecasting or prediction
+and furthermore also for trajectory prediction. Additionally, it
+compares different properties such as the number of scenarios
+and the total recording time. The datasets are recorded with
+various sensors, including RGB camera, radar sensors, and
+LiDAR. Furthermore, they are preprocessed by reducing the
+resolution [263] or deleting recordings with onboard system
+failures [268]. Argoverse [264] is a dataset for motion fore-
+casting that is recorded by LiDAR, RGB video sensors, front-
+facing stereo, and a 6-DOF localization. It includes data from
+American cities in different seasons, weather conditions, and
+times of a day. Argoverse is preferred recorded for 3D trackingand motion forecasting that is required for trajectory planning.
+In INTERACTION [265], drone and traffic cameras were used
+to record scenarios. A big advantage, in contrast to the other
+datasets, is that INTERACTION includes unsafe maneuvers,
+e.g. dangerous situations which could result in an accident.
+Furthermore, it has diverse scenarios like highway, round-
+about, stopping at traffic signs, and lane changes. LYFT [266]
+is recorded using cameras, LiDAR, and radar sensors as well
+as semantical HD-Maps for the task of motion prediction.
+Those HD-Maps capture road rules, lane geometry, and other
+traffic elements. However, LYFT only provides data from the
+day. Similarly, Waymo [267] is a dataset for predicting the
+motion of other vehicles by providing 3D bounding boxes
+and map data. Furthermore, it provides diverse scenes in a
+large-scale dataset. The NuScenes [161] dataset was recorded
+using cameras, radar, and LiDAR to provide a 360◦field of
+view. Especially the radar dataset is not commonly provided
+in other datasets. Additionally, NuScenes provides diverse
+situations like comparing left and right-hand driving. Likewise,
+the Yandex [268] dataset is released for motion prediction
+and is collected using camera-based sensors. To ensure high
+data quality, the raw recordings undergo preprocessing to
+remove scenes exhibiting onboard system failures or violating
+physical constraints. Additionally, it contains a wide range
+of scenes, including different countries (Israel, United States,
+and Russia), with different seasons, times of a day, and
+weather conditions. Yandex is also released for evaluating un-
+certainty estimation and robustness to domain gaps. Therefore,
+it provides an in-domain dataset and an out-domain dataset.
+Finally, Argoverse2 [263] is a dataset for motion prediction
+and forecasting. Besides the forecasting motion dataset, it
+contains a sensor dataset and a LiDAR dataset. It is recorded in
+diverse cities of the United States, since the traffic and also the
+kind of vehicles is different e.g. are there more motorcycles or
+cars in the traffic. Furthermore, the dataset includes different
+weather conditions and provides the forecasting for different
+vehicles like motorcycles or buses and not only cars.
+B. Driving simulators
+Driving simulators are a valuable option for experiments in
+AD to explore and analyze dangerous situations, like collision
+scenarios with pedestrians and other road users. Furthermore,
+they serve as environment in closed loop model training. Last
+but not least, synthetic data are cheaper than real data. In this
+section, we present an overview of different driving simulators,
+their benefits, strengths, and weaknesses. CARLA (Car Learn-
+ing to act) [156] is an open-source autonomous driving sim-
+ulator. CARLA is grounded on the Unreal Engine [269] and
+the roads and urban settings are defined by using the ASAM
+OpenDrive standard [270]. Since CARLA is developed for
+researching on AD, it provides some sensors including RGB
+cameras, LIDAR sensors, a ground truth sensor for semantic
+segmentation, and one for instance segmentation. The CARLA
+driving simulator can be used for many applications. For
+AD tasks, CARLA is used in RL [155], [271]. Furthermore,
+it has been used for motion prediction [272] and trajectory
+planning [273], [274].
+PREPRINT 15
+TABLE I: Overview of Motion Datasets [263]
+Argoverse [264] INTER. [265] LYFT [266] WAYMO [267] NuScenes [161] Yandex [268] Argoverse2 [263]
+# Scenarios 324 k − 170 k 104 k 41k 600 k 250 k
+# Unique Tracks 11.7M 40k 53.4M 7.64M − 17.4M 13.9M
+Average Track Length 2.48s 19.8s 1.84s 7.04s − − 5.16s
+Total Time 320 h 16.5h 1118 h 574 h 5.5h 1667 h 763 h
+Scenario Duration 5s − 25s 9.1s 8s 10s 11s
+Test Forecast Horizon 3s 3s 5s 8s 6s 5s 6s
+Sampling Rate 10Hz 10Hz 10Hz 10Hz 2Hz 5Hz 10Hz
+# Cities 2 6 1 6 1 6 6
+Unique Roadways 290 km 2km 10km 1750 km − − 2220 km
+Avg. # tracks per scenario 50 − 79 − 75 29 73
+# Evaluated object categories 1 1 3 3 1 2 5
+Multi-agent evaluation × ✓ ✓ ✓ × ✓ ✓
+Mined for interestingness ✓ × − ✓ × × ✓
+Vector Map ✓ × × ✓ ✓ × ✓
+Download Size 4.8GB − 22GB 1.4TB 48GB 120 GB 32GB
+# Public Leaderboard Entries 194 − 935 23 18 3 −
+SUMO [275] is an open-source driving simulator for traffic
+scenario generation. The focus of SUMO is the research on
+traffic scenarios [276] as well as vehicle-to-vehicle commu-
+nication [277]. For that, different complex road networks and
+vehicles can be analyzed. The road network can be constructed
+by the user itself, whereby it can decide whether to build its
+own network or use real road networks. Real road networks
+can be included by e.g. OSM [278] or XML-Descriptions.
+SUMO only provides a BEV on a 2D-world. In contrast to
+CARLA, SUMO does not provide any assets like buildings
+or vegetation. However, pedestrians and information about
+the vehicles i.e. emissions are available. SUMO is also used
+for RL tasks [279], [280] whereby the focus is more on the
+traffic scenario itself i.e. traffic light controlling as on one ego-
+vehicle. Furthermore, it is applied for motion prediction [281],
+[282] and trajectory planning [283].
+TORCS [284] is a racing simulator that provides a diverse
+range of vehicles and maps. Additionally, it gives the oppor-
+tunity to edit new maps and vehicles. Therefore, it provides
+a valuable basis for racing tasks in AD. Furthermore, the
+dynamical physics of the vehicles is realistic. Besides that,
+there is a lack of complexity, such that no pedestrians or
+intersections are provided. TORCS is a commonly used driving
+simulator for RL [285], [286].
+IX. C HALLENGES , RECOMMENDATIONS AND OUTLOOK
+A. Challenges
+A diverse range of generative models, including DMs,
+V AEs, GTs, LLMs, and EBMs, have been explored in the
+context of AD, each offering unique advantages and facing
+inherent limitations. While these methodologies contribute to
+significant advancements in AD, they also introduce com-
+plex and interrelated challenges, especially regarding safety,
+interpretability and practical deployment in real-world driving
+environments.
+a) Safety: Safety is paramount in deploying critical func-
+tionalities that could directly impact human lives. In auto-
+motive applications, guidelines like SOTIF [287] standardize
+preparations for unforeseen outcomes, incorporating verifica-
+tion and validation akin to rule-based models. The opacity
+of DNNs introduces vulnerabilities exploited by adversarialattacks [288]. Mitigation strategies involve training networks
+against such adversarial examples [289]. Incorporating con-
+straints aids in learning knowledge priors [290], ensuring pre-
+dictions remain within defined boundaries. Plausibility-based
+approaches maintain consistency with physical and environ-
+mental constraints, providing parallel safety layers [291]. Be-
+yond use-case based testing, simulation-based methodologies,
+such as diffusion models coupled with RL frameworks used by
+GAIA [6], enhance safety validation and allow extensive in-
+simulation testing. Integrating these with established standards
+bridges traditional safety protocols and the complexities of
+advanced AI systems. Methods like Hamilton-Jacobi (HJ)
+reachability analysis [292] and CBFs serve as safety filters or
+certificates [293], [294] for validating the outcome of learning-
+based methods. However, their application faces challenges
+due to computational constraints in unpredictable environ-
+ments. Recent advancements combine CBFs with predictive
+control [295] or employ hypernetworks to estimate safe sets
+in real-time based on environmental observations [296].
+b) Interpretability: Interpreting concepts within genera-
+tive models is challenging, particularly because these models
+often contain millions or even billions of parameters. This
+opacity poses risks in safety-critical domains like AD, the
+system behavior to inputs can be hard to predict. Interpretabil-
+ity paradigms are generally divided into four: behavioral,
+attributional, concept-based and mechanistic [297]. Behavioral
+interpretability addresses how models respond under various
+conditions and scenarios. Attributional interpretability high-
+lights the most influential input features driving the model’s
+output. This includes methods generating synthetic scenarios
+coupled with saliency analysis to attribute anomalous detec-
+tions to specific scenario elements [298]. While behavioral and
+attributional interpretability have seen some application in AD,
+larger models pose greater challenges that are more effectively
+addressed by concept-based and mechanistic interpretability.
+Concept-based interpretability relies on semantically meaning-
+ful latent factors, while mechanistic interpretability reverse-
+engineers a model’s internal processes to reveal its decision-
+making logic. However, the latter two approaches remain
+largely underexplored for AD. To the best of the authors’
+knowledge, only one work [177] has applied both concept-
+PREPRINT 16
+based and mechanistic interpretability to AD. As models
+continue to grow in scale, we expect many more works to
+focus on these interpretability paradigms.
+c) Real-time Feasibility: Efficient operation of generative
+models within real-time constraints is crucial for autonomous
+systems. Xu et al. [299] reviews LLM optimization strategies
+for training and inference, including parameter sharing, modu-
+lar architectures, quantization, pruning, knowledge distillation,
+and low-rank factorization [300]. By using Conditional Flow
+Matching, Ye and Gombolay [188] achieved up to a 100x
+speedup for a prediction task, while [301] applied the tech-
+nique for efficient robot navigation. Sparse representations are
+replacing dense ones, improving efficiency. Tang et al. [302]
+use sparse transformer-based representations to reduce compu-
+tational overhead by compressing latent variables. Similarly,
+SparseDrive [244] introduces a sparse perception module and
+parallel motion planner, optimizing efficiency and safety with
+a hierarchical collision-aware trajectory selection strategy.
+Model-based RL-based approaches, like Hafner et al. [148]
+reduce online computation requirements by modeling latent
+dynamics for parallel decision making. Combining these meth-
+ods with specialized hardware like TPUs and neuromorphic
+systems [303] can greatly boost the real-time performance of
+generative models.
+B. Recommendations
+While GenAI algorithms are advancing rapidly and often
+outperform traditional approaches, it remains too early to
+assess their long-term impact. Therefore, the primary rec-
+ommendation of this section is to closely follow the latest
+developments in the generative model landscape.
+A natural first step in following these developments is
+selecting appropriate GenAI models. Until recently, it was
+generally believed that V AEs were the worst performing
+model, followed by GANs, with diffusion models ranking
+highest in terms of image generation quality, although their
+computational cost were ranked in reverse order. However,
+recent leading architectures [181] demonstrate that V AEs can
+generate high-quality images when trained at scale and when
+their reconstruction loss is combined with GAN-like adversar-
+ial losses on patches. This highlights that hybrid solutions can
+achieve superior performance.
+The effectiveness of these hybrid models further underscores
+the importance of latent spaces. Whether based on learned
+features, as in the V AE example, or abstractions of agents on
+a BEV map, the choice of latent spaces is crucial. Abstract
+‘engineered’ representations provide clear explainability and
+facilitate rule-based checks, whereas learned representations
+typically deliver better performance and are more suitable
+for resource efficient end-to-end approaches [242]. However,
+this advantage comes with the drawback that learned latent
+variables are more prone to suffer from domain shifts.
+For dynamic scenario generation and decision making, most
+models follow the autoregressive logic of LLMs, typically
+using the same representation or token as in scene generation.
+Currently, two strategies stand out: transformer and state space
+(MAMBA) models.In the context of planning, traditional RL methods now
+compete with action transformers or action state-space models.
+GenAI approaches appear to be overtaking pure RL solutions,
+as reflected, for instance, in the CARLA leaderboard at the
+time of writing. Particularly, models incorporating reasoning
+capabilities from LLMs present a promising future direction.
+Nevertheless, hybrid approaches that integrate elements of
+traditional planning are likely to remain competitive.
+Regarding training methods and data, diversity in train-
+ing objectives and methods generally improves performance.
+Similarly, leveraging multiple diverse datasets is preferable to
+single-source training, provided the datasets are well curated.
+C. Outlook
+GenAI solutions for scene generation appear promising, but
+the domain gap remains an obstacle when replacing real-world
+data with synthetic data. Therefore, methods for measuring
+the domain gap in street scenes and driving scenarios must
+be carefully evaluated, and further development of domain-
+specific safety-aware metrics is essential. Additionally, detect-
+ing hallucinations and filtering of illogical outputs will be
+another important direction for GenAI quality assurance.
+Despite the advances in GenAI for motion planning, leading
+algorithms in closed-loop training and testing still exhibit
+measurable accident rates. This underscores the need for more
+robust solutions. Progress will depend on refining testing
+methods, identifying corner cases, and re-training GenAI
+planners. Additionally, testing in open-loop shadow mode is
+necessary, alongside novel methods for evaluating proposed
+but unexecuted actions of GenAI agents.
+The deployment of LLM-based autonomous decision mak-
+ing on edge devices poses new challenges, primarily due to the
+resource demands of reasoning models that offer some degree
+of explainability. While knowledge distillation shows promise
+in downsizing LLMs, in-depth studies in the AD domain are
+yet to come. End-to-end strategies, spanning from sensor input
+to action, go in a quite opposite direction, but they necessitate
+the development of novel testing and diagnostic approaches.
+GenAI in AD is an emerging field, and this survey offers
+only an early glimpse of its potential. Despite numerous chal-
+lenges and open research questions, the outlook is promising,
+and we remain optimistic that some of the technical trends
+outlined here will ultimately mature into robust solutions.
+REFERENCES
+[1] M. Cordts, M. Omran, S. Ramos, et al. , “The cityscapes
+dataset for semantic urban scene understanding,” in Proc.
+IEEE Conf. on Comput. Vis. Pattern Recognit. , 2016.
+[2] A. Geiger, P. Lenz, C. Stiller, and R. Urtasun, “Vision meets
+robotics: The kitti dataset,” Int. J. Robot. Res. , 2013.
+[3] F. Yu, W. Xian, Y . Chen, et al. , “Bdd100k: A diverse
+driving video database with scalable annotation tooling,”
+2018, arXiv:1805.04687.
+[4] J. Niemeijer, M. Schwonberg, J.-A. Termöhlen, N. M.
+Schmidt, and T. Fingscheidt, “Generalization by adaptation:
+Diffusion-based domain extension for domain-generalized
+semantic segmentation,” in IEEE / CVF Comput. Vis. Pattern
+Recognit. Conf. Workshop , 2024.
+PREPRINT 17
+[5] M. Schwonberg, J. Niemeijer, J.-A. Termöhlen, N. M.
+Schmidt, H. Gottschalk, T. Fingscheidt, et al. , “Survey on
+unsupervised domain adaptation for semantic segmentation
+for visual perception in automated driving,” IEEE Access ,
+2023.
+[6] A. Hu, L. Russell, H. Yeo, et al. , “GAIA-1: A Gen-
+erative World Model for Autonomous Driving,” 2023,
+arXiv:2309.17080.
+[7] L. Zhang, A. Rao, and M. Agrawala, “Adding condi-
+tional control to text-to-image diffusion models,” in Proc.
+IEEE/CVF Int. Conf. on Comput. Vis. , 2023.
+[8] A. Mütze, M. Rottmann, and H. Gottschalk, “Semi-
+Supervised Domain Adaptation with CycleGAN Guided by
+Downstream Task Awareness.,” in Int. Conf. on Comput. Vis.
+Theory Appl. , 2023.
+[9] H. Gao, Z. Wang, Y . Li, K. Long, M. Yang, and Y . Shen,
+“A Survey for Foundation Models in Autonomous Driving,”
+2024, arXiv:2402.01105.
+[10] J. Wu, B. Gao, J. Gao, et al. , “Prospective Role of Foun-
+dation Models in Advancing Autonomous Vehicles,” 2024,
+arXiv:2405.02288.
+[11] Z. Yang, X. Jia, H. Li, and J. Yan, “LLM4Drive: A Survey
+of Large Language Models for Autonomous Driving,” 2024,
+arXiv:2311.01043.
+[12] Y . Li, K. Katsumata, E. Javanmardi, and M. Tsukada, “Large
+Language Models for Human-like Autonomous Driving: A
+Survey,” 2024, arXiv:2407.19280.
+[13] W. Ding, C. Xu, M. Arief, H. Lin, B. Li, and D. Zhao, “A
+Survey on Safety-Critical Driving Scenario Generation—A
+Methodological Perspective,” IEEE Trans. on Intell. Transp.
+Syst., 2023.
+[14] Z. Wang, J. Ma, and E. M.-K. Lai, “A Survey of Scenario
+Generation for Automated Vehicle Testing and Validation,”
+Future Internet , 2024.
+[15] H. Yan and Y . Li, “A Survey of Generative AI for Intelligent
+Transportation Systems: Road Transportation Perspective,”
+2024, arXiv:2312.08248.
+[16] Y . Cai and L.-H. Lim, “Distances Between Probability
+Distributions of Different Dimensions,” IEEE Trans. on Inf.
+Theory , 2022.
+[17] I. Kobyzev, S. J. Prince, and M. A. Brubaker, “Normalizing
+Flows: An Introduction and Review of Current Methods,”
+IEEE Trans. on Pattern Anal. Mach. Intell. , 2021.
+[18] D. Rezende and S. Mohamed, “Variational Inference with
+Normalizing Flows,” in Proc. 32nd Int. Conf. on Mach.
+Learn. , 2015.
+[19] S. Bond-Taylor, A. Leach, Y . Long, and C. G. Willcocks,
+“Deep Generative Modelling: A Comparative Review of
+V AEs, GANs, Normalizing Flows, Energy-Based and Au-
+toregressive Models,” IEEE Trans. on Pattern Anal. Mach.
+Intell. , 2022.
+[20] I. Ishikawa, T. Teshima, K. Tojo, K. Oono, M. Ikeda, and M.
+Sugiyama, “Universal Approximation Property of Invertible
+Neural Networks,” J. Mach. Learn. Res. , 2023.
+[21] K. He, X. Zhang, S. Ren, and J. Sun, “Deep Residual Learn-
+ing for Image Recognition,” in 2016 IEEE Conf. Comput.
+Vis. Pattern Recognit. , 2016.
+[22] T. Q. Chen, Y . Rubanova, J. Bettencourt, and D. Duvenaud,
+“Neural Ordinary Differential Equations,” in Annu. Conf. on
+Neural Inf. Process. Syst. , 2018.
+[23] Y . Lipman, R. T. Q. Chen, H. Ben-Hamu, M. Nickel, and
+M. Le, “Flow Matching for Generative Modeling,” 2023,
+arXiv:2210.02747.
+[24] D. P. Kingma and M. Welling, “Auto-Encoding Variational
+Bayes,” 2022, arXiv:1312.6114.
+[25] I. Goodfellow, J. Pouget-Abadie, M. Mirza, et al. , “Genera-
+tive adversarial networks,” Commun. ACM , 2020.[26] T. Karras, S. Laine, and T. Aila, “A Style-Based Generator
+Architecture for Generative Adversarial Networks,” IEEE
+Trans. on Pattern Anal. Mach. Intell. , 2021.
+[27] D. Saxena and J. Cao, “Generative Adversarial Networks
+(GANs): Challenges, Solutions, and Future Directions,”
+ACM Comput. Surv. , 2022.
+[28] J. Sohl-Dickstein, E. Weiss, N. Maheswaranathan, and S.
+Ganguli, “Deep Unsupervised Learning using Nonequilib-
+rium Thermodynamics,” in Proc. 32nd Int. Conf. on Mach.
+Learn. , 2015.
+[29] A. Bansal, E. Borgnia, H.-M. Chu, et al. , “Cold Diffusion:
+Inverting Arbitrary Image Transforms Without Noise,” in
+Neural Inf. Process. Syst. , 2023.
+[30] F.-A. Croitoru, V . Hondru, R. T. Ionescu, and M. Shah,
+“Diffusion Models in Vision: A Survey,” IEEE Trans. on
+Pattern Anal. Mach. Intell. , 2023.
+[31] A. Vaswani, N. Shazeer, N. Parmar, et al. , “Attention is All
+you Need,” in Adv. Neural Inf. Process. Syst. , 2017.
+[32] Y . LeCun, S. Chopra, R. Hadsell, M. Ranzato, and F.-J.
+Huang, “A tutorial on energy-based learning,” in Predict.
+Struct. Data , 2006.
+[33] G. E. Hinton, “Training products of experts by minimizing
+contrastive divergence,” Neural Comput. , 2002.
+[34] A. Hyvärinen and P. Dayan, “Estimation of non-normalized
+statistical models by score matching.,” J. Mach. Learn. Res. ,
+2005.
+[35] R. M. Neal, “MCMC Using Hamiltonian Dynamics,” in
+Handb. Markov Chain Monte Carlo , Section: 5, 2011.
+[36] D. Duvenaud, J. Wang, J. Jacobsen, K. Swersky, M. Norouzi,
+and W. Grathwohl, “Your classifier is secretly an energy
+based model and you should treat it like one,” in Int. Conf.
+on Learn. Represent. , 2020.
+[37] M. Xu, T. Geffner, K. Kreis, et al. , “Energy-Based
+Diffusion Language Models for Text Generation,” 2024,
+arXiv.2410.21357.
+[38] C.-H. Chao, W.-F. Sun, Y .-C. Hsu, Z. Kira, and C.-Y .
+Lee, “Training energy-based normalizing flow with score-
+matching objectives,” Adv. Neural Inf. Process. Syst. , 2024.
+[39] B. Hoover, Y . Liang, B. Pham, et al. , “Energy transformer,”
+Adv. Neural Inf. Process. Syst. , 2024.
+[40] D. Carbone, “Hitchhiker’s guide on Energy-Based Mod-
+els: A comprehensive review on the relation with other
+generative models, sampling and statistical physics,” 2024,
+arXiv:2406.13661.
+[41] R. S. Sutton and A. G. Barto, Reinforcement Learning: An
+Introduction , Second. The MIT Press, 2015.
+[42] M. Ghasemi, A. H. Moosavi, and D. Ebrahimi, “A Com-
+prehensive Survey of Reinforcement Learning: From Algo-
+rithms to Practical Challenges,” 2025, arXiv:2411.18892.
+[43] Q. Huang, “Model-Based or Model-Free, a Review of Ap-
+proaches in Reinforcement Learning,” in 2020 Int. Conf. on
+Comput. Data Sci. , 2020.
+[44] M. Zare, P. M. Kebria, A. Khosravi, and S. Nahavandi, “A
+Survey of Imitation Learning: Algorithms, Recent Develop-
+ments, and Challenges,” IEEE Trans. on Cybern. , 2023.
+[45] F. Codevilla, E. Santana, A. Lopez, and A. Gaidon, “Explor-
+ing the Limitations of Behavior Cloning for Autonomous
+Driving,” in 2019 IEEE/CVF Int. Conf. on Comput. Vis. ,
+2019.
+[46] S. Arora and P. Doshi, “A survey of inverse reinforce-
+ment learning: Challenges, methods and progress,” 2021,
+arXiv:1806.06877.
+[47] A. Plebe, H. Svensson, S. Mahmoud, and M. D. Lio,
+“Human-inspired autonomous driving: A survey,” Cogn.
+Syst. Res. , 2024.
+[48] X. Guo, H. Yang, and D. Huang, “Image Inpainting via
+Conditional Texture and Structure Dual Generation,” 2024,
+arXiv:2108.09760.
+PREPRINT 18
+[49] A. Piazzoni, J. Cherian, M. Azhar, J. Y . Yap, J. L. W. Shung,
+and R. Vijay, “Vista: A framework for virtual scenario-based
+testing of autonomous vehicles,” in 2021 IEEE Int. Conf. on
+Artif. Intell. Test. , 2021.
+[50] J. Yang, S. Gao, Y . Qiu, et al. , “Generalized predictive
+model for autonomous driving,” in Proc. IEEE/CVF Conf.
+on Comput. Vis. Pattern Recognit. , 2024.
+[51] Z. Zhong, D. Rempe, D. Xu, et al. , “Guided conditional
+diffusion for controllable traffic simulation,” in 2023 IEEE
+Int. Conf. on Robotics Autom. , 2023.
+[52] C. Jiang, A. Cornman, C. Park, B. Sapp, Y . Zhou, D.
+Anguelov, et al. , “Motiondiffuser: Controllable multi-agent
+motion prediction using diffusion,” in Proc. IEEE/CVF Conf.
+on Comput. Vis. Pattern Recognit. , 2023.
+[53] W. Zheng, R. Song, X. Guo, C. Zhang, and L. Chen,
+“GenAD: Generative End-to-End Autonomous Driving,” in
+Eur. Conf. on Comput. Vis. 2024 , 2025.
+[54] C. Xu, D. Zhao, A. Sangiovanni-Vincentelli, and B. Li,
+“Diffscene: Diffusion-based safety-critical scenario genera-
+tion for autonomous vehicles,” in The Second. Workshop on
+New Front. Adversarial Mach. Learn. , 2023.
+[55] Z. Huang, Z. Zhang, A. Vaidya, Y . Chen, C. Lv,
+and J. F. Fisac, “Versatile Scene-Consistent Traffic Sce-
+nario Generation as Optimization with Diffusion,” 2024,
+arXiv:2404.02524.
+[56] G. Zhao, X. Wang, Z. Zhu, et al. , “DriveDreamer-2: LLM-
+Enhanced World Models for Diverse Driving Video Gener-
+ation,” 2024, arXiv:2403.06845.
+[57] A. Bourou, A. Genovesio, and V . Mezger, “GANs Condi-
+tioning Methods: A Survey,” 2024, arXiv: 2408.15640.
+[58] S. Ramchandran, G. Tikhonov, O. Lönnroth, P. Tiikkainen,
+and H. Lähdesmäki, “Learning conditional variational au-
+toencoders with missing covariates,” Pattern Recognit. , 2024.
+[59] C. Winkler, D. E. Worrall, E. Hoogeboom, and M.
+Welling, “Learning Likelihoods with Conditional Normal-
+izing Flows,” 2019, arXiv: 1912.00042.
+[60] A. Seff, B. Cera, D. Chen, et al. , “MotionLM: Multi-Agent
+Motion Forecasting as Language Modeling,” in Int. Conf. on
+Comput. Vis. , 2023.
+[61] E. Hüllermeier and W. Waegeman, “Aleatoric and epistemic
+uncertainty in machine learning: An introduction to concepts
+and methods,” Mach. Learn. Springer , 2021.
+[62] M.-K. Bouzidi, B. Derajic, D. Goehring, and J. Reichardt,
+“Motion Planning under Uncertainty: Integrating Learning-
+Based Multi-Modal Predictors into Branch Model Predictive
+Control,” 2024, arXiv: 2405.03470.
+[63] K. Mustafa, D. Jarne Ornia, J. Kober, and J. Alonso-Mora,
+“RACP: Risk-Aware Contingency Planning with Multi-
+Modal Predictions,” IEEE Intell. Veh. Symp. , 2024.
+[64] A. N. Angelopoulos and S. Bates, “A Gentle Introduction
+to Conformal Prediction and Distribution-Free Uncertainty
+Quantification,” 2021, arXiv: 2107.07511.
+[65] F. Seligmann, P. Becker, M. V olpp, and G. Neumann,
+“Beyond Deep Ensembles: A Large-Scale Evaluation of
+Bayesian Deep Learning under Distribution Shift,” in Neural
+Inf. Process. Syst. , 2023.
+[66] B. Mucsányi, M. Kirchhof, and S. J. Oh, “Benchmarking
+Uncertainty Disentanglement: Specialized Uncertainties for
+Specialized Tasks,” 2024, arXiv: 2402.19460.
+[67] Y . Gal and Z. Ghahramani, “Dropout as a Bayesian Approxi-
+mation: Representing Model Uncertainty in Deep Learning,”
+in33nd Int. Conf. on Mach. Learn. , 2016.
+[68] W. J. Maddox, P. Izmailov, T. Garipov, D. P. Vetrov, and
+A. G. Wilson, “A Simple Baseline for Bayesian Uncertainty
+in Deep Learning,” in Neural Inf. Process. Syst. , 2019.
+[69] E. A. Daxberger, A. Kristiadi, A. Immer, R. Eschenhagen,
+M. Bauer, and P. Hennig, “Laplace Redux - Effortless
+Bayesian Deep Learning,” in Annu. Conf. on Neural Inf.
+Process. Syst. , 2021.[70] N. Loo, S. Swaroop, and R. E. Turner, “Generalized Vari-
+ational Continual Learning,” in Int. Conf. on Learn. Repre-
+sent., 2021.
+[71] B. Charpentier, C. Zhang, and S. Günnemann, “Training, Ar-
+chitecture, and Prior for Deterministic Uncertainty Methods,”
+Int. Conf. on Learn. Represent. 2023 Workshop on Pitfalls
+limited data computation for Trust. ML , 2023.
+[72] J. Postels, M. Segù, T. Sun, et al. , “On the Practicality
+of Deterministic Epistemic Uncertainty,” in Proc. 39th Int.
+Conf. on Mach. Learn. 2022 , 2022.
+[73] J. Liu, Z. Lin, S. Padhy, D. Tran, T. Bedrax Weiss, and
+B. Lakshminarayanan, “Simple and principled uncertainty
+estimation with deterministic deep learning via distance
+awareness,” Adv. Neural Inf. Process. Syst. 33: Annu. Conf.
+on Neural Inf. Process. Syst. , 2020.
+[74] H. Goh, S. Sheriffdeen, J. Wittmer, and T. Bui-Thanh,
+“Solving Bayesian Inverse Problems via Variational Autoen-
+coders,” in Math. Sci. Mach. Learn. , 2021.
+[75] P. Oberdiek, G. A. Fink, and M. Rottmann, “UQGAN:
+A Unified Model for Uncertainty Quantification of Deep
+Classifiers trained via Conditional GANs,” in Annu. Conf.
+on Neural Inf. Process. Syst. , 2022.
+[76] J. Sun, Y . Jiang, J. Qiu, P. Nobel, M. J. Kochenderfer, and
+M. Schwager, “Conformal Prediction for Uncertainty-Aware
+Planning with Diffusion Dynamics Model,” in Annu. Conf.
+on Neural Inf. Process. Syst. , 2023.
+[77] V . Böhm, F. Lanusse, and U. Seljak, “Uncertainty Quantifi-
+cation with Generative Models,” 2019, arXiv: 1910.10046.
+[78] J. Liu, P. Hang, X. Zhao, J. Wang, and J. Sun, “DDM-
+Lag : A Diffusion-based Decision-making Model for Au-
+tonomous Vehicles with Lagrangian Safety Enhancement,”
+2024, arXiv:2401.03629.
+[79] M. M. Campos, A. Farinhas, C. Zerva, M. A. T. Figueiredo,
+and A. F. T. Martins, “Conformal Prediction for Natural
+Language Processing: A Survey,” 2024, arXiv: 2405.01976.
+[80] J. Kim, S. O’Hagan, and V . Rocková, “Adaptive Uncertainty
+Quantification for Generative AI,” 2024, arXiv: 2408.08990.
+[81] C. Ling, X. Zhao, X. Zhang, et al. , “Uncertainty Quantifi-
+cation for In-Context Learning of Large Language Models,”
+inProc. 2024 Conf. North Am. Chapter Assoc. for Comput.
+Linguist. Hum. Lang. Technol. , 2024.
+[82] S. Casas, A. Sadat, and R. Urtasun, “Mp3: A unified model
+to map, perceive, predict and plan,” in Proc. IEEE/CVF Conf.
+on Comput. Vis. Pattern Recognit. , 2021.
+[83] S. Hu, L. Chen, P. Wu, H. Li, J. Yan, and D. Tao, “St-
+p3: End-to-end vision-based autonomous driving via spatial-
+temporal feature learning,” in Eur. Conf. on Comput. Vis. ,
+2022.
+[84] X. Bai, Z. Hu, X. Zhu, et al. , “TransFusion: Robust LiDAR-
+Camera Fusion for 3D Object Detection with Transformers,”
+2022, arXiv:2203.11496.
+[85] S. Yao, R. Guan, X. Huang, et al. , “Radar-Camera Fusion
+for Object Detection and Semantic Segmentation in Au-
+tonomous Driving: A Comprehensive Review,” IEEE Trans.
+on Intell. Veh. , 2024.
+[86] W.-W. Kao, “Integration of GPS and dead-reckoning navi-
+gation systems,” in Veh. Navig. Inf. Syst. Conf. 1991 , 1991.
+[87] E. Yurtsever, J. Lambert, A. Carballo, and K. Takeda, “A
+Survey of Autonomous Driving: Common Practices and
+Emerging Technologies ,”IEEE Access , 2020.
+[88] K. Gadzicki, R. Khamsehashari, and C. Zetzsche, “Early vs
+Late Fusion in Multimodal Convolutional Neural Networks,”
+inIEEE 23rd Int. Conf. on Inf. Fusion , 2020.
+[89] Y . Xiao, F. Codevilla, A. Gurram, O. Urfalioglu, and
+A. M. Lopez, “Multimodal End-to-End Autonomous Driv-
+ing,” IEEE Trans. on Intell. Transp. Syst. , 2022.
+[90] Z. Bao, S. Hossain, H. Lang, and X. Lin, “A review of high-
+definition map creation methods for autonomous driving,”
+Eng. Appl. Artif. Intell. , 2023.
+PREPRINT 19
+[91] H. Dong, W. Gu, X. Zhang, et al. , “SuperFusion: Multilevel
+LiDAR-Camera Fusion for Long-Range HD Map Genera-
+tion,” in 2024 IEEE Int. Conf. on Robotics Autom. , 2024.
+[92] Q. Li, Y . Wang, Y . Wang, and H. Zhao, “HDMapNet: An
+Online HD Map Construction and Evaluation Framework,”
+in2022 Int. Conf. on Robotics Autom. , 2022.
+[93] B. Liao, S. Chen, X. Wang, et al. , “MapTR: Structured
+Modeling and Learning for Online Vectorized HD Map
+Construction,” 2023, arXiv:2208.14437.
+[94] B. Jiang, S. Chen, Q. Xu, et al. , “V AD: Vectorized Scene
+Representation for Efficient Autonomous Driving,” 2023,
+arXiv:2303.12077.
+[95] Y . Liu, T. Yuan, Y . Wang, Y . Wang, and H. Zhao, “Vec-
+torMapNet: End-to-end Vectorized HD Map Learning,”
+2022, arXiv:2206.08920.
+[96] J. Gao, C. Sun, H. Zhao, et al. , “VectorNet: Encoding HD
+Maps and Agent Dynamics from Vectorized Representation,”
+2020, arXiv:2005.04259.
+[97] X. Tian, T. Jiang, L. Yun, et al. , “Occ3D: A Large-Scale 3D
+Occupancy Prediction Benchmark for Autonomous Driving,”
+2023, arXiv:2304.14365.
+[98] Y . Wei, L. Zhao, W. Zheng, Z. Zhu, J. Zhou, and J. Lu,
+“SurroundOcc: Multi-Camera 3D Occupancy Prediction for
+Autonomous Driving,” 2023, arXiv:2303.09551.
+[99] H. Li, C. Sima, J. Dai, et al. , “Delving Into the Devils
+of Bird’s-Eye-View Perception: A Review, Evaluation and
+Recipe,” IEEE Trans. on Pattern Anal. Mach. Intell. , 2024.
+[100] D. Wu, W. Han, T. Wang, Y . Liu, X. Zhang, and J. Shen,
+“Language Prompt for Autonomous Driving,” in Annu. Conf.
+on Artif. Intell. 2025 , 2023.
+[101] C. Cui, Y . Ma, X. Cao, et al. , “A Survey on Multimodal
+Large Language Models for Autonomous Driving,” 2023,
+arXiv:2311.12320.
+[102] A. Dosovitskiy, L. Beyer, A. Kolesnikov, et al. , “An Image
+is Worth 16x16 Words: Transformers for Image Recognition
+at Scale,” 2021, arXiv:2010.11929.
+[103] C. R. Qi, H. Su, K. Mo, and L. J. Guibas, “PointNet:
+Deep Learning on Point Sets for 3D Classification and
+Segmentation,” 2017, arXiv:1612.00593.
+[104] J. Li, D. Li, S. Savarese, and S. Hoi, “BLIP-2: Bootstrapping
+Language-Image Pre-training with Frozen Image Encoders
+and Large Language Models,” 2023, arXiv:2301.12597.
+[105] Y . Chai, B. Sapp, M. Bansal, and D. Anguelov, “MultiPath:
+Multiple Probabilistic Anchor Trajectory Hypotheses for
+Behavior Prediction,” in Proc. Conf. on Robot Learn. , 2020.
+[106] J. Ngiam, B. Caine, V . Vasudevan, et al. , “Scene Trans-
+former: A unified architecture for predicting multiple agent
+trajectories,” 2021, arXiv:2106.08417v3.
+[107] M. Schäfer, K. Zhao, M. Bühren, and A. Kummert,
+“Context-Aware Scene Prediction Network (CASPNet),” in
+2022 IEEE 25th Int. Conf. on Intell. Transp. Syst. , 2022.
+[108] Z. Zhou, J. Wang, Y .-H. Li, and Y .-K. Huang, “Query-
+Centric Trajectory Prediction,” in Proc. IEEE/CVF Conf. on
+Comput. Vis. Pattern Recognit. , 2023.
+[109] Q. Sun, X. Huang, J. Gu, B. C. Williams, and H. Zhao,
+“M2I: From Factored Marginal Trajectory Prediction to
+Interactive Prediction,” in Proc. IEEE/CVF Conf. on Comput.
+Vis. Pattern Recognit. , 2022.
+[110] E. Tolstaya, R. Mahjourian, C. Downey, B. Vadarajan, B.
+Sapp, and D. Anguelov, “Identifying Driver Interactions via
+Conditional Behavior Prediction,” in 2021 IEEE Int. Conf.
+on Robotics Autom. , 2021.
+[111] D. Park, H. Ryu, Y . Yang, J. Cho, J. Kim, and K. J. Yoon,
+“Leveraging Future Relationship Reasoning for Vehicle Tra-
+jectory Prediction,” in Int. Conf. on Learn. Represent. , 2023.
+[112] W. Luo, C. Park, A. Cornman, B. Sapp, and D. Anguelov,
+“JFP: Joint Future Prediction with Interactive Multi-Agent
+Modeling for Autonomous Driving,” in Proc. The 6th Conf.
+on Robot Learn. , 2023.[113] Z. Zhou, L. Ye, J. Wang, K. Wu, and K. Lu, “HiVT:
+Hierarchical Vector Transformer for Multi-Agent Motion
+Prediction,” in Proc. IEEE/CVF Conf. on Comput. Vis.
+Pattern Recognit. , 2022.
+[114] S. Casas, C. Gulino, S. Suo, K. Luo, R. Liao, and R. Ur-
+tasun, “Implicit Latent Variable Model for Scene-Consistent
+Motion Forecasting,” in Eur. Conf. on Comput. Vis. , 2020.
+[115] A. Cui, S. Casas, A. Sadat, R. Liao, and R. Urtasun,
+“LookOut: Diverse Multi-Future Prediction and Planning for
+Self-Driving,” in Proc. IEEE/CVF Int. Conf. on Comput. Vis. ,
+2021.
+[116] R. Girgis, F. Golemo, F. Codevilla, et al. , “Latent Variable
+Sequential Set Transformers For Joint Multi-Agent Motion
+Prediction,” 2022, arXiv:2104.00563.
+[117] S. Ulbrich, T. Menzel, A. Reschka, F. Schuldt, and M. Mau-
+rer, “Defining and Substantiating the Terms Scene, Situation,
+and Scenario for Automated Driving,” in IEEE Int. Conf. on
+Intell. Transp. Syst. , 2015.
+[118] R. Liu, J. Wang, and B. Zhang, “High Definition Map
+for Automated Driving: Overview and Analysis,” J. Navig. ,
+2020.
+[119] G. Elghazaly, R. Frank, S. Harvey, and S. Safko, “High-
+Definition Maps: Comprehensive Survey, Challenges, and
+Future Perspectives,” IEEE Open J. Intell. Transp. Syst. ,
+2023.
+[120] S. Yang, X. Zhu, X. Nian, L. Feng, X. Qu, and T. Ma, “A
+robust pose graph approach for city scale LiDAR mapping,”
+in2018 IEEE/RSJ Int. Conf. on Intell. Robots Syst. , 2018.
+[121] X. Tang, K. Jiang, M. Yang, et al. , “High-Definition Maps
+Construction Based on Visual Sensor: A Comprehensive
+Survey,” IEEE Trans. on Intell. Veh. , 2023.
+[122] A. R. Alghooneh, “A Unified Multi-Frame Strategy for Au-
+tonomous Vehicle Perception and Localization Using Radar,
+Camera, LiDAR, and HD Map Fusion,” Ph.D. dissertation,
+University of Waterloo, Waterloo, Belgium, 2024.
+[123] Y . Wei, F. Mahnaz, O. Bulan, Y . Mengistu, S. Mahesh, and
+M. A. Losh, “Creating Semantic HD Maps From Aerial
+Imagery and Aggregated Vehicle Telemetry for Autonomous
+Vehicles,” IEEE Trans. on Intell. Transp. Syst. , 2022.
+[124] M. Elhousni, Y . Lyu, Z. Zhang, and X. Huang, “Automatic
+Building and Labeling of HD Maps with Deep Learning,”
+Proc. AAAI Conf. on Artif. Intell. , 2020.
+[125] G. Zhang, J. Lin, S. Wu, et al. , “Online Map Vectorization
+for Autonomous Driving: A Rasterization Perspective,” Adv.
+Neural Inf. Process. Syst. , 2023.
+[126] G. Mattyus, W. Luo, and R. Urtasun, “DeepRoadMapper:
+Extracting Road Topology From Aerial Images,” in Int. Conf.
+on Comput. Vis. , 2017.
+[127] Z. Li, J. D. Wegner, and A. Lucchi, “Topological Map
+Extraction From Overhead Images,” in Proc. IEEE/CVF Int.
+Conf. on Comput. Vis. , 2019.
+[128] H. Chu, D. Li, D. Acuna, et al. , “Neural Turtle Graphics
+for Modeling City Road Layouts,” in Proc. IEEE/CVF Int.
+Conf. on Comput. Vis. , 2019.
+[129] L. Mi, H. Zhao, C. Nash, et al. , “HDMapGen: A Hierarchical
+Graph Generative Model of High Definition Maps,” 2021,
+arXiv:2106.14880.
+[130] K. Chitta, D. Dauner, and A. Geiger, “SLEDGE: Synthesiz-
+ing Driving Environments with Generative Models and Rule-
+Based Traffic,” in Eur. Conf. on Comput. Vis. , 2024.
+[131] A. Lugmayr, M. Danelljan, A. Romero, F. Yu, R. Timofte,
+and L. Van Gool, “RePaint: Inpainting Using Denoising
+Diffusion Probabilistic Models,” in Proc. IEEE/CVF Conf.
+on Comput. Vis. Pattern Recognit. , 2022.
+[132] M. Treiber, A. Hennecke, and D. Helbing, “Congested traffic
+states in empirical observations and microscopic simula-
+tions,” Phys. Rev. E , 2000.
+PREPRINT 20
+[133] S. Sun, Z. Gu, T. Sun, et al. , “DriveSceneGen: Generating
+Diverse and Realistic Driving Scenarios From Scratch,”
+IEEE Robotics Autom. Lett. , 2024.
+[134] S. Shi, L. Jiang, D. Dai, and B. Schiele, “Motion Trans-
+former with Global Intention Localization and Local Move-
+ment Refinement,” Annu. Conf. on Neural Inf. Process. Syst. ,
+2022.
+[135] J. Chen, R. Deng, and Y . Furukawa, “PolyDiffuse: Polygonal
+Shape Reconstruction via Guided Set Diffusion Models,”
+Adv. Neural Inf. Process. Syst. , 2023.
+[136] B. Liao, S. Chen, Y . Zhang, et al. , “MapTRv2: An End-to-
+End Framework for Online Vectorized HD Map Construc-
+tion,” Int. J. Comput. Vis. , 2024.
+[137] L. Feng, Q. Li, Z. Peng, S. Tan, and B. Zhou, “TrafficGen:
+Learning to Generate Diverse and Realistic Traffic Scenar-
+ios,” 2023, arXiv:2210.06609.
+[138] W. Ding, Y . Cao, D. Zhao, C. Xiao, and M. Pavone,
+“RealGen: Retrieval Augmented Generation for Controllable
+Traffic Scenarios,” 2024, arXiv:2312.13303.
+[139] S. Tan, B. Ivanovic, X. Weng, M. Pavone, and P. Krae-
+henbuehl, “Language Conditioned Traffic Generation,” 2023,
+arXiv:2307.07947.
+[140] K. J. W. Craik, The Nature of Explanation . CUP Archive,
+1967.
+[141] E. C. Tolman, “Cognitive maps in rats and men,” Psychol.
+Rev., 1948.
+[142] A. E. Bryson, Applied Optimal Control: Optimization, Esti-
+mation and Control . New York: Routledge, 2018.
+[143] R. S. Sutton, “Dyna, an integrated architecture for learning,
+planning, and reacting,” SIGART Bull. , 1991.
+[144] D. Ha and J. Schmidhuber, “World Models,” 2018,
+arXiv:1803.10122.
+[145] W. Zheng, W. Chen, Y . Huang, B. Zhang, Y . Duan, and
+J. Lu, “OccWorld: Learning a 3D Occupancy World Model
+for Autonomous Driving,” in Eur. Conf. on Comput. Vis. ,
+2023.
+[146] Y . Wang, J. He, L. Fan, H. Li, Y . Chen, and Z. Zhang,
+“Driving into the Future: Multiview Visual Forecasting and
+Planning with World Model for Autonomous Driving,” 2023,
+arXiv:2311.17918.
+[147] Y . LeCun, “A Path Towards Autonomous Machine Intelli-
+gence,” Open Rev. .
+[148] D. Hafner, T. Lillicrap, J. Ba, and M. Norouzi, “Dream to
+Control: Learning Behaviors by Latent Imagination,” 2020,
+arXiv:1912.01603.
+[149] D. Hafner, T. Lillicrap, I. Fischer, et al. , “Learning Latent
+Dynamics for Planning from Pixels,” in Proc. 36th Int. Conf.
+Mach. Learn. , 2019.
+[150] D. Hafner, J. Pasukonis, J. Ba, and T. Lillicrap, “Mas-
+tering Diverse Domains through World Models,” 2024,
+arXiv:2301.04104.
+[151] M. Caron, H. Touvron, I. Misra, et al. , “Emerging Properties
+in Self-Supervised Vision Transformers,” in Proc. IEEE/CVF
+Int. Conf. on Comput. Vis. , 2021.
+[152] X. Wang, Z. Zhu, G. Huang, X. Chen, J. Zhu, and J. Lu,
+“DriveDreamer: Towards Real-World-Drive World Models
+for Autonomous Driving,” in Comput. Vis. – Eur. Conf. on
+Comput. Vis. 2024 , 2025.
+[153] G. Zhao, C. Ni, X. Wang, et al. , “DriveDreamer4D: World
+Models Are Effective Data Machines for 4D Driving Scene
+Representation,” 2024, arXiv:2410.13571.
+[154] F. Jia, W. Mao, Y . Liu, et al. , “ADriver-I: A General World
+Model for Autonomous Driving,” 2023, arXiv:2311.13549.
+[155] Q. Li, X. Jia, S. Wang, and J. Yan, “Think2Drive: Efficient
+Reinforcement Learning by Thinking in Latent World Model
+for Quasi-Realistic Autonomous Driving (in CARLA-v2),”
+2024, arXiv:2402.16720.[156] A. Dosovitskiy, G. Ros, F. Codevilla, A. Lopez, and V .
+Koltun, “CARLA: An Open Urban Driving Simulator,” 2017,
+arXiv:1711.03938.
+[157] Y . Li, L. Fan, J. He, et al. , “Enhancing End-to-End
+Autonomous Driving with Latent World Model,” 2024,
+arXiv:2406.08481.
+[158] Y . Zhang, S. Gong, K. Xiong, et al. , “BEVWorld: A Mul-
+timodal World Model for Autonomous Driving via Unified
+BEV Latent Space,” 2024, arXiv:2407.05679.
+[159] D. Bogdoll, Y . Yang, T. Joseph, and J. M. Zöllner, “MUVO:
+A Multimodal World Model with Spatial Representations for
+Autonomous Driving,” 2024, arXiv:2311.11762.
+[160] Y . Yang, J. Mei, Y . Ma, et al. , “Driving in the Occupancy
+World: Vision-Centric 4D Occupancy Forecasting and Plan-
+ning via World Models for Autonomous Driving,” 2025,
+arXiv:2408.14197.
+[161] H. Caesar, V . Bankiti, A. H. Lang, et al. , “nuScenes:
+A Multimodal Dataset for Autonomous Driving,” in 2020
+IEEE/CVF Conf. on Comput. Vis. Pattern Recognit. , 2020.
+[162] J. Wei, S. Yuan, P. Li, Q. Hu, Z. Gan, and W.
+Ding, “OccLLaMA: An Occupancy-Language-Action Gen-
+erative World Model for Autonomous Driving,” 2024,
+arXiv:2409.03272.
+[163] N. Nayakanti, R. Al-Rfou, A. Zhou, K. Goel, K. S. Refaat,
+and B. Sapp, “Wayformer: Motion forecasting via simple &
+efficient attention networks,” in IEEE Int. Conf. on Robotics
+& Autom. , 2023.
+[164] C.-L. Zhang, J. Wu, and Y . Li, “Actionformer: Localizing
+moments of actions with transformers,” in Eur. Conf. on
+Comput. Vis. , 2022.
+[165] R. Wagner, O. S. Tas, M. Klemp, C. F. Lopez, and C. Stiller,
+“RedMotion: Motion Prediction via Redundancy Reduction,”
+Trans. on Mach. Learn. Res. , 2024.
+[166] R. Wagner, O. S. Tas, M. Klemp, and C. Fernandez, “Joint-
+Motion: Joint Self-supervision for Joint Motion Prediction,”
+inConf. on Robot Learn. , 2024.
+[167] J. Xia, C. Xu, Q. Xu, C. Xie, Y . Wang, and S. Chen,
+“Language-Driven Interactive Traffic Trajectory Generation,”
+Annu. Conf. on Neural Inf. Process. Syst. , 2024.
+[168] Z. Peng, J. Yan, H. Yin, et al. , “Efficient Interaction-
+Aware Trajectory Prediction Model Based on Multi-head
+Attention,” Automot. Innov. , 2024.
+[169] A. Alahi, K. Goel, V . Ramanathan, A. Robicquet, L. Fei-
+Fei, and S. Savarese, “Social LSTM: Human Trajectory
+Prediction in Crowded Spaces,” in IEEE Conf. Comput. Vis.
+Pattern Recognit. , 2016.
+[170] Y . C. Tang and R. Salakhutdinov, “Multiple Futures Predic-
+tion,” in 32nd Annu. Conf. on Neural Inf. Process. Syst. ,
+2019.
+[171] A. v. d. Oord, S. Dieleman, H. Zen, et al. , “WaveNet: A
+Generative Model for Raw Audio,” 2016, arXiv:1609.03499.
+[172] E. A. Abolfathi, A. Rasouli, P. Lakner, M. Rohani, and
+J. Luo, “LatentFormer: Multi-Agent Transformer-Based In-
+teraction Modeling and Trajectory Prediction,” 2022, arXiv:
+2203.01880.
+[173] Q. Sun, S. Zhang, D. Ma, et al. , “Large Trajectory Models
+are Scalable Motion Predictors and Planners,” 2023, arXiv:
+2310.19620.
+[174] X. Jia, S. Shi, Z. Chen, et al. , “AMP: Autoregressive
+Motion Prediction Revisited with Next Token Prediction for
+Autonomous Driving,” 2024, arXiv: 2403.13331.
+[175] C. Chen, Y . Miao, C. X. Lu, et al. , “MotionTransformer:
+Transferring Neural Inertial Tracking between Domains,” in
+33rd AAAI Conf. Artif. Intell. , 2019.
+[176] J. Philion, X. B. Peng, and S. Fidler, “Trajeglish:
+Learning the Language of Driving Scenarios,” 2023,
+arXiv:2312.04535.
+PREPRINT 21
+[177] O. S. Tas and R. Wagner, “Words in Motion: Extracting
+Interpretable Control Vectors for Motion Transformers,” in
+Int. Conf. on Learn. Represent. , 2025.
+[178] L. Lin, X. Lin, K. Xu, et al. , “Revisit Mixture Models
+for Multi-Agent Simulation: Experimental Study within a
+Unified Framework,” 2025, arXiv:2501.17015.
+[179] W. Wu, X. Feng, Z. Gao, and Y . Kan, “SMART: Scalable
+Multi-agent Real-time Motion Generation via Next-token
+Prediction,” in Adv. Neural Inf. Process. Syst. , 2024.
+[180] Y . Choi, R. C. Mercurius, S. M. A. Shabestary, and A.
+Rasouli, “DICE: Diverse Diffusion Model with Scoring for
+Trajectory Prediction,” 2023, arXiv:2310.14570.
+[181] R. Rombach, A. Blattmann, D. Lorenz, P. Esser, and B.
+Ommer, “High-Resolution Image Synthesis with Latent Dif-
+fusion Models,” 2022, arXiv:2112.10752.
+[182] E. Pronovost, K. Wang, and N. Roy, “Generating driving
+scenes with diffusion,” 2023, arXiv:2305.18452.
+[183] M. Janner, Y . Du, J. B. Tenenbaum, and S. Levine, “Plan-
+ning with diffusion for flexible behavior synthesis,” 2022,
+arXiv:2205.09991.
+[184] O. Maler and D. Nickovic, “Monitoring temporal properties
+of continuous signals,” in Int. Symp. on Formal Tech. Real-
+Time Fault-Tolerant Syst. , 2004.
+[185] Z. Zhu, M. Liu, L. Mao, et al. , “Madiff: Offline multi-agent
+learning with diffusion models,” Adv. Neural Inf. Process.
+Syst., 2025.
+[186] J. Geng, X. Liang, H. Wang, and Y . Zhao, “Diffusion Policies
+as Multi-Agent Reinforcement Learning Strategies,” in Int.
+Conf. on Artif. Neural Networks , 2023.
+[187] A. Tong, K. Fatras, N. Malkin, et al. , “Improving and
+generalizing flow-based generative models with minibatch
+optimal transport,” 2023, arXiv:2302.00482.
+[188] S. Ye and M. C. Gombolay, “Efficient trajectory forecasting
+and generation with conditional flow matching,” in 2024
+IEEE/RSJ Int. Conf. on Intell. Robots Syst. , 2024.
+[189] B. Pang, T. Zhao, X. Xie, and Y . N. Wu, “Trajectory
+prediction with latent belief energy-based model,” in IEEE /
+CVF Comput. Vis. Pattern Recognit. Conf. - Workshop , 2021.
+[190] D. Wang, H. Liu, N. Wang, Y . Wang, H. Wang, and
+S. McLoone, “SEEM: A sequence entropy energy-based
+model for pedestrian trajectory all-then-one prediction,”
+IEEE Trans. on Pattern Anal. Mach. Intell. , 2022.
+[191] Y . Liu, Q. Z. Sheng, and L. Yao, “Modeling Pedes-
+trian Intrinsic Uncertainty for Multimodal Stochastic Tra-
+jectory Prediction via Energy Plan Denoising,” 2024,
+arXiv:2405.07164.
+[192] B. Brito, B. Floor, L. Ferranti, and J. Alonso-Mora, “Model
+Predictive Contouring Control for Collision Avoidance in
+Unstructured Dynamic Environments,” IEEE Robotics Au-
+tom. Lett. , 2019.
+[193] F. Micheli, M. Bersani, S. Arrigoni, F. Braghin, and F. Cheli,
+“NMPC trajectory planner for urban autonomous driving,”
+Veh. Syst. Dyn. , 2023.
+[194] Ö. ¸ S. Ta¸ s, P. H. Brusius, and C. Stiller, “Decision-theoretic
+MPC: Motion Planning with Weighted Maneuver Prefer-
+ences Under Uncertainty,” 2024, arXiv:2310.17963.
+[195] A. Somani, N. Ye, D. Hsu, and W. S. Lee, “DESPOT: Online
+POMDP Planning with Regularization,” in Annu. Conf. on
+Neural Inf. Process. Syst. , 2013.
+[196] Z. Boroujeni, D. Goehring, F. Ulbrich, D. Neumann, and
+R. Rojas, “Flexible unit A-star trajectory planning for au-
+tonomous vehicles on structured road maps,” in IEEE Int.
+Conf. Veh. Electron. Saf. , 2017.
+[197] J. Qi, H. Yang, and H. Sun, “MOD-RRT*: A Sampling-
+Based Algorithm for Robot Path Planning in Dynamic
+Environment,” IEEE Trans. on Ind. Electron. , 2021.
+[198] M.-K. Bouzidi, Y . Yao, D. Goehring, and J. Reichardt,
+“Learning-Aided Warmstart of Model Predictive Control inUncertain Fast-Changing Traffic,” in 2024 IEEE Int. Conf.
+on Robotics Autom. , 2024.
+[199] Y . Chen, U. Rosolia, W. Ubellacker, N. Csomay-Shanklin,
+and A. D. Ames, “Interactive Multi-Modal Motion Planning
+With Branch Model Predictive Control,” IEEE Robotics
+Autom. Lett. , 2022.
+[200] Ö. ¸ S. Ta¸ s, F. Hauser, and M. Lauer, “Efficient Sampling
+in POMDPs with Lipschitz Bandits for Motion Planning in
+Continuous Spaces,” in Proc. IEEE Intell. Veh. Symp. , 2021.
+[201] P. Trautman and A. Krause, “Unfreezing the robot: Navi-
+gation in dense, interacting crowds,” in 2010 IEEE/RSJ Int.
+Conf. on Intell. Robots Syst. , 2010.
+[202] M.-K. Bouzidi and E. Hashemi, “Interaction-Aware Merging
+in Mixed Traffic with Integrated Game-theoretic Predictive
+Control and Inverse Differential Game,” in 2023 IEEE Intell.
+Veh. Symp. , 2023.
+[203] S. S. Samsani, H. Mutahira, and M. S. Muhammad,
+“Memory-based crowd-aware robot navigation using deep
+reinforcement learning,” Complex & Intell. Syst. , 2023.
+[204] J. Tordesillas and J. P. How, “Deep-PANTHER: Learning-
+Based Perception-Aware Trajectory Planner in Dynamic En-
+vironments,” IEEE Robotics Autom. Lett. , 2023.
+[205] T. Nishi, P. Doshi, and D. Prokhorov, “Merging in Congested
+Freeway Traffic Using Multipolicy Decision Making and
+Passive Actor-Critic Learning,” IEEE Intell. Veh. Symp. ,
+2019.
+[206] D. Fu, X. Li, L. Wen, et al. , “Drive Like a Human: Rethink-
+ing Autonomous Driving with Large Language Models,” in
+IEEE/CVF Winter Conf. on Appl. Comput. Vis. 2024 , 2023.
+[207] J. Mao, Y . Qian, J. Ye, H. Zhao, and Y . Wang, “GPT-Driver:
+Learning to Drive with GPT,” in Annu. Conf. on Neural Inf.
+Process. Syst. Workshop , 2023.
+[208] M. Hallgarten, J. Zapata, M. Stoll, K. Renz, and A. Zell,
+“Can Vehicle Motion Planning Generalize to Realistic Long-
+tail Scenarios?” 2024, arXiv:2404.07569.
+[209] Z. Huang, T. Tang, S. Chen, et al. , “Making Large Language
+Models Better Planners with Reasoning-Decision Align-
+ment,” in Eur. Conf. on Comput. Vis. 2024 , 2024.
+[210] S. Gros and M. Zanon, “Data-driven Economic NMPC us-
+ing Reinforcement Learning,” IEEE Trans. Autom. Control. ,
+2020.
+[211] B. Zarrouki, V . Klös, N. Heppner, S. Schwan, R. Ritschel,
+and R. V oßwinkel, “Weights-varying MPC for Autonomous
+Vehicle Guidance: A Deep Reinforcement Learning Ap-
+proach,” in 2021 Eur. Control. Conf. , 2021.
+[212] B. Brito, M. Everett, J. P. How, and J. Alonso-Mora, “Where
+to go Next: Learning a Subgoal Recommendation Policy
+for Navigation in Dynamic Environments,” IEEE Robotics
+Autom. Lett. , 2021.
+[213] A. Tamar, G. Thomas, T. Zhang, S. Levine, and P. Abbeel,
+“Learning from the Hindsight Plan – Episodic MPC Im-
+provement,” 2017, arXiv: 1609.09001.
+[214] T. Koller, F. Berkenkamp, M. Turchetta, J. Boedecker, and
+A. Krause, “Learning-based Model Predictive Control for
+Safe Exploration and Reinforcement Learning,” 2019, arXiv:
+1906.12189.
+[215] J. Berberich, J. Köhler, M. A. Müller, and F. Allgöwer,
+“Data-Driven Model Predictive Control with Stability and
+Robustness Guarantees,” IEEE Trans. on Autom. Control. ,
+2021.
+[216] L. Hewing, K. P. Wabersich, M. Menner, and M. N.
+Zeilinger, “Learning-Based Model Predictive Control: To-
+ward Safe Learning in Control,” Annu. Rev. Control.
+Robotics, Auton. Syst. , 2020.
+[217] B. Brito, A. Agarwal, and J. Alonso-Mora, “Learning
+Interaction-aware Guidance Policies for Motion Planning in
+Dense Traffic Scenarios,” IEEE Trans. on Intell. Transp.
+Syst., 2022.
+PREPRINT 22
+[218] Y . Song and D. Scaramuzza, “Policy Search for Model
+Predictive Control with Application to Agile Drone Flight,”
+2021, arXiv: 2112.03850.
+[219] K. P. Wabersich and M. N. Zeilinger, “Predictive Con-
+trol Barrier Functions: Enhanced Safety Mechanisms for
+Learning-Based Control,” IEEE Trans. on Autom. Control. ,
+2023.
+[220] B. Tearle, K. P. Wabersich, A. Carron, and M. N. Zeilinger,
+“A Predictive Safety Filter for Learning-Based Racing Con-
+trol,” IEEE Robotics Autom. Lett. , 2021.
+[221] S. Natarajan, “Learning initial trajectory using sequence-
+to-sequence approach to warm start an optimization-based
+motion planner,” in IEEE/RSJ Int. Conf. on Intell. Robots
+Syst., 2021.
+[222] X. Xiao, T. Zhang, K. Choromanski, et al. , “Learning Model
+Predictive Controllers with Real-Time Attention for Real-
+World Navigation,” 2022, arXiv: 2209.10780.
+[223] R. Burnwal, A. Santara, N. P. Bhatt, B. Ravindran, and
+G. Aggarwal, “GAN-MPC: Training Model Predictive Con-
+trollers with Parameterized Cost Functions using Demonstra-
+tions from Non-identical Experts,” 2023, arXiv: 2305.19111.
+[224] H. Sha, Y . Mu, Y . Jiang, et al. , “LanguageMPC: Large Lan-
+guage Models as Decision Makers for Autonomous Driving,”
+2023, arXiv:2310.03026.
+[225] F. Lotfi, K. Virji, F. Faraji, et al. , “Uncertainty-aware hybrid
+paradigm of nonlinear MPC and model-based RL for offroad
+navigation: Exploration of transformers in the predictive
+model,” in 2024 IEEE Int. Conf. on Robotics Autom. , 2024.
+[226] F. Djeumou, T. J. Lew, N. Ding, et al. , “One Model to Drift
+Them All: Physics-Informed Conditional Diffusion Model
+for Driving at the Limits,” in Proc. The 8th Conf. on Robot
+Learn. , 2025.
+[227] G. Zhou, S. Swaminathan, R. V . Raju, et al. , “Diffusion
+Model Predictive Control,” 2024, arXiv:2410.05364.
+[228] N. Ma, J. Wang, J. Liu, and M. Q.-H. Meng, “Conditional
+Generative Adversarial Networks for Optimal Path Plan-
+ning,” IEEE Trans. on Cogn. Dev. Syst. , 2022.
+[229] G. Rabenstein, L. Ullrich, and K. Graichen, “Sampling
+for Model Predictive Trajectory Planning in Autonomous
+Driving using Normalizing Flows,” in 2024 IEEE Intell. Veh.
+Symp. (IV) , 2024.
+[230] Y . Wang, R. Jiao, S. S. Zhan, et al. , “Empowering Au-
+tonomous Driving with Large Language Models: A Safety
+Perspective,” in Int. Conf. on Learn. Represent. 2024 Work-
+shop LLMAgent , 2024.
+[231] K. Mizuta and K. Leung, “CoBL-Diffusion: Diffusion-
+Based Conditional Robot Planning in Dynamic Environ-
+ments Using Control Barrier and Lyapunov Functions,”
+2024, arXiv:2406.05309.
+[232] W. Xiao, T.-H. Wang, C. Gan, and D. Rus, “SafeDiffuser:
+Safe Planning with Diffusion Probabilistic Models,” 2023,
+arXiv:2306.00148.
+[233] X. Tian, J. Gu, B. Li, et al. , “DriveVLM: The Convergence
+of Autonomous Driving and Large Vision-Language Mod-
+els,” 2024, arXiv:2402.12289.
+[234] S. Meng, Y . Wang, C.-F. Yang, N. Peng, and K.-W. Chang,
+“LLM-A*: Large Language Model Enhanced Incremental
+Heuristic Search on Path Planning,” in Conf. on Empir.
+Methods Nat. Lang. Process. , 2024.
+[235] J. Levinson, J. Askeland, J. Becker, et al. , “Towards fully
+autonomous driving: Systems and algorithms,” in 2011 IEEE
+Intell. Veh. Symp. , 2011.
+[236] S. Behere and M. Törngren, “A functional reference archi-
+tecture for autonomous driving,” Inf. Softw. Technol. , 2016.
+[237] F. Munir, S. Azam, M. I. Hussain, A. M. Sheri, and M.
+Jeon, “Autonomous Vehicle: The Architecture Aspect of
+Self Driving Car,” in Int. Conf. on Sensors, Signal Image
+Process. , 2018.[238] O. S. Tas, S. Hormann, B. Schaufele, and F. Kuhnt, “Auto-
+mated vehicle system architecture with performance assess-
+ment,” in 2017 IEEE 20th Int. Conf. on Intell. Transp. Syst. ,
+2017.
+[239] A. Tampuu, T. Matiisen, M. Semikin, D. Fishman, and
+N. Muhammad, “A Survey of End-to-End Driving: Archi-
+tectures and Training Methods,” IEEE Trans. on Neural
+Networks Learn. Syst. , 2022.
+[240] B. Jiang, S. Chen, B. Liao, et al. , “Senna: Bridging Large
+Vision-Language Models and End-to-End Autonomous Driv-
+ing,” 2024, arXiv:2410.22313.
+[241] P. S. Chib and P. Singh, “Recent Advancements in End-to-
+End Autonomous Driving using Deep Learning: A Survey,”
+2023, arXiv:2307.04370.
+[242] L. Chen, P. Wu, K. Chitta, B. Jaeger, A. Geiger, and
+H. Li, “End-to-End Autonomous Driving: Challenges and
+Frontiers,” IEEE Trans. on Pattern Anal. Mach. Intell. , 2024.
+[243] Y . Hu, J. Yang, L. Chen, et al. , “Planning-oriented Au-
+tonomous Driving,” 2023, arXiv:2212.10156.
+[244] W. Sun, X. Lin, Y . Shi, C. Zhang, H. Wu, and S. Zheng,
+“SparseDrive: End-to-End Autonomous Driving via Sparse
+Scene Representation,” 2024, arXiv:2405.19620.
+[245] B. Yang, H. Su, N. Gkanatsios, et al. , “Diffusion-ES:
+Gradient-free Planning with Diffusion for Autonomous
+Driving and Zero-Shot Instruction Following,” 2024,
+arXiv:2402.06559.
+[246] B. Liao, S. Chen, H. Yin, et al. , “DiffusionDrive: Truncated
+Diffusion Model for End-to-End Autonomous Driving,”
+2024, arXiv:2411.15139.
+[247] X. Weng, B. Ivanovic, Y . Wang, Y . Wang, and M. Pavone,
+“PARA-Drive: Parallelized Architecture for Real-Time Au-
+tonomous Driving,” in 2024 IEEE/CVF Conf. on Comput.
+Vis. Pattern Recognit. , 2024.
+[248] S. Chen, B. Jiang, H. Gao, et al. , “V ADv2: End-to-End
+Vectorized Autonomous Driving via Probabilistic Planning,”
+2024, arXiv:2402.13243.
+[249] Z. Li, K. Li, S. Wang, et al. , “Hydra-MDP: End-to-end
+Multimodal Planning with Multi-target Hydra-Distillation,”
+2024, arXiv:2406.06978.
+[250] C. Yuan, Z. Zhang, J. Sun, et al. , “DRAMA: An Efficient
+End-to-end Motion Planner for Autonomous Driving with
+Mamba,” 2024, arXiv:2408.03601.
+[251] Z. Xu, Y . Zhang, E. Xie, et al. , “DriveGPT4: Inter-
+pretable End-to-end Autonomous Driving via Large Lan-
+guage Model,” in IEEE Robotics Autom. Lett. , 2024.
+[252] S. Wang, Z. Yu, X. Jiang, et al. , “OmniDrive: A
+Holistic LLM-Agent Framework for Autonomous Driv-
+ing with 3D Perception, Reasoning and Planning,” 2024,
+arXiv:2405.01533.
+[253] K. Renz, L. Chen, A.-M. Marcu, et al. , “CarLLaV A: Vision
+language models for camera-only closed-loop driving,” 2024,
+arXiv:2406.10165.
+[254] J.-J. Hwang, R. Xu, H. Lin, et al. , “EMMA: End-to-
+End Multimodal Model for Autonomous Driving,” 2024,
+arXiv:2410.23262.
+[255] G. Team, R. Anil, S. Borgeaud, et al. , “Gemini: A
+Family of Highly Capable Multimodal Models,” 2024,
+arXiv:2312.11805.
+[256] K. Winter, M. Azer, and F. B. Flohr, “BEVDriver: Leverag-
+ing BEV Maps in LLMs for Robust Closed-Loop Driving,”
+2025, arXiv:2503.03074 [cs].
+[257] L. Espeholt, H. Soyer, R. Munos, et al. , “IMPALA: Scal-
+able Distributed Deep-RL with Importance Weighted Actor-
+Learner Architectures,” 2018, arXiv:1802.01561.
+[258] E. Ma, L. Zhou, T. Tang, et al. , “Unleashing Generalization
+of End-to-End Autonomous Driving with Controllable Long
+Video Generation,” 2024, arXiv:2406.01349.
+PREPRINT 23
+[259] D. Dauner, M. Hallgarten, A. Geiger, and K. Chitta, “Parting
+with Misconceptions about Learning-based Vehicle Motion
+Planning,” 2023, arXiv:2306.07962.
+[260] D. Dauner, M. Hallgarten, T. Li, et al. , “NA VSIM: Data-
+Driven Non-Reactive Autonomous Vehicle Simulation and
+Benchmarking,” 2024, arXiv:2406.15349.
+[261] X. Yang, L. Wen, Y . Ma, et al. , “DriveArena: A Closed-loop
+Generative Simulation Platform for Autonomous Driving,”
+2024, arXiv:2408.00415.
+[262] H. Zhou, L. Lin, J. Wang, et al. , “HUGSIM: A Real-Time,
+Photo-Realistic and Closed-Loop Simulator for Autonomous
+Driving,” 2024, arXiv:2412.01718.
+[263] B. Wilson, W. Qi, T. Agarwal, et al. , “Argoverse 2: Next
+Generation Datasets for Self-Driving Perception and Fore-
+casting,” 2023, arXiv:2301.00493.
+[264] M.-F. Chang, J. Lambert, P. Sangkloy, et al. , “Argov-
+erse: 3D Tracking and Forecasting with Rich Maps,” 2019,
+arXiv:1911.02620.
+[265] W. Zhan, L. Sun, D. Wang, et al. , “INTERACTION Dataset:
+An INTERnational, Adversarial and Cooperative moTION
+Dataset in Interactive Driving Scenarios with Semantic
+Maps,” 2019, arXiv:1910.03088.
+[266] J. Houston, G. Zuidhof, L. Bergamini, et al. , “One Thousand
+and One Hours: Self-driving Motion Prediction Dataset,”
+2020, arXiv:2006.14480.
+[267] S. Ettinger, S. Cheng, B. Caine, et al. , “Large Scale Inter-
+active Motion Forecasting for Autonomous Driving : The
+Waymo Open Motion Dataset,” 2021, arXiv:2104.10133.
+[268] A. Malinin, N. Band, Ganshin, et al. , “Shifts: A Dataset
+of Real Distributional Shift Across Multiple Large-Scale
+Tasks,” 2022, arXiv:2107.07455.
+[269] “Unreal Engine,” 2014, https://www.unrealengine.com/de,
+Citation Key: games_epic_unreal_2014.
+[270] D. Bassermann, “Asam,” 2025, https://www.asam.net/.
+[271] J. Hossain, “Autonomous Driving with Deep Reinforcement
+Learning in CARLA Simulation,” 2023, arXiv:2306.11217.
+[272] Q. Sun, X. Huang, B. C. Williams, and H. Zhao, “P4P:
+Conflict-Aware Motion Prediction for Planning in Au-
+tonomous Driving,” 2022, arXiv:2211.01634.
+[273] P. Wu, X. Jia, L. Chen, J. Yan, H. Li, and Y . Qiao,
+“Trajectory-guided Control Prediction for End-to-end Au-
+tonomous Driving: A Simple yet Strong Baseline,” 2022,
+arXiv:2206.08129.
+[274] J. Roh, C. Mavrogiannis, R. Madan, D. Fox, and S. S.
+Srinivasa, “Multimodal Trajectory Prediction via Topological
+Invariance for Navigation at Uncontrolled Intersections,”
+2020, arXiv:2011.03894.
+[275] P. A. Lopez, M. Behrisch, L. Bieker-Walz, et al. , “Micro-
+scopic Traffic Simulation using SUMO,” in 2018 21st Int.
+Conf. on Intell. Transp. Syst. , 2018.
+[276] R. Markowski and J. Trumpold, “Interfacing a Traffic Light
+Controller with SUMO for Hardware-in-the-Loop Testing,”
+inSUMO User Conf. , 2024.
+[277] M. A. Naeem, X. Jia, M. A. Saleem, et al. , “Vehicle
+to Everything (V2X) Communication Protocol by Using
+Vehicular AD-HOC Network,” in 2020 17th Int. Comput.
+Conf. on Wavelet Active Media Technol. Inf. Process. , 2020.
+[278] “Planet OSM,” 2012, https://planet.openstreetmap.org/.
+[279] Y . Xu, “Deep reinforcement learning for traffic light control
+optimization in multi-modal simulation of SUMO,” Ph.D.
+dissertation, TU Delft, Delft, Nederlands, 2024.
+[280] K. Makantasis, M. Kontorinaki, and I. Nikolos, “Deep
+reinforcement-learning-based driving policy for autonomous
+road vehicles,” IET Intell. Transp. Syst. , 2020.
+[281] M. Klischat, O. Dragoi, M. Eissa, and M. Althoff, “Coupling
+SUMO with a Motion Planning Framework for Automated
+Vehicles,” in SUMO User Conf. 2019 .
+[282] A. Artuñedo, “Motion Prediction and Manoeuvre Planning,”
+inDecis. Strateg. for Autom. Driv. Urban Environ. 2020.[283] M. Gu, Y . Su, C. Wang, and Y . Guo, “Trajectory Planning
+for Automated Merging Vehicles on Freeway Acceleration
+Lane,” IEEE Trans. Veh. Technol. , 2024.
+[284] E. Espié, C. Guionneau, B. Wymann, C. Dimitrakakis, R.
+Coulom, and A. Sumner, “TORCS, The Open Racing Car
+Simulator,” in Semantic Scholar , 2005.
+[285] D. Loiacono, A. Prete, P. L. Lanzi, and L. Cardamone,
+“Learning to overtake in TORCS using simple reinforcement
+learning,” in IEEE Congr. on Evol. Comput. , 2010.
+[286] S. Wang, D. Jia, and X. Weng, “Deep Reinforcement Learn-
+ing for Autonomous Driving,” 2019, arXiv:1811.11329.
+[287] I. Iso, “Pas 21448-road vehicles-safety of the intended func-
+tionality,” Int. Organ. for Stand. , 2019.
+[288] C. Xie, Z. Zhang, Y . Zhou, et al. , “Improving Transferability
+of Adversarial Examples With Input Diversity,” in 2019
+IEEE/CVF Conf. on Comput. Vis. Pattern Recognit. , 2019.
+[289] Y . Carmon, A. Raghunathan, L. Schmidt, J. C. Duchi,
+and P. S. Liang, “Unlabeled Data Improves Adversarial
+Robustness,” in Adv. Neural Inf. Process. Syst. , 2019.
+[290] J. Wörmann, D. Bogdoll, C. Brunner, et al. , “Knowledge
+Augmented Machine Learning with Applications in Au-
+tonomous Driving: A Survey,” 2023, arXiv:2205.04712.
+[291] A. Vivekanandan, N. Maier, and J. M. Zoellner, “Plausibility
+Verification For 3D Object Detectors Using Energy-Based
+Optimization,” 2022, arXiv:2211.05233.
+[292] M. Chen and C. J. Tomlin, “Hamilton–Jacobi Reachabil-
+ity: Some Recent Theoretical Advances and Applications
+in Unmanned Airspace Management,” Annu. Rev. Control.
+Robotics, Auton. Syst. , 2018.
+[293] K. P. Wabersich, A. J. Taylor, J. J. Choi, et al. , “Data-Driven
+Safety Filters: Hamilton-Jacobi Reachability, Control Barrier
+Functions, and Predictive Methods for Uncertain Systems,”
+IEEE Control. Syst. Mag. , 2023.
+[294] K.-C. Hsu, H. Hu, and J. F. Fisac, “The Safety Filter:
+A Unified View of Safety-Critical Control in Autonomous
+Systems,” 2023, arXiv:2309.05837.
+[295] K. P. Wabersich and M. N. Zeilinger, “Predictive control
+barrier functions: Enhanced safety mechanisms for learning-
+based control,” 2022, arXiv:2105.10241.
+[296] B. Deraji ´c, M.-K. Bouzidi, S. Bernhard, and W. Hönig,
+“Learning Maximal Safe Sets Using Hypernetworks for
+MPC-based Local Trajectory Planning in Unknown Envi-
+ronments,” 2025, arXiv:2410.20267.
+[297] L. Bereska and E. Gavves, “Mechanistic Interpretability for
+AI Safety – A Review,” 2024, arXiv:2404.14082.
+[298] S. Atakishiyev, M. Salameh, H. Yao, and R. Goebel, “Ex-
+plainable Artificial Intelligence for Autonomous Driving:
+A Comprehensive Overview and Field Guide for Future
+Research Directions,” 2024, arXiv:2112.11561.
+[299] J. Xu, Z. Li, W. Chen, et al. , “On-Device Language Models:
+A Comprehensive Review,” 2024, arXiv: 2409.00088.
+[300] Y . Gu, L. Dong, F. Wei, and M. Huang, “MiniLLM: Knowl-
+edge Distillation of Large Language Models,” in The Twelfth
+Int. Conf. on Learn. Represent. , 2024.
+[301] S. Gode, A. Nayak, and W. Burgard, “FlowNav: Learning
+Efficient Navigation Policies via Conditional Flow Match-
+ing,” arXiv:2411.09524 , 2024.
+[302] P. Tang, Z. Wang, G. Wang, et al. , “SparseOcc: Rethinking
+Sparse Latent Representation for Vision-Based Semantic
+Occupancy Prediction,” 2024, arXiv:2404.09502.
+[303] M. Davies, A. Wild, G. Orchard, et al. , “Advancing Neu-
+romorphic Computing With Loihi: A Survey of Results and
+Outlook,” Proc. IEEE , 2021.
+PREPRINT 24
+X. B IOGRAPHY SECTION
+Katharina Winter is pursuing her Ph.D. at Munich
+University of Applied Sciences in the Intelligent
+Vehicles Lab. She earned her M.Sc. in Media In-
+formatics at LMU Munich.
+Abhishek Vivekanandan earned his M.Sc. from TU
+Chemnitz and is currently working as a researcher
+at FZI Forschungszentrum Informatik while simul-
+taneously pursuing his PhD from KIT.
+Rupert Polley earned his M.Sc. degree at KIT,
+focusing on machine learning. Since 2021, he has
+been working as a researcher and is pursuing his
+PhD at FZI, specializing in HD maps.
+Yinzhe Shen earned his M.Sc. from University of
+Stuttgart and has been pursuing his Ph.D. at KIT
+since 2023.
+Christian Schlauch is a Researcher at Continental
+Automotive GmbH and a Ph.D. candidate at KIT. He
+holds a B.Sc. and a M.Sc. in Systems Engineering
+and Technical Cybernetics from Otto-von-Guericke
+University Magdeburg.
+Mohamed-Khalil Bouzidi is a Researcher at Con-
+tinental Automotive GmbH and a Ph.D. candidate
+at Freie Universität Berlin. He holds a B.Sc. and a
+M.Sc. from KIT. He also pursued a visiting research
+stay at the University of Alberta.
+Bojan Derajic earned his M.Sc. degree from the
+University of Belgrade in 2022. Since 2023, he is a
+Researcher at Continental Automotive GmbH and a
+Ph.D. candidate at TU Berlin.
+Natalie Grabowsky is pursuing a PhD at TU Berlin
+since 2024. She holds a B. of app.Sc. in Mathematics
+& Physics and a M.Sc. in Technomathematics from
+University of Wuppertal.
+Annajoyce Mariani is pursuing a Ph.D. at TU
+Berlin since 2024. She holds a B.Sc. and a M.Sc.
+in Engineering Physics from Politecnico di Milano.
+Dennis Rochau has been pursuing a Ph.D. at TU
+Berlin since 2024. He holds a B.Sc. in Mathematics
+from Universität Paderborn and an M.Sc. in Mathe-
+matics from TU Berlin.
+Giovanni Lucente is pursuing a PhD at TU Berlin
+while working as a researcher at the German
+Aerospace Center (DLR).
+Harsh Yadav has completed a Dual Degree (B.Tech.
++ M.Tech.) from IIT Bombay. He also earned an
+M.Sc. from the University of Lübeck. Currently, he
+is a researcher at Aptiv and a PhD candidate at the
+University of Wuppertal.
+Firas Mualla earned a M.Sc. degree in Compu-
+tational Engineering and a Ph.D. from Erlangen-
+Nürnberg University. Currently, he is working as a
+senior artificial intelligence engineer at the AI Lab,
+ZF Friedrichshafen.
+Adam Molin earned his Dr.-Ing. from TU München
+in 2014. He is Technical Manager in Software R&D
+at DENSO AUTOMOTIVE Deutschland GmbH, fo-
+cusing on safety verification & validation of au-
+tonomous driving.
+Sebastian Bernhard earned his Dr.-Ing. from TU
+Darmstadt in 2020. He is a technical lead for AI-
+based autonomous systems at the Continental AI Lab
+Berlin, currently focusing on end-to-end learning for
+autonomous driving.
+Christian Wirth earned his Ph.D. from TU Darm-
+stadt in 2017. Since 2018, he works for the Conti-
+nental Automotive GmbH, focusing on uncertainty
+estimation and informed machine learning methods.
+Ömer ¸ Sahin Ta¸ s earned his B.Sc. degree from
+Istanbul Technical University, followed by M.Sc.
+and Ph.D. degrees from KIT and held a visiting re-
+searcher position at the University of Toronto. He is
+leading the Mobile Perception Systems department
+at FZI Forschungszentrum Informatik since 2017.
+Nadja Klein is professor at KIT, and Emmy Noether
+Group Leader. After her PhD in Mathematics, she
+was postdoc at University of Melbourne as Feodor-
+Lynen fellow, and professor at Humboldt-Universität
+zu Berlin before joining KIT. She was awarded with
+the COPSS Emerging Leader Award.
+Fabian B. Flohr earned his M.Sc (2012, KIT)
+and Ph.D. (2018, University of Amsterdam) and
+worked at Mercedes-Benz as Function Owner for
+AD (2012–2022). Since 2022 he is Professor of
+Machine Learning at Munich University of Applied
+Sciences where he leads the Intelligent Vehicles Lab.
+Hanno Gottschalk obtained his PhD in mathemati-
+cal physics in 1999 at Ruhr University Bochum and
+habilitated in 2003 in mathematics at Bonn Univer-
+sity. In 2011, he received a permanent professorship
+in stochastics at the University of Wuppertal. Since
+2023 he holds the chair for Mathematical Modeling
+of Industrial Life Cycles at TU Berlin.

@@ -1,5 +1,85 @@
 {
-    "automotive_papers": [],
+    "automotive_papers": [
+  {
+    "id": "vlm_automotive_ui_2025",
+    "publisher": "SPARKS Solutions GmbH / ArXiv",
+    "title": "Leveraging Vision-Language Models for Visual Grounding and Analysis of Automotive UI",
+    "key_focus": "Fine-tuning vision-language models for UI understanding, visual grounding, and evaluation in automotive infotainment systems",
+    "best_for": "Automated HMI testing, infotainment validation, synthetic data generation, and domain-specific VLM/LAM adaptation"
+  },
+
+  {
+    "id": "genai_autonomous_driving_review_2025",
+    "publisher": "ArXiv",
+    "title": "Generative AI for Autonomous Driving: A Review",
+    "key_focus": "Survey of generative models (VAEs, GANs, diffusion, transformers) and their applications in AD: scenario generation, mapping, motion prediction, planning, and end-to-end driving.",
+    "best_for": "Exploring GenAI’s role in autonomous driving, synthetic data, motion forecasting, world models, and safety-critical generative systems."
+  },
+    
+  {
+    "id": "drift_aware_cv_architecture_2025",
+    "publisher": "University of Siegen / IEEE / ArXiv",
+    "title": "Enhanced Drift-Aware Computer Vision Architecture for Autonomous Driving",
+    "key_focus": "Hybrid YOLOv8 + CNN framework trained on synthetic drifted CARLA data to improve robustness against data drift in real-time perception.",
+    "best_for": "Engineering teams addressing robustness, safety, and reliability of CV pipelines under distribution shift, adverse weather, and sensor drift."
+  },
+
+  {
+    "id": "genai_automotive_applications_2025",
+    "publisher": "arXiv",
+    "title": "Gen AI in Automotive: Applications, Challenges, and Opportunities with a Case study on In-Vehicle Experience",
+    "key_focus": "Exploration of generative AI technologies (GANs, VAEs, LLMs) across automotive domains—design, manufacturing, autonomous driving and in-vehicle UX—plus a case study on voice assistant evolution.",
+    "best_for": "Understanding how generative AI can shape vehicle user experience, system validation, and lifecycle processes in mobility."
+  },
+
+  {
+    "id": "bm_ai_auto_aero_2025",
+    "publisher": "arXiv",
+    "title": "A Benchmarking Framework for AI models in Automotive Aerodynamics",
+    "key_focus": "Standardised evaluation of AI/ML models in automotive external aerodynamics (flow prediction, surface & volumetric fields) within CAE context.",
+    "best_for": "Researchers and practitioners developing or selecting AI models for CFD workflows in automotive design and aerodynamic optimisation."
+  },
+
+  {
+    "id": "embedded_acoustic_intel_auto_2025",
+    "publisher": "arXiv",
+    "title": "Embedded Acoustic Intelligence for Automotive Systems",
+    "key_focus": "Use of in-vehicle acoustic signatures and deep learning for road-type classification, AD/ADAS perception enhancement, and active noise control.",
+    "best_for": "Teams working on sensor fusion, acoustic signal processing, vehicle environment perception, and comfort/noise-management systems."
+  },
+
+  {
+    "id": "genai_formal_methods_auto_sw_2025",
+    "publisher": "arXiv",
+    "title": "Automating Automotive Software Development: A Synergy of Generative AI and Formal Methods",
+    "key_focus": "Integration of generative AI and formal verification to accelerate safe, correct automotive software development for software-defined vehicles.",
+    "best_for": "Automotive software architects, safety engineers, and SDV product teams using AI for requirements, code generation, and verification."
+  },
+
+  {
+    "id": "ai_agents_eng_design_2025",
+    "publisher": "arXiv",
+    "title": "AI Agents in Engineering Design: A Multi-Agent Framework for Aesthetic and Aerodynamic Car Design",
+    "key_focus": "A multi-agent generative design system that jointly optimises aesthetic and aerodynamic properties through collaborative agent reasoning.",
+    "best_for": "Automotive design engineers, CAE/CAD teams, and R&D groups exploring multi-objective generative design or multi-agent co-creation."
+  },
+
+  {
+    "id": "drive_synthetic_dialog_vehicle_env_2025",
+    "publisher": "arXiv",
+    "title": "DRIVE: Disfluency-Rich Synthetic Dialog Data Generation Framework for Intelligent Vehicle Environments",
+    "key_focus": "Synthetic generation of realistic, disfluency-rich dialog datasets to train conversational and voice-assistant systems in vehicles.",
+    "best_for": "Teams developing in-vehicle conversational AI, infotainment voice interfaces, and data generation pipelines for speech systems."
+  },
+  
+  {
+    "id": "auto_sw_elec_2030_mckinsey",
+    "publisher": "McKinsey & Company",
+    "title": "Automotive Software and Electronics 2030",
+    "key_focus": "Projected growth and structural shifts in the automotive software & electrical/electronic (E/E) market driven by ACES (autonomous, connected, electrified, shared) trends and E/E-architecture evolution.",
+    "best_for": "Automotive OEMs, tier-suppliers, semiconductor players and strategists navigating the software-defined vehicle transition and changing value chain dynamics."
+  }
+    ],
   
     "tech_reports": [
     {
@@ -24,6 +104,7 @@
       "best_for": "Benchmarking and transformation roadmaps"
     }
   ],
+  
   "startups_dataset": {
     "source": "Startups Worldwide (Kaggle)",
     "dataset_url": "https://www.kaggle.com/datasets/pashupatigupta/startups-worldwide",

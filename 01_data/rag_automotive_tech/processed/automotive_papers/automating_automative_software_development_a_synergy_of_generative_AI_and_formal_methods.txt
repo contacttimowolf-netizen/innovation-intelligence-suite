@@ -1,0 +1,1026 @@
+TECH REPORT: automating_automative_software_development_a_synergy_of_generative_AI_and_formal_methods
+SOURCE: automating_automative_software_development_a_synergy_of_generative_AI_and_formal_methods.pdf
+============================================================
+
+## KEY SECTIONS ##
+
+### EXECUTIVE SUMMARY ###
+ence highlights the critical importance of providing complete
+and precise input requirements for the proposed automated
+
+--------------------------------------------------
+
+### METHODOLOGY ###
+approach to metamodeling in automotive,” 2025.
+[15] F. Pan, N. Petrovic, V . Zolfaghari, L. Wen, and A. Knoll, “Llm-enabled
+instance model generation,” 2025.
+[16] F. Pan, V . Zolfaghari, L. Wen, N. Petrovic, J. Lin, and A. Knoll,
+“Generative ai for ocl constraint generation: Dataset collection and
+llm fine-tuning,” in 2024 IEEE International Symposium on Systems
+Engineering (ISSE) , 2024, pp. 1–8.
+[17] OMG, Object Constraint Language Version 2.4 , Feb. 2014.
+[18] ——, Meta Object Facility , 2016.
+[19] D. Pilone and N. Pitman, UML 2.0 in a Nutshell . ” O’Reilly Media,
+Inc.”, 2005.
+[20] S. Friedenthal, A. Moore, and R. Steiner, A practical guide to SysML:
+the systems modeling language . Morgan Kaufmann, 2014.
+[21] D. Steinberg, F. Budinsky, E. Merks, and M. Paternostro, EMF: eclipse
+modeling framework . Pearson Education, 2008.
+[22] OBEO, “Generate anything from any emf model,” https://eclipse.dev/
+acceleo/, accessed: 2024-03-25.
+[23] “Ros 2 pointcloud <->laserscan converters,” https://github.com/
+ros-perception/pointcloud tolaserscan, accessed: 2025-04-18.
+
+--------------------------------------------------
+
+### INTRODUCTION ###
+context SoftwareNode
+inv HasInputAndOutputData:
+self.input->notEmpty() and self.output->notEmpty()
+inv NextstepFrequencyEqualOrHigher:
+self.nextstep->notEmpty() implies (self.nextstep.
+frequency >= self.frequency)
+Using the Eclipse OCL Plugin or other solver-based
+formal methods mentioned in [13], model validation can
+be performed and unsatisfied constraints with respect to a
+specific instance model can be detected.
+C. Model-based Code Generation
+We employ model-to-text generation techniques to pro-
+duce middleware-specific code that integrates individual sub-
+components into the vehicle runtime. For models adhering
+to the OMG MOF standard, the OMG MOF Model to Text
+Transformation Language (MOFM2T) specification defines a
+standard method for generating textual artifacts from MOF-
+based models. We use Acceleo [22], a model-to-text gener-
+ation tool, to generate code from the information contained
+within instance models.
+The code generation process takes three inputs: the meta-
+model, the instance model, and a code generation template.
+In Acceleo, templates are defined using the Acceleo Query
+Language (AQL). As discussed previously in Section IV-
+C, the core algorithms of subcomponents are generated
+by LLMs and are middleware-independent. Here, model-
+based generation serves the purpose of bridging these LLM-
+generated modules with the system runtime. To integrate sub-
+components into different systems with varying middleware
+architectures, separate generation templates must be defined
+for each middleware.
+An example code template for generating ROS-specific
+code to integrate LLM-generated software components in
+our demonstration scenario is presented in Listing 5. The
+red text indicates AQL operations, including the entry point
+of generation. The green text represents comments, which
+also provide clarification and refer to the main Acceleo class
+implementation. The blue text denotes AQL queries. These
+queries are written using meta-information (e.g., class and
+property definitions) from the meta model and are used to
+retrieve specific objects defined in the instance model. The
+rest of texts are predefined static codes constructing the class
+of a ROS node. The initial lines of the template specify
+generation configuration, including the entry point, which in
+our case is the EventChain class. We then iterate over each
+SoftwareNOde within the event chain and retrieve required
+attributes through AQL queries, generating a corresponding
+Python script for each as an individual ROS node that can be
+directly deployed into ROS runtime. The node structure is
+predefined within the template. Signal publishing, subscrip-
+tion mechanisms, and submodule interactions are generated
+based on the data preserved in the instance model. In general,
+each generated ROS node receives signals, passes them to
+the corresponding LLM-generated core module, obtains the
+result, and then publishes it for subsequent processing.
+Listing 5: Acceleo template for ROS node generation
+[template public main(eventchain : EventChain)]
+[comment @main /]
+[for (node:SoftwareNode|eventchain.software)]
+[file (node.name.toLowerCase().concat(’ node.py’), false,
+UTF-8’)]
+... (Import statements omitted for brevity)
+class [node.name.concat(’ node’)/](Node):
+def __init__(self):
+super().__init__(’[node.name.concat(’ node’)/]’)
+self.[node.name/] = [node.name/]()
+[for (data : Data | node.input)]
+self.[data.name/] = None
+[/for]
+[for (data : Data | node.input)]
+self.[data.name/]_subscriber = self.create_subscription(
+[data.messageType.tokenize(’/’)->last()/],
+"[data.topicName/]", self.[data.name/]_callback,
+qos_profile=10)
+[/for]
+[for (data : Data | node.output)]
+self.[data.name/]_publisher= self.create_publisher(
+[data.messageType.tokenize(’/’)->last()/],
+"[data.topicName/]", qos_profile=10)
+Fig. 3: Generated instance model for the AEB case study
+[/for]
+self.timer = self.create_timer(1.0/[node.frequency/],
+self.execute)
+[for (data : Data | node.input)]
+def [data.name/]_callback(self, data):
+self.[data.name/] = data.[data.fieldName/]
+[/for]
+def execute(self):
+[for (data : Data | node.input)]
+if self.[data.name/] is None:
+self.get_logger().warn("msg not received")
+return
+[/for]
+output = self.[node.name/].execute([for (data : Data |
+node.input)][data.name/]=self.[data.name/][if
+(node.input->indexOf(data) <>
+node.input->size())], [/if][/for])
+[for (data : Data | node.output)]
+[data.name/]_msg =
+[data.messageType.tokenize(’/’)->last()/]()
+[data.name/]_msg.[data.fieldName/] = output[’data.name’
+/]
+self.[data.name/]_publisher.publish([data.name/]_msg)
+[/for]
+... (ROS main function definition omitted for brevity)
+[/file]
+[/for]
+[/template]
+VI. C ASE STUDY
+In this section, we demonstrate the proposed automotive
+
+--------------------------------------------------
+
+### REFERENCES ###
+REFERENCES
+[1] “The case for an end-to-end automotive-software platform,” https://
+www.mckinsey.com/industries/automotive-and-assembly/our-insights/
+the-case-for-an-end-to-end-automotive-software-platform, accessed:
+2025-03-28.
+[2] A. Matarazzo and R. Torlone, “A survey on large language models
+with some insights on their capabilities and limitations,” 2025.
+[Online]. Available: https://arxiv.org/abs/2501.04040v1
+[3] A. Phatale and A. Kaushik, “Generative ai adoption in automotive
+vehicle technology: Case study of custom gpt,” Journal of Artificial
+Intelligence & Cloud Computing , vol. 3, pp. 1–5, 11 2024.
+[4] N. Petrovic, K. Lebioda, V . Zolfaghari, A. Schamschurko, S. Kirchner,
+N. Purschke, F. Pan, and A. Knoll, “Llm-driven testing for autonomous
+driving scenarios,” in 2024 2nd International Conference on Founda-
+tion and Large Language Models (FLLM) , 2024, pp. 173–178.[5] F. Heckmann and R. M ¨unzenberger, “Event-chain-centric architecture
+design of driver assistance systems,” http://inchron.com/wp-content/
+uploads/2021/12/ESE21 Muenzenberger Heckmann.pdf, 2021,
+accessed: 2025-04-07.
+[6] P. Iyenghar, L. Huning, and E. Pulvermueller, “Automated end-to-end
+timing analysis of autosar-based causal event chains,” in 15th Inter-
+
+--------------------------------------------------
+
+## FULL REPORT CONTENT ##
+
+Automating Automotive Software Development:
+A Synergy of Generative AI and Formal Methods
+Fengjunjie Pan, Yinglei Song, Long Wen, Nenad Petrovic, Krzysztof Lebioda and Alois Knoll
+Abstract — As the automotive industry shifts its focus toward
+software-defined vehicles, the need for faster and reliable
+software development continues to grow. However, traditional
+methods show their limitations. The rise of Generative Artificial
+Intelligence (GenAI), particularly Large Language Models
+(LLMs), introduces new opportunities to automate automotive
+software development tasks such as requirement analysis and
+code generation. However, due to the complexity of automotive
+systems, where software components must interact with each
+other seamlessly, challenges remain in software integration and
+system-level validation. In this paper, we propose to combine
+GenAI with model-driven engineering to automate automotive
+software development. Our approach uses LLMs to convert
+free-text requirements into event chain descriptions and to gen-
+erate platform-independent software components that realize
+the required functionality. At the same time, formal models are
+created based on event chain descriptions to support system
+validation and the generation of integration code for integrating
+generated software components in the whole vehicle system
+through middleware. This approach increases development
+automation while enabling formal analysis to improve system
+reliability. As a proof of concept, we used GPT-4o to implement
+our method and tested it in the CARLA simulation environment
+with ROS2 middleware. We evaluated the system in a simple
+Autonomous Emergency Braking scenario.
+I. I NTRODUCTION
+Over the past decade, the automotive industry has been
+undergoing a transformation from the traditional vehicles
+focused on mechanical systems to software-defined vehi-
+cles (SDVs). As the amount of software in vehicles increases,
+the complexity of automotive software development is grow-
+ing rapidly. Modern cars are now estimated to be about five
+times more complex than they were just a few years ago [1].
+Meanwhile, productivity in software development is increas-
+ing only slowly, which creates a widening gap between rising
+demands and the available development capacity.
+Recently, the emergence of Generative Artificial In-
+telligence (GenAI), particularly Large Language Models
+(LLMs), has provided new possibilities for automating tasks
+across various domains, thanks to their strong capabilities
+in text understanding and generation [2]. Their potential is
+now being explored in the automotive sector as well [3], [4].
+LLMs show promise for tasks such as requirement analysis,
+documentation, and even code generation. However, several
+challenges limit their practical application in the automotive
+domain.
+F. Pan, Y . Song, L. Wen, N. Petrovic, K. Lebioda, A. Knoll are
+with Robotics, Artificial Intelligence and Real-Time Systems, School of
+Computation, Information and Technology, Technical University of Munich,
+Munich, Germany. {panf, syin, wenl, pne, lebioda, knoll }@in.tum.deAutomotive systems are highly complex, involving nu-
+merous software and hardware components interacting with
+each other. These systems typically follow a layered soft-
+ware architecture, which promotes modularity and scalability
+through the use of middleware. Although LLMs can assist
+in generating small software modules, creating complete and
+dependable system-level software remains a significant chal-
+lenge. Furthermore, integrating these LLM-generated com-
+ponents into existing vehicle systems adds another layer of
+complexity. In addition, automotive platforms often require
+strict guarantees related to safety, real-time performance, and
+reliability. These constraints are difficult to analyze using
+purely statistical AI models. In such cases, system validation
+often depends on formal methods and expert review.
+In this work, we aim to accelerate automotive software de-
+velopment by combining the generative capabilities of LLMs
+with the rigor of formal methods. In the automotive domain,
+system behavior is often described using the event chain
+concept [5], which breaks down high-level software function-
+ality into smaller, well-defined processing steps with clearly
+specified inputs and outputs. Event chains are frequently
+used not only to guide software implementation but also to
+support system analysis [6]. Building on this concept, we
+introduce an event chain-driven development approach based
+on an agentic workflow that coordinates multiple specialized
+LLMs. Our process begins by using an LLM to extract
+functional software behaviors from natural language require-
+ments. These behaviors are structured into event chains,
+where each step is described as a subcomponent, representing
+a modular unit of functionality. For each subcomponent,
+middleware-independent software is generated using a code-
+specific LLM. In parallel, a formal representation of the
+event chain, e.g., in Eclipse Modeling Framework (EMF)
+format, is derived via a model-specific LLM. The formal
+event chain model allows for early-stage system validation
+and facilitates post-analysis. At the same time, the formal
+model enables model-based code generation to integrate
+subcomponents into the overall runtime environment. The
+completed software is then deployed to the vehicle platform
+or a simulation environment for further testing and analysis.
+We demonstrate the proposed approach in a basic Au-
+tonomous Emergency Braking (AEB) scenario within a
+ROS2-based simulation environment using the CARLA sim-
+ulator [7]. As the capabilities of cutting-edge LLMs are
+evolving on a daily basis, we do not intend to benchmark
+and identify the most suitable LLM for each individual step.
+Instead, we aim to provide a showcase of the proposed
+method. Thus, the well-known, general-purpose LLM, Ope-arXiv:2505.02500v1 [cs.SE] 5 May 2025
+nAI’s GPT-4o, is employed for event chain construction,
+code generation, and formal modeling. This demonstration
+highlights that the proposed method can significantly au-
+tomate the automotive software development process while
+retaining the ability to perform further system analysis and
+validation.
+II. R ELATED WORK
+Our literature review focuses on the use of generative
+AI and model-based formal methods in automotive software
+development.
+Numerous studies have investigated the use of LLMs to
+generate automotive-related code from textual descriptions.
+Abdalla et al. [8] investigated fine-tuning small open-source
+LLMs to generate low-level vehicle control functions in
+graphical programming languages for model-based devel-
+opment environments, such as MATLAB Simulink. The
+resulting models were subsequently used to generate C code
+via traditional model-based techniques. Patil et al. [9]
+focused on generating industrial-grade C code for automotive
+embedded systems using LLMs. Their work supports both
+high-level and low-level textual specifications, including the
+formal ANSI/ISO C Specification Language, and integrates
+formal code verification tools to analyze the generated out-
+put. Nouri et al. [10] proposed an iterative approach for
+generating safety-critical vehicle functions. They combined
+Python code generation with the esmini simulation environ-
+ment and predefined test cases. If the generated code failed
+the test, the LLM was prompted again with the test results
+and previous code to trigger a correction cycle. These works
+demonstrate that modern LLMs are capable of producing
+syntactically and semantically valid code for automotive
+applications. However, they primarily focus on generating
+isolated functional scripts and do not address the challenges
+of integrating multiple software components or how these
+components interact within a complete vehicle system.
+In parallel, advanced model-based approaches have been
+widely used to support system-level integration and analysis
+in automotive domain. Vinoth Kannan [11] provided an
+overview of model-based methods in automotive systems,
+highlighting how they can improve quality and reduce de-
+velopment time through verification and automated code
+generation. Holtmann et al. [12] presented a comprehensive
+model-based development pipeline, starting from system
+architecture in SysML to software design and integration.
+They proposed automating the transformation from SysML
+models to AUTOSAR-compliant software models, which en-
+ables seamless software integration into the vehicle runtime.
+Our previous work [13] explored the use of formal models
+to represent vehicle software and hardware for analyzing
+resource allocation issues. We also utilized model-based
+code generation to automate deployment-related software.
+These studies confirm the strengths of model-based tech-
+niques in automotive development. However, a key challenge
+remains for the usage of model-based method is signifi-
+cant domain expertise required to construct and use formal
+models. Recently, several works [14]–[16] have exploredhow advanced LLMs can be leveraged to generate model
+components automatically. This opens new opportunities to
+combine generative AI and formal methods to automate the
+development of automotive software systems.
+Therefore, this paper investigates the integration of gener-
+ative AI and model-based engineering for automotive soft-
+ware development. We propose an agent-based workflow
+that utilizes state-of-the-art LLMs for requirement analysis,
+function-level code generation, and formal model creation.
+In addition, model-based methods are employed for system-
+level analysis and software integration. The key benefit of
+our approach lies in accelerating software development while
+supporting formal system analysis and validation.
+III. A GENTIC WORKFLOW
+Our proposed method integrates multiple LLMs and
+model-based techniques within an agentic workflow. The
+entire software development process follows an event chain-
+driven approach. This approach automates the generation of
+automotive software, facilitates seamless system integration,
+and enables system-level verification.
+The workflow begins with the interpretation of natural
+language requirements, specifications and design decisions.
+A general-purpose LLM is used to extract the software
+behavior from these requirements, which is then translated
+into an event chain description (Section IV-A). Each step in
+the event chain represents a subcomponent with explicitly
+defined inputs and outputs.
+In typical automotive software development, some soft-
+ware components and signals may already exist within the
+software base of the system. The LLM should consider this
+context when designing the target software. In the end, the
+resulting event chain describes both existing and not-yet-
+implemented subcomponents, along with their interactions
+through input and output signals. In addition, it captures
+the implementation logic of each subcomponent as extracted
+from the requirements (mainly functional requirements, serv-
+ing as the basis for automated software generation), and,
+where applicable, includes software properties such as tim-
+ing or resource constraints (to support model-based system
+analysis).
+Afterwards, the descriptions of not-yet-implemented sub-
+components in the event chain are identified and passed to
+a code-specific LLM for generating platform-independent
+function code (Section IV-C). By platform-independent, we
+refer to code decoupled from specific middleware, operating
+systems, or hardware dependencies. These generated compo-
+nents adhere to the specifications defined in the event chain.
+On the other hand, existing components from the software
+base are reused rather than regenerated.
+In parallel, a formal representation of the event chain is
+constructed using a modeling-specific LLM (Section IV-B).
+This produces a system model instance conforming to a
+predefined event chain meta model. The formal model can
+capture both the event chain’s architectural structure and any
+relevant system properties. In addition, formal constraints
+will be extracted and formalized from the design decisions,
+Instance model
+(e.g., in XMI)Meta Model
+(e.g., in Ecore)
+Requirements,
+specifications,
+design decisionsFormal constraints
+(e.g., in OCL)
+Event chain
+generationLLM
+Event chain
+description
+(e.g., in JSON)Model generationConstraint generationLLM
+LLM
+Software database Component filterDescription of 
+Software Code generationLLMEarly phase
+validation
+Function codeModel-based
+code generationIntegration-related
+codeSimulationPost validation and anlysis
+Code template
+LLM-based procedures Model-based formal methodsFig. 1: Proposed workflow for automated automotive software development. Inputs to the workflow are highlighted in green,
+processing steps in blue, and intermediate artifacts in grey.
+specifications and requirements (mainly non-functional re-
+lated). These formal models and constraints support early-
+stage system validation (Section V-B) and facilitates post-
+simulation analysis by allowing the integration of runtime
+metrics back into the model. The formal instance model
+also enables model-based code generation, producing the
+integration code that connects individual subcomponents into
+the vehicle runtime system (Section V-C). The advantage
+of model-driven integration lies in its analytical approach,
+which significantly reduces the uncertainty compared to
+purely statistical approaches driven by LLMs. As a result,
+integration can be performed in a deterministic way, allowing
+testing efforts to concentrate on validating the correctness
+of the generated software components and their compliance
+with the functionality defined in requirements, rather than
+resolving integration errors or interface mismatches.
+Finally, the generated software system is deployed to
+the target platform, which may include hardware-in-the-loop
+configurations or simulation environments. For example, in
+our case study, deployment is conducted in the CARLA sim-
+ulator using ROS 2 middleware. Simulation-based tests are
+then executed to verify the system’s functional correctness
+against the initial requirements. During runtime, behavioral
+data and system metrics can be collected and inserted into
+the formal model, enabling further analysis and refinement
+through iterative development cycles.
+IV. LLM- BASED GENERATION
+The proposed workflow leverages Large Language Models
+(LLMs) at multiple stages for both requirement analysis and
+artifact generation. In the first step, an LLM is used to
+derive a structured event chain description from the provided
+requirements. Subsequently, the event chain description is
+modeled into an instance model by an LLM, which then
+serves as a crucial input for model-based analysis and
+further development. In addition, LLMs are also employed
+to generate software components that are not available in the
+existing software base.A. Event Chain Generation
+An event chain captures the data flow within a system
+and describes how different subcomponents interact with one
+another. Generating the event chain description is a core
+enabler of the proposed method for automated automotive
+software development.
+The primary input for this step is a set of requirements
+that define the expected behavior of the target system. In
+complex automotive environments, reusing existing software
+can significantly improve productivity. To support this, in-
+formation about the existing software base is made available
+during event chain generation, allowing the system to incor-
+porate previously developed components where applicable.
+In addition to software reuse, many vehicle signals are often
+predefined at runtime. This runtime signal information is also
+supplied as input for generating the event chain.
+The prompt used guide the LLM in creating the event
+chain is provided in Listing 1. We utilize a standardized
+JSON format to structure the relevant software and signal
+information. This includes component names, textual de-
+scriptions, implementation logic, and detailed input/output
+signal specifications. The JSON template for software com-
+ponents is presented in Listing 2, while the structure for
+signal descriptions is shown in Listing 3. As our prototype
+is implemented using ROS, the signal templates in our
+examples include ROS-specific fields such as topic names
+and message types. However, this approach is not limited to
+ROS. A more generalized signal definition, such as Vehicle
+Signal Specification (VSS), can also be adopted. This would
+require adapters during implementation to convert standard-
+ized signal formats into platform-specific implementations.
+However, the discussion of standardized signal representation
+and its integration with runtime middleware is beyond the
+scope of this paper.
+The resulting event chain is represented as a list of soft-
+ware components in JSON format. Each component defines
+its required input/output signal and its implementation logics
+based on the requirements. This structured event chain de-
+scription is then passed on to the next stage for software code
+generation (Section IV-C) and instance model generation
+(Section IV-B).
+Listing 1: Prompt for event chain generation
+# Task description
+You are an automotive software system developer. Your goal
+is to design a structured event chain description in JSON
+format for the Autonomous Emergency Braking system, using
+existing components and signals/messages where possible.
+If necessary, define new software components that adhere
+to the same format.
+# Guidelines for Building the Event Chain
+1. Reuse existing components and topics in the event chain
+if available.
+2. The event chain should contains only necessary inputs
+and outputs of each components.
+3. The component sequence in the generated json
+description is the software sequence in the event chain.
+# Template for Event Chain Description
+Use the structure below for each component in the event
+chain description:
+{{Template structure of software descriptions in event
+chain}}
+# Existing software components
+{{Description of existing software (using the same
+template)}}
+# Existing signals/messages
+{{Description of existing signals}}
+# Generated Event Chain
+Listing 2: Json Template for describing software components
+[{
+"name": "ComponentName",
+"description": "What the component does. What is the
+implementation logic based on requirements",
+"input": [
+{
+"topic": "/some/input_topic",
+"message_type": "some_msgs/MessageType",
+"qos_profile": "quality_of_service_profile",
+"values": [
+{
+"name": "input_value_name",
+"field": "actual_field_name",
+"description": "What this input value means"
+}
+]
+}
+],
+"output": [
+(follow the same structure as for the input data)
+]
+}]
+Listing 3: Json structure for signal data information
+[{
+"Topic Name": "/topic_name",
+"Message Type": "MessageType",
+"qos_profile": "quality_of_service_profile",
+"Message Definition": [
+{
+"Field": "field_name",
+"Type": "dataType",
+"Description": "What this value means"
+}
+]
+}]
+B. Model and Constraints Creation
+We follow the model generation approach proposed in
+[15] to generate a formal event chain model. This method
+leverages the capabilities of LLMs to generate a conceptualinstance model in JSON format, which is subsequently
+parsed into a valid instance model file.
+This step takes as input a self-defined event chain meta
+model (Section V-A) along with the event chain description
+produced from the previous step (Section IV-A). In our
+implementation, the event chain description is provided in
+a customized JSON format. Following the strategy outlined
+in [15], we manually construct a one-shot example com-
+prising the event chain meta model, a similar event chain
+description, and the expected instance model. This example
+is used to guide the LLM in generating the conceptual in-
+stance model for the target system. The output from the LLM
+is then parsed by the instance modeler introduced in [15],
+resulting in a structured instance model that conforms to the
+predefined meta model. This model serves as a foundation
+for subsequent tasks, including model-based system analysis
+and model-driven code generation (Section V-C).
+The constraint generation is a relatively straightforward
+process, as mentioned in [16]. In our case study, we employ
+the Object Constraint Language (OCL) [17] as the constraint
+language for model-based formal constraint description. It
+has logic similar to first-order logic and is designed for MOF-
+based model validation. We simply pass the meta model
+information and natural language text to the LLM, and the
+corresponding OCL constraints are generated. Examples of
+generated OCL constraints are presented in Section V-B
+C. Code generation
+Code generation is a central focus of this work. Automo-
+tive software, even for individual features such as AEB, is
+inherently complex. This complexity arises not only from
+the underlying algorithms but also from the challenges
+associated with the runtime integration. In our approach,
+we distinguish between two phases of code generation:
+software code generation and integration code generation.
+This subsection focuses on the first phase.
+We consider each subcomponent described in the event
+chain as a standalone piece of software that can be developed
+and tested independently before integration into the complete
+system. The event chain description of a subcomponent
+includes its behavior and implementation logic, both derived
+from the system requirements. This information is provided
+to the LLM through a structured prompt to guide the gener-
+ation of code for the subcomponents. An example of such a
+prompt is shown in Listing 4.
+The prompt specifies that each subcomponent should be
+implemented as a standalone Python class. The resulting
+class is expected to process input signals directly from the
+middleware and produce outputs in a predefined structure,
+such as a Python dictionary. The primary functionality of the
+subcomponent should be encapsulated within an execute()
+method, which serves as the main entry point for its opera-
+tion. If a subcomponent is stateful, its internal state must be
+fully managed within the class. This design enables a static,
+model-based integration strategy to connect subcomponents
+within the overall vehicle software system (Section V-C).
+Listing 4: Prompt for function code generation
+# Task description
+You are an automotive software developer responsible for
+implementing a submodule for the entire system.
+The submodule must fulfill the given software description
+in JSON format.
+The submodule is middleware-independent.
+A middleware wrapper code (it only passes raw inputs to
+the submodule and routes outputs from it) can be used to
+call the submodule and integrate it into the system.
+# Instructions
+1. The software submodule must be a self-contained,
+standalone script of a Python class with all dependancies.
+2. The submodule functionality should be executed directly
+in the function execute(input1, input2, ...)
+3. The output of function execute(input1, input2, ...) is
+a dict {’output1’:output1, ’output2’: output2, ...}
+4. The input and output data of execute() should strictly
+follow the submodule description.
+5. Do not include any middleware-specific code.
+6. The software submodule must encapsulate all necessary
+logic, data processing, and state management to fulfill
+the system functionality.
+7. If the software component is stateful, the state must
+be fully managed internally within the class.
+8. The class must be designed to work with raw input
+values (as passed by the middleware).
+9. The class uses the name from the submodule description.
+10. Please only implement the submodule, not the function
+of the entire target system.
+# The submodule description
+{{Description of target software extracted from the event
+chain description.}}
+# The generated sub software module is:
+V. M ODEL -BASED FORMAL APPROACH
+The model-based approaches introduced in this work aim
+to generate integration-related code, allowing different com-
+ponents generated by LLMs (Section IV-C) to be integrated
+into the system and function together. At the same time,
+model-based method also enables formal system analysis,
+either through automated tools or by human engineers.
+A. Meta model and instance model
+Models are fundamental elements in any model-based
+methodology. According to the modeling standard, the Ob-
+ject Management Group’s Meta-Object Facility (OMG MOF)
+[18], models are categorized to meta models and instance
+models based on their level of abstraction. The meta model
+defines the abstract information of a group of systems. It
+serves as the modeling syntax or schema for constructing cor-
+responding instance models. In contrast, an instance model
+captures detailed information about a specific system and
+adheres to the structure defined by its corresponding meta
+model. Widely adopted modeling languages and tools such as
+Unified Modeling Language (UML) [19], Systems Modeling
+Language (SysML) [20] and Eclipse Modeling Framework
+(EMF) [21] are compatible to this standard.
+To formally model event chains, we developed an example
+meta-model using EMF, as illustrated in Figure 2. In our
+meta model, an event chain may consist of multiple soft-
+ware components and associated data elements. These data
+elements represent input and output signals of the software
+components. Attributes such as execution frequency, data
+Fig. 2: An example meta model for event chain
+topics, and message types are specified. These details are es-
+sential for enabling model-based code generation. Additional
+attributes can also be defined in the meta model for enabling
+further system analysis. However, comprehensive modeling
+strategies for enabling model-based system analysis will not
+be further discuss in this paper.
+In this work, we employ LLMs to automatically generate
+instance models based on our defined meta-model (Sec-
+tion IV-B). An example of such a generated instance model,
+depicting the a basic AEB system , is shown in Figure 3. This
+AEB system serves as case study scenario in Section VI.
+B. Constraints and Model Validation
+In the model-based domain, constraints are used to express
+rules that an instance model should obey but which cannot
+be defined in the meta model. In this work, we utilize LLMs
+to generate OCL constraints for requirements, specifications,
+and design decisions (primarily non-functional related) that
+can be used for model validation (Section IV-B).
+For software described as an event chain, typical design
+constraints may include: 1. Each software node must have
+at least one input data and at least one output data. 2.The
+frequency of the software node in the next step must be
+higher than or equal to the frequency of the current software
+node. Examples of generated OCL constraints are as follows:
+context SoftwareNode
+inv HasInputAndOutputData:
+self.input->notEmpty() and self.output->notEmpty()
+inv NextstepFrequencyEqualOrHigher:
+self.nextstep->notEmpty() implies (self.nextstep.
+frequency >= self.frequency)
+Using the Eclipse OCL Plugin or other solver-based
+formal methods mentioned in [13], model validation can
+be performed and unsatisfied constraints with respect to a
+specific instance model can be detected.
+C. Model-based Code Generation
+We employ model-to-text generation techniques to pro-
+duce middleware-specific code that integrates individual sub-
+components into the vehicle runtime. For models adhering
+to the OMG MOF standard, the OMG MOF Model to Text
+Transformation Language (MOFM2T) specification defines a
+standard method for generating textual artifacts from MOF-
+based models. We use Acceleo [22], a model-to-text gener-
+ation tool, to generate code from the information contained
+within instance models.
+The code generation process takes three inputs: the meta-
+model, the instance model, and a code generation template.
+In Acceleo, templates are defined using the Acceleo Query
+Language (AQL). As discussed previously in Section IV-
+C, the core algorithms of subcomponents are generated
+by LLMs and are middleware-independent. Here, model-
+based generation serves the purpose of bridging these LLM-
+generated modules with the system runtime. To integrate sub-
+components into different systems with varying middleware
+architectures, separate generation templates must be defined
+for each middleware.
+An example code template for generating ROS-specific
+code to integrate LLM-generated software components in
+our demonstration scenario is presented in Listing 5. The
+red text indicates AQL operations, including the entry point
+of generation. The green text represents comments, which
+also provide clarification and refer to the main Acceleo class
+implementation. The blue text denotes AQL queries. These
+queries are written using meta-information (e.g., class and
+property definitions) from the meta model and are used to
+retrieve specific objects defined in the instance model. The
+rest of texts are predefined static codes constructing the class
+of a ROS node. The initial lines of the template specify
+generation configuration, including the entry point, which in
+our case is the EventChain class. We then iterate over each
+SoftwareNOde within the event chain and retrieve required
+attributes through AQL queries, generating a corresponding
+Python script for each as an individual ROS node that can be
+directly deployed into ROS runtime. The node structure is
+predefined within the template. Signal publishing, subscrip-
+tion mechanisms, and submodule interactions are generated
+based on the data preserved in the instance model. In general,
+each generated ROS node receives signals, passes them to
+the corresponding LLM-generated core module, obtains the
+result, and then publishes it for subsequent processing.
+Listing 5: Acceleo template for ROS node generation
+[template public main(eventchain : EventChain)]
+[comment @main /]
+[for (node:SoftwareNode|eventchain.software)]
+[file (node.name.toLowerCase().concat(’ node.py’), false,
+UTF-8’)]
+... (Import statements omitted for brevity)
+class [node.name.concat(’ node’)/](Node):
+def __init__(self):
+super().__init__(’[node.name.concat(’ node’)/]’)
+self.[node.name/] = [node.name/]()
+[for (data : Data | node.input)]
+self.[data.name/] = None
+[/for]
+[for (data : Data | node.input)]
+self.[data.name/]_subscriber = self.create_subscription(
+[data.messageType.tokenize(’/’)->last()/],
+"[data.topicName/]", self.[data.name/]_callback,
+qos_profile=10)
+[/for]
+[for (data : Data | node.output)]
+self.[data.name/]_publisher= self.create_publisher(
+[data.messageType.tokenize(’/’)->last()/],
+"[data.topicName/]", qos_profile=10)
+Fig. 3: Generated instance model for the AEB case study
+[/for]
+self.timer = self.create_timer(1.0/[node.frequency/],
+self.execute)
+[for (data : Data | node.input)]
+def [data.name/]_callback(self, data):
+self.[data.name/] = data.[data.fieldName/]
+[/for]
+def execute(self):
+[for (data : Data | node.input)]
+if self.[data.name/] is None:
+self.get_logger().warn("msg not received")
+return
+[/for]
+output = self.[node.name/].execute([for (data : Data |
+node.input)][data.name/]=self.[data.name/][if
+(node.input->indexOf(data) <>
+node.input->size())], [/if][/for])
+[for (data : Data | node.output)]
+[data.name/]_msg =
+[data.messageType.tokenize(’/’)->last()/]()
+[data.name/]_msg.[data.fieldName/] = output[’data.name’
+/]
+self.[data.name/]_publisher.publish([data.name/]_msg)
+[/for]
+... (ROS main function definition omitted for brevity)
+[/file]
+[/for]
+[/template]
+VI. C ASE STUDY
+In this section, we demonstrate the proposed automotive
+software development approach using a basic AEB scenario.
+A. Experimental Setup
+The LLM-based generation steps were implemented using
+GPT-4o. We utilized Eclipse IDE 2022-06 to create the
+event chain meta-model (Fig. 2) and to present the generated
+instance model (Fig. 3). The OCL All-In-One SDK (version
+6.17.1.v20220309-0840) was used for model validation. The
+Acceleo tool (version 3.7.11.202102190929) served as the
+engine for model-to-text code generation.
+Besides, we set up a CARLA simulation to verify the
+generated code. We utilize CARLA version 0.9.15, and
+choose Town 01 as the map. A straight lane before the traffic
+light replicates a typical scenario that could trigger the brake
+system. A stopped vehicle is spawned before the red light,
+and our ego vehicle should stop before crashing. A Carla-
+ros-bridge has been built to exchange sensor and actuator
+information between ROS and the CARLA environment.
+Specifically, the ROS2 Foxy version of the bridge is used
+for improved real-time performance. The simulation runs on
+a PC equipped with an Intel Core i7-6850K CPU, 32 GB
+RAM, and two Nvidia GTX 1080 GPUs.
+B. AEB Case Study
+The following requirements were used for generating the
+AEB software:
+•The system shall receive distance and relative speed data
+from simulated or physical lidar sensors.
+•The system shall calculate Time-To-Collision (TTC)
+using object distance and relative speed.
+•The system shall signal an emergency braking condition
+when TTC falls below 1.0 seconds.
+•The system shall determine brake force based on TTC
+thresholds: Full brake if TTC <1.0s, Partial brake if
+1.0s≤TTC<2.0s, No brake if TTC ≥2.0s
+•The system shall output a normalized brake force (0.0
+to 1.0).
+•The system shall command braking force to the actuator
+based on the Braking Force Command output.
+As a preliminary step, we constructed two ROS nodes
+to serve as existing software components. The ObjectDetec-
+tionnode integrates the open-source pointcloud tolaserscan
+package [23], which converts LiDAR point cloud data from
+CARLA into LaserScan messages containing the shortest
+distances to nearby obstacles. The VehicleControl node re-
+ceives control commands and translates them into vehicle
+control messages for braking and other maneuvers. Addi-
+tionally, two dummy software components were included
+for simulation purposes. Input information about the existing
+ROS topics and their message definitions was also collected.
+The event chain generation follows the process described
+in Section IV-A. The resulting AEB event chain includes
+four software components. To illustrate the outcome, we
+provide a manually created activity diagram using PlantUML
+(Fig. 4). The event chain begins with the ObjectDetection
+node, which receives LiDAR point cloud data and outputs
+aLaserScan message with object distances. This message,
+along with current vehicle status, is passed to the generated
+TTC Calculation node to compute the shortest Time-To-
+Collision. The Braking Decision node then determines the
+required braking force, and the Carla Vehicle Control node
+sends the corresponding control commands to the vehicle.
+Receive pointcloud data
+Input: /carla/ego_vehicle/lidar
+Output: /aeb/object_distanceProcess with ObjectDetection
+Input: /aeb/object_distance, /carla/ego_vehicle/status
+Output: /aeb/decision/ttc_valueProcess with TTC_Calculation
+Input: /aeb/decision/ttc_value
+Output: /aeb/decision/braking_commandProcess with BrakingDecision
+Input: /carla/ego_vehicle/status, /aeb/decision/braking_command
+Output: /carla/ego_vehicle/vehicle_control_cmdProcess with VehicleControl
+Send brake_command
+Fig. 4: Illustration of generated AEB event chain
+By comparing the event chain description with the listof existing components, we identified that TTC Calculation
+andBrakingDecision were not yet implemented and needed
+to be generated. We passed their descriptions to the prompt
+in Listing 4 and generated the function code as individual
+Python classes for each component. Fig. 5a presents the
+generated code for TTC Calculation .
+Simultaneously, the entire event chain was modeled as
+a formal EMF instance (Fig. 3) based on the event chain
+meta-model (Fig. 2) for further inspection and validation.
+The instance model successfully passed the early-phase
+validation of the OCL constraints presented in Section V-
+B using Eclipse OCL. Afterwards, the instance model was
+utilized via model-based code generation (Section V-C) to
+generate integration-related code that integrates the function
+code of each component as ROS nodes. An example of
+generated code for running the TTC Calculation component
+is presented in Fig. 5b.
+The AEB software was executed in the predefined sim-
+ulation scenario. The generated AEB module was success-
+fully triggered, and the ego vehicle responded by braking
+in time before reaching the stationary vehicle. This basic
+AEB system demonstrates the feasibility of our development
+approach.
+C. Discussion
+In a typical software development project, testing, includ-
+ing unit testing, integration testing, and system testing, is es-
+sential to guarantee the quality of the resulting software arti-
+facts. In the proposed workflow, the integration codes follow
+the concept of correctness-by-construction. Their correctness
+is ensured by the formal model information and predefined
+code templates used during model-based code generation.
+Since the function codes are generated by statistical LLMs,
+their correctness must be verified through rigorous testing
+procedures. Therefore, the testing efforts in our workflow
+should focus primarily on unit testing and system testing of
+the generated functional code components.
+In our case study, we only constructed a simple test
+case that served as a system test to validate the overall
+functionality of the AEB system. The test verified that the
+ego vehicle successfully detected a stationary obstacle and
+triggered emergency braking within the CARLA simulation.
+We also observed that the LLM initially assumed the ob-
+stacle was static, directly treating the ego vehicle’s speed as
+the relative speed between the ego vehicle and the obstacle.
+This oversimplification led to inaccuracies when dealing with
+dynamic scenarios. To address this issue, we refined the
+system requirements by specifying that the relative speed
+between the ego vehicle and detected obstacles must be cal-
+culated based on two distance samples and the corresponding
+time interval. After incorporating this requirement, the LLM
+successfully regenerated a stateful TTC Calculation class
+capable of accurately computing relative speeds. This experi-
+ence highlights the critical importance of providing complete
+and precise input requirements for the proposed automated
+code generation approach. While the integration code bene-
+fits from model-based guarantees, the functional correctness
+(a) Function code of TTC calculation
+ (b) Integration-related code (partial)
+ (c) Testing in CARLA simulator
+Fig. 5: Generated code (partial) for AEB and testing in CARLA simulator
+of LLM-generated modules remains highly dependent on the
+quality and completeness of the input specifications.
+VII. C ONCLUSION
+In this work, we introduced an agentic approach that
+combines the emerging capabilities of generative AI with
+model-driven formal methods to automate the development
+of automotive software. The approach leverages LLMs to
+analyze requirements, construct the overall software design
+as an event chain model, and generate platform-independent
+software function code as standalone classes. The formal
+event chain model serves as a basis for system validation
+and is also used to generate integration code, enabling the
+seamless connection of independent software components to
+the broader vehicle system via middleware. The resulting
+system can be deployed and evaluated in a simulation envi-
+ronment, such as CARLA. Simulation data can then be fed
+back into the event chain model to support further analysis,
+particularly in relation to non-functional requirements. We
+demonstrated the feasibility of this approach through a basic
+AEB scenario.
+Our future work will focus on extending the evaluation to
+larger event chains involving a greater number of software
+components. This will allow us to assess the scalability
+and robustness of the proposed approach in more complex
+automotive scenarios. In parallel, we plan to investigate
+automated test generation techniques for validating LLM
+generated software.
+REFERENCES
+[1] “The case for an end-to-end automotive-software platform,” https://
+www.mckinsey.com/industries/automotive-and-assembly/our-insights/
+the-case-for-an-end-to-end-automotive-software-platform, accessed:
+2025-03-28.
+[2] A. Matarazzo and R. Torlone, “A survey on large language models
+with some insights on their capabilities and limitations,” 2025.
+[Online]. Available: https://arxiv.org/abs/2501.04040v1
+[3] A. Phatale and A. Kaushik, “Generative ai adoption in automotive
+vehicle technology: Case study of custom gpt,” Journal of Artificial
+Intelligence & Cloud Computing , vol. 3, pp. 1–5, 11 2024.
+[4] N. Petrovic, K. Lebioda, V . Zolfaghari, A. Schamschurko, S. Kirchner,
+N. Purschke, F. Pan, and A. Knoll, “Llm-driven testing for autonomous
+driving scenarios,” in 2024 2nd International Conference on Founda-
+tion and Large Language Models (FLLM) , 2024, pp. 173–178.[5] F. Heckmann and R. M ¨unzenberger, “Event-chain-centric architecture
+design of driver assistance systems,” http://inchron.com/wp-content/
+uploads/2021/12/ESE21 Muenzenberger Heckmann.pdf, 2021,
+accessed: 2025-04-07.
+[6] P. Iyenghar, L. Huning, and E. Pulvermueller, “Automated end-to-end
+timing analysis of autosar-based causal event chains,” in 15th Inter-
+national Conference on Evaluation of Novel Approaches to Software
+Engineering , 2020, pp. 477–489.
+[7] A. Dosovitskiy, G. Ros, F. Codevilla, A. Lopez, and V . Koltun, “Carla:
+An open urban driving simulator,” in Conference on robot learning .
+PMLR, 2017, pp. 1–16.
+[8] A. Abdalla, H. Pandey, B. Shomali, J. Schaub, A. M ¨uller, M. Eisen-
+barth, and J. Andert, “Generative artificial intelligence for model-based
+graphical programming in automotive function development,” Novem-
+ber 10 2024, available at SSRN: https://ssrn.com/abstract=5153452 or
+http://dx.doi.org/10.2139/ssrn.5153452.
+[9] M. S. Patil, G. Ung, and M. Nyberg, “Towards specification-driven
+llm-based generation of embedded automotive software,” in Bridging
+the Gap Between AI and Reality , B. Steffen, Ed. Cham: Springer
+Nature Switzerland, 2025, pp. 125–144.
+[10] A. Nouri, J. Andersson, K. Hornig, Z. Fei, E. Knabe, H. Sivencrona,
+B. Cabrero-Daniel, and C. Berger, “On simulation-guided llm-based
+code generation for safe autonomous driving software,” pp. 1–11,
+2025.
+[11] K. Vinoth Kannan, Model-Based Automotive Software Development .
+Cham: Springer International Publishing, 2021, pp. 71–87.
+[12] J. Holtmann, J. Meyer, and M. Meyer, “A seamless model-based
+development process for automotive systems,” 02 2011, pp. 79–88.
+[13] F. Pan, M. Rickert, T. Betz, L. Wen, J. Lin, N. Petrovic, M. Lienkamp,
+and A. Knoll, “Toward software-defined vehicles: From model-based
+engineering to virtualization-based deployment,” IEEE Access , vol. 12,
+pp. 192 127–192 145, 2024.
+[14] N. Petrovic, F. Pan, V . Zolfaghari, and A. Knoll, “Llm-based iterative
+approach to metamodeling in automotive,” 2025.
+[15] F. Pan, N. Petrovic, V . Zolfaghari, L. Wen, and A. Knoll, “Llm-enabled
+instance model generation,” 2025.
+[16] F. Pan, V . Zolfaghari, L. Wen, N. Petrovic, J. Lin, and A. Knoll,
+“Generative ai for ocl constraint generation: Dataset collection and
+llm fine-tuning,” in 2024 IEEE International Symposium on Systems
+Engineering (ISSE) , 2024, pp. 1–8.
+[17] OMG, Object Constraint Language Version 2.4 , Feb. 2014.
+[18] ——, Meta Object Facility , 2016.
+[19] D. Pilone and N. Pitman, UML 2.0 in a Nutshell . ” O’Reilly Media,
+Inc.”, 2005.
+[20] S. Friedenthal, A. Moore, and R. Steiner, A practical guide to SysML:
+the systems modeling language . Morgan Kaufmann, 2014.
+[21] D. Steinberg, F. Budinsky, E. Merks, and M. Paternostro, EMF: eclipse
+modeling framework . Pearson Education, 2008.
+[22] OBEO, “Generate anything from any emf model,” https://eclipse.dev/
+acceleo/, accessed: 2024-03-25.
+[23] “Ros 2 pointcloud <->laserscan converters,” https://github.com/
+ros-perception/pointcloud tolaserscan, accessed: 2025-04-18.

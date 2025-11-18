@@ -1,0 +1,1664 @@
+TECH REPORT: automotive-software-and-electronics-2030-full-report
+SOURCE: automotive-software-and-electronics-2030-full-report.pdf
+============================================================
+
+## KEY SECTIONS ##
+
+### EXECUTIVE SUMMARY ###
+developers), we discuss the implications of the trends and provide an overview of the areas 
+requiring an adaptation to the future landscape. We then offer a way for each player to 
+imagine a shift in orientation that will enable them to act on a concise set of strategy- and 
+operations-focused actions.
+Automotive OEMs need to develop a strategic perspective on SW and electronics
+
+--------------------------------------------------
+
+### METHODOLOGY ###
+Due to the nature of this approach, the market already occurs during the development phase 
+and not only after SOP as for the other models.
+To pressure-test the results of our modeling, we conducted workshops with Global 
+Semiconductor Alliance members in North America, Europe, and Asia. Based on workshop 
+feedback we iterated the models towards the version presented in this report. 
+Automotive software and electronics 2030
+List of abbreviations
+ACES Autonomous driving, connected vehicles, 
+ electrification of the powertrain, shared mobility 
+AD Autonomous driving
+ADAS Advanced driver assistance systems
+ASP Average selling price
+AV Autonomous vehicle
+BEV Battery electric vehicle
+BJB Battery junction box
+BMS Battery management system 
+CAGR Compound annual growth rate
+CMC Cell management controller
+DC/DC Direct current to direct current
+DCU Domain control unit
+E/E Electrical and electronic
+ECU Electronic control unit
+EMS Electronics manufacturing services 
+EV Electric vehicle
+HEV Hybrid electric vehicle
+HV High voltage
+HW Hardware
+ICE Internal combustion engine
+I/O Input/output
+LiDAR Light detection and ranging
+LV Low voltage
+MCFM McKinsey Center for Future Mobility
+OEM Original equipment manufacturer
+OS Operating system
+PHEV Plug-in hybrid electric vehicle
+SOP Start of production
+SW Software
+Automotive software and electronics 2030
+Definitions 
+SAE AV levels1
+Vehicle classes
+Although there is no Europe-wide formal characterization or regulation of vehicle segments, 
+an EU document2 mentions the following classes:
+A: mini cars
+B: small cars
+C: medium cars
+D: large cars
+E: executive cars
+F: luxury cars
+J: sport utility cars (including off-road vehicles)
+M: multi-purpose cars (including pickups)
+S: sports cars  
+1 Source: SAE International J3016
+2 Regulation (EEC) No 4064/89 – Merger Procedure
+Automotive software and electronics 2030
+Important notice
+
+--------------------------------------------------
+
+### INTRODUCTION ###
+standardization, the introduction of ethernet, and the evolution of the E/E architecture, harness 
+variation is expected to be reduced also as more functionality will be defined by SW. While 
+consolidation of ECUs into domain controllers might lead to higher cable volumes, these are likely 
+to have much less variance. While today’s harness market in the high-price segment is primarily 
+driven by customer-specific solutions, the standardization will enable (partial) automation of 
+harness production. Therefore, the average value of the harness per car will decrease, leading to 
+the overall shrinking LV market despite growth of the vehicle base.
+Automotive software and electronics 2030
+Beyond their impact on the business models and 
+operational priorities of individual automotive players, 
+the aforementioned trends will profoundly alter the 
+market’s core value chains and affect all players along 
+the automotive SW and electronics value chain. In the 
+
+--------------------------------------------------
+
+### TECHNOLOGY CATALOG ###
+We distinguish a “base case” with moderate growth in EVs and AVs by 2030 as well as an 
+“accelerated AV adoption case” with a much steeper growth in both vehicle types, but lower
+Automotive software and electronics 2030
+overall vehicle production due to cannibalization of private vehicles production through 
+autonomous shared vehicles. Note that numbers presented in this article refer to the 
+base case except where explicitly stated otherwise. In the vehicle production model, we 
+differentiate production volumes by different categories, i.e., geography, OEM type (volume 
+vs. premium), vehicle class, powertrain type, and SAE AV level. This differentiation is also 
+present within the market models for each element of the automotive SW and E/E market. 
+Hence, depending on the combination of the categories, such as SAE AV level and vehicle 
+class, we assumed different values for the number of components and their ASP where 
+appropriate. 
+Given the significant uncertainty around the emerging SW market and the core elements, 
+such as price points, monetization, sourcing models, and value chain/value capture, the 
+automotive SW market model follows a different logic than those of HW components. 
+The model considers the workforce required to build, maintain, and upgrade individual 
+SW functionalities over time as the key driver of market size, taking into account typical 
+supplier margins for SW as well. The model factors in the number of vehicle platforms and 
+variants across OEMs and tiers, as well as their temporal evolution, are used to obtain a 
+realistic perspective on the market size. To ensure consistency with the other models for E/E 
+components, the applicability of the various SW functions across powertrains and SAE AV 
+levels is also considered. Distribution of the market between OEMs, tier-1 suppliers, and other 
+companies (e.g., IT service providers, engineering service providers) is not taken into account. 
+
+--------------------------------------------------
+
+### STRATEGIC OUTLOOK ###
+obligation to update any forward-looking statements or to conform these forward-looking 
+statements to actual events or developments.
+McKinsey does not assume any responsibility towards any persons for the correctness and 
+completeness of the information contained in this report.
+Automotive software and electronics 2030
+Contacts and 
+authors 
+Content contributors
+Christian Knochenhauer, Senior Expert, Berlin
+Georg Doll, Vice President IoT, Munich
+Martin Kellner, Engagement Manager, Munich
+Silviu Apostu, Consultant, Munich
+Florian Haubner, Consultant, Frankfurt
+Michaela Brandl, Consultant, Munich
+Julia Werra, Consultant, Berlin
+Denis Hörner, Research Analyst, MunichJan Paul Stein is an Engagement Manager in 
+McKinsey’s Munich office. 
+jan_paul_stein@mckinsey.comJohannes Deichmann is an Associate Partner in 
+McKinsey’s Stuttgart office. 
+johannes_deichmann@mckinsey.comOndrej Burkacky is a Partner in 
+McKinsey’s Munich office. 
+ondrej_burkacky@mckinsey.com
+Automotive software and electronics 2030
+
+Advanced Industries – Automotive & Assembly 
+July 2019 
+Copyright © McKinsey & Company 
+Designed by Visual Media Europe
+www.mckinsey.com
+
+--------------------------------------------------
+
+### APPENDIX ###
+Appendix
+Key aspects of the market models 
+The insights of this report were generated based on closely linked qualitative and quantitative 
+
+--------------------------------------------------
+
+### TECHNOLOGY DEFINITION ###
+ —What are the specific trends and drivers of the automotive sector’s SW and E/E growth 
+dynamics and the changing landscape towards 2030? 
+ —How are these drivers going to affect the automotive industry’s long-established value 
+chains?
+ —How can players in and outside of the industry optimally prepare for the upcoming market 
+developments?
+In the following three paragraphs, we provide a short answer to these questions while the 
+remainder of this report will go into detail.
+The insights of this report were generated based on closely linked qualitative and 
+quantitative research. For the qualitative insights, we held interviews with executives in 
+the automotive industry and combined them with the knowledge of internal key experts 
+within our automotive practice to build a holistic view on how ACES trends and additional 
+drivers will influence the automotive SW and E/E market.
+For our quantitative market insights, we built bottom-up market models for each of the 
+core components within the automotive SW and E/E market:
+ —SW development, integration, verification, and validation 
+ —Electronic control units (ECUs)/domain control units (DCUs)
+ —Sensors
+ —Power electronics
+ —Other components (harnesses, controls, switches, displays).
+At the highest level, these models (excluding SW) calculate the market size following the 
+same logic. Market size is the product of the number of a certain component per vehicle, its 
+average selling price (ASP), and the number of vehicles produced in a given year. To achieve 
+the proper granularity of each model, we distinguish the key automotive domains (e.g., 
+advanced driver assistance systems (ADAS), body, infotainment) as well as characteristics 
+such as vehicle segment, original equipment manufacturer (OEM) type, or SAE AV level. 
+The number of vehicles produced each year is provided by a separate model in which we 
+incorporate data from latest McKinsey insights. The size of the automotive SW market is 
+calculated based on the workforce across the supply chain involved in SW topics and the 
+number of vehicle platforms and variants across OEMs and tiers and their change over time.
+
+--------------------------------------------------
+
+### REFERENCES ###
+This report has been prepared by a McKinsey team based on public sources, extensive 
+research, and proprietary information gathered both via in-depth interviews with industry 
+thought leaders and from IHS Markit’s Light Vehicle Production Forecast (2018).
+Neither the report nor any part of its contents is intended or suited to constitute the basis 
+of any investment decision regarding any company operating in the markets covered by this 
+report or any similar markets (including, without limitation, the purchase of any securities of 
+any listed company or in connection with the listing of any company).
+
+--------------------------------------------------
+
+### CONCLUSIONS ###
+have direct implications for HW and SW design on the chip level. Also, the importance of tool 
+chain and services will grow. This growing importance also includes other features that are 
+not directly product related but that are critical to product market success nonetheless. Here 
+again, understanding the end customer’s requirements is crucial. For example, the OEM’s 
+reluctance to create lock-in (e.g., in certain development tool chains) and the desire to reduce 
+integration effort and cost (e.g., through the use of supplier-developed tool chains) need to be 
+carefully weighed against each other. 
+Place your bets wisely
+
+--------------------------------------------------
+
+## FULL REPORT CONTENT ##
+
+Automotive software 
+and electronics 2030
+Mapping the sector’s future landscape
+
+Authors
+Ondrej Burkacky, Munich 
+Johannes Deichmann, Stuttgart 
+Jan Paul Stein, Munich
+Acknowledgements
+This study was conducted by 
+McKinsey & Company, Inc. We wish 
+to express our appreciation and 
+gratitude to GSA and its members for 
+their continued support and valuable 
+contributions. Automotive software 
+and electronics 2030
+Mapping the sector’s future landscape
+
+Table of contents
+Introduction and key insights 6
+1. Software and electronics will outgrow the automotive market 9
+1.1 The software and electronics architecture in vehicles will see a major evolution 10
+1.2 ACES trends and the architecture evolution will result in significant growth in the 
+automotive electronics and software market 12
+2. Key drivers of the automotive sector’s changing landscape 15
+2.1 Software: the global automotive software market will show dynamic growth 16
+2.2 Electronic control units/domain control units: convergence of electronic 
+control units will open up a new market for domain controllers 19
+2.3 Sensors: autonomous driving will be the primary trigger for sensor demand 23
+2.4 Power electronics and harnesses: transition to EVs will enable the formation 
+of a new market 26
+3. Disruptive trends along the industry’s long-established value chains 29
+3.1 New technologies are breaking up the “power dynamic” of traditional 
+relationships between OEMs and tier-1 suppliers 30
+3.2 Separation of hardware and software is leading to new sourcing models 31
+3.3 New companies are entering the playing field in nontraditional and 
+automotive areas 31
+3.4 New partnerships and cooperation models are emerging – primarily for 
+software- and electronics-related topics 34
+4. Building blocks for mapping your automotive software and electronics strategy 35
+4.1 Strategic considerations for each automotive player archetype 36
+4.2 First steps for all players in navigating the changing landscape 38
+Appendix 39
+Key aspects of the market models 39
+List of abbreviations 41
+Definitions 42
+Important notice 43
+Contacts and authors 44
+Automotive software and electronics 2030
+Introduction and 
+key insights
+Automotive software and electronics 2030
+Autonomous driving (AD), connected vehicles, electrification of the powertrain, and shared 
+mobility (ACES) are mutually reinforcing developments in the automotive industry.
+Combined, they are not only disrupting the automotive value chain and impacting all stake-
+holders involved but are also a significant driver of the expected 7 percent compound annual 
+growth rate (CAGR) in the automotive software (SW) and electrical and electronic components 
+(E/E) market, i.e., from USD 238 billion to USD 469 billion, between 2020 and 2030. 
+At this rate, the SW and E/E market is expected to vastly outpace growth in the overall 
+automotive market, which is estimated to grow at 3 percent CAGR in the same time span. As a 
+consequence, SW and electronics have become the focus of most automotive companies and 
+their executives. 
+In this context and based on our extensive research and analyses (Text box 1), we offer a 
+perspective on three key questions: 
+ —What are the specific trends and drivers of the automotive sector’s SW and E/E growth 
+dynamics and the changing landscape towards 2030? 
+ —How are these drivers going to affect the automotive industry’s long-established value 
+chains?
+ —How can players in and outside of the industry optimally prepare for the upcoming market 
+developments?
+In the following three paragraphs, we provide a short answer to these questions while the 
+remainder of this report will go into detail.
+The insights of this report were generated based on closely linked qualitative and 
+quantitative research. For the qualitative insights, we held interviews with executives in 
+the automotive industry and combined them with the knowledge of internal key experts 
+within our automotive practice to build a holistic view on how ACES trends and additional 
+drivers will influence the automotive SW and E/E market.
+For our quantitative market insights, we built bottom-up market models for each of the 
+core components within the automotive SW and E/E market:
+ —SW development, integration, verification, and validation 
+ —Electronic control units (ECUs)/domain control units (DCUs)
+ —Sensors
+ —Power electronics
+ —Other components (harnesses, controls, switches, displays).
+At the highest level, these models (excluding SW) calculate the market size following the 
+same logic. Market size is the product of the number of a certain component per vehicle, its 
+average selling price (ASP), and the number of vehicles produced in a given year. To achieve 
+the proper granularity of each model, we distinguish the key automotive domains (e.g., 
+advanced driver assistance systems (ADAS), body, infotainment) as well as characteristics 
+such as vehicle segment, original equipment manufacturer (OEM) type, or SAE AV level. 
+The number of vehicles produced each year is provided by a separate model in which we 
+incorporate data from latest McKinsey insights. The size of the automotive SW market is 
+calculated based on the workforce across the supply chain involved in SW topics and the 
+number of vehicle platforms and variants across OEMs and tiers and their change over time.
+Further details on the market models and their derivation are provided in the Appendix.Text box 1 
+How we derive insights 
+for this report 
+Automotive software and electronics 2030
+The SW and E/E components market will grow rapidly with 
+significant segment-level variation driven by disparate impact of the 
+ACES trends 
+The move towards a more centralized SW and E/E architecture is an overall trend and a key 
+driver of the market’s expected growth (7 percent CAGR) by 2030. Significant variation is 
+expected across the market’s various segments. Power electronics is expected to occupy 
+the high end of the market’s growth at 15 percent CAGR. Growth in the SW and sensors 
+segments, expected to be at 9 and 8 percent, respectively, will be fueled by AD. The ECUs/
+DCUs segment will continue to hold the largest share of the market, but growth here is likely 
+to be relatively low, at 5 percent. While ECUs/DCUs will be used increasingly in the application 
+of AD, price decreases from efficiency gains will counter-balance growth in the segment. 
+Electric vehicle (EV) platforms will be a new market for high-voltage (HV) harnesses, while 
+the demand for low-voltage (LV) harnesses is expected to shrink, resulting in the harness 
+segment growing at the slowest rate. 
+A separation of hardware (HW) and SW would fundamentally change 
+the dynamics of the automotive industry’s player and value landscape
+The days of OEMs comprehensively defining specifications and suppliers delivering on them 
+may be nearing an end. Neither OEMs nor traditional suppliers are in a position to fully define 
+the technology requirements of new systems. Codevelopment between OEMs and suppliers 
+is expected to become not just prevalent but necessary. In addition, tech-native companies 
+are expected to more boldly enter the space. This will be made easier as HW and SW sourcing 
+become more separate. This separation would break up established value pools, reducing 
+barriers to entry. For OEMs, the separation would also make both sourcing more competitive 
+and scaling less complex and allow for a standardized platform for application SW while 
+maintaining competition on the HW side.
+Both archetype-specific and cross-player strategies can position 
+companies for success in the future landscape
+The set of strategic actions for OEMs includes a plan to keep the cost of ever-growing HW 
+and SW development under control and establish a more agile cross-functional development 
+organization. Cross-functionality would benefit tier-1 suppliers, too, as would actively 
+partnering with OEMs to define their E/E architecture. Tier-2 suppliers will want to further 
+specialize and scale within an attractive niche to thrive even as many components become 
+commodity. All players will benefit from building their SW delivery and E/E architecture 
+capabilities, embracing latest technology innovation (including UI, UX, analytics), and 
+abandoning absolutistic notions of competition while analyzing the benefits of a partnership 
+within an emerging ecosystem.
+Automotive software and electronics 2030
+In the next decade, the automotive industry will face a 
+magnitude of change that has not been seen in a century. This 
+change will be driven primarily by four mutually reinforcing 
+trends, i.e., autonomous, connected, electric, and shared 
+(ACES) vehicles. These will result in different user behaviors 
+and mobility preferences, shifting value pools, innovative 
+business models, and new entrants into automotive. All of 
+these trends are enabled by the advancement of technology 
+in electronics and SW and thus have a substantial 
+impact on the automotive electronics and SW market. 1. Software and 
+electronics will 
+outgrow the 
+automotive market 
+1.1 The software and electronics architecture in vehicles will see a 
+major evolution
+As shown in Exhibit 1, the overall trend is a transition from a decentralized architecture 
+(components connected by a central gateway in the 3rd generation of E/E architectures), in 
+which functions are running on dedicated ECUs with high SW-to-HW integration, towards 
+more centralized systems with dedicated domain controllers (4th generation). Finally, the 
+architecture is expected to evolve into virtual domains (5th generation), in which one control 
+unit runs functions or (micro-)services of different domains (e.g., infotainment and body control). 
+The centralization will go along with a separation of HW and SW, leading to vehicle systems 
+being built as a layered architecture with clear abstraction points at operating system (OS) and 
+middleware layers. While this evolution will occur across domains over time, infotainment and 
+driving assistance are expected to be the forerunners, as areas of high performance and/or low 
+safety or latency criticality are easier and/or more beneficial to transform. 
+The architecture evolution will impact multiple component markets:
+ —DCUs will become a new market segment with high-performance computing units being 
+deployed in vehicles, especially for ADAS, and with higher autonomous vehicle (AV) levels, i.e., AD.
+ —ECUs will no longer be fully tied to the sourcing/development of SW functions. The change 
+in business model is made possible by the separation of HW and SW. 
+ —Automotive sensors, as a market, will be distinguished between smart sensors, which have a high 
+degree of (pre-)processing capabilities versus raw sensors, which send data into a central DCU.
+ —Sensors, harnesses, ECUs, and other HW components will become increasingly 
+standardized and commoditized with the transition towards SW-defined functions, i.e., 
+functionality will be realized through SW instead of additional HW (e.g., ADAS functions 
+enabled on-demand based on a standardized set of sensors).
+Automotive software and electronics 2030
+Exhibit 1
+The E/E architect ure is evolving from independent, func tion-speci/f_ic ECUs towards 
+a centralize d architect ure
+Generation Main features High-level architecture
+Domain 
+centralized
+−Central domain controller
+−Abilit y to handle more complex functions
+−Conso lidation of functions (cost 
+optimization)
+−Collabo ration of ECUs within one domain
+−Domain s: body/comfort, chassis, 
+powertrain, and infotainment
+−3-4 indepen dent networks
+−Limit ed commu nication between domain s
+−Independent ECUs
+−Isolated functions
+−Each function has its ECU (1:1 conne ction)Vehicle 
+centralized 
+−Virtual domain
+−Limit ed dedic ated HW
+−Ethernet backbone
+−Complex functions, high 
+performance comput ingE/E architecture
+Distributed 
+−Stronger collabo ration via central gat eway
+−Cross-functional conne ction
+−Abilit y to handle complex functions, e.g., 
+adapt ive cruis e control
+SOURCE: McK inseyBody/comfort Chassis Powert rain
+Infot ainm entCentralgatewayDomain 
+controller CentralgatewaySensor ActuatorInfot ainm ent
+Centralgateway
+1st2nd3rd4th5th
+Today
+Automotive software and electronics 2030
+1.2 ACES trends and the architecture evolution will result in 
+significant growth in the automotive electronics and software market
+The effect of the ACES trends and the architecture evolution is a significantly growing automotive 
+electronics and SW market. While the global automotive market is expected to grow from 
+USD 2,755 billion in 2020 to USD 3,800 billion at a rate of ~3 percent p.a., SW and E/E will grow 
+at a rate of ~7 percent p.a. from a total market size of ~USD 238 billion to ~USD 469 billion 
+(excluding battery cells).1 Exhibit 2 shows the overall market figures as well as the breakdown by 
+component and region.
+Both in 2020 and 2030, ECUs and later DCUs compose the component group with the largest 
+market share. The moderate growth in ECUs/DCUs is the result of two counteracting effects, 
+i.e., a growing vehicle market and higher instance of functions based on electronics in each car 
+versus decreasing unit costs and a cost decrease due to ECU consolidation into DCUs. With a 
+rate of ~17 percent p.a., power electronics is the component group with the largest growth rate, 
+primarily driven by EV adoption. Growth in SW and sensors is largely driven by the development 
+and adoption of AD, requiring advanced SW functionality (e.g., object detection and classifica-
+tion based on neural networks, raw data sensor fusion, and environmental modeling as well as 
+algorithms for path planning), increased functional safety, and new sensor types (especially light 
+detection and ranging, LiDAR). Other components are mostly growing in line with the automotive 
+market due to higher electronics demand outweighed by decreasing unit costs. Geographically, 
+the market will primarily be divided into the large regions of Europe, North America, and China, with 
+regional hotspots for specific components, e.g., China for developing batteries and power electronics.
+While growth of the total E/E market is expected to be stronger than that of the automotive 
+market as a whole, the individual content of electronics and SW per car will differ hugely 
+by segment, powertrain type, and SAE AV level. This is illustrated by three example vehicle 
+configurations – a traditional SAE AV Level 1 volume car in the B segment (with an internal 
+combustion engine, ICE), robotaxis (SAE AV Level 4 to 5 volume car in the C segment with 
+battery electric vehicle (BEV) technology), and a premium SAE AV Level 3 vehicle with plug-in 
+hybrid electric vehicle (PHEV) technology – see Exhibit 3.
+Exhibit 2
+Automo tive SW and E/E market w ith a CAGR of 7% p.a. until 2030, largely driven by 
+power el ectronics, SW, and ECUs /DCUs
+63 76 85205081
+92129156
+3750
+25 2030 2020238362469ComponentsAutomotive SW and E/E market
+USD billions
++5%
++15%+10%
++8%+9%
++3%+7%CAGR 
+2020-30
+SW ( functi ons, OS, middleware)
+Integrati on, veri/f_ication, and validation services
+ECUs/DCUs
+Sensors
+Power electr onics (excl. battery cells)
+Other electr onic components 
+(harnesses, controls, switches, displays)Automotive sales
+USD billions
++3% CAGR 2020-302020 2025 2030
+2,755 3,027 3 ,800EU 112
+China 161
+US
+Canada
+Mexico68
+RoW 78Korea
+Japan50Total electronics and SW 
+by geo graphy in 2030
+469 TotalTotal
+SOU RCE: McKinsey analysis; Revenue forecasts based on vehicle volumes from IHS Markit, Light Vehicle Production Forecast, October 2018; 
+pull completed on November 6, 20181 Revenue forecasts based on vehicle volumes from IHS Markit, Light Vehicle Production Forecast, October 2018; 
+pull completed on November 6, 2018
+Automotive software and electronics 2030
+Exhibit 3
+Automotive SW and E/E cont ent per car
+Volume car, 
+L1 with ICE powertrainPurpose-built robo taxi
+(L5) as BEVPremium car with 
+L3 function and PHEV
+894
+105
+822
+162
+21
+25Batter ySW
+Power electronicsECU/DCU
+Sensors
+Other electronics2025 2030
+6712,1818,50818,164
+2,275
+6,227
+2,614
+2,0272,051
+6,283
+6,0473,6542,888
+3,1281,732
+2,1303,371
+3,148
+1,812
+1,764
+2,063
+1,574
+1,086
+SOURCE: McKinsey analysisTotalSegmen t B C E/FUSD
+2,023 38,297
+19,45315,361
+12,987 2,210
+Automotive software and electronics 2030
+Traditional SAE AV Level 1 volume cars in the B segment 
+The electronics content of these cars will only change marginally. While more functions 
+will expand into the mass market, commoditization of electronics and SW functions due to 
+standardization of the architecture and scale effects will lead to decreasing prices, keeping 
+content per vehicle stable.
+Robotaxis
+Electronic and SW costs for robotaxis will be significantly higher in 2025, driven primarily 
+by high costs for sensors as well as a low vehicle base, across which the significant SW 
+costs for SAE AV Level 4 to 5 can be distributed. With increasing numbers of robotaxis and 
+commoditization of sensor technology (especially LiDAR), robotaxis will see a significant drop 
+in SW and electronics costs by 2030, improving the business case for them.
+Premium SAE AV Level 3 vehicles with PHEV powertrain
+Electronics components in these cars will slightly devalue between 2025 and 2030 due 
+to scale effects. The largest drop in individual contribution to cost will happen in SW as 
+standardization and application of SW on a larger vehicle base at nearly zero marginal costs 
+allows for better distribution of initial development costs.
+Thus, market growth can be strongly attributed to the increasing penetration of vehicles 
+with higher SAE AV levels and electric drive vehicles (xEVs). The production numbers of cars 
+equipped with SAE AV Level 3 are expected to grow from somewhere on the order of 100,000 
+vehicles in 2020 to more than 10 million vehicles in 2030. Additionally, the number of SAE AV 
+Level 4 to 5 vehicles produced per year will surpass ~5 million in 2030. Finally, the worldwide 
+share of EVs – hybrid electric vehicles (HEVs), PHEVs, and BEVs-produced is likely to grow from 
+less than 4 percent in 2020 to more than 20 percent in 2030.
+The growing base of cars equipped with AD systems or electrified powertrains highly relying 
+on SW and electronics will drive market growth and open opportunities for companies in this 
+sphere. In the following chapter, we will explain the trends and drivers of growth in each of the 
+component groups shown in Exhibit 2 in further detail.
+Automotive software and electronics 2030
+While the overall market growth offers significant upside 
+across all components, factors like AV penetration and 
+powertrain distribution will impact component groups 
+differently. Yet most of the components show strong 
+sensitivity to those factors as well as the total number 
+of produced cars. Our detailed bottom-up model of the 
+automotive SW and E/E market allows us to identify and 
+quantify the impact that the core drivers (i.e., ACES trends) 
+will have on the market dynamics described above. 
+We will explain these drivers in the following chapter.2. Key drivers of 
+the automotive 
+sector’s changing 
+landscape
+2.1 Software: the global automotive software market will show 
+dynamic growth 
+Our analysis of the automotive SW market combines a functional grouping of SW functionality 
+with a value chain perspective. From a functional point of view, the market can be divided into 
+several SW domains along the technology stack. The OS and middleware are the low-level 
+SW components that enable HW/SW separation and implement low-level functions. The 
+SW functions running on ECUs, DCUs, or smart sensors can be grouped according to their 
+functional domain: powertrain, chassis, energy, body, ADAS/AD, infotainment, middleware, 
+OS, connectivity and security, and connected services. For each domain we have analyzed 
+how the SW development effort will evolve by 2030, depending on the complexity of the SW 
+functions and influence of ACES trends.
+From a value chain perspective, there are three main phases of the SW development process 
+to be considered: implementation of core functions (including adaptation of functionality for 
+specific vehicle platforms), validation and verification of intended functionality, and system 
+integration of SW modules. Our analysis has considered how the ratios between these phases 
+vary depending on the functional domain – e.g., safety-related functions contain a higher 
+share of validation and verification in the total development effort.
+Some domains likely to grow strongly due to ACES trends, others to remain mostly 
+constant or hit a plateau
+Exhibit 4 shows the breakdown of the automotive SW development efforts by the different 
+domains and tech-stack elements. Overall market size is expected to reach ~USD 84 billion by 
+2030 and therefore more than double over the ten-year period from 2020 when the market size 
+is estimated at ~USD 34 billion. While overall SW development is expected to increase, this will 
+probably not be the case for all vehicle SW functions. Particularly, development related to ICE 
+powertrains is likely to increase at only 1.5 percent year over year, and the market for chassis-
+related SW is expected to stay almost flat until 2030. If the effect of a labor cost increase is 
+controlled for, development effort for the chassis domain is expected to decrease by ~2 percent 
+year over year as fewer ICE vehicle platforms are developed and the focus shifts to BEVs.
+Exhibit 4
+Breakdown of SW development eﬀorts into domains
+USD billions
+156
+14
+25 20208
+6
+5Body and energy
+434
+2030Infotainment, connec tivity, securi ty, 
+connec ted servicesOS and middleware
+Powertr ain and chassis5
+ADAS and AD86384
++11%+9%
++9%+11%
++10%
++1%TotalCAGR 
+2020-30
+SOURCE: McKinsey analysis
+Automotive software and electronics 2030
+In turn, boosted by ACES trends such as increased connectivity, the pursuit of AVs, and 
+electrification, other domains are expected to grow significantly. Functions in areas like 
+AD, connected services, energy, or infotainment will gain complexity, as well as become 
+increasingly relevant for a broader share of vehicle platforms.
+OS and middleware represent a particularly interesting battleground. Specifically, established 
+automotive tier-1 suppliers will compete in these areas with tech players who have experience 
+in developing OSs in the consumer space. OS development efforts are focused on 3 OS types: 
+event-driven, time-driven, and time-and-event driven, the last one being necessary for AD. 
+We expect the market to converge towards a small number of alternatives for each type, which 
+will in turn limit the size and growth of this market niche.
+As already mentioned, developing the core SW functionality is only the first step in the 
+development process. The important subsequent processes are customization for the 
+specific vehicle platform, followed by validation, verification, and integration. After start of 
+production (SOP) there is the maintenance of the SW, which is becoming more and more 
+important and for our analysis has been treated as part of the normal development process. 
+Combined, all of these stages increase SW development costs well beyond base costs for 
+function development, as depicted in Exhibit 5 .
+Increasing software complexity and broader deployment of vehicle platforms to 
+underpin growth of software market until 2030
+Three key factors contribute to the strong overall growth of the SW market: increase in SW 
+complexity in the domains most influenced by ACES trends, customization effort for integrating 
+functions in a growing number of platforms, and growing labor costs for SW developers.
+In the upcoming years, SW will become one of the strategic development areas for the auto-
+motive sector. This is because the continuous expansion of vehicle functionality – becoming 
+more connected, managing the electric powertrain, AD – is enabled by increasingly powerful 
+SW just as much as by HW. These developments are mutually reinforcing. Take the domains 
+of infotainment and connected services as an example: once vehicles are able to drive 
+Exhibit 5
+Split ofSW marke tintoSW development, integration, and valid ation /veri/f_ication
+213750 101724
+4
+Function developmentValidation and veri/f_ication
+2020 25 2030Integration
++9%
++10%
++10%Total +9%CAGR 
+2020-30
+SOURCE: McKinsey analysisUSD billions
+Automotive software and electronics 2030
+autonomously, passengers will expect the infotainment system to integrate the kind of 
+services that are currently typical of smartphones, e.g., virtual assistants, media consumption, 
+and productivity SW. In another area poised for growth, energy management will be a prime 
+target for further evolution with the proliferation of EVs.
+All these developments must be enabled through a sustained effort in SW development and 
+testing – programming more sophisticated functions, enabling interaction between SW 
+modules, and extensive testing. Depending on the domain, ACES-trends-related factors are 
+expected to contribute to the CAGR of the SW market with values between ~2 percentage 
+points (infotainment) and ~15 percentage points (AD).
+The necessity to expand the target functionality and customize the core SW for a broad range 
+of vehicles is another important driver of the expected growth in the automotive SW market. 
+As complex functions become mainstream, more and more vehicle platforms and variants will 
+integrate them. This will lead to increased efforts from OEMs and tier-1 suppliers to customize 
+and expand the SW. ACES trends will accelerate this need, as more vehicle platforms will 
+be connected and require advanced energy management functions or AD features. We 
+expect that by 2030 almost all vehicle platforms will have some form of data connectivity and 
+incorporate ADAS features. For more “classical” SW domains (e.g., powertrain, chassis, body), 
+the customization effort for different vehicle variants will remain an important multiplier for 
+the costs of the base ECU SW.
+Beyond function development and customization, validation and verification are the stages 
+of the development process that ensure that the developed functions meet specifications 
+and fulfill their purpose consistently and reliably. Validation and verification are expected to 
+represent ~29 percent (USD 24 billion) of the total automotive SW market in 2030 (Exhibit 5). 
+This significant share will be driven mostly by the need to verify safety-critical SW, e.g., ADAS, 
+AD, security, as well as the OS deployed in the vehicles. The implication for automotive players 
+is that they need to further invest in their capabilities to test and validate SW efficiently. For 
+automotive players, this translates to adoption of more specialized tools and restructuring of 
+teams to foster efficient validation and collaboration with HW teams.
+Integration – at the system level – is the process of bringing together SW subsystems into a 
+larger system. Estimated at USD 4 billion in 2020 and USD 10 billion in 2030, the integration’s 
+12-percent share of the overall SW market is expected to remain stable. Yet, for some areas 
+such as AD, its share of development is likely to significantly increase (up to 30 percent).
+The increase in labor costs will also contribute to the overall growth of the market. Depending 
+on the skill set, salaries are expected to grow annually between 2 percent and 6 percent by 
+2030, with domain specialists and highly skilled developers at the higher end of the range.
+The growth of the overall development effort in the coming decade is reflected in the growth 
+of the sheer number of SW developers, totaling ~250,000 in 2030. The largest share of 
+developers is expected to be concentrated in ADAS/AD and infotainment (~30 percent). As 
+the number of SW developers increases, the market will likely see shifts in the distribution of 
+the workforce. Specifically, organizations’ resources should be increasingly allocated to SW 
+domains most impacted by ACES .
+AD SW with highest yearly growth rate until 2030 due to increased complexity and 
+integration effort
+By 2030, AD SW (excluding ADAS) is expected to represent more than a quarter of the market 
+value and grow at an average yearly rate of over 20 percent until 2030. Its growth exemplifies 
+the key factors mentioned: increasingly complex functionality, increased validation and 
+integration effort for AD functionality as it becomes integrated in more vehicle platforms, and 
+growing labor costs for the highly specialized and scarce development resources. 
+AD is likely to be the automotive SW domain where most OEMs and tier-1 suppliers place 
+their strategic bets. The value of the market is expected to grow to ~USD 28 billion by 
+2030. Increased functionality is one important driver. Elements such as sensor fusion or 
+Automotive software and electronics 2030
+environmental modeling will become more complex in the following years as AD-enabled vehicles 
+will need to handle real-world situations. Especially for SAE Level 4 to 5, covering corner cases 
+and ensuring the safety of the driver will become prohibitive after a certain point. For this reason, 
+it is important to make critical decisions about what functionality is really needed. The market is 
+expected to become more dynamic; thus specialized companies might seek to cover specific AD 
+components.
+Validation and verification as well as integration are also significant multipliers of the market 
+value. We expect AD development costs to almost double due to validation and verification 
+and integration. The reasons for this are the extensive testing and simulation that must be 
+done to ensure safety, as well as the integration with different sensor configurations. This is 
+likely to lead to increased collaboration between market actors to ensure integration is done 
+efficiently, and costs are kept under control.
+An important growth factor is the steady increase in labor costs for specialized SW devel-
+opers and domain experts typically required for AD SW – we expect a CAGR of 4.5 percent 
+given the profile mix. AD talent sourcing is likely to remain an important topic for all the market 
+players and, in the short term, talent will continue to remain highly concentrated. However, as 
+the market adapts and the technology and tools become better understood, we might see an 
+increase in the available talent pool.
+2.2 Electronic control units/domain control units: convergence of 
+Electronic control units will open up a new market for domain controllers
+ECUs and DCUs with a market potential of ~USD 156 billion in 2030
+ECUs within a vehicle are responsible for controlling the electrical subsystems. Examples range 
+from simple ECUs that control the engine that electrically moves passenger seats to complex 
+ECUs like those responsible for ensuring optimal engine performance based on the input from 
+various sensors. DCUs are the next level of evolution of ECUs, consolidating the functionality of 
+several individual ECUs into a single, more cost-efficient system. In this context, an ECU or DCU 
+is not only defined as an integrated circuit but as the full “box,” including, i.a., the printed circuit 
+board or input/output (I/O) connectors. The combined ECU/DCU market size is expected to reach 
+~USD 92 billion in 2020 and grow at a CAGR of 5 percent to ~USD 156 billion in 2030, as shown 
+in Exhibit 6. As explained in Text box 1, to understand this growth, it is important to consider 
+three factors: changes in vehicle production, ECU/DCU ASPs, and the number and distribution 
+of ECUs/DCUs within each vehicle domain. First, vehicle production is growing at ~2 percent 
+p.a., and second, ECU/DCU ASPs are declining at a rate of ~3 percent p.a. due to efficiency 
+gains in ECU/DCU production. This effect is not compensated for by potential ASP increases 
+due to performance or functionality gains. Third, there is a shift towards higher-cost ECUs/
+DCUs driven chiefly by ACES trends. Due to the introduction of DCUs, the number of control 
+units per vehicle does not increase further (see next section for a discussion of architectural 
+considerations) so that this is not a driver of growth. At the same time, consolidation into DCUs 
+can reduce costs for OEMs due to less common components (e.g., power supply). Note that the 
+calculated market sizes include costs for low-level SW below the OS or middleware stack layers 
+but exclude costs for functional SW as the latter is covered explicitly in the automotive SW market 
+model (see Section 2.1).
+The following paragraphs detail the drivers underlying the varying market size changes per 
+vehicle domain that are shown in Exhibit 6.
+Powertrain domain
+Within the powertrain domain, the expected market growth at a CAGR of ~5 percent is largely 
+driven by a shift towards EVs (i.e., PHEV, HEV, BEV). This is because the ECUs of EVs have 
+a large ASP, i.e., up to ten times higher than that of ICEs accounting for their complexity. 
+ICE vehicles only make a minor contribution to ECU/DCU market growth in the powertrain 
+domain, as the ASP of ICE ECUs will remain largely stable over time. Overall, the market size 
+of the powertrain domain is the largest, because the take rate of powertrain ECUs/DCUs for 
+Automotive software and electronics 2030
+engine, transmission, or battery control is virtually 100 percent.
+Chassis domain
+ECUs/DCUs in the chassis domain are mainly used for controlling braking, suspension, and 
+steering. The expected rather low market growth of ~1 percent is because the growth in the 
+vehicle production at ~2 percent is partially offset by declining ASPs. Most innovation is 
+expected to take place in the context of electronically controlled braking and steering where, 
+consequently, ECU ASPs are highest. The remaining systems such as ABS/ESP are largely 
+commoditized with low, quickly declining ASPs. The shift towards more expensive ECUs will 
+all in all result in a small net market growth.
+Body domain
+The body domain consists of a multitude of separate systems, such as access control, lighting, 
+HVAC, window lift, seat control, door control, or gateway. Moderate growth of the ECU/DCU 
+market in the body domain at an expected ~3 percent is mainly driven by the shift towards 
+systems with more complex and, hence, more expensive ECUs, such as advanced front 
+lighting or gateway systems.
+ADAS domain
+The ADAS domain comprises ECUs/DCUs utilized for controlling systems such as airbags, 
+collision warning, tire pressure, or e-call telematics. DCUs become a prerequisite for SAE AV 
+Level 3 vehicles and above, because the complexity of multiple separate ECUs in an SAE AV 
+Level 3 system would be too high. Some OEMs may use ADAS DCUs even for SAE AV Level 1 
+systems, e.g., in case time-to-market benefits are expected. Market growth at ~3 percent 
+CAGR is largely driven by the growing incorporation of ECUs/DCUs that control ADAS and 
+related functionality. Other ECUs, such as airbag or tire pressure control units, are largely 
+commoditized and hence contribute little to overall growth.
+AD domain
+AD (SAE AV Level 4 to 5) represents a largely different segment in comparison to the afore-
+mentioned “traditional” vehicle domains. Given that the production of those vehicles in 2020 
+is virtually 0 and likely to reach ~6 million vehicles p.a. by 2030, AD DCUs are expected to 
+grow significantly. Market size will likely grow from essentially 0 in 2020 to ~USD 34 billion by 
+2030, largely because of the expected uptake of SAE AV Level 4 and Level 5 vehicles. Exhibit 6
+ECU/DCU marke t by domain
+USD billions
+13
+202010
+26
+20303914
+30 19034
+26
+2713156
+25+5%
+n/aTotalCAGR 
+2020-30
+SOURCE: McKinsey analysis+1% ChassisAD
++3% ADAS-2% Infotainment
++5% Powertrain+3% Body
+Automotive software and electronics 2030
+AD DCU redundancy needs represent an additional factor leading to a large market size in 
+2030, i.e., the second-largest ECU/DCU market in 2030.
+Infotainment domain
+In the infotainment domain, ECUs/DCUs are primarily used for controlling primary instrument 
+clusters, navigation systems, or the vehicle audio system. The infotainment ECU/DCU market 
+size is expected to decline at an annual rate of ~2 percent. The reason for this is a strongly 
+decreasing number of ASPs for instrument clusters, car audio, and navigation systems. 
+There is a shift towards solid-state displays as instrument clusters that entails the need for 
+more complex control HW at better performance. However, this shift is not strong enough to 
+compensate the overall decrease in market size. 
+Convergence of architecture leading to major shift towards DCUs between 2025 
+and 2030
+After 2020, we expect a major shift in vehicle E/E architecture. The architecture will change 
+from one with numerous separate ECUs (~100 ECUs for complex vehicles) towards a more 
+streamlined architecture with a few central DCUs covering one vehicle domain each, such 
+as chassis or infotainment. DCUs consolidate the non-time-critical functionality of multiple 
+ECUs and process data from multiple sources centrally. For example, in a traditional, non-
+DCU architecture, sensors such as cameras process captured data locally, and control 
+actuators based on processing results. In a DCU-based E/E architecture, the data from 
+multiple sensors such as cameras, radars, and LiDAR is processed centrally, e.g., for sensor 
+fusion. Functionality that likely remains local, i.e., close to the sensor, is mainly related to the 
+preprocessing of data to avoid congestion of the vehicle bus system. Also, latency-critical I/O 
+functionality is expected to remain local.
+The architectural shift towards a DCU-based architecture is induced by four key benefits:
+ —First, the transition to an E/E architecture based on few central DCUs leads to a reduction 
+not only of HW but also of SW complexity. This is because a domain-based architecture 
+allows for a clear functional split within SW modules where higher-level functionality (e.g., 
+sensor fusion) resides in DCUs and lower-level functionality (e.g., data preprocessing) 
+resides within remaining local control units, e.g., in sensors. 
+ —Second, a clear functional split of SW reduces validation cost, as the SW for a single DCU 
+can be validated separately without having to incorporate a complex network of ECUs and 
+their respective SW in the validation process. 
+ —Third, in a domain-based architecture with DCUs, SW upgradability is simplified, which is 
+especially relevant in the context of over-the-air (OTA) updates. 
+ —Fourth and last, consolidation of multiple ECUs into a single DCU delivers reduced HW 
+cost even when the majority of ECUs will remain local at reduced functionality. Savings are 
+expected to come not only from the reduction in ECU-related HW costs, but also from a 
+reduction in secondary costs, e.g., the wiring harness.
+The speed of transition from an architecture with separate ECUs to centralized DCUs differs 
+by domain. The infotainment domain is fastest because ECU functionality is virtually neither 
+latency- nor safety-critical, and there is the clear benefit of enabling relatively simple SW 
+updates. Updates are not only a prerequisite for the security (and safety) of connected 
+applications in the infotainment domain, they may also enable an improved user experience 
+and, hence, have a directly monetizable customer benefit. In contrast, we expect a slower 
+transition in the body domain due to a relatively large number of separate ECUs, e.g., for 
+doors, windows, seats, or HVAC. Much functionality has already been consolidated in body 
+control modules. At the same time, there is only a limited benefit of further consolidation, as 
+there is comparatively little need for upgradability in the body domain. 
+Automotive software and electronics 2030
+We expect that the speed of transition is also driven by the adoption of higher SAE AV levels. 
+Vehicles with SAE AV Level 3 and above require a HW architecture that supports a clear 
+functional split and easy upgradability for the relatively complex ADAS and AD functionality. 
+Especially the latter is important because it is safety critical to ensure that the most recent 
+ADAS/AD SW version is running on vehicle systems at any time. Therefore, AD functionality is 
+expected to naturally entail a domain-based architecture.
+Specifically, between 2020 and 2030, the structure of the automotive market for control units 
+is expected to shift from one that is almost entirely comprised of ECUs (98 percent) into one 
+where DCUs represent ~43 percent of the market as shown in Exhibit 7. In the base-case 
+scenario, the halfway point in this transition is expected to arrive two “car generations” from 
+now in 2025, when DCUs will represent 20 percent of the control-unit market. In the accelerated 
+AV adoption case (see Appendix 1 and the right-hand side of Exhibit 7), we expect a faster rate in 
+the ECU-to-DCU transition than in the base case in the time frame 2025 to 2030. In 2025, the 
+DCU share is likely to be ~17 percent and expected to increase to ~54 percent in 2030. 
+The differences between the base case and the accelerated AV adoption case are due to 
+different assumptions in vehicle production and adoption rates of higher SAE AV levels, 
+especially in the years 2025 to 2030. In the accelerated case, the number of SAE AV Level 4 
+to 5 vehicles is expected to be about twice as high as in the base case. Vehicles at higher SAE 
+AV levels are assumed to have a higher DCU penetration due to a higher degree of freedom 
+in architecture and the increased need to centrally process data from various sensors. The 
+overall market size in the accelerated case of ~USD 207 billion in 2030 is higher than that of 
+the base case of ~USD 156 billion in 2030 for two reasons. First, as previously discussed, the 
+share of SAE AV Level 4 to 5 vehicles that need a costly AD DCU is higher. Second, the share 
+of EVs requiring relatively more expensive engine and battery control units is higher in the 
+accelerated case as well.
+Exhibit 7
+Change of split be tween DCU and ECU over time in base case and accel erated 
+AV a doption case
+ECU/DCU market, USD billions
+(43% )
+(2%)
+(57%)
+(98% )26
+(20% )
+(80% )
+2030921291562020-25
++7%
++68%
+(90% )2
+(2%)
+(46%)
+2020 25105
+(83%)21
+(17%)111
+(54%)
++ 3%2020-30
++5%
++43%
+0%+7%
++61%
++3%+9%
++50%
++1%DCU
+ECU
+Base case Accelerated AV adoption case
+SOURCE: McK insey analysisTotalCAGR 2020-25 2020-30
+Total
+Automotive software and electronics 2030
+2.3 Sensors: autonomous driving will be the primary trigger for 
+sensor demand
+Most sensors are growing in line with overall automotive market growth. Sensors related to 
+ADAS/AD are the single driver for the above-average expected growth in automotive sensors. 
+An increasing adoption rate of ADAS and AD will be responsible for an overall expected 
+growth rate of 8 percent in automotive sensors (Exhibit 8).
+More specifically, this growth will most likely be seen in ADAS/AD systems starting from SAE 
+AV Level 3 due to the near-full autonomy of the system and the higher requirements and costs 
+(and introduced redundancies) regarding the sensors used at this level. The following is a 
+description on a vehicle domain level of how the various sensor categories contribute to the 
+overall growth trajectory.
+Powertrain sensors
+Powertrain sensors play a role in the operation of the engine, transmission, and alternator. 
+The costs of these sensors vary greatly depending on the engine type (e.g., BEV, HEV, ICE, 
+PHEV) with the number of required sensors decreasing with an increasingly electric engine. 
+With the shift towards electrification, the volume of powertrain-related sensors is expected 
+to decrease. On top of that, powertrain sensor costs in BEV vehicles are also lower. Together, 
+the electrification trend and the commoditization of sensors are likely to lead to a shrinking 
+market with a CAGR of -1 percent between 2020 and 2030.
+Chassis sensors
+Chassis sensors monitor functions, such as braking, steering, and suspension. In general, 
+innovation related to these sensors is quite low, and this leads to price pressure. These 
+sensors are, however, integrated in ADAS/AD use cases, particularly when it comes to the 
+safety redundancies implemented in the braking and steering features of SAE AV Level 3 
+vehicles. Together, these realities put the growth of chassis sensors slightly above the CAGR 
+of the overall vehicle market at 4 percent.
+Exhibit 8
+Total automotive sensor marke t will outgrow automotive sales primarily driven by strong 
+growth in AD AS sensors
+5
+10
+25
+8
+203044Total automotivesensormarket, USD billions
+CAGR 
+2020-30
++5%
+ChassisBody
++4%
+-1%
++13%−Traditional powert rain sensors with increas e in 
+line with growth of automotive market
+−New sensors for elect ric drives (e.g., current 
+sensors) counterbalance the decline of 
+combustion sensors−Body sensors with positive outlook due to 
+increas e of comfort features oﬀsetting decline 
+of prices of commodit y-type sensors
+−ADAS/safety as strong est growing domain due 
+to adopt ion of ADAS and AD features
+−Growth primarily driven by increas ing demand 
+for cameras, radars and introdu ction of LiDAR 
+sensors at scale−Increas ing number of chassis sensors, e.g., due 
+to requ irements for ADAS/AD systems and 
+addit ional comfort features, e.g., air suspens ion 
+or back ax le steering 
+Powertrain
+ADAS/AD+8%
+Automotive production
+Million units
++2% CAGR 2020-30202020252030
+97 108 115ChassisBody
+Powertrain
+ADAS/AD
+SOURCE: McKinsey analysisTotal 63
+Automotive software and electronics 2030
+Body sensors 
+Body sensors measure the state of the vehicle in ways less related to active performance than 
+safety/AD sensors. For instance, body sensors capture and convey information regarding 
+door/roof closure, seat occupancy, and the amount of sunlight/rainfall and can trigger alerts 
+and basic functions of the vehicle body accordingly. Growth of this sensor type is expected 
+at 5 percent CAGR, which is mainly due to growth of the vehicle market and additional body 
+functionality and higher safety requirements for body functions in SAE AV Level 4 to 5 vehicles. 
+ADAS/AD sensors
+ADAS/AD sensors include cameras, LiDAR, and radar. The sensors required for SAE AV 
+Level 1 to 2, mainly a combination of camera and radar, are largely safety related. The safety 
+functions required for 5-star NCAP drive the increasing demand for cameras and radars. 
+Compared to lower SAE AV levels, ADAS/AD sensors used in SAE AV Level 3 and up come at 
+a higher cost. As a prerequisite technology, LiDAR’s high price point is the main cost driver at 
+these SAE AV levels. The redundancy requirements starting with SAE AV Level 3 also require 
+a higher number of sensors per vehicle. Robotaxis/shuttles are among the SAE AV Level 4 
+to 5 use cases with these significantly higher sensor requirements and costs. A CAGR of 
+12 percent is expected for these sensors, due to significant increases in production rates 
+of SAE AV Level 1+ vehicles driven by safety regulations and safety tests (with emergency 
+braking assists, in particular) as well as in SAE AV Level 3+ vehicles. Other sensors in the 
+ADAS/AD domain, including airbag sensors, tire pressure sensors, and ultrasonic sensors, 
+are growing with a 6-percent CAGR.
+Sensor setup for autonomous cars 
+Exhibit 9 shows exemplary sensor configurations for different levels of autonomy. SAE AV 
+Level 1 to 2 vehicles typically have one front-facing long-range radar sensor and one camera 
+for adaptive cruise control, emergency brake assist, and lane departure warning/assistant. 
+Two backward-facing medium-range radar sensors enable blind-spot detection. Up to four 
+additional cameras and up to 12 ultrasonic sensors allow a 360° view for parking assistant 
+functions.
+In addition to the sensor set of SAE AV Level 1 to 2 vehicles, we expect SAE AV Level 3 
+vehicles to typically have one more front-facing long-range LiDAR for redundancy and for 
+situations where other sensors reach their physical limitations, e.g., cameras at night or 
+Exhibit 9
+Sketch ofa vehi cleand itssensorsetupforAD
+Level 2 Level 3 Level 4/5Long -range radar Short-and medium-range radar Camer a Long -range LiDA R Short-range LiDA R
+SOURCE: Expert interviews; Waymo Safety Report ; Audi press annou ncements; GM investor presentation
+Automotive software and electronics 2030
+glaring sunlight. The LiDAR sensor is also characterized by a high resolution, wide angle, 
+and high accuracy due to active distance measurement, which will be needed to detect and 
+classify objects or track landmarks for localization. For highway pilot applications, a second, 
+rear-facing long-range LiDAR sensor is typically used. 
+Additional short-range front-facing radars could improve the detection of vehicles cutting into 
+the lane, while a backward-facing radar detects approaching vehicles on a highway. A driver-
+monitoring camera might be required to assess attention of the driver, who is required to take 
+over the car if necessary.
+SAE AV Level 4 to 5 vehicles usually require a 360° view with different sensor technologies 
+to provide redundancy and to level out disadvantages of each sensor principle, e.g., camera 
+detection to the side of the vehicle at night. To provide this 360° view, five to ten cameras, eight 
+to 12 radar sensors, and five to 12 LiDAR sensors could be used (spinning, long-range LiDAR 
+sensors could be replaced by several solid-state sensors in the medium term). Exhibit 9 
+shows a typical setup with eight cameras, eight radars, and four long- and four short-range 
+LiDARs. With additional sensors, like microphones and ultrasonic sensors, the number 
+of additional sensors for SAE AV Level 4 to 5 could easily reach 50 sensors or more. 
+Unforeseeable innovations or breakthroughs in the sensor technologies could change the 
+sensor setup for AD in the long term.
+On top of these outward-facing sensors, there are additional sensors either required or 
+optional for safety systems, e.g., acceleration sensors for crash detection and airbag release, 
+rollover sensors, seat occupant sensors, night-vision and tire-pressure sensors. 
+Price erosion and technological advancement to shape the ADAS/AD sensor market
+The market for ADAS/AD sensors is expected to grow by 12 percent p.a. Exhibit 10 shows, 
+that this growth will be mainly driven by the LiDAR market, which is hardly existent today but 
+will likely take the ADAS/AD market to USD 13 billion in 2030. The radar sensor market is also 
+growing by 13 percent p.a. and is likely to be the largest sensor market in 2030 with a market 
+size of ~USD 14 billion. Other safety sensors are expected to grow with a CAGR of 6 percent 
+p.a. driven by increased vehicle sales and increased safety requirements, especially since 
+emerging markets are catching up with the stricter regulations in Europe and the US. 
+Exhibit 10
+Split of marke t by sensor types in AD AS/AD for 2020 vs. 2030
+USD billions
+0(0%)
+20204(31%)
+4(33%)8
+(18%)
+(29% )
+5(36%)14
+(33% )
+(20% )LiDAR
+Camera
+Radar
+Other (e.g., ultrasonic )1343 +13%
++80%
++7%
++13%
++6%
+SOURCE: McK insey analysisTotalCAGR 
+2020-30
+Automotive software and electronics 2030
+The market for other sensors (e.g., ultrasonic) is expected to grow at 6 percent p.a. driven by, 
+for example, the tightening of the Euro NCAP regulation, and likely to reach a market size of 
+~USD 9 billion in 2030. 
+LiDAR sensors are positioned for strong growth (an anticipated rate of ~80 percent p.a. 
+through 2030). This technology is currently only in place in a limited number of vehicles, but 
+these sensors will be key elements of the growing number of SAE AV Level 3+ vehicles.
+“Mass market” as a force to shape LiDAR technology
+Today’s testing vehicles for urban automated driving are usually equipped with mechanical 
+LiDAR sensors with spinning parts. Once LiDAR sensors become available in the mass market 
+in the early 2020s, however, we expect a switch to solid-state sensors. Initial solid-state 
+sensors will come at a relatively high price point compared to cameras or radars, but the price 
+is expected to drop rapidly due to an uptake in numbers, and they should be able to deliver 
+higher robustness. Even after erosion, however, the price of solid-state LiDAR sensors is 
+expected to remain higher than that of other environmental sensors. 
+As there is a lot of research going on in the sensor field, there might be unforeseeable technology 
+changes. These new technologies could change the assumed number of sensors per car or price 
+points per sensor. This would also lead to a different split between sensor technologies in the 
+market. 
+Notably, the cost of LiDAR sensors will be added on top of the costs of the high-performance 
+AD DCUs. This is a main reason for why urban AD is likely to be deployed first in robotaxis/ 
+-shuttles, where customers are not as price sensitive as private car buyers. 
+2.4 Power electronics and harnesses: transition to EVs will enable the 
+formation of a new market
+The power electronics market is expected to have the largest relative growth with 15 percent 
+CAGR until 2030, not taking into account the battery cells (Exhibit 11).1 This growth is primarily 
+driven by adoption of xEVs, which require significant amounts of power electronics, as 
+1 A more detailed analysis of the power electronics market will be featured in our upcoming publication “Reboost – a view 
+on the changing powertrain components market and how suppliers can succeed.”
+Exhibit 11
+Power electronics marke t –breakdown of compo nents
+USD billions
+15
+11
+On-board charger8
+BJB9
+202018
+611DC/DC converter
+CMC
+E-motor
+Inverter53 149BMS
+25172081 +15%
+-21%
++20%
++16%+19%
++18%
++9%Total
++13%
+SOURCE: McKinsey Sustainable Initiat ive Powert rain Model, McKinseyCAGR 
+2020-30
+Automotive software and electronics 2030
+well as introduction of mild HEVs to complement traditional combustion engines. Inverters 
+are expected to represent the largest product category in 2020 due to their higher ASP 
+than e-motors in the LV market segment, yet a multitude of components with different 
+technologies compose the overall power electronics market. In the long term, battery junction 
+boxes (BJBs) are projected to capture the highest market share.
+The biggest driver and also biggest uncertainty for power electronics growth is the adoption 
+rate of xEVs. This in turn depends significantly on the industry’s ability to decrease production 
+costs of batteries to satisfy customer demands for range and expected sales price for vehicles 
+as well as regulatory steering. This would be self-reinforced by an increase in production 
+capacity, technological advancement, and competitive pressure, that will decrease the price per 
+kWh for batteries further, again leading to higher EV adoption. An additional effect is a potential 
+higher adoption of SAE AV Level 4 to 5 vehicles, especially robotaxis. As robotaxis are expected 
+to have a relatively higher share of BEV powertrains than other vehicles, a higher growth will 
+boost also the power electronics market.
+Our growth projection includes two core effects: first and obviously, the overall automotive 
+sales growth, including xEV adoption as described above. Second, standardization and 
+commoditization of core product segments such as 40 to 150 kW inverters or 48 V systems, 
+are likely to lower entry barriers for semiconductor tier-2 suppliers to offer more integrated 
+systems and therefore increase competition and put pressure on system ASPs.
+The harness is an additional key component of the vehicle for data and power transmission. 
+The global automotive harness market is expected to grow at a moderate rate (Exhibit 12). The 
+LV harness represents the majority of the market. There are two countering effects impacting 
+the harness market. Combined, these effects are expected to have the net impact of giving 
+the market a growth rate that, at ~1 percent p.a. from 2020 to 2030, is below the overall 
+automotive sales growth. 
+Major growth driver for harnesses is the introduction of EV platforms. This will open a new, 
+strongly growing market for HV harnesses that connect HV battery, charger, e-motor, and 
+further HV components inside the EV. While current BEV models are mainly built on existing 
+Exhibit 12
+Automotive harne ssmarke t
+USD billions
+254316
+2030HV harness
+LV/d ata harness50
+4448+1%
++20%
+0%
+SOURCE: McKinsey analysisTotalCAGR 
+2020-30
+Automotive software and electronics 2030
+ICE platforms and thus the harness is not fully efficient, native BEV platforms will have more 
+efficient designs. This efficiency gain is exhibited by the difference in cable weight for the 
+powertrain harness between the first and second generation of an EV between 2011 and 2017. 
+The respective weights of 6.2 kg and 2.1 kg correspond to a weight reduction of 66 percent. 
+Despite the ASP reduction of individual harnesses, the overall HV harness market is expected to 
+grow significantly driven by increasing EV penetration. 
+On the other side, the LV harness segment is expected to shrink due to ASP reduction. Due to 
+standardization, the introduction of ethernet, and the evolution of the E/E architecture, harness 
+variation is expected to be reduced also as more functionality will be defined by SW. While 
+consolidation of ECUs into domain controllers might lead to higher cable volumes, these are likely 
+to have much less variance. While today’s harness market in the high-price segment is primarily 
+driven by customer-specific solutions, the standardization will enable (partial) automation of 
+harness production. Therefore, the average value of the harness per car will decrease, leading to 
+the overall shrinking LV market despite growth of the vehicle base.
+Automotive software and electronics 2030
+Beyond their impact on the business models and 
+operational priorities of individual automotive players, 
+the aforementioned trends will profoundly alter the 
+market’s core value chains and affect all players along 
+the automotive SW and electronics value chain. In the 
+following, we will discuss the key implications of the 
+changes described above on existing stakeholders’ value 
+chains, threats and opportunities, and points of entry 
+for new players from other industries and start-ups.3. Disruptive 
+trends along 
+the industry’s 
+long-established 
+value chains 
+3.1 New technologies are breaking up the “power dynamic” of 
+traditional relationships between OEMs and tier-1 suppliers
+Traditionally, automotive OEMs have specified the high-level functionality requirements 
+of individual components. Then, tier-1 suppliers (and the supply chain behind them) have 
+delivered integrated systems based on those functional specifications. The technologies, 
+know-how, and low-level specifications are unique to the respective tier-1 and tier-2 suppliers. 
+The technology trends described above, however, are changing these roles, especially for 
+electronics and SW components for a variety of reasons: 
+ —First, OEMs and end customers can be expected to demand systems combining “best of 
+breed” features, and no single supplier will be able to deliver a full, best-in-class system 
+covering all technologies end to end in a competitive way.
+ —Second, capabilities required for new systems, especially for SW, do not exist at sufficient 
+levels in the traditional industry structures. This creates opportunities for new entrants 
+(e.g., SW companies) with the ability to approach the market with different collaboration 
+models than incumbents. 
+ —Finally, the growing complexity and cross-system integration of SW and electronics 
+requires the collaboration of OEMs and their partners as early on in the process as the 
+design phase. It also impedes traditional dual- or multisourcing paradigms, as long as 
+standard interfaces/frameworks have not yet been established in the market (see HW-SW 
+separation below). 
+These new realities may have specific implications for the relationship between OEMs and tier-1 
+suppliers. Namely, design specification is likely to be more of a codevelopment process. In 
+this situation, OEMs and tier-1 suppliers will deliberately “lock themselves in” together for the 
+duration of a project to handle complexity and deliver time to market. To maintain some level 
+of independence, such approaches will more frequently be coupled with dual-sourcing to 
+build-to-print or AD services (electronics manufacturing services, EMS) providers that get the 
+right to only manufacture the system that had been developed within the OEM-tier-1-supplier 
+partnership.
+However, these models lack the single point of responsibility that was guaranteed by the 
+classic tier-1 supplier business model. Therefore, it remains to be seen how much this will 
+extend into the market and, in particular, which players, both on the OEM and the tier-1 
+supplier side, will build up the necessary capabilities to sustain this model successfully.
+Automotive software and electronics 2030
+3.2 Separation of hardware and software is leading to new 
+sourcing models
+Currently, the majority of SW is combined with HW in a single “package” and sourced from 
+a tier-1 supplier. This model is largely a result of the fact that most functionalities in vehicles 
+currently are single-function devices with a relatively simple interface (such as CAN bus). 
+However, new roles in the market and go-to-market strategies are also being created, 
+including the model where OEMs source pure SW only, HW and integration combined, or even 
+pure system integration engineering services. 
+Separating HW and SW, if successful, would create two main advantages for OEMs: 
+ —First, it would reduce complexity as HW and SW can be sourced, scaled across classes/
+tiers, and innovated independently of each other. 
+ —Second, separate sourcing would break the value pool of integrated system providers, 
+lowering entry barriers for new entrants by, for example, allowing SW pure players access 
+to automotive (see above). For the OEM, it would allow a standardized SW platform while 
+keeping competition on the HW to avoid costs through lock-ins. This certainly threatens 
+the value pools of established tier-1 suppliers, but an increase in competition among 
+suppliers could be a benefit to OEMs.
+There are other significant implications of a new sourcing model. Since SW is more about R&D 
+costs (“zero marginal costs”) than unit costs, the traditional HW sourcing approach will make 
+way for new realities. First, single-sourcing solutions and strategic partnerships will arise. 
+Next, secondary factors, such as toolchain integration, development excellence (e.g., defect 
+resolution time), and testing automation will become key differentiators, and buyers need to 
+be able to judge those. Finally, the SW life cycle will extend beyond ten years after SOP. This 
+means that finding the right strategic, contractual and operational sourcing approaches to 
+optimize life cycle cost and customer delivery will be crucial.
+3.3 New companies are entering the playing field in nontraditional 
+and automotive areas 
+Based on the findings of our proprietary Start-up and Investment Landscape Analysis 
+(SILA), we can paint a detailed picture of the evolving battleground in automotive. Every 
+third automotive company in operation today was founded within the past two decades. 
+Unsurprisingly, this number is fueled by automotive SW and electronics companies 
+operating around ACES trends, especially providers of infotainment, connected services, 
+and cybersecurity (44 percent of which were founded since 2000), and ADAS/AD system 
+providers (38 percent of which are less than ten years old). In terms of headquarters, 
+34 percent of the new companies founded over the past ten years are based in the US and 
+28 percent in China, showcasing the innovative drive through start-ups in the US as well as 
+the growing technology focus in China. 
+Automotive software and electronics 2030
+As can be seen from the SILA landscape and cluster analysis (Text box 2 and Exhibit 13), [1] 
+OEMs, [2] tier-1, [3] powertrain/chassis and [4] power electronics suppliers are positioned 
+in the middle of the network graph. These “traditional” companies, with a median founding 
+year between 1964 and 1973, form the backbone of the network and provide the fundamental 
+parts of a vehicle. Those clusters are highly integrated and show a strong interaction with 
+other automotive players.
+McKinsey’s Start-up and Investment Landscape Analysis (SILA) tool reveals areas with 
+the largest investment activity by using big-data algorithms and semantic analytics. It 
+leverages inputs from comprehensive private and venture capital investment databases 
+covering about 2 million companies. Furthermore, it analyzes developments over 
+time and across regions and identifies implicit technological similarities between 
+organizations. 
+This information helps to identify trends in the automotive landscape and to locate 
+technology capabilities. Of course, it only takes into account the external investment 
+view; it does not cover internal investments, such as R&D expenses.
+Towards the edges of the graph, [5] battery, [6] semiconductor, and [7] infotainment, 
+connected services, and cybersecurity suppliers are separated from the main network of 
+core vehicle functions. These players are clustered together in a natural way as they provide 
+unique, add-on technology solutions to tier-1 suppliers and OEMs. 
+The cluster for [8] ADAS/AD system suppliers, on the other hand, is spread out, indicating a 
+difference in product and service offers. Hardly surprising, ADAS/AD system suppliers show 
+similarities to [9] automotive sensor suppliers. This may be explained by the overlaps in their 
+product portfolios, e.g., sensor suppliers might decide to introduce ADAS/AD systems and 
+vice versa.
+Shifting the focus to past transactions, most funding (in terms of number of transactions 
+received) was provided to companies headquartered in the US, China, and South Korea. This 
+is also true for five out of the nine product categories ([4], [5], [6], [7], [9]). For the clusters [1] 
+OEMs and [2] tier-1 suppliers, companies headquartered in two out of the three countries 
+were among the top three. In Europe, German companies were ranked among the top three in 
+the categories [1] OEMs, [3] powertrain/chassis, and [8] ADAS/AD systems. 
+Looking at the different market players, it becomes obvious that traditional companies 
+[1-3] received more than 80 percent of their transaction value through public offering. But 
+[4] power electronics suppliers saw an equal number of transactions through M&A, private 
+placements, and public offerings. Reasons for this may be related to the high specialization 
+of power electronics companies and their comparatively smaller sizes and, consequentially, a 
+lower share of publicly-listed power electronics companies.
+On the other hand, nontraditional, emerging start-up companies ([5], [7], [8], [9]) that fuel the 
+automotive revolution received at least 70 percent of their transaction value through seed 
+funding/private placements or M&As. The transaction volume spent on M&As for [8] ADAS/
+AD system providers (43 percent of transaction value in this cluster) and [7] infotainment, 
+connected services, and cybersecurity providers (38 percent) is especially high, showing the 
+race and need for innovative SW solutions.Text box 2 
+Start-up and Investment 
+Landscape Analysis: a big-
+data tech-finding tool 
+Automotive software and electronics 2030
+Exhibit 13
+Automotive SW and E/E ne twork map
+SOURCE: McK insey analysisSpecialized solutions
+ADAS/ AD/sens orsCore t echnolog yIndividual company Company similarity
+1
+34
+9
+Cluster name
+2
+8
+6Power electronic s suppliers Infotainment, connec ted 
+services, and cybersecurity 
+supplier sTier-1 supplier s
+Autom otive sensor suppliersSemic onductor suppliersBattery supplier s
+Powert rain/ chassi s suppli ersADAS/AD system suppl iersOEMs
+Automotive software and electronics 2030
+3.4 New partnerships and cooperation models are emerging – 
+primarily for software- and electronics-related topics
+As the complexity and costs of new SW-driven functions, e.g., for AD or connected cars, 
+are huge, we see increased cooperation to share costs or speed up development. Even 
+close competitors, such as BMW and Daimler or GM and Honda, are now working together, 
+especially in the field of AD, to share the high development costs. For EVs, Volkswagen 
+announced their openness to share their EV platform with other OEMs. Also, tier-1 suppliers 
+and OEMs are intensifying their cooperation and are building strategic partnerships. For 
+example, engineers from Daimler and Bosch are working together, colocated in two locations 
+to develop HW and SW for AD. 
+OEMs are also moving closer to strategically important tier-2 suppliers and tech companies 
+and are using directed-buy or “direct buy” (by OEM) mechanisms for the sourcing of key 
+components, and to gain access to IP, shape IP development, or secure critical supply. We see 
+this, for example, for high-performance computing chips and other potential breakthrough 
+technologies like LiDAR. These partnerships sometimes include financial investments by the 
+OEMs. For example, for reasons stated above, Ford invested in the LiDAR company Velodyne. 
+Also, tech companies are becoming a growing focus of OEMs. Volkswagen and Microsoft, for 
+example, are building an automotive cloud platform together, a partnership that also signifies 
+the move by players currently focused on consumer (electronics) into the automotive space. 
+Besides Microsoft, Google has launched Google Automotive Services, including a partnership 
+with and first deployment at Volvo1, while Samsung has shown interest in entering the 
+automotive space with the acquisition of Harman. Not surprisingly, those companies primarily 
+aim at infotainment and connected services with a direct link to the customer, yet they might 
+move further down into other domains over time.
+We also see the formation of ecosystems with several players along the value chain working 
+closely together. One example would be the close collaboration of BMW, FCA, Intel, Magna, 
+Aptiv, Continental, LiDAR supplier Innoviz, and SW specialists TTTech and KPIT to jointly 
+develop an AD platform. Baidu is trying to build an open platform for AD with its OEM, tier-1 
+supplier, tier-2 supplier, and research institution partners, sharing source code and data.
+In summary, the traditional OEM-supplier relationship, especially in the fields of innovation 
+in SW and electronics, is giving way to a variety of relationship models like strategic 
+partnerships, directed-buy initiatives, minority and majority acquisitions, and different forms 
+of alliances and joint ventures. These new forms of cooperation can be primarily observed in 
+technology areas that are highly complex and/or characterized by deeply integrated systems, 
+with value creation by different companies, impeding traditional sourcing mechanisms.
+1 https://www.polestar.com/us/news/year-of-the-2-user-interface, 23.01.2019
+Automotive software and electronics 2030
+The emerging threats, but especially opportunities, 
+resulting from the growing SW and E/E markets and their 
+shifting dynamics call for action from most automotive 
+companies and those who want to enter the industry. Due 
+to fast-paced changes, it is imperative to map out and follow 
+a clear strategy to ensure benefits from the disruptions 
+in automotive and not be on the side of the disrupted. 
+In the following section, we will describe emerging 
+strategies by player type and provide an outlook on how 
+companies can successfully navigate the landscape.4. Building blocks 
+for mapping your 
+automotive 
+software and 
+electronics strategy
+4.1 Strategic considerations for each automotive player archetype
+The trends described thus far will significantly impact all aspects of the automotive industry. 
+Not only will they influence the strategic positions and outlook of all players, but they will also 
+shape the products and influence the end customers who buy them. In the following, for each 
+of the player archetypes (OEMs, tier-1 suppliers, tier-2/component suppliers, semiconductor 
+companies, tech companies outside automotive, and engineering agencies/3rd-party SW 
+developers), we discuss the implications of the trends and provide an overview of the areas 
+requiring an adaptation to the future landscape. We then offer a way for each player to 
+imagine a shift in orientation that will enable them to act on a concise set of strategy- and 
+operations-focused actions.
+Automotive OEMs need to develop a strategic perspective on SW and electronics
+For OEMs, we see four main strategic implications of the shift in automotive SW and electronics:
+Mitigate rising per-vehicle HW and SW costs
+The HW and SW costs per vehicle can be expected to increase significantly by 2030. 
+As they will unlikely be able to completely pass these costs on to end customers, OEMs 
+should find mitigation strategies to reduce the HW and SW development costs. Examples 
+include creating economies of scale through partnerships with other OEMs, using supplier 
+components for nondifferentiating components with higher economies of scale, increasing 
+reusability of SW between platforms and models, or simplifying the E/E architecture. 
+Build SW development capabilities
+In order to develop differentiating parts of the SW in house, OEMs should strengthen their 
+SW capabilities. There are several ways to achieve this, including hiring additional experts, 
+creating or acquiring dedicated business units or subsidiaries for SW development, or 
+investing into development and validation tool chains.
+Develop full-stack competencies
+OEMs should increase their competencies along the full technology stack – i.e., across the 
+elements of middleware, OS, HW abstraction layer, and cloud computing. This increased 
+capacity will allow OEMs to specify the different technology stack elements in order to enable 
+HW-SW separation and follow a best-of-breed sourcing approach. 
+Create a cross-functional development organization
+By breaking up their domain silos in the development organization and moving decision- 
+making power for SW and E/E architecture to central departments, OEMs can speed up time 
+to market for new E/E architecture definition and sourcing decisions. 
+Tier-1 suppliers must react to the increased capabilities and changed sourcing 
+behaviors of OEMs 
+In order to do so, tier-1 suppliers can redefine their SW and E/E strategy through three 
+strategic moves: 
+Jointly define the E/E architecture
+By becoming a thought partner, tier-1 suppliers can work with OEMs to cocreate a vision for 
+the future E/E architecture and jointly shape the requirements. Tier-1 suppliers can seek to 
+establish new partnerships or join existing ecosystems. 
+Invest in SW development and integration capabilities
+Tier-1 suppliers can become significant players in this growth area by building the necessary 
+SW-related capabilities. To do so, however, they will need to win the war for talent (see below). 
+They can also create a dedicated development, integration, and validation tool chain to enable 
+continuous integration and development. 
+Break down internal domain silos
+As with OEMs, tier-1 suppliers also need to create a cross-functional organization to stay 
+competitive in cross-domain offers and respond to their customers’ changing engineering 
+needs/sources.
+Automotive software and electronics 2030
+Tier-2/component suppliers should think ahead and shape their space of differentiation
+Increasingly centralized systems can favor larger tier-1 suppliers over specialized ECU 
+providers. However, this and other market trends can also be a growth opportunity for tier-2 
+suppliers if they take action in two areas:
+Claim their space
+Due to functional differentiation on the SW level, many electronics components will be subject 
+to commoditization, putting margins under pressure, especially for suppliers down the value 
+chain. Tier-2 suppliers need to find an attractive niche and then scale within that niche. 
+Develop specialized SW capabilities
+Specialized component suppliers have an opportunity to grow their business by adding certain 
+SW capabilities (e.g., functional safety, artificial intelligence, or security capabilities) on top of 
+their existing offering to larger tier-1 suppliers. They can even bypass them and supply directly to 
+OEMs, or ensure that the OEM is directing the tier-1 supplier to use their components.
+Semiconductor players are required to embrace the growing relevance of matters that 
+were once only tangential 
+For semiconductor players, we see three crucial prerequisites for success:
+Think beyond your direct customer
+Understanding the technology shifts at the end customer (i.e., OEM) and deriving the 
+implications for your own strategic position is needed now more than ever. Due to the 
+technology shifts described above, many products will become commoditized or even obsolete 
+(e.g., general-purpose controllers), while others’ value will be maintained (e.g., specialized 
+controllers) or even increase (e.g., power electronics). Semiconductor players need to 
+understand this early, and they cannot wait for their direct tier-1 customers to tell them. 
+Understand the requirements
+Before making any investments, semiconductor players need to understand the end 
+customer product requirements. Those might be very specific and, in contrast to the last 
+decades, will have an impact even on the lowest elements of the technology stack. For 
+example, OEM preferences for certain OSs that enable the OEM to scale its application SW 
+have direct implications for HW and SW design on the chip level. Also, the importance of tool 
+chain and services will grow. This growing importance also includes other features that are 
+not directly product related but that are critical to product market success nonetheless. Here 
+again, understanding the end customer’s requirements is crucial. For example, the OEM’s 
+reluctance to create lock-in (e.g., in certain development tool chains) and the desire to reduce 
+integration effort and cost (e.g., through the use of supplier-developed tool chains) need to be 
+carefully weighed against each other. 
+Place your bets wisely
+While the opportunity in many segments is huge, so are, in many cases, the technology entry 
+barriers or the competition. A realistic, objective assessment of a semiconductor player’s 
+own ability to compete is a prerequisite for commercial success. The risk of making huge 
+investments into technologies that will be commoditized or turn out to have a different natural 
+owner is significant. 
+That being said, the opportunity is huge, and those who approach it right have significant 
+value to capture. Given the current early state of technology and market maturation, the future 
+winners will have made the right choices today.
+This similarly applies to engineering or (SW) development service providers and other 
+tech companies from outside the automotive space. The technology borders between the 
+automotive and the consumer electronics world will continue to be torn down. This will open 
+up huge opportunities but also risks, for those who make efforts to enter the new markets. 
+Automotive software and electronics 2030
+4.2 First steps for all players in navigating the changing landscape 
+Without doubt, there is no one-size-fits-all approach to tackling the challenges that the 
+disruptive trends described in this report present to various players in the automotive industry. 
+Yet, independent of their individual starting position or location along the automotive value 
+chain, we see a set of clear actions that all companies need to assess to successfully navigate 
+the changing landscape of automotive SW and electronics:
+Beef up your SW and E/E architecture capabilities and become part of early, shaping 
+discussions
+While the overall trends in SW and E/E architecture are clearly materializing, there is a lot 
+of ambiguity and uncertainty. Players that involve themselves in early concept and design 
+phases will be in a better position to shape the concrete technological solution, structure the 
+integration of components, and, ultimately, set themselves up to own a competitive share of 
+the market.
+Be ready to experiment as there is no silver bullet yet
+For most technological challenges and business models, solutions are not yet set in stone, for 
+example, for AD. Players that want to be successful in the emerging technologies, especially 
+SW and electronics for AD and next-generation infotainment/services, will need to embrace a 
+test-and-learn culture and be ready to experiment and quickly iterate learnings.
+Critically review existing control points and expand the view on establishing ecosystems
+Control points that are relevant today might become commodities tomorrow. Players that 
+want to successfully navigate the market need to continuously and critically review their 
+control points along the technology stack. Furthermore, the dynamics of establishing 
+ecosystems can quickly disrupt complete domains and reshuffle control points, requiring 
+players to closely monitor and observe changing ecosystem landscapes.
+Establish partnerships in an emerging ecosystem
+The rising complexity of SW and electronics systems in the car required for AD and other 
+functionalities of the future will make it impossible for a single player to develop and maintain 
+the system end to end. In addition, high R&D costs, especially for SW, require a large base 
+of vehicles to distribute the costs; otherwise, costs per car would be prohibitive, even for the 
+largest OEMs. This leads to the necessity of players to work together more intensely than in 
+the past with deeper integration than traditional supplier-purchaser relationships.
+Automotive software and electronics 2030
+Appendix
+Key aspects of the market models 
+The insights of this report were generated based on closely linked qualitative and quantitative 
+research. Our qualitative insights come from external and internal sources. In terms of 
+external sources, we conducted a series of interviews with executives in the automotive 
+industry that not only helped us challenge and refine our perspectives on the three key 
+questions mentioned above but also provided us with hands-on insights that fueled our 
+quantitative analyses. In terms of internal sources, we combined the knowledge of key 
+experts within our automotive practice to build a holistic view on how ACES trends and various 
+more specific drivers will influence the automotive SW and E/E market.
+For our quantitative market insights, we built bottom-up market models for each of the core 
+components within the automotive SW and E/E market:
+ —SW development, integration, verification, and validation
+ —ECUs/DCUs
+ —Sensors
+ —Power electronics
+ —Other components (harnesses, controls, switches, displays).
+For the first three of these market models we distinguish several automotive domains to 
+ensure that we have the proper granularity within each model:
+ —Powertrain
+ —Chassis
+ —Body
+ —ADAS
+ —AD
+ —Infotainment.
+At the highest level, each model, except that for automotive SW (see paragraph below for 
+details), follows the same logic. The market size in a given year is calculated as the product of 
+the number of components (e.g., the number of ECUs) per vehicle, their ASPs, and the number 
+of vehicles produced in a given year. The calculation also takes into account differences, e.g., 
+in take rate, price, between vehicle segments, OEM types, SAE AV levels (see “Definitions” on 
+page 42 for details), and powertrain types. Specifically, for ECUs/DCUs, we have excluded the 
+value of the SW content (OS, middleware, functions) from the model to avoid double counting. 
+The market value is comprised of the supplier value generation and components sold to the 
+OEM. For DCUs, for example, this includes not only the integrated circuits but, among others, 
+also the printed circuit board, memory, I/O connectors, thermal control, housing and the 
+value add of development, integration, and component testing of the component at the tier-1 
+supplier. Next to the aforementioned sources of insight, we integrated findings from market 
+research companies such as Strategy Analytics and IHS Markit as an additional validation.
+The number of vehicles produced each year is provided by a separate model in which we 
+incorporate data from the latest McKinsey Center for Future Mobility (MCFM) market outlook, 
+the McKinsey EV market model, and the MCFM mobility of the future scenario analysis. 
+We distinguish a “base case” with moderate growth in EVs and AVs by 2030 as well as an 
+“accelerated AV adoption case” with a much steeper growth in both vehicle types, but lower
+Automotive software and electronics 2030
+overall vehicle production due to cannibalization of private vehicles production through 
+autonomous shared vehicles. Note that numbers presented in this article refer to the 
+base case except where explicitly stated otherwise. In the vehicle production model, we 
+differentiate production volumes by different categories, i.e., geography, OEM type (volume 
+vs. premium), vehicle class, powertrain type, and SAE AV level. This differentiation is also 
+present within the market models for each element of the automotive SW and E/E market. 
+Hence, depending on the combination of the categories, such as SAE AV level and vehicle 
+class, we assumed different values for the number of components and their ASP where 
+appropriate. 
+Given the significant uncertainty around the emerging SW market and the core elements, 
+such as price points, monetization, sourcing models, and value chain/value capture, the 
+automotive SW market model follows a different logic than those of HW components. 
+The model considers the workforce required to build, maintain, and upgrade individual 
+SW functionalities over time as the key driver of market size, taking into account typical 
+supplier margins for SW as well. The model factors in the number of vehicle platforms and 
+variants across OEMs and tiers, as well as their temporal evolution, are used to obtain a 
+realistic perspective on the market size. To ensure consistency with the other models for E/E 
+components, the applicability of the various SW functions across powertrains and SAE AV 
+levels is also considered. Distribution of the market between OEMs, tier-1 suppliers, and other 
+companies (e.g., IT service providers, engineering service providers) is not taken into account. 
+Due to the nature of this approach, the market already occurs during the development phase 
+and not only after SOP as for the other models.
+To pressure-test the results of our modeling, we conducted workshops with Global 
+Semiconductor Alliance members in North America, Europe, and Asia. Based on workshop 
+feedback we iterated the models towards the version presented in this report. 
+Automotive software and electronics 2030
+List of abbreviations
+ACES Autonomous driving, connected vehicles, 
+ electrification of the powertrain, shared mobility 
+AD Autonomous driving
+ADAS Advanced driver assistance systems
+ASP Average selling price
+AV Autonomous vehicle
+BEV Battery electric vehicle
+BJB Battery junction box
+BMS Battery management system 
+CAGR Compound annual growth rate
+CMC Cell management controller
+DC/DC Direct current to direct current
+DCU Domain control unit
+E/E Electrical and electronic
+ECU Electronic control unit
+EMS Electronics manufacturing services 
+EV Electric vehicle
+HEV Hybrid electric vehicle
+HV High voltage
+HW Hardware
+ICE Internal combustion engine
+I/O Input/output
+LiDAR Light detection and ranging
+LV Low voltage
+MCFM McKinsey Center for Future Mobility
+OEM Original equipment manufacturer
+OS Operating system
+PHEV Plug-in hybrid electric vehicle
+SOP Start of production
+SW Software
+Automotive software and electronics 2030
+Definitions 
+SAE AV levels1
+Vehicle classes
+Although there is no Europe-wide formal characterization or regulation of vehicle segments, 
+an EU document2 mentions the following classes:
+A: mini cars
+B: small cars
+C: medium cars
+D: large cars
+E: executive cars
+F: luxury cars
+J: sport utility cars (including off-road vehicles)
+M: multi-purpose cars (including pickups)
+S: sports cars  
+1 Source: SAE International J3016
+2 Regulation (EEC) No 4064/89 – Merger Procedure
+Automotive software and electronics 2030
+Important notice
+This report has been prepared by a McKinsey team based on public sources, extensive 
+research, and proprietary information gathered both via in-depth interviews with industry 
+thought leaders and from IHS Markit’s Light Vehicle Production Forecast (2018).
+Neither the report nor any part of its contents is intended or suited to constitute the basis 
+of any investment decision regarding any company operating in the markets covered by this 
+report or any similar markets (including, without limitation, the purchase of any securities of 
+any listed company or in connection with the listing of any company).
+This report contains certain forward-looking statements (i.e., estimates, forecasts, and 
+projections about industries, trends, players, and consumers). By their nature, forward-
+looking statements involve uncertainties because they relate to events that may or may not 
+occur in the future. This applies particularly to statements in this report containing information 
+on future developments; earnings capacity; plans and expectations regarding the business, 
+growth, and profitability of companies operating in the markets covered by the manufacturing 
+industry or any related markets; and general economic and regulatory conditions and other 
+factors that affect such companies. Forward-looking statements in this report are based on 
+current estimates and assumptions that are made to the McKinsey team’s best knowledge. 
+These forward-looking statements and the overall markets about which they are made 
+are subject to risks, uncertainties, and other factors that could cause actual situations and 
+developments to differ materially from those expressly or implicitly predicted by these 
+forward-looking statements or not occur at all. In addition, McKinsey does not assume any 
+obligation to update any forward-looking statements or to conform these forward-looking 
+statements to actual events or developments.
+McKinsey does not assume any responsibility towards any persons for the correctness and 
+completeness of the information contained in this report.
+Automotive software and electronics 2030
+Contacts and 
+authors 
+Content contributors
+Christian Knochenhauer, Senior Expert, Berlin
+Georg Doll, Vice President IoT, Munich
+Martin Kellner, Engagement Manager, Munich
+Silviu Apostu, Consultant, Munich
+Florian Haubner, Consultant, Frankfurt
+Michaela Brandl, Consultant, Munich
+Julia Werra, Consultant, Berlin
+Denis Hörner, Research Analyst, MunichJan Paul Stein is an Engagement Manager in 
+McKinsey’s Munich office. 
+jan_paul_stein@mckinsey.comJohannes Deichmann is an Associate Partner in 
+McKinsey’s Stuttgart office. 
+johannes_deichmann@mckinsey.comOndrej Burkacky is a Partner in 
+McKinsey’s Munich office. 
+ondrej_burkacky@mckinsey.com
+Automotive software and electronics 2030
+
+Advanced Industries – Automotive & Assembly 
+July 2019 
+Copyright © McKinsey & Company 
+Designed by Visual Media Europe
+www.mckinsey.com
