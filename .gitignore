@@ -1,10 +1,106 @@
-.DS_Store
-*.DS_Store
-data/rag_automotive_tech/raw_sources
+# =============================================
+# DATA DIRECTORIES
+# =============================================
+
+# Current structure - 01_data/
+**/01_data/**/raw_sources/
+**/01_data/**/processed/chunks/
+**/01_data/**/processed/*.json
+**/01_data/**/processed/*.pdf
+**/01_data/**/processed/*.txt  # Add this if you process text files
+!**/01_data/**/README.md
+
+# Old structure - data/ (if any legacy files exist)
+data/rag_automotive_tech/raw_sources/
 data/rag_automotive_tech/processed/*.pdf
+data/rag_automotive_tech/processed/*.json
+
+# =============================================
+# MODEL DIRECTORIES
+# =============================================
+
+# Current structure - 04_models/
+**/04_models/**/*
+!**/04_models/**/README.md
+
+# Old structure - models/ (if any legacy files exist)
 models/vector_index/
 models/saved_model/
-.env
+
+# =============================================
+# MACHINE LEARNING MODEL FILES (All locations)
+# =============================================
 *.key
 *.ckpt
 *.bin
+*.pth
+*.pt
+*.safetensors
+*.h5
+*.tflite
+*.onnx
+
+# =============================================
+# PYTHON & DEVELOPMENT
+# =============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv
+venv/
+env/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Streamlit cache
+**/05_app/.streamlit/
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
