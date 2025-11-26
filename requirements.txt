@@ -3,6 +3,8 @@ numpy<2.0.0  # Pin to compatible version
 pandas
 scikit-learn
 scipy
+pickle
+importlib
 
 # LangChain Ecosystem
 langchain>=0.1.0
@@ -12,6 +14,7 @@ langchain-core>=0.1.0
 # Text Processing
 nltk
 tqdm
+PyPDF2
 
 # Vector Store & Embeddings
 faiss-cpu  # Lightweight CPU version
@@ -29,6 +32,8 @@ groq
 python-dotenv
 joblib
 chardet  # For encoding detection
+os
+sys
 
 # Jupyter
 jupyter
