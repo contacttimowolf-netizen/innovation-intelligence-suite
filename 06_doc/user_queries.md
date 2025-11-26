@@ -20,9 +20,9 @@ Note: The Innovation Intelligence Suite will return on these queries within the 
 
 1. “Which startups work on AI for automotive?” (Descriptive / Contextual)
 
-2. "Summarize the latest research on conversational AI and autonomous driving." (Explanatory)
+2. "Summarize the latest research on AI and autonomous driving." (Explanatory)
 
-3. "Summarize latest tech trends and especially the development on AI agents" (-- connected to project case study)
+3. "Summarize latest tech trends in development of AI agents" (-- connected to project case study)
 
 4. "Summarize the key pain points/use cases mentioned in these sources about [topic]." (Explanatory)
 
@@ -40,6 +40,11 @@ Out of Scope:
 ("Which emerging fields should we focus on first?)
 - comparative questions 
 (“What are the main approaches to AI-based recycling?”)
+
+✅ Each tests different RAG capabilities
+✅ Good for evaluating specific query types
+✅ Clear separation of concerns
+✅ Better for tracking performance metrics
 
 
 # Data Options 

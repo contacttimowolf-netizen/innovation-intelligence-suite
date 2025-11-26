@@ -1,0 +1,346 @@
+[
+  {
+    "query_id": 1,
+    "question": "Which startups work on AI for automotive?",
+    "answer": "Based on the provided context, it is not possible to directly answer which startups work on AI for automotive. However, we can infer some information about the automotive industry's adoption of AI and the potential opportunities for startups.\n\nThe research paper \"Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt\" highlights the growing importance of generative AI in the automotive industry, including its applications in design, manufacturing, and autonomous driving. This suggests that startups working on AI for automotive might focus on developing innovative solutions in these areas.\n\nThe research paper \"drive_disfluency-rich_synthetic_dialog_data_generation_framework_for_intelligent_vehicle_environments.txt\" emphasizes the need for domain-specific synthetic dialog datasets to enhance the naturalness and adaptability of AI systems in automotive environments. This implies that startups might work on developing AI-powered voice assistants or conversational interfaces for vehicles.\n\nThe McKinsey tech report \"mckinsey_tech_trends_2025.txt\" mentions recent advances in AI, including models that can communicate with each other and create their own languages. This development has implications for robotics, complex problem-solving, and other fields, including potentially the automotive industry.\n\nHowever, without specific information about startups working on AI for automotive, we cannot provide a comprehensive list of companies. The provided context focuses on research papers and industry trends rather than specific companies or startups.\n\nTo answer this question, we would need additional information or sources that specifically mention startups working on AI for automotive.",
+    "sources": [
+      {
+        "content": "This paper aims to explore the impact of generative AI\non the automotive industry, focusing on its applications,\nbenefits, and potential challenges. The objectives are to\nprovide a comprehensive understanding of how generative\nAI technologies like GANs and V AEs can be leveraged\nto innovate and enhance various aspects of automotive\ndesign, manufacturing, and autonomous driving. The paper is\nstructured as follows:\n1)Introduction: A brief history of AI in automotive\napplications and an introduction to generative AI.\n2)Generative AI Technologies: An in-depth look at key\ngenerative AI technologies, including GANs and V AEs,\nand their relevance to the automotive industry.\n3)Applications in the Automotive Industry: Exploration\nof specific use cases, such as V oice Assistant in\nAutomotive Infotainment\n4)Challenges and Future Directions: Discussion of the\nchallenges in implementing generative AI and potential\nfuture developments in this space.\n5)Conclusion: A summary of key findings and the",
+        "source_file": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+        "doc_type": "research_paper",
+        "similarity_score": 0.47675180883063506,
+        "full_metadata": {
+          "source": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+          "doc_type": "research_paper",
+          "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt"
+        }
+      },
+      {
+        "content": "driver-AI interactions. Moreover, disfluencies dis-\nrupt the regular, fluent structure that language mod-\nels are typically trained on. Research by Ferreira\nand Bailey (2004) shows that such interruptions canarXiv:2507.19867v1 [cs.CL] 26 Jul 2025\nimpair syntactic parsing and semantic integration,\nwhile Fox Tree (2001) demonstrate that filler words\ncarry subtle prosodic cues reflecting planning de-\nlays—factors that further challenge the robustness\nof conversational AI.\nConsequently, models fine-tuned on fluent, task-\noriented datasets may struggle to interpret and re-\nspond effectively to the fragmented, disfluent in-\nputs intrinsic to automotive contexts. Addressing\nthis shortfall requires the development of domain-\nspecific synthetic dialog datasets that not only repli-\ncate the natural flow of driver-AI interactions but\nalso incorporate a rich variety of disfluencies, ulti-\nmately enhancing the naturalness and adaptability\nof AI systems in real-world automotive environ-\nments.",
+        "source_file": "drive_disfluency-rich_synthetic_dialog_data_generation_framework_for_intelligent_vehicle_environments.txt",
+        "doc_type": "research_paper",
+        "similarity_score": 0.4440014956914867,
+        "full_metadata": {
+          "source": "drive_disfluency-rich_synthetic_dialog_data_generation_framework_for_intelligent_vehicle_environments.txt",
+          "doc_type": "research_paper",
+          "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/drive_disfluency-rich_synthetic_dialog_data_generation_framework_for_intelligent_vehicle_environments.txt"
+        }
+      },
+      {
+        "content": "4 Two artificial intelligences talk to each other,” ScienceDaily, March 18, 2024.\n5 “AI models work faster together when they speak their own language,” New Scientist , November 15, 2024.content, execute searches, evaluate hundreds \nof sources, and synthesize information into \ncomprehensive reports. These agents reflect \na broader shift toward using AI not just for \nretrieval but also for reasoning enabled by faster \nknowledge generation that can be scaled.3 \n —AI agents can “talk” to one another. Recent \nadvances in AI include models that can \ncommunicate with one another and create their \nown languages.4 Neural networks can now learn \ntasks and describe them to other AI systems. \nProcessing this AI-to-AI communication costs \nless than processing AI-to-human interaction. \nThese developments in AI-to-AI communication \nhave implications for robotics, complex problem-\nsolving, and other fields, though they also raise \nconcerns about transparency and control.5",
+        "source_file": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.42614249750972627,
+        "full_metadata": {
+          "source": "mckinsey_tech_trends_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+        }
+      }
+    ],
+    "retrieved_chunks": 3,
+    "timestamp": "2025-11-26T11:04:43.394927",
+    "model_used": "llama-3.1-8b-instant"
+  },
+  {
+    "query_id": 2,
+    "question": "Summarize the latest research on conversational AI and autonomous driving.",
+    "answer": "Based on the provided research papers, here's a summary of the latest research on conversational AI and autonomous driving:\n\n**Conversational AI in Autonomous Driving**\n\nThe latest research on conversational AI in autonomous driving focuses on developing advanced voice assistants that can understand and respond to complex queries related to autonomous driving scenarios. For example, the MBUX system, which is LLM-based, can interpret and comprehend inquiries about autonomous driving scenarios, such as pedestrians on both sides of the road [Source: Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt].\n\n**Autonomous Driving Prediction and Simulation**\n\nResearchers have been working on developing simulations to test and polish autonomous driving systems under varied conditions. For instance, Gaia-1 was offered for autonomous driving prediction and simulation of scenarios through a generative AI-driven world model [Source: Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt]. Another example is the Wedge dataset, which was proposed by Marathe et al. (2023) to synthesize artificial intelligence models that focus on multi-weather conditions for autonomous driving [Source: Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt].\n\n**Multimodal World Models**\n\nRecent research has focused on developing multimodal world models for autonomous driving. For example, BEVWorld, a multimodal world model for autonomous driving via unified BEV latent space, was proposed by Zhang et al. (2024) [Source: generative_AI_for_autonomous_driving_a_review.txt]. Another example is MUVO, a multimodal world model with spatial representations for autonomous driving, proposed by Bogdoll et al. (2024) [Source: generative_AI_for_autonomous_driving_a_review.txt].\n\n**Occupancy Forecasting and Planning**\n\nResearchers have also been working on developing occupancy forecasting and planning models for autonomous driving. For instance, Driving in the Occupancy World, a vision-centric 4D occupancy forecasting and planning model via world models for autonomous driving, was proposed by Yang et al. (2025) [Source: generative_AI_for_autonomous_driving_a_review.txt].\n\n**Dataset for Autonomous Driving**\n\nThe nuScenes dataset, a multimodal dataset for autonomous driving, was proposed by Caesar et al. (2020) [Source: generative_AI_for_autonomous_driving",
+    "sources": [
+      {
+        "content": "you like me to find a\ncoffee shop closer to\nyour meeting location?”\nIt can also check for\nother relevant factors,\nlike “The weather is\nnice today. Should I\nfind a caf ´e with outdoor\nseating?”\nTABLE X: Scenario 5: Asking for next Autonomous Driving\nManeuver,Voice Command: “How are you going to handle\nthe upcoming scenario with pedestrians on both sides of the\nroad?”\nSystem Ford SYNC (2007) MBUX (LLM-based) Advanced In-Vehicle\nVoice Assistants (In\nResearch)\nInput\nRequirementLimited or\nUnsupported:\nFord SYNC from\n2007 would\nnot support\nsuch advanced\ninquiries related\nto autonomous\ndriving.Natural Language\nUnderstanding:The\nsystem can interpret\nthe question due to its\nLLM-based foundation,\nunderstanding the\ncontext of autonomous\ndriving.Highly Flexible\nUnderstanding:\nThe assistant can\nfully comprehend the\ninquiry, recognizing\nthe complexity of\nthe scenario and the\nrelevance to autonomous\ndriving.\nSystem\nOutputNo Response or\nError:The system\nmight respond with\n“Command not\nrecognized,” or",
+        "source_file": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+        "doc_type": "research_paper",
+        "similarity_score": 0.5266099274945539,
+        "full_metadata": {
+          "source": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+          "doc_type": "research_paper",
+          "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt"
+        }
+      },
+      {
+        "content": "al. (2024) [59]presents the ability to simulate difficult driving\nscenarios. The work demonstrates how such simulations\ncould help polish and test the autonomous driving systems\nunder varied conditions. Gaia-1, in contrast, was offered for\nautonomous driving prediction and simulation of scenarios by\nHu et al. (2023) [23]through a generative AI-driven world\nmodel; emphasis was laid on the importance of realistic\nenvironment simulation for training and validation. Marathe\net al. (2023) [35]propose Wedge, a novel dataset synthesized\nfrom artificial intelligence models that focus on multiweather\nconditions for autonomous driving. It brings forth important\ninsights towards how one can raise the bar even further in\nterms of robustness and accuracy for autonomous systems\nunder different weather condition\n3) Maintenance and Monitoring:Liu et al. (2021)\n[31]present a method leveragingLSTM-GANfor\nself-detection of abnormal data and predictive maintenance in",
+        "source_file": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+        "doc_type": "research_paper",
+        "similarity_score": 0.4471171353751893,
+        "full_metadata": {
+          "source": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+          "doc_type": "research_paper",
+          "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt"
+        }
+      },
+      {
+        "content": "arXiv:2406.08481.\n[158] Y . Zhang, S. Gong, K. Xiong, et al. , “BEVWorld: A Mul-\ntimodal World Model for Autonomous Driving via Unified\nBEV Latent Space,” 2024, arXiv:2407.05679.\n[159] D. Bogdoll, Y . Yang, T. Joseph, and J. M. Zöllner, “MUVO:\nA Multimodal World Model with Spatial Representations for\nAutonomous Driving,” 2024, arXiv:2311.11762.\n[160] Y . Yang, J. Mei, Y . Ma, et al. , “Driving in the Occupancy\nWorld: Vision-Centric 4D Occupancy Forecasting and Plan-\nning via World Models for Autonomous Driving,” 2025,\narXiv:2408.14197.\n[161] H. Caesar, V . Bankiti, A. H. Lang, et al. , “nuScenes:\nA Multimodal Dataset for Autonomous Driving,” in 2020\nIEEE/CVF Conf. on Comput. Vis. Pattern Recognit. , 2020.\n[162] J. Wei, S. Yuan, P. Li, Q. Hu, Z. Gan, and W.\nDing, “OccLLaMA: An Occupancy-Language-Action Gen-\nerative World Model for Autonomous Driving,” 2024,\narXiv:2409.03272.\n[163] N. Nayakanti, R. Al-Rfou, A. Zhou, K. Goel, K. S. Refaat,",
+        "source_file": "generative_AI_for_autonomous_driving_a_review.txt",
+        "doc_type": "research_paper",
+        "similarity_score": 0.4189943919731646,
+        "full_metadata": {
+          "source": "generative_AI_for_autonomous_driving_a_review.txt",
+          "doc_type": "research_paper",
+          "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/generative_AI_for_autonomous_driving_a_review.txt"
+        }
+      }
+    ],
+    "retrieved_chunks": 3,
+    "timestamp": "2025-11-26T11:04:44.267715",
+    "model_used": "llama-3.1-8b-instant"
+  },
+  {
+    "query_id": 3,
+    "question": "Summarize latest tech trends and especially the development on AI agents",
+    "answer": "Based on the provided context, here's a summary of the latest tech trends and developments on AI agents:\n\n**Key Developments:**\n\n1. **Agentic AI**: AI agents capable of autonomous decision-making and interagent communication are being developed, presenting exciting possibilities, but also raising concerns about trust, governance, and liability. [Source: mckinsey_tech_trends_2025.txt]\n2. **General-Purpose Agent Platforms**: Developers are building AI-powered, general-purpose agent platforms, which are being added to existing platforms by some companies. [Source: mckinsey_tech_trends_2025.txt]\n3. **AI-to-AI Communication**: Recent developments in AI-to-AI communication have implications for robotics, complex problem-solving, and other fields, but also raise concerns about transparency and control. [Source: mckinsey_tech_trends_2025.txt]\n\n**Trends and Drivers:**\n\n1. **Rapid Progress**: The rapid progress of agentic AI underscores a critical need for robust governance frameworks to address trust, liability, and ethical concerns. [Source: mckinsey_tech_trends_2025.txt]\n2. **Investment and Adoption**: Equity investment in agentic AI has increased significantly, with $1.1 billion invested in 2023-24, and job postings for AI-related roles have risen by 985%. [Source: mckinsey_tech_trends_2025.txt]\n3. **Hybrid Worker Environments**: The spread of AI, especially of agents, requires humans to play a lead role in reimagining future agents and workflows, and companies must look after AI workers as well as human colleagues. [Source: bcg_ai_value_2025.txt]\n\n**Key Players:**\n\n1. **Google**: Google has developed an AI-powered, general-purpose agent platform called Gemini 2.0, which is now available to everyone. [Source: mckinsey_tech_trends_2025.txt]\n2. **OpenAI**: OpenAI has introduced an AI agent called Operator, which is a general-purpose agent platform. [Source: mckinsey_tech_trends_2025.txt]\n\n**Near-term vs Long-term Developments:**\n\n1. **Near-term**: The development of general-purpose agent platforms and AI-to-AI communication is expected to continue in the near term, with a focus on addressing trust, governance, and liability concerns.\n",
+    "sources": [
+      {
+        "content": "Because these agents use language that \nhumans can read, they can describe what \nthey’re doing and be guided via feedback on \ntheir work plan.\nThe potential of agentic AI has persuaded many \nindustries to explore enlisting agentic virtual \ncoworkers for a variety of functions and roles. \n11\nTechnology Trends Outlook 2025\nLatest developments \nThe development of AI agents capable of \nautonomous decision-making and interagent \ncommunication presents exciting possibilities. \nHowever, the rapid progress of agentic AI \nunderscores a critical need for robust governance \nframeworks to address trust, liability, and ethical \nconcerns. The latest developments in agentic AI \ninclude the following:\n —Developers are building AI-powered, general-\npurpose agent platforms. Some companies \nare adding agentic capabilities to their existing \n1 Google Blog , “Gemini 2.0 is now available to everyone,” blog entry by Koray Kavukcuoglu, February 5, 2025; “Introducing Operator,” OpenAI,",
+        "source_file": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.5015603770737883,
+        "full_metadata": {
+          "source": "mckinsey_tech_trends_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+        }
+      },
+      {
+        "content": "harmony, and enabling interoperability across cloud-based, \nBOSTON CONSULTING GROUPTHE WIDENING AI VALUE GAP 16on-premises, and external ecosystems of AI agents and \ntools. Future-built companies involve the workforce twice \nas often as others do in reshaping workflows as they build, \ntest, and deploy agents. This inclusiveness ensures \nsmoother adoption and builds ownership and trust. These \nfirms recognize that as the AI operating model takes hold, \nthe role of humans evolves dramatically. Companies must \nlook after AI workers as well as human colleagues so that \nboth deliver optimal outcomes together. With the spread of \nAI, and especially of agents, humans must play a lead role \nin reimagining future agents and workflows.\nHybrid Worker Environments and Skills Evolution. \nOperating in a hybrid worker environment—one in which \nhumans and AI agents collaborate—calls for new \nmanagement capabilities . AI reshapes roles by \nautomating routine processes, narrowing performance",
+        "source_file": "bcg_ai_value_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.46666127508750327,
+        "full_metadata": {
+          "source": "bcg_ai_value_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/bcg_ai_value_2025.txt"
+        }
+      },
+      {
+        "content": "These developments in AI-to-AI communication \nhave implications for robotics, complex problem-\nsolving, and other fields, though they also raise \nconcerns about transparency and control.5 \n —Rising concerns about trust, governance, \nand liability are influencing the development \nand deployment of agentic AI. As AI agents \ntake on more autonomous roles that include \nexecuting financial transactions and interacting \nacross digital platforms, businesses are \nincreasingly grappling with accountability and \nlegal frameworks. Recent high-profile pilot \ndeployments have brought these risks into \nsharper focus, especially as AI systems act \nindependently across jurisdictions. Designing \nrobust guardrails and providing the right \noperational context for agents will be essential \nto ensure reliability and accountability.Scoring the trendTHE AI REV OLUTION\nAgentic AI\n$1.1Equity \ninvestment, \nbillion +985%Job pos tings,\n2023–24,",
+        "source_file": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.4402945559587584,
+        "full_metadata": {
+          "source": "mckinsey_tech_trends_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+        }
+      }
+    ],
+    "retrieved_chunks": 3,
+    "timestamp": "2025-11-26T11:04:45.158426",
+    "model_used": "llama-3.1-8b-instant"
+  },
+  {
+    "query_id": 4,
+    "question": "Summarize the key pain points/use cases mentioned in these sources about automotive AI.",
+    "answer": "Based on the provided sources, the key pain points and use cases mentioned in the context of automotive AI are:\n\n1. **Access to AI tools**: In relatively immature sectors, less than 50% of employees have access to AI tools, indicating a significant disparity in access to AI tools. [Source: bcg_ai_value_2025.txt]\n\n2. **Generative AI applications in automotive design, manufacturing, and autonomous driving**: The paper aims to explore the impact of generative AI on the automotive industry, focusing on its applications, benefits, and potential challenges. [Source: Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt]\n\n   a. **Voice Assistant in Automotive Infotainment**: One specific use case mentioned in the paper is the application of generative AI in voice assistants for infotainment systems.\n\n3. **Challenges in implementing generative AI**: The paper discusses the challenges in implementing generative AI, but the specific challenges are not mentioned in the provided context.\n\n4. **ACES trends and various drivers influencing the automotive SW and E/E market**: The report highlights the impact of ACES (Autonomous, Connected, Electric, and Shared) trends and various drivers on the automotive software and electronics (SW and E/E) market. [Source: automotive-software-and-electronics-2030-full-report.txt]\n\n   a. **SW development, integration, verification, and validation**: The report mentions the importance of these core components in the automotive SW and E/E market.\n\n   b. **ECUs/DCUs, Sensors, Power electronics, and Other components**: The report highlights the significance of these components in the automotive SW and E/E market.\n\n5. **AI's contribution to value in core functions**: In sectors such as airlines and telecommunications, AI's contribution to value in core functions pushes 80%. In the automotive industry, the report does not provide specific information on AI's contribution to value in core functions.\n\nNote that the provided context does not mention specific pain points or challenges in the automotive AI space. The information is mostly focused on the applications, benefits, and potential challenges of generative AI in the automotive industry.",
+    "sources": [
+      {
+        "content": "visible in both capability adoption and workforce readiness. \nAnd though maturity varies across sectors, companies in each \none have made cutting-edge progress.\nSoftware, telecommunications, and payments and fintech \nlead the maturity race in 2025, showing strong year-over-\nyear development and boosting their positions on our index \nby 13 points, 11 points, and 7 points, respectively. Fashion \nand luxury, chemicals, and real estate and construction \nremain at the lower end of the AI maturity curve.\nIn sectors such as airlines and telecommunications, AI’s \ncontribution to value in core functions pushes 80% (up 15 \npercentage points (pp) and 8 pp, respectively, from 2024). \nChemicals, oil and gas, and machinery and automation \nshow the highest shift toward AI use in core functions, with \nincreases of 14 to 19 pp. \nThere are big disparities in access to AI tools. In relatively \nimmature sectors, less than 50% of employees have access",
+        "source_file": "bcg_ai_value_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.43470642974263474,
+        "full_metadata": {
+          "source": "bcg_ai_value_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/bcg_ai_value_2025.txt"
+        }
+      },
+      {
+        "content": "This paper aims to explore the impact of generative AI\non the automotive industry, focusing on its applications,\nbenefits, and potential challenges. The objectives are to\nprovide a comprehensive understanding of how generative\nAI technologies like GANs and V AEs can be leveraged\nto innovate and enhance various aspects of automotive\ndesign, manufacturing, and autonomous driving. The paper is\nstructured as follows:\n1)Introduction: A brief history of AI in automotive\napplications and an introduction to generative AI.\n2)Generative AI Technologies: An in-depth look at key\ngenerative AI technologies, including GANs and V AEs,\nand their relevance to the automotive industry.\n3)Applications in the Automotive Industry: Exploration\nof specific use cases, such as V oice Assistant in\nAutomotive Infotainment\n4)Challenges and Future Directions: Discussion of the\nchallenges in implementing generative AI and potential\nfuture developments in this space.\n5)Conclusion: A summary of key findings and the",
+        "source_file": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+        "doc_type": "research_paper",
+        "similarity_score": 0.43175920726516714,
+        "full_metadata": {
+          "source": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+          "doc_type": "research_paper",
+          "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt"
+        }
+      },
+      {
+        "content": "research. Our qualitative insights come from external and internal sources. In terms of \nexternal sources, we conducted a series of interviews with executives in the automotive \nindustry that not only helped us challenge and refine our perspectives on the three key \nquestions mentioned above but also provided us with hands-on insights that fueled our \nquantitative analyses. In terms of internal sources, we combined the knowledge of key \nexperts within our automotive practice to build a holistic view on how ACES trends and various \nmore specific drivers will influence the automotive SW and E/E market.\nFor our quantitative market insights, we built bottom-up market models for each of the core \ncomponents within the automotive SW and E/E market:\n —SW development, integration, verification, and validation\n —ECUs/DCUs\n —Sensors\n —Power electronics\n —Other components (harnesses, controls, switches, displays).",
+        "source_file": "automotive-software-and-electronics-2030-full-report.txt",
+        "doc_type": "research_paper",
+        "similarity_score": 0.4186167569937561,
+        "full_metadata": {
+          "source": "automotive-software-and-electronics-2030-full-report.txt",
+          "doc_type": "research_paper",
+          "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/automotive-software-and-electronics-2030-full-report.txt"
+        }
+      }
+    ],
+    "retrieved_chunks": 3,
+    "timestamp": "2025-11-26T11:04:45.979260",
+    "model_used": "llama-3.1-8b-instant"
+  },
+  {
+    "query_id": 5,
+    "question": "Show me recent reports on technology trends.",
+    "answer": "Based on the provided context, I will analyze the recent reports on technology trends.\n\n**Technology Trends Outlook 2025**\n\nAccording to the McKinsey report, the investment climate for frontier technologies stabilized and, in many cases, rebounded in 2024 after a decline in 2023 [Source: mckinsey_tech_trends_2025.txt]. The report highlights that levels of equity investment in trends such as cloud and edge computing, bioengineering, and space technologies increased despite the broader market dip in 2023.\n\n**Key Trends and Developments**\n\n1. **5G Networks**: The report mentions that 5G networks are transforming space communication by integrating 5G with satellite systems, extending high-speed, low-latency internet coverage to remote areas, and improving global telecommunications [Source: mckinsey_tech_trends_2025.txt].\n2. **Immersive Reality**: The report highlights the use of augmented reality goggles in maintaining and repairing complex turbine systems safely, showcasing the potential of immersive reality in industrial applications [Source: mckinsey_tech_trends_2025.txt].\n3. **Cloud and Edge Computing**: The report notes that equity investment in cloud and edge computing increased in 2024, indicating growing interest in these technologies [Source: mckinsey_tech_trends_2025.txt].\n4. **Bioengineering**: The report mentions that equity investment in bioengineering also increased in 2024, suggesting growing investment in this field [Source: mckinsey_tech_trends_2025.txt].\n5. **Space Technologies**: The report highlights that equity investment in space technologies increased in 2024, indicating growing interest in this field [Source: mckinsey_tech_trends_2025.txt].\n\n**Talent Demand and Equity Investment**\n\nThe report provides data on talent demand and equity investment for various technology trends, including:\n\n1. **Talent Demand Ratio**: The report mentions that the talent demand ratio for skilled people to job vacancies is relatively low, indicating a potential shortage of skilled workers in certain fields [Source: mckinsey_tech_trends_2025.txt].\n2. **Equity Investment**: The report provides data on equity investment in various technology trends, including cloud and edge computing, bioengineering, and space technologies [Source: mckinsey_tech_trends_2025.txt].\n\n**Limitations**\n\nThe provided context does not provide information on specific startups or companies",
+    "sources": [
+      {
+        "content": "STARTUP #11459:\n  Name: Boiler Room\n  Location: N/A\n  Tagline: The world's leading underground music show\n  Description: am taped to a warehouse wall in Hackney, we've now hosted shows in over 65 cities, showcasing the output of quality emerging & established ...\n--------------------------------------------------\n\nSTARTUP #11460:\n  Name: Articheck\n  Location: N/A\n  Tagline: revolutionising art world condition reports\n  Description: Articheck is an app for the artworld - a tool that saves conservators thousands of hours of time writing condition reports.\nReports are filled when an artwork is moved or sold, for inventory and insurance purposes. With Articheck, reports are created 75% faster, ...\n--------------------------------------------------\n\nSTARTUP #11461:\n  Name: TGTHR\n  Location: N/A\n  Tagline: Find the people you don't know but should know\n  Description: esent yourself through the pictures that say the most about you ...\n--------------------------------------------------",
+        "source_file": "startups_processed.txt",
+        "doc_type": "startups_data",
+        "similarity_score": 0.46541297567117046,
+        "full_metadata": {
+          "source": "startups_processed.txt",
+          "doc_type": "startups_data",
+          "file_path": "../01_data/rag_automotive_tech/processed/startups_processed.txt"
+        }
+      },
+      {
+        "content": "clean-energy output while minimizing \ndowntime and operational costs Immersive reality\nTechnicians use augmented reality \ngoggles that provide visual guidance \nto help them maintain and repair \ncomplex turbine systems safely Three examples illustrate the combinatorial power of technology trends. \nIllustrations: T.M. Detwiler\nTechnology Trends Outlook 2025\nAfter a year in which the macroeconomic \nenvironment and broader market weakness \nprovoked significant declines in equity financing \nfor technology across several of our trends, the \ninvestment climate for frontier technologies \nstabilized and, in many cases, rebounded in 2024. \nLevels of equity investment in trends such as cloud \nand edge computing, bioengineering, and space \ntechnologies increased despite the broader market \ndip in 2023, while investments in other trends, such \nas AI and robotics, dipped only to recover to higher levels in 2024 than they achieved two years prior. \nThe two trends with the highest levels of equity",
+        "source_file": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.4591788263594113,
+        "full_metadata": {
+          "source": "mckinsey_tech_trends_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+        }
+      },
+      {
+        "content": "News\nPress reports \nfeaturing trend-\nrelated phrasesSearches \nSearch engine \nqueries for terms \nrelated to trendResearch\nScienti/f_ic \npublications on \ntopics associated \nwith trendPatents\nPatent /f_ilings for \ntechnologies \nrelated to trendTalent demand \nRatio of skilled \npeople to job \nvacanciesEquity investment\nPrivate- and public- \nmarket capital \nraises for relevant \ntechnologies\n0.16\n0.04\n0.08\n0.12\nNote: For each vector, we used a de/f_ined set of data sources to /f_ind occurrences of keywords associated with each of the 13 trends, screened those occurrences \nfor valid mentions of activity, and indexed the resulting numbers of mentions on a 0–1 scoring scale that is relative to the trends studied.\nTechnology Trends Outlook 2025\n5G networks also are transforming space \ncommunication. Integrating 5G with satellite \nsystems has extended high-speed, low-latency \ninternet coverage to remote areas and improved \nglobal telecommunications. Developments",
+        "source_file": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.402618321862755,
+        "full_metadata": {
+          "source": "mckinsey_tech_trends_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+        }
+      }
+    ],
+    "retrieved_chunks": 3,
+    "timestamp": "2025-11-26T11:04:46.828117",
+    "model_used": "llama-3.1-8b-instant"
+  },
+  {
+    "query_id": 6,
+    "question": "Which technologies are likely to mature next year?",
+    "answer": "Based on the provided context, it is challenging to determine which technologies are likely to mature next year with high accuracy. However, we can analyze the current stage of the mentioned technologies and identify potential transition indicators.\n\n**Artificial Intelligence (AI)**\n\nAccording to the McKinsey report, AI is an overarching category that replaces four previous trends, including applied AI, generative AI, industrializing machine learning, and next-generation software development. This suggests that AI has reached a significant level of maturity, with various subfields already in the commercialization phase.\n\n[Source: mckinsey_tech_trends_2025.txt]\n\nHowever, the report does not provide specific information on the current stage of AI or its subfields. To assess AI's maturity, we would need more detailed information on its development stage and transition evidence.\n\n**Agentic AI and Application-Specific Semiconductors**\n\nThese two trends have been added to the report since last year's publication. Agentic AI is likely in the research phase, as it is a relatively new area of research. Application-specific semiconductors may be in the development phase, as they require significant advancements in semiconductor technology.\n\n[Source: mckinsey_tech_trends_2025.txt]\n\n**Future of Energy and Sustainability Technologies**\n\nThis trend combines electrification and renewables and climate technologies beyond electrification. The report does not provide specific information on the current stage of this trend. However, it is likely that some subfields, such as renewable energy technologies, have reached a high level of maturity and are in the commercialization phase.\n\n[Source: mckinsey_tech_trends_2025.txt]\n\n**Emerging Technologies from the World Economic Forum (WEF) Report**\n\nThe WEF report lists the following emerging technologies:\n\n1. **Synthetic Biology**: This technology is likely in the research phase, as it requires significant advancements in genetic engineering and biotechnology.\n2. **Extended Reality (XR)**: This technology is likely in the development phase, as it requires significant advancements in hardware and software.\n3. **Quantum Computing**: This technology is likely in the research phase, as it requires significant advancements in quantum mechanics and computer science.\n4. **Autonomous Systems**: This technology is likely in the development phase, as it requires significant advancements in AI, robotics, and sensor technology.\n5. **Biotechnology**: This technology is likely in the research phase, as it requires significant advancements in genetic engineering and biotechnology",
+    "sources": [
+      {
+        "content": "proprietary Organizational Data \nPlatform, which stores licensed, \nde-identified data on publicly \navailable professional profiles and job \npostings. Data are drawn primarily \nfrom English-speaking countries.\nIn addition, we updated the selection \nand definition of trends from last \nyear’s report to reflect the evolution of \ntechnology trends:\n —An overarching artificial intelligence \ncategory replaces these four \ntrends: applied A I, generative AI, \nindustrializing machine learning, \nand next-generation software \ndevelopment. \n —The agentic AI and application-specific \nsemiconductors trends have been \nadded since last year’s publication. \n —Two separate trends from last year, \nelectrificati on and renewables \nand climate technologies beyond \nelectrification, have been combined \ninto a single trend: future of energy \nand sustainability technologies.\nThe data sources and keywords have been \nupdated. For equity investment insights into the future of space technologies",
+        "source_file": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.431780350137698,
+        "full_metadata": {
+          "source": "mckinsey_tech_trends_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+        }
+      },
+      {
+        "content": "that might emerge from some of today’s most \npromising innovations.H.E. Khalfan Belhoul \nChief Executive Officer, \nDubai Future Foundation\nAs an assumption\nTechnological progress will continue \nto accelerate.\nAs an uncertainty\nTechnologies are shaped by complex constraints \n– infrastructure limitations, energy demands, \npolicy shifts and societal readiness.\nAs an enabler\nTechnologies that underpin emerging megatrends \nand future opportunities.\nTop 10 Emerging Technologies of 2025\nIntroduction\nA message from the Top 10 Emerging \nTechnologies Steering Group Co-Chairs.\nMariette DiChristina \nDean and Professor, \nPractice in Journalism, \nBoston University College \nof CommunicationBernard S. Meyerson \nChief Innovation Officer \nEmeritus, IBM\nThe Fourth Industrial Revolution continues apace, \nfilling this year’s Top 10 Emerging Technologies \nreport with a striking array of integrative advances \nthat address global gaps and concerns. Our \nselection reflects the diverse nature of technological",
+        "source_file": "wef_emerging_tech_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.4067697413838688,
+        "full_metadata": {
+          "source": "wef_emerging_tech_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/wef_emerging_tech_2025.txt"
+        }
+      },
+      {
+        "content": "for sustainability and creating new foundations for \ntrust in connected systems. Each represents not \njust a technical advance, but a path towards more \nresilient and sustainable societies.\nThis work would not be possible without Mariette \nDiChristina and Bernard Meyerson, co-chairs of \nour Emerging Technologies Steering Committee. \nTheir leadership has been essential in shaping both \nthis report and the selection process behind it. \nWe are equally grateful to our steering committee \nmembers, whose diverse expertise ensures we \nidentify truly groundbreaking technologies with the \npotential to transform our world.\nAs the report continues to evolve, this year we’ve \nalso introduced ecosystem readiness maps that \nprovide practical guidance on the specific actions \nneeded to scale these technologies from promise \nto impact.\nWe offer this report not as an endpoint, but as a call \nto action – a catalyst for the collaboration essential \nto help these technologies fulfil their promise. In an",
+        "source_file": "wef_emerging_tech_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.39587690479504334,
+        "full_metadata": {
+          "source": "wef_emerging_tech_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/wef_emerging_tech_2025.txt"
+        }
+      }
+    ],
+    "retrieved_chunks": 3,
+    "timestamp": "2025-11-26T11:04:56.824240",
+    "model_used": "llama-3.1-8b-instant"
+  },
+  {
+    "query_id": 7,
+    "question": "Which AI research topics are growing fastest?",
+    "answer": "Based on the provided context, it appears that there is no direct information about AI research topics growing fastest. However, we can infer some insights from the BCG report on future-built companies and their strategies for AI adoption.\n\nThe report highlights that future-built companies, which are outperforming their peers, are more likely to have appointed a chief AI officer, have a chief data officer, and have deployed or scaled more AI workflows [Source: bcg_ai_value_2025.txt]. This suggests that companies are investing in AI talent and infrastructure, which could be indicative of growing interest in AI research topics.\n\nAdditionally, the report mentions that future-built companies are more likely to focus on reshaping and inventing work flows toward AI, leverage strategic workforce planning for AI, and implement responsible AI guardrails and governance [Source: bcg_ai_value_2025.txt]. This implies that companies are exploring new applications and uses of AI, which could be driving growth in AI research topics.\n\nHowever, without more specific information on AI research topics, it is difficult to provide a comprehensive answer. The context provided focuses on the adoption and implementation of AI in companies, rather than the specific research areas that are growing fastest.\n\nIf I had to speculate, based on the provided context, some potential AI research topics that could be growing in interest include:\n\n* Explainable AI (XAI) and AI transparency, given the emphasis on responsible AI guardrails and governance [Source: bcg_ai_value_2025.txt]\n* AI workflow optimization and automation, as companies seek to reshape and invent work flows toward AI [Source: bcg_ai_value_2025.txt]\n* Strategic workforce planning for AI, as companies recognize the need to adapt their talent and skills to leverage AI [Source: bcg_ai_value_2025.txt]\n\nHowever, these are highly speculative and based on indirect inferences from the provided context. A more comprehensive answer would require additional information on AI research topics and their growth trajectories.",
+    "sources": [
+      {
+        "content": "STARTUP #36032:\n  Name: Aevy\n  Location: N/A\n  Tagline: Opening up the professional world\n  Description:  up the professional world\n\n--------------------------------------------------\n\nSTARTUP #36033:\n  Name: FishBrain\n  Location: N/A\n  Tagline: The fastest growing app & social network for the world's biggest hobby - sport fishing\n  Description: \n--------------------------------------------------\n\nSTARTUP #36034:\n  Name: FundedByMe\n  Location: N/A\n  Tagline: Europe's fastest growing crowd investment platform connecting investors and entrepreneurs\n  Description: FundedByMe is Europe's fastest growing crowd investment platform connecting investors and entrepreneurs.\n--------------------------------------------------\n\nSTARTUP #36035:\n  Name: Auxy\n  Location: N/A\n  Tagline: Modern music creation made simple and social\n  Description: \n--------------------------------------------------",
+        "source_file": "startups_processed.txt",
+        "doc_type": "startups_data",
+        "similarity_score": 0.442908270625751,
+        "full_metadata": {
+          "source": "startups_processed.txt",
+          "doc_type": "startups_data",
+          "file_path": "../01_data/rag_automotive_tech/processed/startups_processed.txt"
+        }
+      },
+      {
+        "content": "STARTUP #3728:\n  Name: TheTechPanda\n  Location: N/A\n  Tagline: India's Fastest Growing Startup Blog\n  Description:  Fastest Growing Startup Blog\n\n--------------------------------------------------\n\nSTARTUP #3729:\n  Name: SKIITCH\n  Location: N/A\n  Tagline: SKIITCH is  is the expression of freedom, power and excitement through skirts.\n  Description: SKIITCH is a brand of designer skirts for women. The skirt is the symbol of the modern independent woman and represents her freedom, confidence and power in the social milieu. SKIITCH as a brand is to be positioned as new age, high fashion, affordable and customizable ...\n--------------------------------------------------",
+        "source_file": "startups_processed.txt",
+        "doc_type": "startups_data",
+        "similarity_score": 0.3962972401895834,
+        "full_metadata": {
+          "source": "startups_processed.txt",
+          "doc_type": "startups_data",
+          "file_path": "../01_data/rag_automotive_tech/processed/startups_processed.txt"
+        }
+      },
+      {
+        "content": "Which parts can and should be covered by AI (including \nGenAI and agents)? Which tasks need to remain with the \ninternal workforce?EXHIBIT 6\nFuture-Built Companies Pursue Five Strategies\nSource: BCG Build for the Future 2025 Global Study (n = 1,250).\nNote: FTE = full-time equivalent.What future-built companies do diﬀerently Outperformance versus laggards\nMore C-level executives and leadership teams deeply engaged with AI\nMore likely to have appointed a chief AI oﬃcer\nMore likely to have appointed a chief data oﬃcerPursue a multiyear\nstrategic ambition\nMore AI workﬂows already deployed or scaled\nMore governance in place or AI value-measuring setup\nMore focus on reshaping and inventing workﬂows toward AI Reshape and invent\nwith impact\nMore likely to leverage strategic workforce planning for AI\nHigher maturity in implementing responsible AI guardrails and governance\nMore likely to ensure shared business-IT ownership on AI implementationImplement an AI-ﬁrst\noperating model",
+        "source_file": "bcg_ai_value_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.38620073795524223,
+        "full_metadata": {
+          "source": "bcg_ai_value_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/bcg_ai_value_2025.txt"
+        }
+      }
+    ],
+    "retrieved_chunks": 3,
+    "timestamp": "2025-11-26T11:05:06.329510",
+    "model_used": "llama-3.1-8b-instant"
+  },
+  {
+    "query_id": 8,
+    "question": "Which research topics in quantum computing are moving from academy to application?",
+    "answer": "Based on the provided context, the research topics in quantum computing moving from academia to application include:\n\n1. **Quantum Error Correction**: IBM's first European quantum data center, which opened in October 2024, marked the first successful demonstration of low-latency quantum error correction, enabling the rapid feedback essential for fault-tolerant quantum computing. [Source: mckinsey_tech_trends_2025.txt]\n2. **Quantum Computing Chip Development**: Companies like Amazon, Microsoft, and Google are unveiling new quantum computing chips, such as Amazon's Ocelot, Microsoft's Majorana 1, and Google's Willow, which can reduce errors exponentially when scaling by adding more qubits. [Source: mckinsey_tech_trends_2025.txt]\n3. **Accelerated Quantum Supercomputing**: The NVIDIA Accelerated Quantum Research Center (NVAQC) aims to integrate leading quantum hardware with AI supercomputers, a concept referred to as accelerated quantum supercomputing, to overcome some of the most pressing challenges in quantum computing. [Source: mckinsey_tech_trends_2025.txt]\n4. **Quantum Key Distribution (QKD)**: Quantum key distribution is being explored as a secure method for transferring quantum information across distances, with potential applications in secure communication. [Source: mckinsey_tech_trends_2025.txt]\n\n**Technology Maturity Assessment:**\n\nBased on the provided context, the current stage of these research topics is in the **Development Phase (TRL 5-6)**, with evidence of prototyping, testing, and deployment.\n\n* **Quantum Error Correction**: IBM's demonstration of low-latency quantum error correction in October 2024 indicates a significant milestone in the development phase.\n* **Quantum Computing Chip Development**: The unveiling of new quantum computing chips by Amazon, Microsoft, and Google suggests a maturation of the technology, with companies moving from research to development.\n* **Accelerated Quantum Supercomputing**: The establishment of the NVIDIA Accelerated Quantum Research Center (NVAQC) and its focus on integrating leading quantum hardware with AI supercomputers indicate a shift towards development and testing.\n* **Quantum Key Distribution (QKD)**: While QKD is still in the research phase, its exploration as a secure method for transferring quantum information across distances suggests a growing interest in its development.\n\n**Transition Indicators and Timelines:**\n\n* **2024**: IBM's first",
+    "sources": [
+      {
+        "content": "5 “AWS unveils Ocelot, its first quantum computing chip,” Quantum Insider, February 27, 2025; “Amazon Web Services announces a new \nquantum computing chip,” Amazon, February 27, 2025.\n6 “Microsoft’s Majorana 1 chip carves new path for quantum computing,” Microsoft, February 19, 2025.\n7 “First IBM quantum data center in Europe opens; will include IBM’s most performant quantum systems,” IBM, October 1, 2024.marked the first successful demonstration of \nlow-latency quantum error correction, enabling \nthe rapid feedback essential for fault-tolerant \nquantum computing.\nReal-world examples involving competition and \nadvances in scaling include the following:\n —Google announced Willow, its latest \nquantum chip, which can reduce errors \nexponentially when scaling by adding more \nqubits. Reducing errors is a key challenge in \nquantum computing. Willow also performed a \nbenchmark computation that would take one \nof today’s fastest supercomputers 10 septillion",
+        "source_file": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.651426053284796,
+        "full_metadata": {
+          "source": "mckinsey_tech_trends_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+        }
+      },
+      {
+        "content": "integrating leading quantum hardware with \nAI supercomputers, a concept referred to as \naccelerated quantum supercomputing. NVAQC \nhopes to overcome some of the most pressing \nchallenges in quantum computing, including qubit \nnoise and the transformation of experimental \nquantum processors into practical devices, as \nwell as developing techniques like quantum \nerror correction and hybrid quantum algorithms.\nUnderlying technologies\nQuantum technologies encompass the following:\n —Quantum computing. Quantum computing is \na computing paradigm leveraging the laws of \nquantum mechanics to significantly improve \nthe performance of certain applications and to \nenable new territories of computing. \n —Quantum communication. Quantum \ncommunication is the secure transfer of \nquantum information across distances. \n —Quantum key distribution (QKD). QKD is the \nuse of quantum technology to securely share \na secret key that can be used with classical \nencryption algorithms.",
+        "source_file": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.6493970986058193,
+        "full_metadata": {
+          "source": "mckinsey_tech_trends_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+        }
+      },
+      {
+        "content": "at least theoretically. Microsoft says Majorana \n1 will enable quantum computers to solve \nmeaningful, industrial-scale problems in years \nrather than decades.6\nReal-world examples involving quantum hubs \ninclude the following:\n —IBM inaugurated its first European quantum \ndata center in Ehningen, Germany. There, \nadvanced processors like Eagle and Heron \nprovide quantum computational power. The \ncenter aims to foster research and innovation \nacross Europe, offering cloud-based access to \nquantum computing resources while adhering to \nregional data protection regulations.7\nTechnology Trends Outlook 2025\n —Nvidia announced that it is building a \nquantum computing research center, the \nNVIDIA Accelerated Quantum Research \nCenter (NVAQC), in Boston. This initiative \nplans to advance quantum computing by \nintegrating leading quantum hardware with \nAI supercomputers, a concept referred to as \naccelerated quantum supercomputing. NVAQC \nhopes to overcome some of the most pressing",
+        "source_file": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.6490529443621716,
+        "full_metadata": {
+          "source": "mckinsey_tech_trends_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+        }
+      }
+    ],
+    "retrieved_chunks": 3,
+    "timestamp": "2025-11-26T11:05:17.366720",
+    "model_used": "llama-3.1-8b-instant"
+  }
+]
