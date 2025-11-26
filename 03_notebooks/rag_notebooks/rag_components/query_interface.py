@@ -36,7 +36,7 @@ class SimpleQueryInterface:
         if filename is None:
             filename = f"query_results_{len(query)}_{hash(query) % 10000}.json"
         
-        save_path = f"../01_data/rag_automotive_tech/processed/{filename}"
+        save_path = f"../../01_data/rag_automotive_tech/processed/{filename}"
         
         with open(save_path, 'w', encoding='utf-8') as f:
             json.dump(results, f, indent=2, ensure_ascii=False)
