@@ -18,21 +18,21 @@ information about emerging technologies, startups, and research trends connected
 
 Note: The Innovation Intelligence Suite will return on these queries within the prototype scope.
 
-1. “Which startups work on AI for automotive?” (Descriptive / Contextual)
+1. “Which startups work on AI for automotive?” (Sourcing / Analytical) - take out of scope?
 
-2. "Summarize the latest research on AI and autonomous driving." (Explanatory)
+2. "Summarize the latest research on AI and autonomous driving." (Descriptive / Explanatory)
 
-3. "Summarize latest tech trends in development of AI agents" (-- connected to project case study)
+3. "Summarize latest tech trends in development of AI agents" (Descriptive -- connected to project case study)
 
-4. "Summarize the key pain points/use cases mentioned in these sources about [topic]." (Explanatory)
+4. "Summarize the key pain points/use cases in automotive AI." (Descriptive / Explanatory)
 
-5. “Show me recent reports on technology trends.” (Factual / Sourcing)
+5. “Show me recent patents on AI for automotive.” (Factual / Sourcing)
 
-6. “Which technologies are likely to mature next year?” (Timing / Forecast)
+6. “Which technologies are likely to mature next year?” (Timing / Predictive)
 
-7. "Which AI research topics are growing fastest?" (Trend / Velocity)
+7. "Which AI research topics are growing fastest?" (Trend / Analytical)
 
-8. “Which research topics in quatuum computing are moving from academy to application?” (Shift / Transition)
+8. “Which research topics in quatuum computing are moving from academy to application?” (Shift / TRL/Maturity)
 
 
 Out of Scope: 

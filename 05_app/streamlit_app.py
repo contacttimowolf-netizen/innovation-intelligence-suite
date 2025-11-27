@@ -321,36 +321,41 @@ def main():
     # Query interface (only shown when system is ready)
     st.success("🎉 System ready! Ask your question below.")
     
+    # Initialize question input in session state if not exists
+    if 'question_input' not in st.session_state:
+        st.session_state.question_input = ""
+    
     # Query input
     question = st.text_input(
         "💬 Your question:",
-        placeholder="e.g., Summarize the latest research on AI and autonomous driving.",
+        value=st.session_state.question_input,
+        placeholder="e.g., Which startups work on AI for automotive?",
         key="question_input"
     )
     
-    # Pre-defined query buttons - UPDATED with patent examples
+    # Pre-defined query buttons
     st.subheader("📋 Example Questions")
     col1, col2 = st.columns(2)
     
     with col1:
-        if st.button("🔬 Latest AI Research", use_container_width=True):
+        if st.button("🔬 Latest AI Research", use_container_width=True, key="research_btn"):
             st.session_state.question_input = "Summarize the latest research on AI and autonomous driving."
             st.rerun()
-        if st.button("📜 Automotive Patents", use_container_width=True):
+        if st.button("📜 Automotive Patents", use_container_width=True, key="patents_btn"):
             st.session_state.question_input = "What are the key patents in automotive AI with US jurisdiction?"
             st.rerun()
-        if st.button("🚀 Startups in AI Automotive", use_container_width=True):
+        if st.button("🚀 Startups in AI Automotive", use_container_width=True, key="startups_btn"):
             st.session_state.question_input = "Which startups work on AI for automotive?"
             st.rerun()
     
     with col2:
-        if st.button("📈 Tech Trends", use_container_width=True):
+        if st.button("📈 Tech Trends", use_container_width=True, key="trends_btn"):
             st.session_state.question_input = "Show me recent reports on technology trends."
             st.rerun()
-        if st.button("🤖 AI Agents Development", use_container_width=True):
+        if st.button("🤖 AI Agents Development", use_container_width=True, key="agents_btn"):
             st.session_state.question_input = "Summarize latest tech trends in development of AI agents"
             st.rerun()
-        if st.button("🎯 Tech Maturity", use_container_width=True):
+        if st.button("🎯 Tech Maturity", use_container_width=True, key="maturity_btn"):
             st.session_state.question_input = "Which automotive technologies are moving from academy to application?"
             st.rerun()
     
