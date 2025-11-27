@@ -242,13 +242,13 @@ def ask_question(question, retriever, groq_client):
 # STREAMLIT UI
 def main():
     st.set_page_config(
-        page_title="Innovation Intelligence Suite", 
+        page_title="INNOVATION INTELLIGENCE SUITE", 
         page_icon="🚗", 
         layout="wide"
     )
     
-    st.title("Innovation Intelligence Suite")
-    st.markdown("Ask questions about latest tech trends in the automotive industry, including startup and patent.")
+    st.title("INNOVATION INTELLIGENCE SUITE")
+    st.markdown("Ask questions about latest tech trends in the automotive industry, including patents and startups.")
     
     # Initialize system with session state for persistence
     if 'rag_initialized' not in st.session_state:
@@ -324,7 +324,7 @@ def main():
     # Query input
     question = st.text_input(
         "💬 Your question:",
-        placeholder="e.g., Which startups work on AI for automotive?",
+        placeholder="e.g., Summarize the latest research on AI and autonomous driving.",
         key="question_input"
     )
     
@@ -333,14 +333,14 @@ def main():
     col1, col2 = st.columns(2)
     
     with col1:
-        if st.button("🚀 Startups in AI Automotive", use_container_width=True):
-            st.session_state.question_input = "Which startups work on AI for automotive?"
-            st.rerun()
         if st.button("🔬 Latest AI Research", use_container_width=True):
             st.session_state.question_input = "Summarize the latest research on AI and autonomous driving."
             st.rerun()
         if st.button("📜 Automotive Patents", use_container_width=True):
             st.session_state.question_input = "What are the key patents in automotive AI with US jurisdiction?"
+            st.rerun()
+        if st.button("🚀 Startups in AI Automotive", use_container_width=True):
+            st.session_state.question_input = "Which startups work on AI for automotive?"
             st.rerun()
     
     with col2:

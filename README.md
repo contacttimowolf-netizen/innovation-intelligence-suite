@@ -4,7 +4,7 @@
 This capstone project explores how AI/ML can accelerate insight generation for R&D teams:
 - A **Retrieval-Augmented Generation (RAG)** interface synthesizing information and answering domain-scoped innovation queries. 
 - A **Technology Adoption Readiness Predictor** that classifies emerging technologies by maturity adding an intelligence layer to RAG by feeding tags into a prediction model. 
-- **Automotive technology focus** with research papers, tech reports, startups and patent data.
+- **Automotive AI technology focus** with research papers, tech reports, startups and patent data (2025).
 
 Developed as a Data Science + AI Bootcamp capstone project (2025).
 
