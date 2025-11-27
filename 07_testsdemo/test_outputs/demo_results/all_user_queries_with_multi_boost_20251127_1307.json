@@ -1,0 +1,480 @@
+[
+  {
+    "query_id": 1,
+    "question": "Which startups work on AI for automotive?",
+    "answer": "Based on the provided context, there are no startups explicitly mentioned that work on AI for automotive applications. However, we can infer some connections and potential opportunities.\n\nFrom the research paper \"Gen Ai In Automotive Applications Challenges And Opportunities With A Case Study On In-Vehicle Experience,\" we can see that generative AI technologies like GANs and V AEs have potential applications in the automotive industry, including voice assistants in infotainment systems. However, this paper does not mention any specific startups working on AI for automotive.\n\nThe second research paper \"DRIVE Framework: Synthetic Dialog Data for Intelligent Vehicles\" discusses the challenges of developing conversational AI for automotive contexts, including the need for domain-specific synthetic dialog datasets. While this paper does not mention any startups, it highlights the importance of AI in automotive applications.\n\nConsidering the provided context, it is not possible to identify any specific startups that work on AI for automotive applications. However, the research papers suggest that there may be opportunities for startups to develop innovative AI solutions for the automotive industry.\n\nIf we look at the provided startups, none of them explicitly mention working on AI for automotive applications. However, some of them may have potential connections or applications in this space:\n\n* Boxure (STARTUP #2872) is a productivity app that combines email and social communication, which may have potential applications in automotive infotainment systems.\n* StartupsFM (STARTUP #2873) is a startup storytelling platform, but it may have potential connections to the automotive industry through its exclusive network for startups.\n* Web Espy (STARTUP #27087) is a Yelp-like platform for startups, which may have potential applications in the automotive industry through its user reviews and ratings.\n* Bus Rush (STARTUP #27089) is a school bus locator app for students, which may have potential connections to the automotive industry through its transportation-related services.\n\nHowever, without more information, it is not possible to confirm whether these startups are working on AI for automotive applications.",
+    "sources": [
+      {
+        "content": "STARTUP #2872:\n  Name: Boxure\n  Location: N/A\n  Tagline: work better\n  Description: Boxure is a productivity app that combines Email and Social communication. It helps you solve the information overload and increase your productivity. It is a unified inbox with a massive API twist for real-time information.\nBoxure is also coming up with a powerful ...\n--------------------------------------------------\n\nSTARTUP #2873:\n  Name: StartupsFM\n  Location: N/A\n  Tagline: Storytelling on all things startups. Also launching an exclusive network for startups.\n  Description: Startups.fm is a startup storytelling platform. We ♥ Startups. Across the world, over the oceans, beyond earth, wherever they may be.\n--------------------------------------------------",
+        "source_file": "startups_processed.txt",
+        "doc_type": "startups_data",
+        "similarity_score": 0.47424284681047824,
+        "full_metadata": {
+          "source": "startups_processed.txt",
+          "doc_type": "startups_data",
+          "file_path": "../01_data/rag_automotive_tech/processed/startups_processed.txt"
+        }
+      },
+      {
+        "content": "STARTUP #27087:\n  Name: Web Espy\n  Location: N/A\n  Tagline: Yelp for Startups\n  Description: Web Espy is the Yelp for startups. We connect people with the best startups in the world through user reviews.\n--------------------------------------------------\n\nSTARTUP #27088:\n  Name: Silver Tongue\n  Location: N/A\n  Tagline: \n  Description: \n--------------------------------------------------\n\nSTARTUP #27089:\n  Name: Bus Rush\n  Location: N/A\n  Tagline: School Bus Locator For Students\n  Description: rning. Worry Free Afternoons.\n--------------------------------------------------\n\nSTARTUP #27090:\n  Name: VOLK\n  Location: N/A\n  Tagline: Reinvention of Japanese Folding Wall\n  Description: tion of Japanese Folding Wall\n\n--------------------------------------------------",
+        "source_file": "startups_processed.txt",
+        "doc_type": "startups_data",
+        "similarity_score": 0.46646368418366396,
+        "full_metadata": {
+          "source": "startups_processed.txt",
+          "doc_type": "startups_data",
+          "file_path": "../01_data/rag_automotive_tech/processed/startups_processed.txt"
+        }
+      },
+      {
+        "content": "This paper aims to explore the impact of generative AI\non the automotive industry, focusing on its applications,\nbenefits, and potential challenges. The objectives are to\nprovide a comprehensive understanding of how generative\nAI technologies like GANs and V AEs can be leveraged\nto innovate and enhance various aspects of automotive\ndesign, manufacturing, and autonomous driving. The paper is\nstructured as follows:\n1)Introduction: A brief history of AI in automotive\napplications and an introduction to generative AI.\n2)Generative AI Technologies: An in-depth look at key\ngenerative AI technologies, including GANs and V AEs,\nand their relevance to the automotive industry.\n3)Applications in the Automotive Industry: Exploration\nof specific use cases, such as V oice Assistant in\nAutomotive Infotainment\n4)Challenges and Future Directions: Discussion of the\nchallenges in implementing generative AI and potential\nfuture developments in this space.\n5)Conclusion: A summary of key findings and the",
+        "source_file": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+        "doc_type": "research_paper",
+        "similarity_score": 0.47675180883063506,
+        "full_metadata": {
+          "source": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+          "doc_type": "research_paper",
+          "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt"
+        }
+      },
+      {
+        "content": "driver-AI interactions. Moreover, disfluencies dis-\nrupt the regular, fluent structure that language mod-\nels are typically trained on. Research by Ferreira\nand Bailey (2004) shows that such interruptions canarXiv:2507.19867v1 [cs.CL] 26 Jul 2025\nimpair syntactic parsing and semantic integration,\nwhile Fox Tree (2001) demonstrate that filler words\ncarry subtle prosodic cues reflecting planning de-\nlays—factors that further challenge the robustness\nof conversational AI.\nConsequently, models fine-tuned on fluent, task-\noriented datasets may struggle to interpret and re-\nspond effectively to the fragmented, disfluent in-\nputs intrinsic to automotive contexts. Addressing\nthis shortfall requires the development of domain-\nspecific synthetic dialog datasets that not only repli-\ncate the natural flow of driver-AI interactions but\nalso incorporate a rich variety of disfluencies, ulti-\nmately enhancing the naturalness and adaptability\nof AI systems in real-world automotive environ-\nments.",
+        "source_file": "drive_disfluency-rich_synthetic_dialog_data_generation_framework_for_intelligent_vehicle_environments.txt",
+        "doc_type": "research_paper",
+        "similarity_score": 0.4440014956914867,
+        "full_metadata": {
+          "source": "drive_disfluency-rich_synthetic_dialog_data_generation_framework_for_intelligent_vehicle_environments.txt",
+          "doc_type": "research_paper",
+          "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/drive_disfluency-rich_synthetic_dialog_data_generation_framework_for_intelligent_vehicle_environments.txt"
+        }
+      }
+    ],
+    "retrieved_chunks": 4,
+    "source_count_used": 4,
+    "startup_boost_applied": true,
+    "patent_boost_applied": false,
+    "timestamp": "2025-11-27T13:06:30.128769",
+    "model_used": "llama-3.1-8b-instant"
+  },
+  {
+    "query_id": 2,
+    "question": "Summarize the latest research on AI and autonomous driving.",
+    "answer": "Based on the provided research papers, here is a summary of the latest research on AI and autonomous driving:\n\n**Advancements in Autonomous Driving**\n\nRecent research has focused on developing more robust and accurate autonomous driving systems. For instance, [158] Y. Zhang, S. Gong, K. Xiong, et al. proposed BEVWorld, a multimodal world model for autonomous driving via unified BEV latent space [1]. Similarly, [159] D. Bogdoll, Y. Yang, T. Joseph, and J. M. Zöllner introduced MUVO, a multimodal world model with spatial representations for autonomous driving [2].\n\n**Generative AI for Autonomous Driving**\n\nGenerative AI has been explored for its potential in simulating difficult driving scenarios and predicting autonomous driving outcomes. For example, [31] Liu et al. presented a method leveraging LSTM-GAN for self-detection of abnormal data and predictive maintenance in autonomous driving [3]. Additionally, [240] B. Jiang, S. Chen, B. Liao, et al. proposed Senna, a framework that bridges large vision-language models and end-to-end autonomous driving [4].\n\n**Path Planning and Architecture**\n\nResearchers have also focused on developing more efficient path planning algorithms and architectures for autonomous driving. For instance, [235] J. Levinson, J. Askeland, J. Becker, et al. proposed a functional reference architecture for autonomous driving [5]. Similarly, [239] A. Tampuu, T. Matiisen, M. Semikin, D. Fishman, and N. Muhammad surveyed end-to-end driving architectures and training methods [6].\n\n**Multimodal Datasets and World Models**\n\nThe development of multimodal datasets and world models has been crucial for advancing autonomous driving research. For example, [161] H. Caesar, V. Bankiti, A. H. Lang, et al. introduced nuScenes, a multimodal dataset for autonomous driving [7]. Additionally, [162] J. Wei, S. Yuan, P. Li, Q. Hu, Z. Gan, and W. Ding proposed OccLLaMA, an occupancy-language-action generative world model for autonomous driving [8].\n\n**End-to-End Autonomous Driving**\n\nRecent research has also focused on developing end-to-end autonomous driving systems. For instance, [241] P. S. Chib and P. Singh surveyed recent advancements in end-to-end autonomous",
+    "sources": [
+      {
+        "content": "you like me to find a\ncoffee shop closer to\nyour meeting location?”\nIt can also check for\nother relevant factors,\nlike “The weather is\nnice today. Should I\nfind a caf ´e with outdoor\nseating?”\nTABLE X: Scenario 5: Asking for next Autonomous Driving\nManeuver,Voice Command: “How are you going to handle\nthe upcoming scenario with pedestrians on both sides of the\nroad?”\nSystem Ford SYNC (2007) MBUX (LLM-based) Advanced In-Vehicle\nVoice Assistants (In\nResearch)\nInput\nRequirementLimited or\nUnsupported:\nFord SYNC from\n2007 would\nnot support\nsuch advanced\ninquiries related\nto autonomous\ndriving.Natural Language\nUnderstanding:The\nsystem can interpret\nthe question due to its\nLLM-based foundation,\nunderstanding the\ncontext of autonomous\ndriving.Highly Flexible\nUnderstanding:\nThe assistant can\nfully comprehend the\ninquiry, recognizing\nthe complexity of\nthe scenario and the\nrelevance to autonomous\ndriving.\nSystem\nOutputNo Response or\nError:The system\nmight respond with\n“Command not\nrecognized,” or",
+        "source_file": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+        "doc_type": "research_paper",
+        "similarity_score": 0.5266099274945539,
+        "full_metadata": {
+          "source": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+          "doc_type": "research_paper",
+          "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt"
+        }
+      },
+      {
+        "content": "al. (2024) [59]presents the ability to simulate difficult driving\nscenarios. The work demonstrates how such simulations\ncould help polish and test the autonomous driving systems\nunder varied conditions. Gaia-1, in contrast, was offered for\nautonomous driving prediction and simulation of scenarios by\nHu et al. (2023) [23]through a generative AI-driven world\nmodel; emphasis was laid on the importance of realistic\nenvironment simulation for training and validation. Marathe\net al. (2023) [35]propose Wedge, a novel dataset synthesized\nfrom artificial intelligence models that focus on multiweather\nconditions for autonomous driving. It brings forth important\ninsights towards how one can raise the bar even further in\nterms of robustness and accuracy for autonomous systems\nunder different weather condition\n3) Maintenance and Monitoring:Liu et al. (2021)\n[31]present a method leveragingLSTM-GANfor\nself-detection of abnormal data and predictive maintenance in",
+        "source_file": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+        "doc_type": "research_paper",
+        "similarity_score": 0.4471171353751893,
+        "full_metadata": {
+          "source": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+          "doc_type": "research_paper",
+          "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt"
+        }
+      },
+      {
+        "content": "arXiv:2406.08481.\n[158] Y . Zhang, S. Gong, K. Xiong, et al. , “BEVWorld: A Mul-\ntimodal World Model for Autonomous Driving via Unified\nBEV Latent Space,” 2024, arXiv:2407.05679.\n[159] D. Bogdoll, Y . Yang, T. Joseph, and J. M. Zöllner, “MUVO:\nA Multimodal World Model with Spatial Representations for\nAutonomous Driving,” 2024, arXiv:2311.11762.\n[160] Y . Yang, J. Mei, Y . Ma, et al. , “Driving in the Occupancy\nWorld: Vision-Centric 4D Occupancy Forecasting and Plan-\nning via World Models for Autonomous Driving,” 2025,\narXiv:2408.14197.\n[161] H. Caesar, V . Bankiti, A. H. Lang, et al. , “nuScenes:\nA Multimodal Dataset for Autonomous Driving,” in 2020\nIEEE/CVF Conf. on Comput. Vis. Pattern Recognit. , 2020.\n[162] J. Wei, S. Yuan, P. Li, Q. Hu, Z. Gan, and W.\nDing, “OccLLaMA: An Occupancy-Language-Action Gen-\nerative World Model for Autonomous Driving,” 2024,\narXiv:2409.03272.\n[163] N. Nayakanti, R. Al-Rfou, A. Zhou, K. Goel, K. S. Refaat,",
+        "source_file": "generative_AI_for_autonomous_driving_a_review.txt",
+        "doc_type": "research_paper",
+        "similarity_score": 0.4189943919731646,
+        "full_metadata": {
+          "source": "generative_AI_for_autonomous_driving_a_review.txt",
+          "doc_type": "research_paper",
+          "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/generative_AI_for_autonomous_driving_a_review.txt"
+        }
+      },
+      {
+        "content": "“LLM-A*: Large Language Model Enhanced Incremental\nHeuristic Search on Path Planning,” in Conf. on Empir.\nMethods Nat. Lang. Process. , 2024.\n[235] J. Levinson, J. Askeland, J. Becker, et al. , “Towards fully\nautonomous driving: Systems and algorithms,” in 2011 IEEE\nIntell. Veh. Symp. , 2011.\n[236] S. Behere and M. Törngren, “A functional reference archi-\ntecture for autonomous driving,” Inf. Softw. Technol. , 2016.\n[237] F. Munir, S. Azam, M. I. Hussain, A. M. Sheri, and M.\nJeon, “Autonomous Vehicle: The Architecture Aspect of\nSelf Driving Car,” in Int. Conf. on Sensors, Signal Image\nProcess. , 2018.[238] O. S. Tas, S. Hormann, B. Schaufele, and F. Kuhnt, “Auto-\nmated vehicle system architecture with performance assess-\nment,” in 2017 IEEE 20th Int. Conf. on Intell. Transp. Syst. ,\n2017.\n[239] A. Tampuu, T. Matiisen, M. Semikin, D. Fishman, and\nN. Muhammad, “A Survey of End-to-End Driving: Archi-\ntectures and Training Methods,” IEEE Trans. on Neural\nNetworks Learn. Syst. , 2022.",
+        "source_file": "generative_AI_for_autonomous_driving_a_review.txt",
+        "doc_type": "research_paper",
+        "similarity_score": 0.39079342924380306,
+        "full_metadata": {
+          "source": "generative_AI_for_autonomous_driving_a_review.txt",
+          "doc_type": "research_paper",
+          "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/generative_AI_for_autonomous_driving_a_review.txt"
+        }
+      },
+      {
+        "content": "[236] S. Behere and M. Törngren, “A functional reference archi-\ntecture for autonomous driving,” Inf. Softw. Technol. , 2016.\n[237] F. Munir, S. Azam, M. I. Hussain, A. M. Sheri, and M.\nJeon, “Autonomous Vehicle: The Architecture Aspect of\nSelf Driving Car,” in Int. Conf. on Sensors, Signal Image\nProcess. , 2018.[238] O. S. Tas, S. Hormann, B. Schaufele, and F. Kuhnt, “Auto-\nmated vehicle system architecture with performance assess-\nment,” in 2017 IEEE 20th Int. Conf. on Intell. Transp. Syst. ,\n2017.\n[239] A. Tampuu, T. Matiisen, M. Semikin, D. Fishman, and\nN. Muhammad, “A Survey of End-to-End Driving: Archi-\ntectures and Training Methods,” IEEE Trans. on Neural\nNetworks Learn. Syst. , 2022.\n[240] B. Jiang, S. Chen, B. Liao, et al. , “Senna: Bridging Large\nVision-Language Models and End-to-End Autonomous Driv-\ning,” 2024, arXiv:2410.22313.\n[241] P. S. Chib and P. Singh, “Recent Advancements in End-to-\nEnd Autonomous Driving using Deep Learning: A Survey,”\n2023, arXiv:2307.04370.",
+        "source_file": "generative_AI_for_autonomous_driving_a_review.txt",
+        "doc_type": "research_paper",
+        "similarity_score": 0.38943840923750433,
+        "full_metadata": {
+          "source": "generative_AI_for_autonomous_driving_a_review.txt",
+          "doc_type": "research_paper",
+          "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/generative_AI_for_autonomous_driving_a_review.txt"
+        }
+      }
+    ],
+    "retrieved_chunks": 5,
+    "source_count_used": 5,
+    "startup_boost_applied": false,
+    "patent_boost_applied": false,
+    "timestamp": "2025-11-27T13:06:31.221361",
+    "model_used": "llama-3.1-8b-instant"
+  },
+  {
+    "query_id": 3,
+    "question": "Summarize latest tech trends in development of AI agents",
+    "answer": "Based on the provided context from the McKinsey Technology Trends Outlook 2025 and Bcg AI Value 2025 reports, here is a summary of the latest tech trends in the development of AI agents:\n\n1. **Agentic AI capabilities**: AI agents are being developed to independently plan and execute complex, multistep tasks, communicate with each other, and adapt to new information. [Source: McKinsey Technology Trends Outlook 2025]\n2. **General-purpose agent platforms**: Developers are building AI-powered, general-purpose agent platforms, and some companies are adding agentic capabilities to their existing platforms. [Source: McKinsey Technology Trends Outlook 2025]\n3. **Specialized agents**: Specialized agents are being designed for deep research, and significant advancements have emerged in this area. [Source: McKinsey Technology Trends Outlook 2025]\n4. **AI-to-AI communication**: Developments in AI-to-AI communication have implications for robotics, complex problem-solving, and other fields, but also raise concerns about transparency and control. [Source: McKinsey Technology Trends Outlook 2025]\n5. **Rising concerns about trust, governance, and liability**: As AI agents take on more autonomous roles, businesses are increasingly grappling with accountability and legal frameworks. [Source: McKinsey Technology Trends Outlook 2025]\n6. **Robust governance frameworks**: There is a critical need for robust governance frameworks to address trust, liability, and ethical concerns related to agentic AI. [Source: McKinsey Technology Trends Outlook 2025]\n7. **Hybrid worker environments**: Operating in a hybrid worker environment, where humans and AI agents collaborate, calls for new management capabilities and skills evolution. [Source: Bcg AI Value 2025]\n8. **Inclusiveness in AI development**: Future-built companies involve the workforce twice as often as others do in reshaping workflows as they build, test, and deploy agents, ensuring smoother adoption and building ownership and trust. [Source: Bcg AI Value 2025]\n9. **Responsible AI**: Efforts are underway in the United States to enact legislation that would establish guardrails for AI, reflecting a movement within the tech industry known as \"responsible AI.\" [Source: McKinsey Technology Trends Outlook 2025]\n\nOverall, the development of AI agents is rapidly advancing, with significant advancements in capabilities, platforms, and specialized agents. However, concerns about trust, governance, and liability are also rising, highlighting the",
+    "sources": [
+      {
+        "content": "Because these agents use language that \nhumans can read, they can describe what \nthey’re doing and be guided via feedback on \ntheir work plan.\nThe potential of agentic AI has persuaded many \nindustries to explore enlisting agentic virtual \ncoworkers for a variety of functions and roles. \n11\nTechnology Trends Outlook 2025\nLatest developments \nThe development of AI agents capable of \nautonomous decision-making and interagent \ncommunication presents exciting possibilities. \nHowever, the rapid progress of agentic AI \nunderscores a critical need for robust governance \nframeworks to address trust, liability, and ethical \nconcerns. The latest developments in agentic AI \ninclude the following:\n —Developers are building AI-powered, general-\npurpose agent platforms. Some companies \nare adding agentic capabilities to their existing \n1 Google Blog , “Gemini 2.0 is now available to everyone,” blog entry by Koray Kavukcuoglu, February 5, 2025; “Introducing Operator,” OpenAI,",
+        "source_file": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.5015603770737883,
+        "full_metadata": {
+          "source": "mckinsey_tech_trends_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+        }
+      },
+      {
+        "content": "harmony, and enabling interoperability across cloud-based, \nBOSTON CONSULTING GROUPTHE WIDENING AI VALUE GAP 16on-premises, and external ecosystems of AI agents and \ntools. Future-built companies involve the workforce twice \nas often as others do in reshaping workflows as they build, \ntest, and deploy agents. This inclusiveness ensures \nsmoother adoption and builds ownership and trust. These \nfirms recognize that as the AI operating model takes hold, \nthe role of humans evolves dramatically. Companies must \nlook after AI workers as well as human colleagues so that \nboth deliver optimal outcomes together. With the spread of \nAI, and especially of agents, humans must play a lead role \nin reimagining future agents and workflows.\nHybrid Worker Environments and Skills Evolution. \nOperating in a hybrid worker environment—one in which \nhumans and AI agents collaborate—calls for new \nmanagement capabilities . AI reshapes roles by \nautomating routine processes, narrowing performance",
+        "source_file": "bcg_ai_value_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.46666127508750327,
+        "full_metadata": {
+          "source": "bcg_ai_value_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/bcg_ai_value_2025.txt"
+        }
+      },
+      {
+        "content": "These developments in AI-to-AI communication \nhave implications for robotics, complex problem-\nsolving, and other fields, though they also raise \nconcerns about transparency and control.5 \n —Rising concerns about trust, governance, \nand liability are influencing the development \nand deployment of agentic AI. As AI agents \ntake on more autonomous roles that include \nexecuting financial transactions and interacting \nacross digital platforms, businesses are \nincreasingly grappling with accountability and \nlegal frameworks. Recent high-profile pilot \ndeployments have brought these risks into \nsharper focus, especially as AI systems act \nindependently across jurisdictions. Designing \nrobust guardrails and providing the right \noperational context for agents will be essential \nto ensure reliability and accountability.Scoring the trendTHE AI REV OLUTION\nAgentic AI\n$1.1Equity \ninvestment, \nbillion +985%Job pos tings,\n2023–24,",
+        "source_file": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.4402945559587584,
+        "full_metadata": {
+          "source": "mckinsey_tech_trends_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+        }
+      },
+      {
+        "content": "Director, McKinsey Global \nInstitute, and senior \npartner, Bay AreaMichael Chui\nSenior fellow, \nQuantumBlack, AI by \nMcKinsey, Bay AreaRoger Roberts\nPartner, \nQuantumBlack, AI by \nMcKinsey, Bay AreaSven Smit\nChair of the McKinsey \nGlobal Institute and senior \npartner, Amsterdam\nAbout the authors\nTechnology Trends Outlook 2025\nAI revolution\nAgentic AI\nAgentic AI is an artificial \nintelligence system capable of \nindependently planning and \nexecuting complex, multistep \ntasks. Built on foundation \nmodels, these agents can \nautonomously perform actions, \ncommunicate with one another, \nand adapt to new information. \nSignificant advancements have \nemerged, from general agent \nplatforms to specialized agents \ndesigned for deep research. \nThe trend—and why it matters\nAgentic AI has quickly gone from a fringe concept \nto one of the most talked-about shifts in enterprise \ntechnology. It is gaining traction as organizations \nexplore new ways to automate workflows and",
+        "source_file": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.4097264988946675,
+        "full_metadata": {
+          "source": "mckinsey_tech_trends_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+        }
+      },
+      {
+        "content": "producing code that demonstrates a deeper \nunderstanding of a problem and the steps \nrequired to solve it. These agents can act \nsemiautonomously, expanding their capabilities \nthroughout a product development life cycle.\nReal-world examples of the impetus for the industry \nto move from principles to action on responsible AI \ninclude the following:\n —Efforts are underway in the United States \nto enact legislation that would establish \nguardrails for AI, reflecting a movement within \nthe tech industry known as “responsible AI.” \n14 Adam Zewe, “MIT researchers develop an efficient way to train more reliable AI agents,” MIT News , November 22, 2024.\n15 “Ally Financial cuts pipeline outages and eases security scanning with GitLab,” GitLab, accessed March 19, 2025; GitLab Blog , “GitLab \nreceives Ally Technology Partner Award for Operational Excellence,” blog entry by Sandra Gittlen, June 17, 2024.\n16 “Regrello,” Crunchbase, accessed March 19, 2025.",
+        "source_file": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.39761544025520124,
+        "full_metadata": {
+          "source": "mckinsey_tech_trends_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+        }
+      }
+    ],
+    "retrieved_chunks": 5,
+    "source_count_used": 5,
+    "startup_boost_applied": false,
+    "patent_boost_applied": false,
+    "timestamp": "2025-11-27T13:06:32.076876",
+    "model_used": "llama-3.1-8b-instant"
+  },
+  {
+    "query_id": 4,
+    "question": "What are the key patents in automotive AI with US jurisdiction?",
+    "answer": "Based on the provided context, I will attempt to answer the question about key patents in automotive AI with US jurisdiction.\n\nUnfortunately, the provided context does not contain any information about specific patents in automotive AI with US jurisdiction. The context includes research papers and a tech report, but none of them mention patents or provide information about patent applications or granted patents.\n\nHowever, I can suggest some possible sources where you may be able to find information about key patents in automotive AI with US jurisdiction:\n\n1. Patent databases: You can search patent databases such as the United States Patent and Trademark Office (USPTO) database or the European Patent Office (EPO) database for patents related to automotive AI.\n2. Patent search platforms: Platforms like Google Patents or PatentScope can help you search for patents and filter results by jurisdiction, kind codes, and other criteria.\n3. Industry reports and publications: Reports and publications from industry analysts, research firms, and patent law firms may provide information about key patents in automotive AI with US jurisdiction.\n\nIf you would like to proceed with searching for patents, I can provide some general guidance on how to search for patents and interpret patent documents.\n\nAlternatively, if you would like to explore other topics related to automotive AI, I can attempt to answer questions based on the provided context.",
+    "sources": [
+      {
+        "content": "This paper aims to explore the impact of generative AI\non the automotive industry, focusing on its applications,\nbenefits, and potential challenges. The objectives are to\nprovide a comprehensive understanding of how generative\nAI technologies like GANs and V AEs can be leveraged\nto innovate and enhance various aspects of automotive\ndesign, manufacturing, and autonomous driving. The paper is\nstructured as follows:\n1)Introduction: A brief history of AI in automotive\napplications and an introduction to generative AI.\n2)Generative AI Technologies: An in-depth look at key\ngenerative AI technologies, including GANs and V AEs,\nand their relevance to the automotive industry.\n3)Applications in the Automotive Industry: Exploration\nof specific use cases, such as V oice Assistant in\nAutomotive Infotainment\n4)Challenges and Future Directions: Discussion of the\nchallenges in implementing generative AI and potential\nfuture developments in this space.\n5)Conclusion: A summary of key findings and the",
+        "source_file": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+        "doc_type": "research_paper",
+        "similarity_score": 0.603279963909573,
+        "full_metadata": {
+          "source": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+          "doc_type": "research_paper",
+          "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt"
+        }
+      },
+      {
+        "content": "platforms at scale\n•Reﬁne data and architecture management to \nincrease eﬀectivenessUse ﬁt-for-purpose\ntechnology and dataMove up\nto scalingMove up to\nfuture-built\nBCG's 10-20-70 model Key challenges named by respondents (%)\nLack of access to high-quality data\nPotential hallucinations and lack of explainability in AI\nInsuﬃcient model accuracy and reliability\nAI-driven security risks \nIntegrating AI with systems, tools, and APIs\nCompliance and implementing responsible AI \nHigh AI scaling costs diﬃcult to control \nNo expertise to manage unstructured data\nPeople adapting to changes and using AI daily\nShortage of AI talent \nSilos limiting cross-functional collaboration on AI\nMissing clear AI metrics and ROI measurement \nDiﬃculty aligning AI initiatives with ﬁrmwide strategy\nSocial resistance and labor concerns limiting scale \nSigniﬁcantly higher for laggards versus future-builtLack of leadership support or commitment for AI68\n66\n72\n63\n77\n69\n63\n42Algorithms\nTechnology\nPeople,\norganization,",
+        "source_file": "bcg_ai_value_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.48331059281499145,
+        "full_metadata": {
+          "source": "bcg_ai_value_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/bcg_ai_value_2025.txt"
+        }
+      },
+      {
+        "content": "driver-AI interactions. Moreover, disfluencies dis-\nrupt the regular, fluent structure that language mod-\nels are typically trained on. Research by Ferreira\nand Bailey (2004) shows that such interruptions canarXiv:2507.19867v1 [cs.CL] 26 Jul 2025\nimpair syntactic parsing and semantic integration,\nwhile Fox Tree (2001) demonstrate that filler words\ncarry subtle prosodic cues reflecting planning de-\nlays—factors that further challenge the robustness\nof conversational AI.\nConsequently, models fine-tuned on fluent, task-\noriented datasets may struggle to interpret and re-\nspond effectively to the fragmented, disfluent in-\nputs intrinsic to automotive contexts. Addressing\nthis shortfall requires the development of domain-\nspecific synthetic dialog datasets that not only repli-\ncate the natural flow of driver-AI interactions but\nalso incorporate a rich variety of disfluencies, ulti-\nmately enhancing the naturalness and adaptability\nof AI systems in real-world automotive environ-\nments.",
+        "source_file": "drive_disfluency-rich_synthetic_dialog_data_generation_framework_for_intelligent_vehicle_environments.txt",
+        "doc_type": "research_paper",
+        "similarity_score": 0.4817717434471419,
+        "full_metadata": {
+          "source": "drive_disfluency-rich_synthetic_dialog_data_generation_framework_for_intelligent_vehicle_environments.txt",
+          "doc_type": "research_paper",
+          "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/drive_disfluency-rich_synthetic_dialog_data_generation_framework_for_intelligent_vehicle_environments.txt"
+        }
+      }
+    ],
+    "retrieved_chunks": 3,
+    "source_count_used": 3,
+    "startup_boost_applied": false,
+    "patent_boost_applied": false,
+    "timestamp": "2025-11-27T13:06:38.941234",
+    "model_used": "llama-3.1-8b-instant"
+  },
+  {
+    "query_id": 5,
+    "question": "Show me recent reports on technology trends.",
+    "answer": "Based on the provided context, here are recent reports on technology trends:\n\n1. **Equity Investment in Technology Trends**: According to the McKinsey Technology Trends Outlook 2025, equity investment in trends such as cloud and edge computing, bioengineering, and space technologies increased in 2024 despite the broader market dip in 2023. [Source: McKinsey Technology Trends Outlook 2025]\n\n2. **Talent Demand and Equity Investment**: The McKinsey Technology Trends Outlook 2025 also reports that the talent demand ratio for skilled people to job vacancies is relatively low, indicating a potential shortage of skilled workers in the technology sector. Additionally, equity investment in private- and public-market capital raises for relevant technologies has increased. [Source: McKinsey Technology Trends Outlook 2025]\n\n3. **Emerging Trends**: The report highlights emerging trends such as agentic AI, application-specific semiconductors, and the future of energy and sustainability technologies. These trends are expected to drive innovation and address critical challenges across sectors. [Source: McKinsey Technology Trends Outlook 2025]\n\n4. **Artificial Intelligence (AI)**: AI stands out as a powerful technology wave that is driving innovation and addressing critical challenges across sectors. Its impact increasingly occurs via a combination with other trends, accelerating progress within individual domains and unlocking new possibilities at the intersections. [Source: McKinsey Technology Trends Outlook 2025]\n\n5. **5G Networks**: 5G networks are transforming space communication by integrating with satellite systems, extending high-speed, low-latency internet coverage to remote areas, and improving global telecommunications. [Source: McKinsey Technology Trends Outlook 2025]\n\nRegarding patent documents, the provided context does not include any specific patent information. However, based on the guidelines provided, if a patent question were to be asked, it would be essential to consider the jurisdiction (geographic protection scope) and kind codes (document type and status) to assess the market focus and protection scope.\n\nFor trend questions, the provided context identifies velocity, drivers, and key players for emerging trends such as agentic AI, application-specific semiconductors, and the future of energy and sustainability technologies.\n\nFor forecasting, the McKinsey Technology Trends Outlook 2025 report provides insights into the near-term and long-term developments in technology trends, including the expected growth of equity investment and talent demand.\n\nFor descriptive questions, the provided context includes specific examples and entities, such as the Boiler Room, Articheck, and",
+    "sources": [
+      {
+        "content": "STARTUP #11459:\n  Name: Boiler Room\n  Location: N/A\n  Tagline: The world's leading underground music show\n  Description: am taped to a warehouse wall in Hackney, we've now hosted shows in over 65 cities, showcasing the output of quality emerging & established ...\n--------------------------------------------------\n\nSTARTUP #11460:\n  Name: Articheck\n  Location: N/A\n  Tagline: revolutionising art world condition reports\n  Description: Articheck is an app for the artworld - a tool that saves conservators thousands of hours of time writing condition reports.\nReports are filled when an artwork is moved or sold, for inventory and insurance purposes. With Articheck, reports are created 75% faster, ...\n--------------------------------------------------\n\nSTARTUP #11461:\n  Name: TGTHR\n  Location: N/A\n  Tagline: Find the people you don't know but should know\n  Description: esent yourself through the pictures that say the most about you ...\n--------------------------------------------------",
+        "source_file": "startups_processed.txt",
+        "doc_type": "startups_data",
+        "similarity_score": 0.46541297567117046,
+        "full_metadata": {
+          "source": "startups_processed.txt",
+          "doc_type": "startups_data",
+          "file_path": "../01_data/rag_automotive_tech/processed/startups_processed.txt"
+        }
+      },
+      {
+        "content": "clean-energy output while minimizing \ndowntime and operational costs Immersive reality\nTechnicians use augmented reality \ngoggles that provide visual guidance \nto help them maintain and repair \ncomplex turbine systems safely Three examples illustrate the combinatorial power of technology trends. \nIllustrations: T.M. Detwiler\nTechnology Trends Outlook 2025\nAfter a year in which the macroeconomic \nenvironment and broader market weakness \nprovoked significant declines in equity financing \nfor technology across several of our trends, the \ninvestment climate for frontier technologies \nstabilized and, in many cases, rebounded in 2024. \nLevels of equity investment in trends such as cloud \nand edge computing, bioengineering, and space \ntechnologies increased despite the broader market \ndip in 2023, while investments in other trends, such \nas AI and robotics, dipped only to recover to higher levels in 2024 than they achieved two years prior. \nThe two trends with the highest levels of equity",
+        "source_file": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.4591788263594113,
+        "full_metadata": {
+          "source": "mckinsey_tech_trends_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+        }
+      },
+      {
+        "content": "News\nPress reports \nfeaturing trend-\nrelated phrasesSearches \nSearch engine \nqueries for terms \nrelated to trendResearch\nScienti/f_ic \npublications on \ntopics associated \nwith trendPatents\nPatent /f_ilings for \ntechnologies \nrelated to trendTalent demand \nRatio of skilled \npeople to job \nvacanciesEquity investment\nPrivate- and public- \nmarket capital \nraises for relevant \ntechnologies\n0.16\n0.04\n0.08\n0.12\nNote: For each vector, we used a de/f_ined set of data sources to /f_ind occurrences of keywords associated with each of the 13 trends, screened those occurrences \nfor valid mentions of activity, and indexed the resulting numbers of mentions on a 0–1 scoring scale that is relative to the trends studied.\nTechnology Trends Outlook 2025\n5G networks also are transforming space \ncommunication. Integrating 5G with satellite \nsystems has extended high-speed, low-latency \ninternet coverage to remote areas and improved \nglobal telecommunications. Developments",
+        "source_file": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.402618321862755,
+        "full_metadata": {
+          "source": "mckinsey_tech_trends_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+        }
+      },
+      {
+        "content": "equity investment, and talent that underpin \neach of the 13 trends and explore the underlying \ntechnologies, uncertainties, and questions around \nthem. (For more about our research, please see \nthe sidebar, “Research methodology.”)\nThis outlook highlights transformative trends \nthat are driving innovation and addressing critical \nchallenges across sectors. Artificial intelligence \nstands out not only as a powerful technology wave \non its own but also as a foundational amplifier of \nthe other trends. Its impact increasingly occurs \nvia a combination with other trends, as AI both \naccelerates progress within individual domains \nand unlocks new possibilities at the intersections—\naccelerating the training of robots, advancing \nscientific discoveries in bioengineering, optimizing \nenergy systems, and much more. The evolution of AI \nsolutions in the marketplace increasingly combines \nAbout the McKinsey Global Institute\nThis annual report is developed by the",
+        "source_file": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.39124778759562123,
+        "full_metadata": {
+          "source": "mckinsey_tech_trends_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+        }
+      },
+      {
+        "content": "proprietary Organizational Data \nPlatform, which stores licensed, \nde-identified data on publicly \navailable professional profiles and job \npostings. Data are drawn primarily \nfrom English-speaking countries.\nIn addition, we updated the selection \nand definition of trends from last \nyear’s report to reflect the evolution of \ntechnology trends:\n —An overarching artificial intelligence \ncategory replaces these four \ntrends: applied A I, generative AI, \nindustrializing machine learning, \nand next-generation software \ndevelopment. \n —The agentic AI and application-specific \nsemiconductors trends have been \nadded since last year’s publication. \n —Two separate trends from last year, \nelectrificati on and renewables \nand climate technologies beyond \nelectrification, have been combined \ninto a single trend: future of energy \nand sustainability technologies.\nThe data sources and keywords have been \nupdated. For equity investment insights into the future of space technologies",
+        "source_file": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.3837656117346802,
+        "full_metadata": {
+          "source": "mckinsey_tech_trends_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+        }
+      }
+    ],
+    "retrieved_chunks": 5,
+    "source_count_used": 5,
+    "startup_boost_applied": false,
+    "patent_boost_applied": false,
+    "timestamp": "2025-11-27T13:06:55.054412",
+    "model_used": "llama-3.1-8b-instant"
+  },
+  {
+    "query_id": 6,
+    "question": "Which automotive AI technologies are likely to mature next year?",
+    "answer": "Based on the provided context, it is challenging to determine which automotive AI technologies are likely to mature next year. However, we can assess the current stage of generative AI technologies and identify potential transition indicators.\n\nGenerative AI technologies, such as GANs and VAEs, are currently in the Development Phase (TRL 5-6), as indicated by the research papers on Gen Ai In Automotive Applications Challenges And Opportunities With A Case Study On In-Vehicle Experience and DRIVE Framework: Synthetic Dialog Data for Intelligent Vehicles. These papers discuss the applications, benefits, and challenges of generative AI in the automotive industry, suggesting that the technology is being prototyped and tested.\n\nThe BCG AI Value 2025 report suggests that companies with higher maturity in implementing responsible AI guardrails and governance are more likely to ensure shared business-IT ownership on AI implementation and implement an AI-first operating model. This implies that companies are actively working on deploying and scaling AI technologies, which could indicate a transition to the Commercialization Phase (TRL 7-9).\n\nHowever, the report does not provide specific information on the maturity of automotive AI technologies. The BCG Build for the Future 2025 Global Study mentions that future-built companies pursue five strategies, including implementing an AI-first operating model and leveraging strategic workforce planning for AI. This suggests that companies are actively working on integrating AI into their operations, but it does not provide a clear indication of technology maturity.\n\nBased on the provided context, it is difficult to determine which automotive AI technologies are likely to mature next year. However, the evidence suggests that generative AI technologies are being developed and tested, and companies are actively working on deploying and scaling AI technologies.\n\nTransition indicators and timelines are not explicitly mentioned in the provided context. However, the BCG AI Value 2025 report suggests that companies with higher maturity in implementing responsible AI guardrails and governance are more likely to ensure shared business-IT ownership on AI implementation and implement an AI-first operating model. This implies that companies are actively working on deploying and scaling AI technologies, which could indicate a transition to the Commercialization Phase (TRL 7-9) in the near future.\n\nTherefore, a cautious answer would be:\n\n* Generative AI technologies, such as GANs and VAEs, are likely to continue in the Development Phase (TRL 5-6) next year, with potential transition to the Commercialization Phase (TRL 7-9) in the near future.\n* Companies are actively",
+    "sources": [
+      {
+        "content": "This paper aims to explore the impact of generative AI\non the automotive industry, focusing on its applications,\nbenefits, and potential challenges. The objectives are to\nprovide a comprehensive understanding of how generative\nAI technologies like GANs and V AEs can be leveraged\nto innovate and enhance various aspects of automotive\ndesign, manufacturing, and autonomous driving. The paper is\nstructured as follows:\n1)Introduction: A brief history of AI in automotive\napplications and an introduction to generative AI.\n2)Generative AI Technologies: An in-depth look at key\ngenerative AI technologies, including GANs and V AEs,\nand their relevance to the automotive industry.\n3)Applications in the Automotive Industry: Exploration\nof specific use cases, such as V oice Assistant in\nAutomotive Infotainment\n4)Challenges and Future Directions: Discussion of the\nchallenges in implementing generative AI and potential\nfuture developments in this space.\n5)Conclusion: A summary of key findings and the",
+        "source_file": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+        "doc_type": "research_paper",
+        "similarity_score": 0.5457916420743192,
+        "full_metadata": {
+          "source": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+          "doc_type": "research_paper",
+          "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt"
+        }
+      },
+      {
+        "content": "driver-AI interactions. Moreover, disfluencies dis-\nrupt the regular, fluent structure that language mod-\nels are typically trained on. Research by Ferreira\nand Bailey (2004) shows that such interruptions canarXiv:2507.19867v1 [cs.CL] 26 Jul 2025\nimpair syntactic parsing and semantic integration,\nwhile Fox Tree (2001) demonstrate that filler words\ncarry subtle prosodic cues reflecting planning de-\nlays—factors that further challenge the robustness\nof conversational AI.\nConsequently, models fine-tuned on fluent, task-\noriented datasets may struggle to interpret and re-\nspond effectively to the fragmented, disfluent in-\nputs intrinsic to automotive contexts. Addressing\nthis shortfall requires the development of domain-\nspecific synthetic dialog datasets that not only repli-\ncate the natural flow of driver-AI interactions but\nalso incorporate a rich variety of disfluencies, ulti-\nmately enhancing the naturalness and adaptability\nof AI systems in real-world automotive environ-\nments.",
+        "source_file": "drive_disfluency-rich_synthetic_dialog_data_generation_framework_for_intelligent_vehicle_environments.txt",
+        "doc_type": "research_paper",
+        "similarity_score": 0.4363307326733265,
+        "full_metadata": {
+          "source": "drive_disfluency-rich_synthetic_dialog_data_generation_framework_for_intelligent_vehicle_environments.txt",
+          "doc_type": "research_paper",
+          "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/drive_disfluency-rich_synthetic_dialog_data_generation_framework_for_intelligent_vehicle_environments.txt"
+        }
+      },
+      {
+        "content": "Higher maturity in implementing responsible AI guardrails and governance\nMore likely to ensure shared business-IT ownership on AI implementationImplement an AI-ﬁrst\noperating model\nMore likely to dedicate time and structure programs for AI learning\nMore FTEs planned for AI upskilling in the coming year\nMore likely to involve employees in shaping and adopting AISecure and enable\nnecessary talent\nMore standard templates and enterprise-wide data models\nMore central AI data policies deﬁned and monitored by central team\nMore central AI platforms in operation to enable scale and adoption12x\n3x\n2x\n5x\n2.5x\n2.5x\n5x\n5x\n1.5x\n4x\n3x\n2x\n3x\n3x\n3xUse ﬁt-for-purpose\ntechnology and data \nBOSTON CONSULTING GROUPTHE WIDENING AI VALUE GAP 13The bank redefined a set of employee journeys (such as “I \napply and join,” “I get feedback,” “I get rewarded,” and “I \nleave”)—and all the component parts—to serve as the \nbackbone of the transformation. It anchored the redesign in",
+        "source_file": "bcg_ai_value_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.43338209129077226,
+        "full_metadata": {
+          "source": "bcg_ai_value_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/bcg_ai_value_2025.txt"
+        }
+      },
+      {
+        "content": "Which parts can and should be covered by AI (including \nGenAI and agents)? Which tasks need to remain with the \ninternal workforce?EXHIBIT 6\nFuture-Built Companies Pursue Five Strategies\nSource: BCG Build for the Future 2025 Global Study (n = 1,250).\nNote: FTE = full-time equivalent.What future-built companies do diﬀerently Outperformance versus laggards\nMore C-level executives and leadership teams deeply engaged with AI\nMore likely to have appointed a chief AI oﬃcer\nMore likely to have appointed a chief data oﬃcerPursue a multiyear\nstrategic ambition\nMore AI workﬂows already deployed or scaled\nMore governance in place or AI value-measuring setup\nMore focus on reshaping and inventing workﬂows toward AI Reshape and invent\nwith impact\nMore likely to leverage strategic workforce planning for AI\nHigher maturity in implementing responsible AI guardrails and governance\nMore likely to ensure shared business-IT ownership on AI implementationImplement an AI-ﬁrst\noperating model",
+        "source_file": "bcg_ai_value_2025.txt",
+        "doc_type": "tech_report",
+        "similarity_score": 0.40403430393496287,
+        "full_metadata": {
+          "source": "bcg_ai_value_2025.txt",
+          "doc_type": "tech_report",
+          "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/bcg_ai_value_2025.txt"
+        }
+      }
+    ],
+    "retrieved_chunks": 4,
+    "source_count_used": 4,
+    "startup_boost_applied": false,
+    "patent_boost_applied": false,
+    "timestamp": "2025-11-27T13:07:09.073362",
+    "model_used": "llama-3.1-8b-instant"
+  },
+  {
+    "query_id": 7,
+    "question": "Which AI research topics in automotive are growing fastest?",
+    "answer": "Based on the provided context, it appears that AI research topics in the automotive industry are growing rapidly, particularly in the areas of conversational AI and generative AI. However, the context does not provide a comprehensive overview of the fastest-growing topics. Nevertheless, we can identify some key areas of interest and growth.\n\nOne area of growth is in the development of domain-specific synthetic dialog datasets for conversational AI in automotive contexts. Research papers, such as the DRIVE Framework: Synthetic Dialog Data for Intelligent Vehicles, highlight the need for datasets that can replicate the natural flow of driver-AI interactions and incorporate a rich variety of disfluencies [Source: DRIVE Framework]. This suggests that there is a growing interest in developing more robust and adaptable conversational AI systems for automotive applications.\n\nAnother area of growth is in the application of generative AI technologies, such as GANs and VAEs, in the automotive industry. Research papers, such as Gen AI In Automotive Applications Challenges And Opportunities With A Case Study On In-Vehicle Experience, explore the potential benefits and challenges of leveraging generative AI in various aspects of automotive design, manufacturing, and autonomous driving [Source: Gen AI In Automotive Applications]. This suggests that there is a growing interest in using generative AI to innovate and enhance various aspects of the automotive industry.\n\nHowever, the context does not provide information on the specific startups or companies that are driving growth in these areas. The Startup Innovation Database provides information on various startups, but it does not provide a clear indication of which ones are specifically focused on AI research in the automotive industry.\n\nIn summary, while the context provides some insights into the growth of AI research topics in the automotive industry, it is not comprehensive enough to identify the fastest-growing topics. However, the areas of conversational AI and generative AI appear to be of growing interest and importance.\n\nKey points:\n\n* Domain-specific synthetic dialog datasets for conversational AI in automotive contexts are a growing area of interest [Source: DRIVE Framework].\n* Generative AI technologies, such as GANs and VAEs, are being explored for their potential applications in the automotive industry [Source: Gen AI In Automotive Applications].\n* The automotive industry is a growing area of interest for AI research, with various startups and companies exploring its potential applications.\n\nLimitations:\n\n* The context does not provide a comprehensive overview of the fastest-growing AI research topics in the automotive industry.\n* The Startup Innovation Database does not provide clear information on which startups are specifically focused on AI research",
+    "sources": [
+      {
+        "content": "driver-AI interactions. Moreover, disfluencies dis-\nrupt the regular, fluent structure that language mod-\nels are typically trained on. Research by Ferreira\nand Bailey (2004) shows that such interruptions canarXiv:2507.19867v1 [cs.CL] 26 Jul 2025\nimpair syntactic parsing and semantic integration,\nwhile Fox Tree (2001) demonstrate that filler words\ncarry subtle prosodic cues reflecting planning de-\nlays—factors that further challenge the robustness\nof conversational AI.\nConsequently, models fine-tuned on fluent, task-\noriented datasets may struggle to interpret and re-\nspond effectively to the fragmented, disfluent in-\nputs intrinsic to automotive contexts. Addressing\nthis shortfall requires the development of domain-\nspecific synthetic dialog datasets that not only repli-\ncate the natural flow of driver-AI interactions but\nalso incorporate a rich variety of disfluencies, ulti-\nmately enhancing the naturalness and adaptability\nof AI systems in real-world automotive environ-\nments.",
+        "source_file": "drive_disfluency-rich_synthetic_dialog_data_generation_framework_for_intelligent_vehicle_environments.txt",
+        "doc_type": "research_paper",
+        "similarity_score": 0.42515397205095895,
+        "full_metadata": {
+          "source": "drive_disfluency-rich_synthetic_dialog_data_generation_framework_for_intelligent_vehicle_environments.txt",
+          "doc_type": "research_paper",
+          "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/drive_disfluency-rich_synthetic_dialog_data_generation_framework_for_intelligent_vehicle_environments.txt"
+        }
+      },
+      {
+        "content": "This paper aims to explore the impact of generative AI\non the automotive industry, focusing on its applications,\nbenefits, and potential challenges. The objectives are to\nprovide a comprehensive understanding of how generative\nAI technologies like GANs and V AEs can be leveraged\nto innovate and enhance various aspects of automotive\ndesign, manufacturing, and autonomous driving. The paper is\nstructured as follows:\n1)Introduction: A brief history of AI in automotive\napplications and an introduction to generative AI.\n2)Generative AI Technologies: An in-depth look at key\ngenerative AI technologies, including GANs and V AEs,\nand their relevance to the automotive industry.\n3)Applications in the Automotive Industry: Exploration\nof specific use cases, such as V oice Assistant in\nAutomotive Infotainment\n4)Challenges and Future Directions: Discussion of the\nchallenges in implementing generative AI and potential\nfuture developments in this space.\n5)Conclusion: A summary of key findings and the",
+        "source_file": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+        "doc_type": "research_paper",
+        "similarity_score": 0.39770097112289093,
+        "full_metadata": {
+          "source": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+          "doc_type": "research_paper",
+          "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt"
+        }
+      },
+      {
+        "content": "STARTUP #36032:\n  Name: Aevy\n  Location: N/A\n  Tagline: Opening up the professional world\n  Description:  up the professional world\n\n--------------------------------------------------\n\nSTARTUP #36033:\n  Name: FishBrain\n  Location: N/A\n  Tagline: The fastest growing app & social network for the world's biggest hobby - sport fishing\n  Description: \n--------------------------------------------------\n\nSTARTUP #36034:\n  Name: FundedByMe\n  Location: N/A\n  Tagline: Europe's fastest growing crowd investment platform connecting investors and entrepreneurs\n  Description: FundedByMe is Europe's fastest growing crowd investment platform connecting investors and entrepreneurs.\n--------------------------------------------------\n\nSTARTUP #36035:\n  Name: Auxy\n  Location: N/A\n  Tagline: Modern music creation made simple and social\n  Description: \n--------------------------------------------------",
+        "source_file": "startups_processed.txt",
+        "doc_type": "startups_data",
+        "similarity_score": 0.3933252817569992,
+        "full_metadata": {
+          "source": "startups_processed.txt",
+          "doc_type": "startups_data",
+          "file_path": "../01_data/rag_automotive_tech/processed/startups_processed.txt"
+        }
+      },
+      {
+        "content": "STARTUP #3728:\n  Name: TheTechPanda\n  Location: N/A\n  Tagline: India's Fastest Growing Startup Blog\n  Description:  Fastest Growing Startup Blog\n\n--------------------------------------------------\n\nSTARTUP #3729:\n  Name: SKIITCH\n  Location: N/A\n  Tagline: SKIITCH is  is the expression of freedom, power and excitement through skirts.\n  Description: SKIITCH is a brand of designer skirts for women. The skirt is the symbol of the modern independent woman and represents her freedom, confidence and power in the social milieu. SKIITCH as a brand is to be positioned as new age, high fashion, affordable and customizable ...\n--------------------------------------------------",
+        "source_file": "startups_processed.txt",
+        "doc_type": "startups_data",
+        "similarity_score": 0.35193229387400493,
+        "full_metadata": {
+          "source": "startups_processed.txt",
+          "doc_type": "startups_data",
+          "file_path": "../01_data/rag_automotive_tech/processed/startups_processed.txt"
+        }
+      }
+    ],
+    "retrieved_chunks": 4,
+    "source_count_used": 4,
+    "startup_boost_applied": false,
+    "patent_boost_applied": false,
+    "timestamp": "2025-11-27T13:07:20.105398",
+    "model_used": "llama-3.1-8b-instant"
+  },
+  {
+    "query_id": 8,
+    "question": "Which automotive technologies are moving from academy to application?",
+    "answer": "Based on the provided context, we can identify some automotive technologies that are moving from the academy to application. However, the context is limited, and we can only make educated guesses based on the information available.\n\n1. **GPS-based open platform for moving services**: Motsee (STARTUP #4057) is developing a GPS-based open platform for moving services and people, which could be an application of automotive technology. However, the current stage of this technology is unclear, and it's difficult to assess its maturity.\n\n2. **Automotive software and electronics**: The Automotive Software and Electronics 2030 Report [Source: Automotive Software and Electronics 2030 Report] mentions that the technology borders between the automotive and consumer electronics world will continue to be torn down. This suggests that automotive technologies are moving from the academy to application, but the specific technologies are not mentioned.\n\n3. **Smart home moving services**: Homeshift (STARTUP #11976) is a smart home moving service, which might involve the application of automotive technologies such as GPS, navigation, or IoT sensors. However, the current stage of this technology is unclear, and it's difficult to assess its maturity.\n\nTransition indicators and timelines:\n\n* **GPS-based open platform for moving services**: The development of Motsee's platform suggests that this technology is in the **Development Phase (TRL 5-6)**, with prototyping and testing underway.\n* **Automotive software and electronics**: The Automotive Software and Electronics 2030 Report suggests that the automotive industry is in a state of rapid change, with technology borders being torn down. This implies that the industry is in the **Commercialization Phase (TRL 7-9)**, with deployment and scaling underway.\n* **Smart home moving services**: The development of Homeshift's smart home moving service suggests that this technology is in the **Development Phase (TRL 5-6)**, with prototyping and testing underway.\n\nPlease note that these assessments are based on limited information and should be taken as educated guesses rather than definitive conclusions.",
+    "sources": [
+      {
+        "content": "STARTUP #11976:\n  Name: Homeshift\n  Location: N/A\n  Tagline: Homeshift is a smart home moving service \n  Description: Moving is one of the most stressful events in life, second only to death and divorce. Whether it's preparing for a move, ordering moving services or submitting change of address notices, moving is without question a logistical nightmare for millions of households ...\n--------------------------------------------------\n\nSTARTUP #11977:\n  Name: Commonplace\n  Location: N/A\n  Tagline: Crowd-mapped consultation for better living places\n  Description: Commonplace is a mobile-first digital tool for neighbourhoods and property developers. \n\nWe help neighbourhoods act on their needs, and property developers reduce their planning risk and costs. They pay commonplace for this data.\n\nIndividuals use Commonplace ...\n--------------------------------------------------",
+        "source_file": "startups_processed.txt",
+        "doc_type": "startups_data",
+        "similarity_score": 0.39765160145496903,
+        "full_metadata": {
+          "source": "startups_processed.txt",
+          "doc_type": "startups_data",
+          "file_path": "../01_data/rag_automotive_tech/processed/startups_processed.txt"
+        }
+      },
+      {
+        "content": "STARTUP #14357:\n  Name: moveBuddha\n  Location: N/A\n  Tagline: Kayak for the moving industry\n  Description: Instantly compare all your pricing and moving options in one place. With a few simple questions, moveBuddha shows you customized pricing and recommends the best moving option and companies based on your moving needs, personal preferences, and budget.\n--------------------------------------------------\n\nSTARTUP #14358:\n  Name: MANTIS Ad Network\n  Location: N/A\n  Tagline: Marketing platform for the cannabis industry\n  Description: MANTIS® is the marijuana marketing platform. We are a team of technology experts focused on building information rich data sets relevant to the developing, legal cannabis industry. This data can then be leveraged by advertisers for more direct targeting capabilities ...\n--------------------------------------------------",
+        "source_file": "startups_processed.txt",
+        "doc_type": "startups_data",
+        "similarity_score": 0.38232498648403535,
+        "full_metadata": {
+          "source": "startups_processed.txt",
+          "doc_type": "startups_data",
+          "file_path": "../01_data/rag_automotive_tech/processed/startups_processed.txt"
+        }
+      },
+      {
+        "content": "STARTUP #4057:\n  Name: Motsee\n  Location: N/A\n  Tagline: Directory of moving vehicles offering public services\n  Description: Motsee is a technology startup to build worlds first GPS based open platform for moving services and people. This will give a Uber kind of experience for any moving services and people by bringing GPS technology to common people. By connecting nearest moving services ...\n--------------------------------------------------\n\nSTARTUP #4058:\n  Name: Skyriz\n  Location: N/A\n  Tagline: iPhone for the blind\n  Description: Ray is the first smartphone which is completely Braille based. It solves the problems inherent in the existing solutions, especially the problem of interacting with the phone. Both input and output in the phone can be done over Braille. Ray features a Braille user ...\n--------------------------------------------------",
+        "source_file": "startups_processed.txt",
+        "doc_type": "startups_data",
+        "similarity_score": 0.37777533478496633,
+        "full_metadata": {
+          "source": "startups_processed.txt",
+          "doc_type": "startups_data",
+          "file_path": "../01_data/rag_automotive_tech/processed/startups_processed.txt"
+        }
+      },
+      {
+        "content": "tech companies from outside the automotive space. The technology borders between the \nautomotive and the consumer electronics world will continue to be torn down. This will open \nup huge opportunities but also risks, for those who make efforts to enter the new markets. \nAutomotive software and electronics 2030\n4.2 First steps for all players in navigating the changing landscape \nWithout doubt, there is no one-size-fits-all approach to tackling the challenges that the \ndisruptive trends described in this report present to various players in the automotive industry. \nYet, independent of their individual starting position or location along the automotive value \nchain, we see a set of clear actions that all companies need to assess to successfully navigate \nthe changing landscape of automotive SW and electronics:\nBeef up your SW and E/E architecture capabilities and become part of early, shaping \ndiscussions",
+        "source_file": "automotive-software-and-electronics-2030-full-report.txt",
+        "doc_type": "research_paper",
+        "similarity_score": 0.33004687749123984,
+        "full_metadata": {
+          "source": "automotive-software-and-electronics-2030-full-report.txt",
+          "doc_type": "research_paper",
+          "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/automotive-software-and-electronics-2030-full-report.txt"
+        }
+      }
+    ],
+    "retrieved_chunks": 4,
+    "source_count_used": 4,
+    "startup_boost_applied": false,
+    "patent_boost_applied": false,
+    "timestamp": "2025-11-27T13:07:31.022249",
+    "model_used": "llama-3.1-8b-instant"
+  }
+]

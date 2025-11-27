@@ -1,0 +1,57 @@
+{
+  "query_id": 1,
+  "question": "Which startups work on AI for automotive?",
+  "answer": "Based on the provided context, there are no startups explicitly mentioned that work on AI for automotive applications. However, we can infer some connections and potential opportunities.\n\nFrom the research paper \"Gen Ai In Automotive Applications Challenges And Opportunities With A Case Study On In-Vehicle Experience,\" we can see that generative AI technologies like GANs and V AEs have potential applications in the automotive industry, including voice assistants in infotainment systems. However, this paper does not mention any specific startups working on AI for automotive.\n\nThe second research paper \"DRIVE Framework: Synthetic Dialog Data for Intelligent Vehicles\" discusses the challenges of developing conversational AI for automotive contexts, including the need for domain-specific synthetic dialog datasets. While this paper does not mention any startups, it highlights the importance of AI in automotive applications.\n\nConsidering the provided context, it is not possible to identify any specific startups that work on AI for automotive applications. However, the research papers suggest that there may be opportunities for startups to develop innovative AI solutions for the automotive industry.\n\nIf we look at the provided startups, none of them explicitly mention working on AI for automotive applications. However, some of them may have potential connections or applications in this space:\n\n* Boxure (STARTUP #2872) is a productivity app that combines email and social communication, which may have potential applications in automotive infotainment systems.\n* StartupsFM (STARTUP #2873) is a startup storytelling platform, but it may have potential connections to the automotive industry through its exclusive network for startups.\n* Web Espy (STARTUP #27087) is a Yelp-like platform for startups, which may have potential applications in the automotive industry through its user reviews and ratings.\n* Bus Rush (STARTUP #27089) is a school bus locator app for students, which may have potential connections to the automotive industry through its transportation-related services.\n\nHowever, without more information, it is not possible to confirm whether these startups are working on AI for automotive applications.",
+  "sources": [
+    {
+      "content": "STARTUP #2872:\n  Name: Boxure\n  Location: N/A\n  Tagline: work better\n  Description: Boxure is a productivity app that combines Email and Social communication. It helps you solve the information overload and increase your productivity. It is a unified inbox with a massive API twist for real-time information.\nBoxure is also coming up with a powerful ...\n--------------------------------------------------\n\nSTARTUP #2873:\n  Name: StartupsFM\n  Location: N/A\n  Tagline: Storytelling on all things startups. Also launching an exclusive network for startups.\n  Description: Startups.fm is a startup storytelling platform. We ♥ Startups. Across the world, over the oceans, beyond earth, wherever they may be.\n--------------------------------------------------",
+      "source_file": "startups_processed.txt",
+      "doc_type": "startups_data",
+      "similarity_score": 0.47424284681047824,
+      "full_metadata": {
+        "source": "startups_processed.txt",
+        "doc_type": "startups_data",
+        "file_path": "../01_data/rag_automotive_tech/processed/startups_processed.txt"
+      }
+    },
+    {
+      "content": "STARTUP #27087:\n  Name: Web Espy\n  Location: N/A\n  Tagline: Yelp for Startups\n  Description: Web Espy is the Yelp for startups. We connect people with the best startups in the world through user reviews.\n--------------------------------------------------\n\nSTARTUP #27088:\n  Name: Silver Tongue\n  Location: N/A\n  Tagline: \n  Description: \n--------------------------------------------------\n\nSTARTUP #27089:\n  Name: Bus Rush\n  Location: N/A\n  Tagline: School Bus Locator For Students\n  Description: rning. Worry Free Afternoons.\n--------------------------------------------------\n\nSTARTUP #27090:\n  Name: VOLK\n  Location: N/A\n  Tagline: Reinvention of Japanese Folding Wall\n  Description: tion of Japanese Folding Wall\n\n--------------------------------------------------",
+      "source_file": "startups_processed.txt",
+      "doc_type": "startups_data",
+      "similarity_score": 0.46646368418366396,
+      "full_metadata": {
+        "source": "startups_processed.txt",
+        "doc_type": "startups_data",
+        "file_path": "../01_data/rag_automotive_tech/processed/startups_processed.txt"
+      }
+    },
+    {
+      "content": "This paper aims to explore the impact of generative AI\non the automotive industry, focusing on its applications,\nbenefits, and potential challenges. The objectives are to\nprovide a comprehensive understanding of how generative\nAI technologies like GANs and V AEs can be leveraged\nto innovate and enhance various aspects of automotive\ndesign, manufacturing, and autonomous driving. The paper is\nstructured as follows:\n1)Introduction: A brief history of AI in automotive\napplications and an introduction to generative AI.\n2)Generative AI Technologies: An in-depth look at key\ngenerative AI technologies, including GANs and V AEs,\nand their relevance to the automotive industry.\n3)Applications in the Automotive Industry: Exploration\nof specific use cases, such as V oice Assistant in\nAutomotive Infotainment\n4)Challenges and Future Directions: Discussion of the\nchallenges in implementing generative AI and potential\nfuture developments in this space.\n5)Conclusion: A summary of key findings and the",
+      "source_file": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+      "doc_type": "research_paper",
+      "similarity_score": 0.47675180883063506,
+      "full_metadata": {
+        "source": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+        "doc_type": "research_paper",
+        "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt"
+      }
+    },
+    {
+      "content": "driver-AI interactions. Moreover, disfluencies dis-\nrupt the regular, fluent structure that language mod-\nels are typically trained on. Research by Ferreira\nand Bailey (2004) shows that such interruptions canarXiv:2507.19867v1 [cs.CL] 26 Jul 2025\nimpair syntactic parsing and semantic integration,\nwhile Fox Tree (2001) demonstrate that filler words\ncarry subtle prosodic cues reflecting planning de-\nlays—factors that further challenge the robustness\nof conversational AI.\nConsequently, models fine-tuned on fluent, task-\noriented datasets may struggle to interpret and re-\nspond effectively to the fragmented, disfluent in-\nputs intrinsic to automotive contexts. Addressing\nthis shortfall requires the development of domain-\nspecific synthetic dialog datasets that not only repli-\ncate the natural flow of driver-AI interactions but\nalso incorporate a rich variety of disfluencies, ulti-\nmately enhancing the naturalness and adaptability\nof AI systems in real-world automotive environ-\nments.",
+      "source_file": "drive_disfluency-rich_synthetic_dialog_data_generation_framework_for_intelligent_vehicle_environments.txt",
+      "doc_type": "research_paper",
+      "similarity_score": 0.4440014956914867,
+      "full_metadata": {
+        "source": "drive_disfluency-rich_synthetic_dialog_data_generation_framework_for_intelligent_vehicle_environments.txt",
+        "doc_type": "research_paper",
+        "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/drive_disfluency-rich_synthetic_dialog_data_generation_framework_for_intelligent_vehicle_environments.txt"
+      }
+    }
+  ],
+  "retrieved_chunks": 4,
+  "source_count_used": 4,
+  "startup_boost_applied": true,
+  "patent_boost_applied": false,
+  "timestamp": "2025-11-27T13:06:30.128769",
+  "model_used": "llama-3.1-8b-instant"
+}

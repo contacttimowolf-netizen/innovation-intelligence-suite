@@ -5,13 +5,13 @@ Note: The Innovation Intelligence Suite is targeting a persona. Therefore, the p
 
 - Name: Claire Müller
 - Working field: R&D/innovation
-- Employer: Strategy & technology consulting (i.e. Accenture Innovation Services)
+- Employer: Strategy & AI technologies consulting (i.e. Accenture Innovation Services)
 - Customers: Automotive industry
 - Pain point: 
 --- spending significant time and money in collecting and summarizing
 information about emerging technologies, startups, and research trends connected to their business/client pain points.--- lack quantitative signals of where technological attention is accelerated and how to embedd it into their strategy roadmap.
 
-#automotive #challenges #solution #usecases #technologies #innovation #R&D #startups #research #trends #academy #adoption 
+#automotive #challenges #solution #usecases #technologies #AI #innovation #R&D #startups #research #trends #academy #adoption 
 
 
 # Exemplary user queries

@@ -1,0 +1,57 @@
+{
+  "query_id": 8,
+  "question": "Which automotive technologies are moving from academy to application?",
+  "answer": "Based on the provided context, we can identify some automotive technologies that are moving from the academy to application. However, the context is limited, and we can only make educated guesses based on the information available.\n\n1. **GPS-based open platform for moving services**: Motsee (STARTUP #4057) is developing a GPS-based open platform for moving services and people, which could be an application of automotive technology. However, the current stage of this technology is unclear, and it's difficult to assess its maturity.\n\n2. **Automotive software and electronics**: The Automotive Software and Electronics 2030 Report [Source: Automotive Software and Electronics 2030 Report] mentions that the technology borders between the automotive and consumer electronics world will continue to be torn down. This suggests that automotive technologies are moving from the academy to application, but the specific technologies are not mentioned.\n\n3. **Smart home moving services**: Homeshift (STARTUP #11976) is a smart home moving service, which might involve the application of automotive technologies such as GPS, navigation, or IoT sensors. However, the current stage of this technology is unclear, and it's difficult to assess its maturity.\n\nTransition indicators and timelines:\n\n* **GPS-based open platform for moving services**: The development of Motsee's platform suggests that this technology is in the **Development Phase (TRL 5-6)**, with prototyping and testing underway.\n* **Automotive software and electronics**: The Automotive Software and Electronics 2030 Report suggests that the automotive industry is in a state of rapid change, with technology borders being torn down. This implies that the industry is in the **Commercialization Phase (TRL 7-9)**, with deployment and scaling underway.\n* **Smart home moving services**: The development of Homeshift's smart home moving service suggests that this technology is in the **Development Phase (TRL 5-6)**, with prototyping and testing underway.\n\nPlease note that these assessments are based on limited information and should be taken as educated guesses rather than definitive conclusions.",
+  "sources": [
+    {
+      "content": "STARTUP #11976:\n  Name: Homeshift\n  Location: N/A\n  Tagline: Homeshift is a smart home moving service \n  Description: Moving is one of the most stressful events in life, second only to death and divorce. Whether it's preparing for a move, ordering moving services or submitting change of address notices, moving is without question a logistical nightmare for millions of households ...\n--------------------------------------------------\n\nSTARTUP #11977:\n  Name: Commonplace\n  Location: N/A\n  Tagline: Crowd-mapped consultation for better living places\n  Description: Commonplace is a mobile-first digital tool for neighbourhoods and property developers. \n\nWe help neighbourhoods act on their needs, and property developers reduce their planning risk and costs. They pay commonplace for this data.\n\nIndividuals use Commonplace ...\n--------------------------------------------------",
+      "source_file": "startups_processed.txt",
+      "doc_type": "startups_data",
+      "similarity_score": 0.39765160145496903,
+      "full_metadata": {
+        "source": "startups_processed.txt",
+        "doc_type": "startups_data",
+        "file_path": "../01_data/rag_automotive_tech/processed/startups_processed.txt"
+      }
+    },
+    {
+      "content": "STARTUP #14357:\n  Name: moveBuddha\n  Location: N/A\n  Tagline: Kayak for the moving industry\n  Description: Instantly compare all your pricing and moving options in one place. With a few simple questions, moveBuddha shows you customized pricing and recommends the best moving option and companies based on your moving needs, personal preferences, and budget.\n--------------------------------------------------\n\nSTARTUP #14358:\n  Name: MANTIS Ad Network\n  Location: N/A\n  Tagline: Marketing platform for the cannabis industry\n  Description: MANTIS® is the marijuana marketing platform. We are a team of technology experts focused on building information rich data sets relevant to the developing, legal cannabis industry. This data can then be leveraged by advertisers for more direct targeting capabilities ...\n--------------------------------------------------",
+      "source_file": "startups_processed.txt",
+      "doc_type": "startups_data",
+      "similarity_score": 0.38232498648403535,
+      "full_metadata": {
+        "source": "startups_processed.txt",
+        "doc_type": "startups_data",
+        "file_path": "../01_data/rag_automotive_tech/processed/startups_processed.txt"
+      }
+    },
+    {
+      "content": "STARTUP #4057:\n  Name: Motsee\n  Location: N/A\n  Tagline: Directory of moving vehicles offering public services\n  Description: Motsee is a technology startup to build worlds first GPS based open platform for moving services and people. This will give a Uber kind of experience for any moving services and people by bringing GPS technology to common people. By connecting nearest moving services ...\n--------------------------------------------------\n\nSTARTUP #4058:\n  Name: Skyriz\n  Location: N/A\n  Tagline: iPhone for the blind\n  Description: Ray is the first smartphone which is completely Braille based. It solves the problems inherent in the existing solutions, especially the problem of interacting with the phone. Both input and output in the phone can be done over Braille. Ray features a Braille user ...\n--------------------------------------------------",
+      "source_file": "startups_processed.txt",
+      "doc_type": "startups_data",
+      "similarity_score": 0.37777533478496633,
+      "full_metadata": {
+        "source": "startups_processed.txt",
+        "doc_type": "startups_data",
+        "file_path": "../01_data/rag_automotive_tech/processed/startups_processed.txt"
+      }
+    },
+    {
+      "content": "tech companies from outside the automotive space. The technology borders between the \nautomotive and the consumer electronics world will continue to be torn down. This will open \nup huge opportunities but also risks, for those who make efforts to enter the new markets. \nAutomotive software and electronics 2030\n4.2 First steps for all players in navigating the changing landscape \nWithout doubt, there is no one-size-fits-all approach to tackling the challenges that the \ndisruptive trends described in this report present to various players in the automotive industry. \nYet, independent of their individual starting position or location along the automotive value \nchain, we see a set of clear actions that all companies need to assess to successfully navigate \nthe changing landscape of automotive SW and electronics:\nBeef up your SW and E/E architecture capabilities and become part of early, shaping \ndiscussions",
+      "source_file": "automotive-software-and-electronics-2030-full-report.txt",
+      "doc_type": "research_paper",
+      "similarity_score": 0.33004687749123984,
+      "full_metadata": {
+        "source": "automotive-software-and-electronics-2030-full-report.txt",
+        "doc_type": "research_paper",
+        "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/automotive-software-and-electronics-2030-full-report.txt"
+      }
+    }
+  ],
+  "retrieved_chunks": 4,
+  "source_count_used": 4,
+  "startup_boost_applied": false,
+  "patent_boost_applied": false,
+  "timestamp": "2025-11-27T13:07:31.022249",
+  "model_used": "llama-3.1-8b-instant"
+}

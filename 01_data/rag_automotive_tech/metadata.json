@@ -78,9 +78,28 @@
     "title": "Automotive Software and Electronics 2030",
     "key_focus": "Projected growth and structural shifts in the automotive software & electrical/electronic (E/E) market driven by ACES (autonomous, connected, electrified, shared) trends and E/E-architecture evolution.",
     "best_for": "Strategically navigating the software-defined vehicle transition and changing value chain dynamics."
+  },
+
+   {
+    "id": "lens_scholarly_ai_automotive_2025.csv",
+    "publisher": "lens.org",
+    "title": "Paper abstracts from automotive and AI journal articles",
+    "key_focus": "Collection of abstracts of journal abstracts published in 2025, focusing on AI technologies in automotive and mobility.",
+    "best_for": "Latest trends and research on AI in automotive industry."
   }
     ],
   
+    "automotive_tech_patents": [
+
+       {
+    "id": "lens_patent_ai_automotive_2025.csv",
+    "publisher": "lens.org",
+    "title": "Patents on automotive and AI",
+    "key_focus": "Collection of patents applied for in 2025, focusing on AI technologies in automotive and mobility.",
+    "best_for": "Latest trends and tech developments on AI in automotive industry shifting from academia to industry application."
+  }
+    ],
+
     "tech_reports": [
     {
       "id": "wef_2025",

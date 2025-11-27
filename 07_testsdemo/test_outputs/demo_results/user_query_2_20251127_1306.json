@@ -1,0 +1,68 @@
+{
+  "query_id": 2,
+  "question": "Summarize the latest research on AI and autonomous driving.",
+  "answer": "Based on the provided research papers, here is a summary of the latest research on AI and autonomous driving:\n\n**Advancements in Autonomous Driving**\n\nRecent research has focused on developing more robust and accurate autonomous driving systems. For instance, [158] Y. Zhang, S. Gong, K. Xiong, et al. proposed BEVWorld, a multimodal world model for autonomous driving via unified BEV latent space [1]. Similarly, [159] D. Bogdoll, Y. Yang, T. Joseph, and J. M. Zöllner introduced MUVO, a multimodal world model with spatial representations for autonomous driving [2].\n\n**Generative AI for Autonomous Driving**\n\nGenerative AI has been explored for its potential in simulating difficult driving scenarios and predicting autonomous driving outcomes. For example, [31] Liu et al. presented a method leveraging LSTM-GAN for self-detection of abnormal data and predictive maintenance in autonomous driving [3]. Additionally, [240] B. Jiang, S. Chen, B. Liao, et al. proposed Senna, a framework that bridges large vision-language models and end-to-end autonomous driving [4].\n\n**Path Planning and Architecture**\n\nResearchers have also focused on developing more efficient path planning algorithms and architectures for autonomous driving. For instance, [235] J. Levinson, J. Askeland, J. Becker, et al. proposed a functional reference architecture for autonomous driving [5]. Similarly, [239] A. Tampuu, T. Matiisen, M. Semikin, D. Fishman, and N. Muhammad surveyed end-to-end driving architectures and training methods [6].\n\n**Multimodal Datasets and World Models**\n\nThe development of multimodal datasets and world models has been crucial for advancing autonomous driving research. For example, [161] H. Caesar, V. Bankiti, A. H. Lang, et al. introduced nuScenes, a multimodal dataset for autonomous driving [7]. Additionally, [162] J. Wei, S. Yuan, P. Li, Q. Hu, Z. Gan, and W. Ding proposed OccLLaMA, an occupancy-language-action generative world model for autonomous driving [8].\n\n**End-to-End Autonomous Driving**\n\nRecent research has also focused on developing end-to-end autonomous driving systems. For instance, [241] P. S. Chib and P. Singh surveyed recent advancements in end-to-end autonomous",
+  "sources": [
+    {
+      "content": "you like me to find a\ncoffee shop closer to\nyour meeting location?”\nIt can also check for\nother relevant factors,\nlike “The weather is\nnice today. Should I\nfind a caf ´e with outdoor\nseating?”\nTABLE X: Scenario 5: Asking for next Autonomous Driving\nManeuver,Voice Command: “How are you going to handle\nthe upcoming scenario with pedestrians on both sides of the\nroad?”\nSystem Ford SYNC (2007) MBUX (LLM-based) Advanced In-Vehicle\nVoice Assistants (In\nResearch)\nInput\nRequirementLimited or\nUnsupported:\nFord SYNC from\n2007 would\nnot support\nsuch advanced\ninquiries related\nto autonomous\ndriving.Natural Language\nUnderstanding:The\nsystem can interpret\nthe question due to its\nLLM-based foundation,\nunderstanding the\ncontext of autonomous\ndriving.Highly Flexible\nUnderstanding:\nThe assistant can\nfully comprehend the\ninquiry, recognizing\nthe complexity of\nthe scenario and the\nrelevance to autonomous\ndriving.\nSystem\nOutputNo Response or\nError:The system\nmight respond with\n“Command not\nrecognized,” or",
+      "source_file": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+      "doc_type": "research_paper",
+      "similarity_score": 0.5266099274945539,
+      "full_metadata": {
+        "source": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+        "doc_type": "research_paper",
+        "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt"
+      }
+    },
+    {
+      "content": "al. (2024) [59]presents the ability to simulate difficult driving\nscenarios. The work demonstrates how such simulations\ncould help polish and test the autonomous driving systems\nunder varied conditions. Gaia-1, in contrast, was offered for\nautonomous driving prediction and simulation of scenarios by\nHu et al. (2023) [23]through a generative AI-driven world\nmodel; emphasis was laid on the importance of realistic\nenvironment simulation for training and validation. Marathe\net al. (2023) [35]propose Wedge, a novel dataset synthesized\nfrom artificial intelligence models that focus on multiweather\nconditions for autonomous driving. It brings forth important\ninsights towards how one can raise the bar even further in\nterms of robustness and accuracy for autonomous systems\nunder different weather condition\n3) Maintenance and Monitoring:Liu et al. (2021)\n[31]present a method leveragingLSTM-GANfor\nself-detection of abnormal data and predictive maintenance in",
+      "source_file": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+      "doc_type": "research_paper",
+      "similarity_score": 0.4471171353751893,
+      "full_metadata": {
+        "source": "Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt",
+        "doc_type": "research_paper",
+        "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/Gen_AI_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt"
+      }
+    },
+    {
+      "content": "arXiv:2406.08481.\n[158] Y . Zhang, S. Gong, K. Xiong, et al. , “BEVWorld: A Mul-\ntimodal World Model for Autonomous Driving via Unified\nBEV Latent Space,” 2024, arXiv:2407.05679.\n[159] D. Bogdoll, Y . Yang, T. Joseph, and J. M. Zöllner, “MUVO:\nA Multimodal World Model with Spatial Representations for\nAutonomous Driving,” 2024, arXiv:2311.11762.\n[160] Y . Yang, J. Mei, Y . Ma, et al. , “Driving in the Occupancy\nWorld: Vision-Centric 4D Occupancy Forecasting and Plan-\nning via World Models for Autonomous Driving,” 2025,\narXiv:2408.14197.\n[161] H. Caesar, V . Bankiti, A. H. Lang, et al. , “nuScenes:\nA Multimodal Dataset for Autonomous Driving,” in 2020\nIEEE/CVF Conf. on Comput. Vis. Pattern Recognit. , 2020.\n[162] J. Wei, S. Yuan, P. Li, Q. Hu, Z. Gan, and W.\nDing, “OccLLaMA: An Occupancy-Language-Action Gen-\nerative World Model for Autonomous Driving,” 2024,\narXiv:2409.03272.\n[163] N. Nayakanti, R. Al-Rfou, A. Zhou, K. Goel, K. S. Refaat,",
+      "source_file": "generative_AI_for_autonomous_driving_a_review.txt",
+      "doc_type": "research_paper",
+      "similarity_score": 0.4189943919731646,
+      "full_metadata": {
+        "source": "generative_AI_for_autonomous_driving_a_review.txt",
+        "doc_type": "research_paper",
+        "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/generative_AI_for_autonomous_driving_a_review.txt"
+      }
+    },
+    {
+      "content": "“LLM-A*: Large Language Model Enhanced Incremental\nHeuristic Search on Path Planning,” in Conf. on Empir.\nMethods Nat. Lang. Process. , 2024.\n[235] J. Levinson, J. Askeland, J. Becker, et al. , “Towards fully\nautonomous driving: Systems and algorithms,” in 2011 IEEE\nIntell. Veh. Symp. , 2011.\n[236] S. Behere and M. Törngren, “A functional reference archi-\ntecture for autonomous driving,” Inf. Softw. Technol. , 2016.\n[237] F. Munir, S. Azam, M. I. Hussain, A. M. Sheri, and M.\nJeon, “Autonomous Vehicle: The Architecture Aspect of\nSelf Driving Car,” in Int. Conf. on Sensors, Signal Image\nProcess. , 2018.[238] O. S. Tas, S. Hormann, B. Schaufele, and F. Kuhnt, “Auto-\nmated vehicle system architecture with performance assess-\nment,” in 2017 IEEE 20th Int. Conf. on Intell. Transp. Syst. ,\n2017.\n[239] A. Tampuu, T. Matiisen, M. Semikin, D. Fishman, and\nN. Muhammad, “A Survey of End-to-End Driving: Archi-\ntectures and Training Methods,” IEEE Trans. on Neural\nNetworks Learn. Syst. , 2022.",
+      "source_file": "generative_AI_for_autonomous_driving_a_review.txt",
+      "doc_type": "research_paper",
+      "similarity_score": 0.39079342924380306,
+      "full_metadata": {
+        "source": "generative_AI_for_autonomous_driving_a_review.txt",
+        "doc_type": "research_paper",
+        "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/generative_AI_for_autonomous_driving_a_review.txt"
+      }
+    },
+    {
+      "content": "[236] S. Behere and M. Törngren, “A functional reference archi-\ntecture for autonomous driving,” Inf. Softw. Technol. , 2016.\n[237] F. Munir, S. Azam, M. I. Hussain, A. M. Sheri, and M.\nJeon, “Autonomous Vehicle: The Architecture Aspect of\nSelf Driving Car,” in Int. Conf. on Sensors, Signal Image\nProcess. , 2018.[238] O. S. Tas, S. Hormann, B. Schaufele, and F. Kuhnt, “Auto-\nmated vehicle system architecture with performance assess-\nment,” in 2017 IEEE 20th Int. Conf. on Intell. Transp. Syst. ,\n2017.\n[239] A. Tampuu, T. Matiisen, M. Semikin, D. Fishman, and\nN. Muhammad, “A Survey of End-to-End Driving: Archi-\ntectures and Training Methods,” IEEE Trans. on Neural\nNetworks Learn. Syst. , 2022.\n[240] B. Jiang, S. Chen, B. Liao, et al. , “Senna: Bridging Large\nVision-Language Models and End-to-End Autonomous Driv-\ning,” 2024, arXiv:2410.22313.\n[241] P. S. Chib and P. Singh, “Recent Advancements in End-to-\nEnd Autonomous Driving using Deep Learning: A Survey,”\n2023, arXiv:2307.04370.",
+      "source_file": "generative_AI_for_autonomous_driving_a_review.txt",
+      "doc_type": "research_paper",
+      "similarity_score": 0.38943840923750433,
+      "full_metadata": {
+        "source": "generative_AI_for_autonomous_driving_a_review.txt",
+        "doc_type": "research_paper",
+        "file_path": "../01_data/rag_automotive_tech/processed/automotive_papers/generative_AI_for_autonomous_driving_a_review.txt"
+      }
+    }
+  ],
+  "retrieved_chunks": 5,
+  "source_count_used": 5,
+  "startup_boost_applied": false,
+  "patent_boost_applied": false,
+  "timestamp": "2025-11-27T13:06:31.221361",
+  "model_used": "llama-3.1-8b-instant"
+}

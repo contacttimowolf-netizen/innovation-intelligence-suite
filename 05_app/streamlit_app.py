@@ -1,5 +1,5 @@
 # AUTOMOTIVE TECH INTELLIGENCE - STREAMLIT APP
-# Complete RAG interface using your tested components
+# Complete RAG interface with patent definitions and updated source mapping
 
 import streamlit as st
 import sys
@@ -54,10 +54,20 @@ def setup_groq_client():
         return None, f"Error setting up Groq client: {str(e)}"
 
 def build_smart_prompt(question, context):
-    """YOUR universal prompt template from notebook 03"""
-    maturity_keywords = ['trl', 'mature', 'transition', 'academy to application', 'commercial']
-    is_maturity_question = any(keyword in question.lower() for keyword in maturity_keywords)
+    """UPDATED universal prompt template with patent definitions"""
+    # Detect if this is a technology maturity question
+    maturity_keywords = ['trl', 'mature', 'transition', 'academy to application', 
+                        'commercial', 'moving from academy', 'readiness', 'development stage']
     
+    # Detect if this is a patent-related question
+    patent_keywords = ['patent', 'intellectual property', 'ip', 'jurisdiction', 'ep', 'us', 'wo',
+                      'kind', 'a1', 'b2', 'filing', 'protection', 'patent office', 'lens']
+    
+    question_lower = question.lower()
+    is_maturity_question = any(keyword in question_lower for keyword in maturity_keywords)
+    is_patent_question = any(keyword in question_lower for keyword in patent_keywords)
+    
+    # Include TRL section only for maturity questions
     if is_maturity_question:
         trl_section = """
 TECHNOLOGY MATURITY ASSESSMENT:
@@ -70,6 +80,28 @@ TECHNOLOGY MATURITY ASSESSMENT:
 """
     else:
         trl_section = ""
+    
+    # Include patent definitions only for patent questions
+    if is_patent_question:
+        patent_section = """
+PATENT DOCUMENT INTERPRETATION:
+- JURISDICTION indicates geographic protection scope:
+  * EP: European Patent Office (multiple European countries)
+  * US: United States Patent and Trademark Office
+  * WO: World Intellectual Property Organization (PCT international applications)
+  
+- KIND CODES indicate document type and status:
+  * A1: Patent application with search report
+  * A2: Patent application without search report  
+  * A3: Search report published separately
+  * B1: Granted patent (examined and approved)
+  * B2: Amended/revised granted patent
+  
+- Consider jurisdiction for market focus and protection scope
+- Use kind codes to distinguish between applications (A) and granted patents (B)
+"""
+    else:
+        patent_section = ""
     
     prompt = f"""
 CONTEXT:
@@ -84,9 +116,11 @@ ANALYSIS INSTRUCTIONS:
 3. If the context is insufficient, acknowledge what cannot be answered
 
 {trl_section}
+{patent_section}
 
 ADDITIONAL GUIDELINES:
 - For technology maturity questions: assess development stage and transition evidence
+- For patent questions: consider jurisdiction and document type implications
 - For trend questions: identify velocity, drivers, and key players  
 - For descriptive questions: provide specific examples and entities
 
@@ -108,8 +142,9 @@ def determine_source_count(question):
         return 3
 
 def format_source_name(source_file):
-    """YOUR file name formatting from notebook 03"""
+    """UPDATED file name formatting with new data sources"""
     name_mapping = {
+        # Automotive Papers
         'a_benchmark_framework_for_AL_models_in_automotive_aerodynamics.txt': 'Benchmark Framework for AI Models in Automotive Aerodynamics',
         'AL_agents_in_engineering_design_a_multiagent_framework_for_aesthetic_and_aerodynamic_car_design.txt': 'AI Agents in Engineering Design',
         'automating_automotive_software_development_a_synergy_of_generative_AL_and_formal_methods.txt': 'Automating Automotive Software Development',
@@ -120,10 +155,16 @@ def format_source_name(source_file):
         'Gen_AL_in_automotive_applications_challenges_and_opportunities_with_a_case_study_on_in-vehicle_experience.txt': 'Generative AI in Automotive',
         'generative_AL_for_autonomous_driving_a_review.txt': 'Generative AI for Autonomous Driving',
         'leveraging_vision_language_models_for_visual_grounding_and_analysis_of_automative_UI.txt': 'Vision-Language Models for Automotive UI',
+        
+        # Tech Reports
         'bog_ai_value_2025.txt': 'BCG: AI Value Creation 2025',
         'mckinsey_tech_trends_2025.txt': 'McKinsey Technology Trends 2025',
         'wef_emerging_tech_2025.txt': 'WEF: Emerging Technologies 2025',
+        
+        # New Processed Files
         'startups_processed.txt': 'Startup Innovation Database',
+        'automotive_papers_processed.txt': 'Automotive Research Papers Database',
+        'automotive_patents_processed.txt': 'Automotive Technology Patents Database',
     }
     return name_mapping.get(source_file, source_file.replace('.txt', '').replace('_', ' ').title())
 
@@ -162,7 +203,7 @@ def ask_question(question, retriever, groq_client):
         
         if not retrieved_data:
             return {
-                'answer': "I couldn't find relevant information in our knowledge base for this specific question. Try asking about automotive AI, tech trends, or startup innovations.",
+                'answer': "I couldn't find relevant information in our knowledge base for this specific question. Try asking about automotive AI, tech trends, startup innovations, or patents.",
                 'sources': [],
                 'success': True,
                 'source_count': k
@@ -201,13 +242,13 @@ def ask_question(question, retriever, groq_client):
 # STREAMLIT UI
 def main():
     st.set_page_config(
-        page_title="Automotive Tech Intelligence", 
+        page_title="INNOVATION INTELLIGENCE SUITE", 
         page_icon="🚗", 
         layout="wide"
     )
     
-    st.title("🚗 Automotive Technology Intelligence")
-    st.markdown("Ask questions about AI, autonomous driving, startups, and tech trends in the automotive industry.")
+    st.title("INNOVATION INTELLIGENCE SUITE")
+    st.markdown("Ask questions about latest tech trends in the automotive industry, including patents and startups.")
     
     # Initialize system with session state for persistence
     if 'rag_initialized' not in st.session_state:
@@ -283,20 +324,23 @@ def main():
     # Query input
     question = st.text_input(
         "💬 Your question:",
-        placeholder="e.g., Which startups work on AI for automotive?",
+        placeholder="e.g., Summarize the latest research on AI and autonomous driving.",
         key="question_input"
     )
     
-    # Pre-defined query buttons
+    # Pre-defined query buttons - UPDATED with patent examples
     st.subheader("📋 Example Questions")
     col1, col2 = st.columns(2)
     
     with col1:
-        if st.button("🚀 Startups in AI Automotive", use_container_width=True):
-            st.session_state.question_input = "Which startups work on AI for automotive?"
-            st.rerun()
         if st.button("🔬 Latest AI Research", use_container_width=True):
             st.session_state.question_input = "Summarize the latest research on AI and autonomous driving."
+            st.rerun()
+        if st.button("📜 Automotive Patents", use_container_width=True):
+            st.session_state.question_input = "What are the key patents in automotive AI with US jurisdiction?"
+            st.rerun()
+        if st.button("🚀 Startups in AI Automotive", use_container_width=True):
+            st.session_state.question_input = "Which startups work on AI for automotive?"
             st.rerun()
     
     with col2:
@@ -305,6 +349,9 @@ def main():
             st.rerun()
         if st.button("🤖 AI Agents Development", use_container_width=True):
             st.session_state.question_input = "Summarize latest tech trends in development of AI agents"
+            st.rerun()
+        if st.button("🎯 Tech Maturity", use_container_width=True):
+            st.session_state.question_input = "Which automotive technologies are moving from academy to application?"
             st.rerun()
     
     # Process question

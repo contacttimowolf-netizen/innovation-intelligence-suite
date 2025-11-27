@@ -1,0 +1,68 @@
+{
+  "query_id": 3,
+  "question": "Summarize latest tech trends in development of AI agents",
+  "answer": "Based on the provided context from the McKinsey Technology Trends Outlook 2025 and Bcg AI Value 2025 reports, here is a summary of the latest tech trends in the development of AI agents:\n\n1. **Agentic AI capabilities**: AI agents are being developed to independently plan and execute complex, multistep tasks, communicate with each other, and adapt to new information. [Source: McKinsey Technology Trends Outlook 2025]\n2. **General-purpose agent platforms**: Developers are building AI-powered, general-purpose agent platforms, and some companies are adding agentic capabilities to their existing platforms. [Source: McKinsey Technology Trends Outlook 2025]\n3. **Specialized agents**: Specialized agents are being designed for deep research, and significant advancements have emerged in this area. [Source: McKinsey Technology Trends Outlook 2025]\n4. **AI-to-AI communication**: Developments in AI-to-AI communication have implications for robotics, complex problem-solving, and other fields, but also raise concerns about transparency and control. [Source: McKinsey Technology Trends Outlook 2025]\n5. **Rising concerns about trust, governance, and liability**: As AI agents take on more autonomous roles, businesses are increasingly grappling with accountability and legal frameworks. [Source: McKinsey Technology Trends Outlook 2025]\n6. **Robust governance frameworks**: There is a critical need for robust governance frameworks to address trust, liability, and ethical concerns related to agentic AI. [Source: McKinsey Technology Trends Outlook 2025]\n7. **Hybrid worker environments**: Operating in a hybrid worker environment, where humans and AI agents collaborate, calls for new management capabilities and skills evolution. [Source: Bcg AI Value 2025]\n8. **Inclusiveness in AI development**: Future-built companies involve the workforce twice as often as others do in reshaping workflows as they build, test, and deploy agents, ensuring smoother adoption and building ownership and trust. [Source: Bcg AI Value 2025]\n9. **Responsible AI**: Efforts are underway in the United States to enact legislation that would establish guardrails for AI, reflecting a movement within the tech industry known as \"responsible AI.\" [Source: McKinsey Technology Trends Outlook 2025]\n\nOverall, the development of AI agents is rapidly advancing, with significant advancements in capabilities, platforms, and specialized agents. However, concerns about trust, governance, and liability are also rising, highlighting the",
+  "sources": [
+    {
+      "content": "Because these agents use language that \nhumans can read, they can describe what \nthey’re doing and be guided via feedback on \ntheir work plan.\nThe potential of agentic AI has persuaded many \nindustries to explore enlisting agentic virtual \ncoworkers for a variety of functions and roles. \n11\nTechnology Trends Outlook 2025\nLatest developments \nThe development of AI agents capable of \nautonomous decision-making and interagent \ncommunication presents exciting possibilities. \nHowever, the rapid progress of agentic AI \nunderscores a critical need for robust governance \nframeworks to address trust, liability, and ethical \nconcerns. The latest developments in agentic AI \ninclude the following:\n —Developers are building AI-powered, general-\npurpose agent platforms. Some companies \nare adding agentic capabilities to their existing \n1 Google Blog , “Gemini 2.0 is now available to everyone,” blog entry by Koray Kavukcuoglu, February 5, 2025; “Introducing Operator,” OpenAI,",
+      "source_file": "mckinsey_tech_trends_2025.txt",
+      "doc_type": "tech_report",
+      "similarity_score": 0.5015603770737883,
+      "full_metadata": {
+        "source": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+      }
+    },
+    {
+      "content": "harmony, and enabling interoperability across cloud-based, \nBOSTON CONSULTING GROUPTHE WIDENING AI VALUE GAP 16on-premises, and external ecosystems of AI agents and \ntools. Future-built companies involve the workforce twice \nas often as others do in reshaping workflows as they build, \ntest, and deploy agents. This inclusiveness ensures \nsmoother adoption and builds ownership and trust. These \nfirms recognize that as the AI operating model takes hold, \nthe role of humans evolves dramatically. Companies must \nlook after AI workers as well as human colleagues so that \nboth deliver optimal outcomes together. With the spread of \nAI, and especially of agents, humans must play a lead role \nin reimagining future agents and workflows.\nHybrid Worker Environments and Skills Evolution. \nOperating in a hybrid worker environment—one in which \nhumans and AI agents collaborate—calls for new \nmanagement capabilities . AI reshapes roles by \nautomating routine processes, narrowing performance",
+      "source_file": "bcg_ai_value_2025.txt",
+      "doc_type": "tech_report",
+      "similarity_score": 0.46666127508750327,
+      "full_metadata": {
+        "source": "bcg_ai_value_2025.txt",
+        "doc_type": "tech_report",
+        "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/bcg_ai_value_2025.txt"
+      }
+    },
+    {
+      "content": "These developments in AI-to-AI communication \nhave implications for robotics, complex problem-\nsolving, and other fields, though they also raise \nconcerns about transparency and control.5 \n —Rising concerns about trust, governance, \nand liability are influencing the development \nand deployment of agentic AI. As AI agents \ntake on more autonomous roles that include \nexecuting financial transactions and interacting \nacross digital platforms, businesses are \nincreasingly grappling with accountability and \nlegal frameworks. Recent high-profile pilot \ndeployments have brought these risks into \nsharper focus, especially as AI systems act \nindependently across jurisdictions. Designing \nrobust guardrails and providing the right \noperational context for agents will be essential \nto ensure reliability and accountability.Scoring the trendTHE AI REV OLUTION\nAgentic AI\n$1.1Equity \ninvestment, \nbillion +985%Job pos tings,\n2023–24,",
+      "source_file": "mckinsey_tech_trends_2025.txt",
+      "doc_type": "tech_report",
+      "similarity_score": 0.4402945559587584,
+      "full_metadata": {
+        "source": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+      }
+    },
+    {
+      "content": "Director, McKinsey Global \nInstitute, and senior \npartner, Bay AreaMichael Chui\nSenior fellow, \nQuantumBlack, AI by \nMcKinsey, Bay AreaRoger Roberts\nPartner, \nQuantumBlack, AI by \nMcKinsey, Bay AreaSven Smit\nChair of the McKinsey \nGlobal Institute and senior \npartner, Amsterdam\nAbout the authors\nTechnology Trends Outlook 2025\nAI revolution\nAgentic AI\nAgentic AI is an artificial \nintelligence system capable of \nindependently planning and \nexecuting complex, multistep \ntasks. Built on foundation \nmodels, these agents can \nautonomously perform actions, \ncommunicate with one another, \nand adapt to new information. \nSignificant advancements have \nemerged, from general agent \nplatforms to specialized agents \ndesigned for deep research. \nThe trend—and why it matters\nAgentic AI has quickly gone from a fringe concept \nto one of the most talked-about shifts in enterprise \ntechnology. It is gaining traction as organizations \nexplore new ways to automate workflows and",
+      "source_file": "mckinsey_tech_trends_2025.txt",
+      "doc_type": "tech_report",
+      "similarity_score": 0.4097264988946675,
+      "full_metadata": {
+        "source": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+      }
+    },
+    {
+      "content": "producing code that demonstrates a deeper \nunderstanding of a problem and the steps \nrequired to solve it. These agents can act \nsemiautonomously, expanding their capabilities \nthroughout a product development life cycle.\nReal-world examples of the impetus for the industry \nto move from principles to action on responsible AI \ninclude the following:\n —Efforts are underway in the United States \nto enact legislation that would establish \nguardrails for AI, reflecting a movement within \nthe tech industry known as “responsible AI.” \n14 Adam Zewe, “MIT researchers develop an efficient way to train more reliable AI agents,” MIT News , November 22, 2024.\n15 “Ally Financial cuts pipeline outages and eases security scanning with GitLab,” GitLab, accessed March 19, 2025; GitLab Blog , “GitLab \nreceives Ally Technology Partner Award for Operational Excellence,” blog entry by Sandra Gittlen, June 17, 2024.\n16 “Regrello,” Crunchbase, accessed March 19, 2025.",
+      "source_file": "mckinsey_tech_trends_2025.txt",
+      "doc_type": "tech_report",
+      "similarity_score": 0.39761544025520124,
+      "full_metadata": {
+        "source": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "file_path": "../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+      }
+    }
+  ],
+  "retrieved_chunks": 5,
+  "source_count_used": 5,
+  "startup_boost_applied": false,
+  "patent_boost_applied": false,
+  "timestamp": "2025-11-27T13:06:32.076876",
+  "model_used": "llama-3.1-8b-instant"
+}
