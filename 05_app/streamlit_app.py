@@ -1,10 +1,15 @@
 # AUTOMOTIVE TECH INTELLIGENCE - STREAMLIT APP
-# Complete RAG interface with patent definitions and updated source mapping
+# Complete RAG interface with Query Expansion
+# UPDATED FOR FAISS RETRIEVER
 
 import streamlit as st
 import sys
 import os
 import importlib.util
+
+# Removed unused imports that were causing numpy version conflicts
+# import spacy  # NOT USED
+# from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS  # NOT USED
 
 def get_correct_paths():
     """Get absolute paths based on your exact folder structure"""
@@ -17,23 +22,46 @@ def get_correct_paths():
     return rag_components_path, vector_index_path, project_root
 
 def import_your_components():
-    """Import your actual tested components with exact paths"""
+    """Import FAISS retriever with exact paths"""
     rag_components_path, _, _ = get_correct_paths()
-    retriever_path = os.path.join(rag_components_path, 'retriever.py')
     
-    if not os.path.exists(retriever_path):
-        return None, f"Retriever not found at: {retriever_path}"
+    # Updated for FAISS retriever
+    faiss_retriever_path = os.path.join(rag_components_path, 'faiss_retriever.py')
+    
+    if not os.path.exists(faiss_retriever_path):
+        return None, f"FAISS Retriever not found at: {faiss_retriever_path}"
         
     try:
         if rag_components_path not in sys.path:
             sys.path.insert(0, rag_components_path)
         
-        spec = importlib.util.spec_from_file_location("retriever", retriever_path)
+        spec = importlib.util.spec_from_file_location("faiss_retriever", faiss_retriever_path)
         retriever_module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(retriever_module)
         return retriever_module, None
     except Exception as e:
-        return None, f"Error importing retriever: {str(e)}"
+        return None, f"Error importing FAISS retriever: {str(e)}"
+
+def import_query_expander():
+    """Import the query expander module"""
+    rag_components_path, _, _ = get_correct_paths()
+    expander_path = os.path.join(rag_components_path, 'query_expander.py')
+    
+    if not os.path.exists(expander_path):
+        # Create the file if it doesn't exist
+        with open(expander_path, 'w') as f:
+            f.write('''# Query expander placeholder - will be created automatically''')
+    
+    try:
+        if rag_components_path not in sys.path:
+            sys.path.insert(0, rag_components_path)
+        
+        spec = importlib.util.spec_from_file_location("query_expander", expander_path)
+        expander_module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(expander_module)
+        return expander_module, None
+    except Exception as e:
+        return None, f"Error importing query expander: {str(e)}"
 
 def setup_groq_client():
     """Your exact client setup from notebook 03"""
@@ -54,7 +82,7 @@ def setup_groq_client():
         return None, f"Error setting up Groq client: {str(e)}"
 
 def build_smart_prompt(question, context):
-    """UPDATED universal prompt template with patent definitions"""
+    """UPDATED universal prompt template with patent AND startup definitions"""
     # Detect if this is a technology maturity question
     maturity_keywords = ['trl', 'mature', 'transition', 'academy to application', 
                         'commercial', 'moving from academy', 'readiness', 'development stage']
@@ -63,9 +91,14 @@ def build_smart_prompt(question, context):
     patent_keywords = ['patent', 'intellectual property', 'ip', 'jurisdiction', 'ep', 'us', 'wo',
                       'kind', 'a1', 'b2', 'filing', 'protection', 'patent office', 'lens']
     
+    # Detect if this is a startup-related question
+    startup_keywords = ['startup', 'startups', 'company', 'companies', 'venture', 'business', 
+                       'funding', 'investment', 'series a', 'series b', 'series c', 'backed']
+    
     question_lower = question.lower()
     is_maturity_question = any(keyword in question_lower for keyword in maturity_keywords)
     is_patent_question = any(keyword in question_lower for keyword in patent_keywords)
+    is_startup_question = any(keyword in question_lower for keyword in startup_keywords)
     
     # Include TRL section only for maturity questions
     if is_maturity_question:
@@ -77,6 +110,7 @@ TECHNOLOGY MATURITY ASSESSMENT:
   * Commercialization Phase (TRL 7-9): Deployment, scaling
 - Assess current stage based on evidence in context
 - Identify transition indicators and timelines
+- Include a definition of TRL stages in the answer
 """
     else:
         trl_section = ""
@@ -103,6 +137,36 @@ PATENT DOCUMENT INTERPRETATION:
     else:
         patent_section = ""
     
+    # Include startup guidance only for startup questions
+    if is_startup_question:
+        startup_section = """
+CRITICAL INSTRUCTIONS FOR STARTUP QUERIES:
+1. **EXTRACT ALL SPECIFIC STARTUP/COMPANY NAMES** mentioned in the context
+2. **FOCUS ON STARTUP DATABASES**: Pay special attention to sections from "Automotive Startup Profiles & Tracker" and "Automotive Industry Startups to Watch in 2025"
+3. **FOR EACH STARTUP FOUND**:
+   * State the company name clearly and prominently
+   * Describe their primary technology or business focus
+   * Include location information if available
+   * Mention any funding details (rounds raised, investors)
+   * Note their automotive/AI specialization
+4. **REQUIRED ANSWER STRUCTURE**:
+   - Start with a summary of findings
+   - Then provide a CLEAR, NUMBERED LIST of startups
+   - Format: "1. **Company Name**: [description] [Source: filename]"
+   - Cite the specific source file for each piece of information
+5. **IF STARTUPS EXIST IN CONTEXT BUT AREN'T EXPLICITLY MENTIONED**, still extract them
+6. **IF NO STARTUPS ARE FOUND**, clearly state: "No specific startup companies were found in the available documents."
+7. **PRIORITIZE INFORMATION FROM STARTUP DATABASES** over general reports when answering startup questions
+
+EXAMPLE FORMAT:
+"Based on the startup databases, I found these automotive AI companies:
+
+1. **Company X**: Develops AI perception systems for autonomous vehicles. Based in Berlin. [Source: Automotive Startup Profiles & Tracker]
+2. **Company Y**: Specializes in battery management AI for electric vehicles. Raised $20M Series A. [Source: Automotive Industry Startups to Watch in 2025]"
+"""
+    else:
+        startup_section = ""
+    
     prompt = f"""
 CONTEXT:
 {context}
@@ -117,6 +181,7 @@ ANALYSIS INSTRUCTIONS:
 
 {trl_section}
 {patent_section}
+{startup_section}
 
 ADDITIONAL GUIDELINES:
 - For technology maturity questions: assess development stage and transition evidence
@@ -161,8 +226,9 @@ def format_source_name(source_file):
         'mckinsey_tech_trends_2025.txt': 'McKinsey Technology Trends 2025',
         'wef_emerging_tech_2025.txt': 'WEF: Emerging Technologies 2025',
         
-        # New Processed Files
-        'startups_processed.txt': 'Startup Innovation Database',
+        # New Processed Files (UPDATED)
+        'autotechinsight_startups_processed.txt': 'Automotive Startup Profiles & Tracker',
+        'seedtable_startups_processed.txt': 'Automotive Industry Startups to Watch in 2025',
         'automotive_papers_processed.txt': 'Automotive Research Papers Database',
         'automotive_patents_processed.txt': 'Automotive Technology Patents Database',
     }
@@ -171,35 +237,193 @@ def format_source_name(source_file):
 # Initialize components with lazy loading
 @st.cache_resource
 def initialize_rag_system():
-    """Initialize all RAG components using exact paths"""
+    """Initialize all RAG components using exact paths - UPDATED FOR FAISS"""
     rag_components_path, vector_index_path, project_root = get_correct_paths()
     
-    # Check if vector index exists
+    # Check if vector index exists - updated check for FAISS files
     if not os.path.exists(vector_index_path):
-        return None, None, f"Vector index not found at: {vector_index_path}"
+        return None, None, None, f"Vector index not found at: {vector_index_path}"
     
-    # Import retriever
+    # Check for FAISS files specifically
+    faiss_files = ['faiss_index.bin', 'texts.pkl', 'metadata.pkl']
+    missing_files = []
+    for file in faiss_files:
+        if not os.path.exists(os.path.join(vector_index_path, file)):
+            missing_files.append(file)
+    
+    if missing_files:
+        return None, None, None, f"FAISS files missing: {', '.join(missing_files)}. Did you run the FAISS embedding creation?"
+    
+    # Import FAISS retriever
     retriever_module, retriever_error = import_your_components()
     if retriever_error:
-        return None, None, retriever_error
+        return None, None, None, retriever_error
+    
+    # Import query expander
+    expander_module, expander_error = import_query_expander()
+    if expander_error and "placeholder" not in expander_error:
+        print(f"Note: Query expander not fully available: {expander_error}")
     
     # Setup Groq client
     groq_client, groq_error = setup_groq_client()
     if groq_error:
-        return None, None, groq_error
+        return None, None, None, groq_error
     
-    # Initialize retriever
+    # Initialize FAISS retriever
     try:
-        retriever = retriever_module.DocumentAwareRetriever(vector_index_path)
-        return retriever, groq_client, None
+        retriever = retriever_module.FAISSRetriever(vector_index_path)
+        
+        # Initialize query expander if module loaded
+        query_expander = None
+        if expander_module and not expander_error:
+            try:
+                query_expander = expander_module.QueryExpander()
+                print("✅ Query expander initialized")
+            except Exception as e:
+                print(f"⚠️ Query expander init warning: {e}")
+                query_expander = None
+        
+        return retriever, groq_client, query_expander, None
+        
     except Exception as e:
-        return None, None, f"Error initializing retriever: {str(e)}"
+        return None, None, None, f"Error initializing FAISS retriever: {str(e)}"
 
-def ask_question(question, retriever, groq_client):
-    """YOUR complete RAG pipeline from notebook 03"""
+def retrieve_with_expansion(question, retriever, query_expander=None, k=3):
+    """Enhanced retrieval with query expansion (NO VISUAL DISPLAY)"""
+    all_results = []
+    
+    # Generate query variations if expander is available
+    if query_expander:
+        try:
+            expanded_queries = query_expander.expand_query(question, use_llm=True)
+            
+            # ⚠️ REMOVED: Do NOT display search variations to user
+            # Just use them silently in the background
+            
+            # Retrieve for each query variation
+            for query_variant in expanded_queries:
+                try:
+                    # FAISS retriever uses retrieve_with_sources method
+                    results = retriever.retrieve_with_sources(query_variant, k=2)
+                    all_results.extend(results)
+                except Exception as e:
+                    print(f"Error retrieving for variant '{query_variant}': {e}")
+                    continue
+        except Exception as e:
+            print(f"Query expansion failed: {e}")
+            # Fallback to regular retrieval
+            results = retriever.retrieve_with_sources(question, k=k)
+            all_results.extend(results)
+    else:
+        # No expansion available - use regular retrieval
+        results = retriever.retrieve_with_sources(question, k=k)
+        all_results.extend(results)
+    
+    if not all_results:
+        return []
+    
+    # Remove duplicates while preserving order
+    unique_results = []
+    seen_content = set()
+    
+    for result in all_results:
+        # FAISS results have 'text' field instead of 'content'
+        content = result.get('text', result.get('content', ''))
+        content_start = content[:150]  # First 150 chars
+        source = result.get('source_file', 'unknown')
+        signature = f"{source}:{content_start}"
+        
+        if signature not in seen_content:
+            seen_content.add(signature)
+            unique_results.append(result)
+    
+    # Sort by similarity score and return top k
+    unique_results.sort(key=lambda x: x.get('similarity_score', 0), reverse=True)
+    return unique_results[:k]
+
+def retrieve_with_forced_startups(question, retriever, query_expander=None, k=3):
+    """🚀 FIXED: FORCE-INCLUDE startup files with query expansion"""
+    question_lower = question.lower()
+    startup_keywords = ['startup', 'company', 'venture', 'business', 'firm', 'enterprise', 'companies', 'startups']
+    
+    is_startup_query = any(keyword in question_lower for keyword in startup_keywords)
+    
+    # Get initial results with query expansion
+    initial_results = retrieve_with_expansion(question, retriever, query_expander, k=k)
+    
+    # If it's a startup query, check and force-add startup files
+    if is_startup_query:
+        # Check if we already have startup files in results
+        has_startup_files = False
+        for item in initial_results:
+            source_file = item.get('source_file', '')
+            if any(startup_file in source_file 
+                   for startup_file in ['autotechinsight_startups_processed.txt', 'seedtable_startups_processed.txt']):
+                has_startup_files = True
+                break
+        
+        # If no startup files found, force add them
+        if not has_startup_files:
+            # Try specific startup-related queries
+            startup_specific_queries = [
+                "automotive startup AI technology",
+                "AI automotive companies startups",
+                "autonomous vehicle startup companies",
+                "automotive tech ventures",
+                "electric vehicle AI startups"
+            ]
+            
+            startup_items = []
+            for startup_query in startup_specific_queries:
+                try:
+                    startup_results = retriever.retrieve_with_sources(startup_query, k=1)
+                    for item in startup_results:
+                        # Only take items from startup files
+                        source_file = item.get('source_file', '')
+                        if any(startup_file in source_file 
+                              for startup_file in ['autotechinsight_startups_processed.txt', 'seedtable_startups_processed.txt']):
+                            # Check for duplicates with existing results
+                            is_duplicate = False
+                            for existing in initial_results:
+                                existing_content = existing.get('text', existing.get('content', ''))
+                                item_content = item.get('text', item.get('content', ''))
+                                if item_content[:100] == existing_content[:100]:
+                                    is_duplicate = True
+                                    break
+                            if not is_duplicate:
+                                startup_items.append(item)
+                                if len(startup_items) >= 2:  # Get at most 2 startup items
+                                    break
+                    if len(startup_items) >= 2:
+                        break
+                except Exception as e:
+                    continue
+            
+            # Add startup items to results
+            if startup_items:
+                # Combine and re-sort
+                combined_results = startup_items + initial_results
+                combined_results.sort(key=lambda x: x.get('similarity_score', 0), reverse=True)
+                return combined_results[:k]
+        
+        # If we already have startup files or couldn't find any, return initial results
+        return initial_results[:k] if initial_results else []
+    else:
+        # Non-startup query, just return initial results
+        return initial_results[:k] if initial_results else []
+
+def ask_question(question, retriever, groq_client, query_expander=None):
+    """UPDATED RAG pipeline with query expansion - COMPATIBLE WITH FAISS"""
     try:
         k = determine_source_count(question)
-        retrieved_data = retriever.retrieve_with_sources(question, k=k)
+        
+        # Use enhanced retrieval with query expansion
+        retrieved_data = retrieve_with_forced_startups(
+            question, 
+            retriever, 
+            query_expander=query_expander, 
+            k=k
+        )
         
         if not retrieved_data:
             return {
@@ -209,11 +433,18 @@ def ask_question(question, retriever, groq_client):
                 'source_count': k
             }
         
-        context = "\n\n".join([
-            f"Source: {format_source_name(item['source_file'])} | Type: {item['doc_type']}\nContent: {item['content']}"
-            for item in retrieved_data
-        ])
+        # Build context from retrieved data
+        context_parts = []
+        for item in retrieved_data:
+            # FAISS uses 'text' field, old retriever uses 'content'
+            content = item.get('text', item.get('content', ''))
+            source_file = item.get('source_file', 'unknown')
+            doc_type = item.get('doc_type', 'document')
+            
+            readable_name = format_source_name(source_file)
+            context_parts.append(f"Source: {readable_name} | Type: {doc_type}\nContent: {content}")
         
+        context = "\n\n".join(context_parts)
         prompt = build_smart_prompt(question, context)
         
         response = groq_client.chat.completions.create(
@@ -252,8 +483,8 @@ def main():
     
     # Initialize system with session state for persistence
     if 'rag_initialized' not in st.session_state:
-        with st.spinner("Loading your RAG system..."):
-            st.session_state.retriever, st.session_state.groq_client, error = initialize_rag_system()
+        with st.spinner("Loading your RAG system with FAISS..."):
+            st.session_state.retriever, st.session_state.groq_client, st.session_state.query_expander, error = initialize_rag_system()
             
             if error:
                 st.session_state.rag_initialized = False
@@ -277,18 +508,47 @@ def main():
                     GROQ_API_KEY=your_actual_api_key_here
                     ```
                     """)
-                elif "Vector index not found" in error:
+                elif "Vector index not found" in error or "FAISS files missing" in error:
                     st.error("**Knowledge Base Missing**")
                     st.info("""
-                    **Solution:** Generate the vector index first by running your RAG notebooks.
-                    The vector index should be in `04_models/vector_index/`
+                    **Solution:** Generate the FAISS vector index first by running the FAISS embedding creation code in notebook 02.
+                    The FAISS index should be in `04_models/vector_index/` with these files:
+                    - faiss_index.bin
+                    - texts.pkl  
+                    - metadata.pkl
+                    - embeddings.npy
+                    """)
+                elif "FAISS Retriever not found" in error:
+                    st.error("**FAISS Retriever Missing**")
+                    st.info("""
+                    **Solution:** Make sure `faiss_retriever.py` exists in `rag_components/` folder.
+                    Also install required packages:
+                    ```bash
+                    pip install faiss-cpu fastembed
+                    ```
+                    """)
+                elif "Error importing FAISS retriever" in error:
+                    st.error("**Import Error**")
+                    st.info("""
+                    **Solution:** Check that `faiss_retriever.py` has correct imports:
+                    ```python
+                    import faiss
+                    from fastembed import TextEmbedding
+                    ```
+                    Install missing packages with:
+                    ```bash
+                    pip install faiss-cpu fastembed
+                    ```
                     """)
                 else:
                     st.error(f"**Error:** {error}")
                     
             elif st.session_state.retriever and st.session_state.groq_client:
                 st.session_state.rag_initialized = True
-                st.success("✅ RAG system ready!")
+                if st.session_state.query_expander:
+                    st.success("✅ FAISS RAG system ready with query expansion!")
+                else:
+                    st.success("✅ FAISS RAG system ready! (Query expansion not available)")
             else:
                 st.session_state.rag_initialized = False
                 st.error("❌ Failed to initialize RAG system")
@@ -303,8 +563,17 @@ def main():
             st.write(f"**Project Root:** `{project_root}`")
             st.write(f"**RAG Components Path:** `{rag_path}`")
             st.write(f"**Vector Index Path:** `{vector_path}`")
-            st.write(f"**retriever.py exists:** {os.path.exists(os.path.join(rag_path, 'retriever.py'))}")
+            st.write(f"**faiss_retriever.py exists:** {os.path.exists(os.path.join(rag_path, 'faiss_retriever.py'))}")
             st.write(f"**vector_index exists:** {os.path.exists(vector_path)}")
+            
+            # Check FAISS files
+            if os.path.exists(vector_path):
+                faiss_files = ['faiss_index.bin', 'texts.pkl', 'metadata.pkl']
+                for file in faiss_files:
+                    file_path = os.path.join(vector_path, file)
+                    st.write(f"**{file} exists:** {os.path.exists(file_path)}")
+            
+            st.write(f"**query_expander.py exists:** {os.path.exists(os.path.join(rag_path, 'query_expander.py'))}")
             
             # Check .env file
             env_path = os.path.join(project_root, '.env')
@@ -319,13 +588,47 @@ def main():
         return
     
     # Query interface (only shown when system is ready)
-    st.success("🎉 System ready! Ask your question below.")
+    st.success("🎉 FAISS system ready! Ask your question below.")
     
     # Initialize question input in session state if not exists
     if 'question_input' not in st.session_state:
         st.session_state.question_input = ""
     
-    # Query input
+    # Initialize button flags if not exists
+    if 'research_clicked' not in st.session_state:
+        st.session_state.research_clicked = False
+    if 'patents_clicked' not in st.session_state:
+        st.session_state.patents_clicked = False
+    if 'startups_clicked' not in st.session_state:
+        st.session_state.startups_clicked = False
+    if 'trends_clicked' not in st.session_state:
+        st.session_state.trends_clicked = False
+    if 'agents_clicked' not in st.session_state:
+        st.session_state.agents_clicked = False
+    if 'maturity_clicked' not in st.session_state:
+        st.session_state.maturity_clicked = False
+    
+    # Check for button clicks BEFORE creating the text input
+    if st.session_state.research_clicked:
+        st.session_state.question_input = "Summarize the latest research on AI and autonomous driving."
+        st.session_state.research_clicked = False
+    elif st.session_state.patents_clicked:
+        st.session_state.question_input = "What are the key patents in automotive AI with US jurisdiction?"
+        st.session_state.patents_clicked = False
+    elif st.session_state.startups_clicked:
+        st.session_state.question_input = "Which startups work on AI for automotive?"
+        st.session_state.startups_clicked = False
+    elif st.session_state.trends_clicked:
+        st.session_state.question_input = "Show me recent reports on technology trends."
+        st.session_state.trends_clicked = False
+    elif st.session_state.agents_clicked:
+        st.session_state.question_input = "Summarize latest tech trends in development of AI agents"
+        st.session_state.agents_clicked = False
+    elif st.session_state.maturity_clicked:
+        st.session_state.question_input = "Which automotive technologies are moving from academy to application?"
+        st.session_state.maturity_clicked = False
+    
+    # Query input - NOW this comes AFTER button checks
     question = st.text_input(
         "💬 Your question:",
         value=st.session_state.question_input,
@@ -339,30 +642,35 @@ def main():
     
     with col1:
         if st.button("🔬 Latest AI Research", use_container_width=True, key="research_btn"):
-            st.session_state.question_input = "Summarize the latest research on AI and autonomous driving."
+            st.session_state.research_clicked = True
             st.rerun()
         if st.button("📜 Automotive Patents", use_container_width=True, key="patents_btn"):
-            st.session_state.question_input = "What are the key patents in automotive AI with US jurisdiction?"
+            st.session_state.patents_clicked = True
             st.rerun()
         if st.button("🚀 Startups in AI Automotive", use_container_width=True, key="startups_btn"):
-            st.session_state.question_input = "Which startups work on AI for automotive?"
+            st.session_state.startups_clicked = True
             st.rerun()
     
     with col2:
         if st.button("📈 Tech Trends", use_container_width=True, key="trends_btn"):
-            st.session_state.question_input = "Show me recent reports on technology trends."
+            st.session_state.trends_clicked = True
             st.rerun()
         if st.button("🤖 AI Agents Development", use_container_width=True, key="agents_btn"):
-            st.session_state.question_input = "Summarize latest tech trends in development of AI agents"
+            st.session_state.agents_clicked = True
             st.rerun()
         if st.button("🎯 Tech Maturity", use_container_width=True, key="maturity_btn"):
-            st.session_state.question_input = "Which automotive technologies are moving from academy to application?"
+            st.session_state.maturity_clicked = True
             st.rerun()
     
     # Process question
     if question:
         with st.spinner("🔍 Searching documents and generating answer..."):
-            result = ask_question(question, st.session_state.retriever, st.session_state.groq_client)
+            result = ask_question(
+                question, 
+                st.session_state.retriever, 
+                st.session_state.groq_client,
+                query_expander=st.session_state.query_expander
+            )
         
         # Display results
         st.subheader("📝 Answer")
@@ -373,11 +681,15 @@ def main():
             st.subheader(f"📚 Sources ({len(result['sources'])} documents)")
             for i, source in enumerate(result['sources']):
                 readable_name = format_source_name(source['source_file'])
-                with st.expander(f"📄 {readable_name} (Relevance: {source['similarity_score']:.3f})"):
-                    st.write(source['content'])
+                similarity = source.get('similarity_score', 0)
+                
+                with st.expander(f"📄 {readable_name} (Relevance: {similarity:.3f})"):
+                    # FAISS uses 'text' field, old retriever uses 'content'
+                    content = source.get('text', source.get('content', ''))
+                    st.write(content)
         
         st.markdown("---")
-        st.caption("Powered by RAG + Groq/Llama | Innovation Intelligence Suite")
+        st.caption("Powered by FAISS RAG + Query Expansion + Groq/Llama | Innovation Intelligence Suite")
 
 if __name__ == "__main__":
     main()

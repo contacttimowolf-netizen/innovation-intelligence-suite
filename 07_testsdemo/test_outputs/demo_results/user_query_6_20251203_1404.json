@@ -1,0 +1,57 @@
+{
+  "query_id": 6,
+  "question": "Which technologies are likely to mature next year?",
+  "answer": "Based on the provided context, it is challenging to determine which technologies are likely to mature next year due to the limited information on specific timelines and transition indicators. However, we can assess the current stage of some technologies mentioned and identify potential transition indicators.\n\n1. **PortPro Technologies' drayOS and drayOS Track**: As a transportation management software, PortPro Technologies is likely in the Commercialization Phase (TRL 7-9) given its description as a product designed for improving operations, saving time, and growing revenue. [Source: Automotive Startup Profiles & Tracker]\n\n2. **Advanced Nuclear Technologies**: The World Economic Forum's report on Emerging Technologies 2025 highlights Advanced Nuclear Technologies as a promising path to clean, reliable power. By 2030, Small Modular Reactors (SMRs) could redefine how power is delivered. This suggests that Advanced Nuclear Technologies are in the Development Phase (TRL 5-6) and are expected to transition to the Commercialization Phase in the near future. [Source: World Economic Forum: Emerging Technologies 2025]\n\n3. **AI-led Molecular Design**: This technology was featured in the Top 10 Emerging Technologies of 2018 and is expected to continue its development. However, there is no specific information on its current stage or transition indicators. [Source: World Economic Forum: Emerging Technologies 2025]\n\n4. **mRNA Vaccines**: As a technology that has already been implemented in practice, mRNA vaccines are likely in the Commercialization Phase (TRL 7-9). [Source: World Economic Forum: Emerging Technologies 2025]\n\n5. **CRISPr-CAS9**: This technology was featured in the Top 10 Emerging Technologies of 2015 and is expected to continue its development. However, there is no specific information on its current stage or transition indicators. [Source: World Economic Forum: Emerging Technologies 2025]\n\nIn conclusion, while it is difficult to determine which technologies will mature next year, Advanced Nuclear Technologies and PortPro Technologies' drayOS and drayOS Track are likely to be in the Development Phase and Commercialization Phase, respectively. The transition indicators for these technologies suggest that they may transition to the next phase in the near future.",
+  "sources": [
+    {
+      "content": "STARTUP #1760:\nName: PortPro Technologies\nLocation: North America\nDate: 15-Aug-2025\nDescription: PortPro Technologies Inc designs, develops, and offers transportation management software. Its products include drayOS and drayOS Track, which help to improve operations, save time, and grow revenue. PortPro Technologies Inc was formerly known as Axle Technologies LLC and…\n----------------------------------------",
+      "source_file": "autotechinsight_startups_processed.txt",
+      "doc_type": "startups",
+      "similarity_score": 0.4618194347237553,
+      "full_metadata": {
+        "source": "autotechinsight_startups_processed.txt",
+        "doc_type": "startups",
+        "file_path": "../../01_data/rag_automotive_tech/processed/startups/autotechinsight_startups_processed.txt"
+      }
+    },
+    {
+      "content": "scientific potential with practical implementation. \nThe most profound innovations are rarely obvious \nat first glance. They emerge through persistent \nobservation, interdisciplinary collaboration and a \nfundamental willingness to reimagine what’s possible.\nScaling innovation: how emerging technologies become tomorrow’s foundations FIGURE 3\nCRISPr-CAS9\nHighlighted/uni00A0in Top 10 \nEmerging Technologies \nof 2015\nmRNA vaccines\nHighlighted/uni00A0in Top 10 \nEmerging Technologies \nof 2017AI-led molecular design\nHighlighted/uni00A0in Top 10 \nEmerging Technologies \nof 2018Engineered living \ntherapeutics\nHighlighted/uni00A0in Top 10 \nEmerging Technologies \nof 2025\nTechnologies featured in the Top 10 Emerging Technologies reports, \ndemonstrate how breakthrough technologies build upon foundational \ninnovations, creating disruptions and redesigns of entire societal ecosystems.\nTop 10 Emerging Technologies of 2025\nContributors\nWorld Economic Forum \nKimmy Bettinger",
+      "source_file": "wef_emerging_tech_2025.txt",
+      "doc_type": "tech_report",
+      "similarity_score": 0.44912168559059257,
+      "full_metadata": {
+        "source": "wef_emerging_tech_2025.txt",
+        "doc_type": "tech_report",
+        "file_path": "../../01_data/rag_automotive_tech/processed/tech_reports/wef_emerging_tech_2025.txt"
+      }
+    },
+    {
+      "content": "safety systems and operational efficiency \nunder various conditions.KEY ACTIONS TO ACHIEVE SCALE\nTechnologicalSocial\nEconomicEnvironmentalPolicy\n Image: \nAdvanced nuclear \ntechnologies support rising \nclean energy demands \nand decarbonization goals.\nCredit: Midjourney \nand Studio Miko. \nPrompt (abbreviated): \n“Nuclear reaction creating \na swirl of energy.”\nRead more: \nFor more expert analysis, \nvisit the advanced nuclear \ntechnologies transformation \nmap. Authored by: Sergei \nDudarev, Wenxi Tian.\nTop 10 Emerging Technologies of 2025\nStrategic outlook \nAdvanced nuclear technologies\nBy Dubai Future Foundation\nAdvanced nuclear technologies, particularly SMRs and \ngas-cooled reactors, offer a promising path to clean, \nreliable power. These technologies combine flexible siting \nwith enhanced safety compared to traditional nuclear \nplants, positioning them as key enablers of a sustainable \nenergy future.\nBy 2030, SMRs could redefine how power is delivered.",
+      "source_file": "wef_emerging_tech_2025.txt",
+      "doc_type": "tech_report",
+      "similarity_score": 0.41525502974429074,
+      "full_metadata": {
+        "source": "wef_emerging_tech_2025.txt",
+        "doc_type": "tech_report",
+        "file_path": "../../01_data/rag_automotive_tech/processed/tech_reports/wef_emerging_tech_2025.txt"
+      }
+    },
+    {
+      "content": "RESEARCH PAPER #814:\n  Title: A Review on Hybrid Vehicle Technologies and Strategies\n  Year Published: 2025\n  Authors: Engu Nikhith; A. Srinivaas; B. Sharath Chandra; S. Vijaya Sarathy",
+      "source_file": "automotive_papers_processed.txt",
+      "doc_type": "research_paper",
+      "similarity_score": 0.4152354385714708,
+      "full_metadata": {
+        "source": "automotive_papers_processed.txt",
+        "doc_type": "research_paper",
+        "file_path": "../../01_data/rag_automotive_tech/processed/automotive_papers/automotive_papers_processed.txt"
+      }
+    }
+  ],
+  "retrieved_chunks": 4,
+  "source_count_used": 4,
+  "startup_boost_applied": false,
+  "patent_boost_applied": false,
+  "timestamp": "2025-12-03T14:04:30.967656",
+  "model_used": "llama-3.1-8b-instant"
+}
