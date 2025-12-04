@@ -20,12 +20,8 @@ data/rag_automotive_tech/processed/*.json
 # =============================================
 
 # Current structure - 04_models/
-**/04_models/**/*
-!**/04_models/**/README.md
 
 # Old structure - models/ (if any legacy files exist)
-models/vector_index/
-models/saved_model/
 
 # =============================================
 # MACHINE LEARNING MODEL FILES (All locations)
