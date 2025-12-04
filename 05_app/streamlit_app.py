@@ -662,8 +662,8 @@ def main():
             st.session_state.maturity_clicked = True
             st.rerun()
     
-    # Process question
-    if question:
+    # Process question if submitted
+    if submit_button and question:
         with st.spinner("🔍 Searching documents and generating answer..."):
             result = ask_question(
                 question, 
