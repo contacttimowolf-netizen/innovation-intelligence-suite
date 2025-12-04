@@ -29,6 +29,10 @@ data/rag_automotive_tech/processed/*.json
 *.key
 *.ckpt
 *.bin
+# Add exception immediately after *.bin line
+# On macOS:
+sed -i '' '/\*\.bin/a\
+!04_models/vector_index/faiss_index.bin' .gitignore
 *.pth
 *.pt
 *.safetensors
@@ -99,4 +103,4 @@ logs/
 
 # Temporary files
 *.tmp
-*.temp
+*.temp4442_models/vector_index/faiss_index.bin
