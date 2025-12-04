@@ -1,0 +1,68 @@
+{
+  "query_id": 3,
+  "question": "What are the latest tech trends in development of AI agents",
+  "answer": "Based on the provided context, the latest tech trends in the development of AI agents include:\n\n1. **Agentic AI**: Agentic AI is an artificial intelligence system capable of independently planning and executing complex, multistep tasks. It is built on foundation models and can autonomously perform actions, communicate with one another, and adapt to new information. [Source: McKinsey Technology Trends Outlook 2025]\n\n2. **General-Purpose Agent Platforms**: Developers are building AI-powered, general-purpose agent platforms that can be used for various tasks. Some companies are adding agentic capabilities to their existing platforms. [Source: McKinsey Technology Trends Outlook 2025]\n\n3. **Autonomous Decision-Making and Interagent Communication**: AI agents are being developed to make autonomous decisions and communicate with each other, presenting exciting possibilities for various industries. [Source: McKinsey Technology Trends Outlook 2025]\n\n4. **Hybrid Agents**: Hybrid agents combine hierarchical and sequential approaches, allowing agents to work both sequentially and in parallel. This approach is beneficial for tasks that require complex dependencies and prioritization. [Source: Ai Agents In Engineering Design A Multiagent Framework For Aesthetic And Aerodynamic Car Design]\n\n5. **Robust Governance Frameworks**: The rapid progress of agentic AI underscores a critical need for robust governance frameworks to address trust, liability, and ethical concerns. [Source: McKinsey Technology Trends Outlook 2025]\n\n6. **Agentic Virtual Coworkers**: Many industries are exploring the use of agentic virtual coworkers for various functions and roles, including procurement, supply chain management, and call center rostering. [Source: Bcg Ai Value 2025]\n\n7. **Language-Based Communication**: Agentic AI agents use language that humans can read, allowing them to describe what they're doing and be guided via feedback on their work plan. [Source: McKinsey Technology Trends Outlook 2025]\n\n8. **Integration with Existing Systems**: Companies are integrating agentic AI into their existing systems, such as Google's Gemini 2.0 and OpenAI's Operator. [Source: McKinsey Technology Trends Outlook 2025]\n\nThese trends indicate a significant advancement in the development of AI agents, with a focus on autonomous decision-making, interagent communication, and robust governance frameworks.",
+  "sources": [
+    {
+      "content": "harmony, and enabling interoperability across cloud-based, \nBOSTON CONSULTING GROUPTHE WIDENING AI VALUE GAP 16on-premises, and external ecosystems of AI agents and \ntools. Future-built companies involve the workforce twice \nas often as others do in reshaping workflows as they build, \ntest, and deploy agents. This inclusiveness ensures \nsmoother adoption and builds ownership and trust. These \nfirms recognize that as the AI operating model takes hold, \nthe role of humans evolves dramatically. Companies must \nlook after AI workers as well as human colleagues so that \nboth deliver optimal outcomes together. With the spread of \nAI, and especially of agents, humans must play a lead role \nin reimagining future agents and workflows.\nHybrid Worker Environments and Skills Evolution. \nOperating in a hybrid worker environment—one in which \nhumans and AI agents collaborate—calls for new \nmanagement capabilities . AI reshapes roles by \nautomating routine processes, narrowing performance",
+      "source_file": "bcg_ai_value_2025.txt",
+      "doc_type": "tech_report",
+      "similarity_score": 0.5525639263768771,
+      "full_metadata": {
+        "source": "bcg_ai_value_2025.txt",
+        "doc_type": "tech_report",
+        "file_path": "../../01_data/rag_automotive_tech/processed/tech_reports/bcg_ai_value_2025.txt"
+      }
+    },
+    {
+      "content": "Director, McKinsey Global \nInstitute, and senior \npartner, Bay AreaMichael Chui\nSenior fellow, \nQuantumBlack, AI by \nMcKinsey, Bay AreaRoger Roberts\nPartner, \nQuantumBlack, AI by \nMcKinsey, Bay AreaSven Smit\nChair of the McKinsey \nGlobal Institute and senior \npartner, Amsterdam\nAbout the authors\nTechnology Trends Outlook 2025\nAI revolution\nAgentic AI\nAgentic AI is an artificial \nintelligence system capable of \nindependently planning and \nexecuting complex, multistep \ntasks. Built on foundation \nmodels, these agents can \nautonomously perform actions, \ncommunicate with one another, \nand adapt to new information. \nSignificant advancements have \nemerged, from general agent \nplatforms to specialized agents \ndesigned for deep research. \nThe trend—and why it matters\nAgentic AI has quickly gone from a fringe concept \nto one of the most talked-about shifts in enterprise \ntechnology. It is gaining traction as organizations \nexplore new ways to automate workflows and",
+      "source_file": "mckinsey_tech_trends_2025.txt",
+      "doc_type": "tech_report",
+      "similarity_score": 0.49825016477182416,
+      "full_metadata": {
+        "source": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "file_path": "../../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+      }
+    },
+    {
+      "content": "(See Exhibit 4.)\nGenAI helps these and other firms leverage predictive \nAI in the service of wider adoption by facilitating \nnontechnical communication and engagement. Future-\nbuilt companies, which put predictive AI on their CEO \nagendas as early as 2021, are now much faster than others \nat enabling broad adoption.On Come Agents\nThe emergence of agentic AI in the past 12 months \nrepresents a critical development in making AI more \nrelevant to businesses. Agentic AI combines predictive AI \nand GenAI in core business workflows across the entire \nvalue chain. The workflows can be simple, such as performing \nreconciliation in the procurement function, but companies \ncan also integrate multiple agents into more complex \nworkflows, such as supply chain management or consolidated \nsupply and demand workflows in call center rostering. \nThe most successful examples involve embedding agents \nacross entire workflows rather than running them as",
+      "source_file": "bcg_ai_value_2025.txt",
+      "doc_type": "tech_report",
+      "similarity_score": 0.46822633290186955,
+      "full_metadata": {
+        "source": "bcg_ai_value_2025.txt",
+        "doc_type": "tech_report",
+        "file_path": "../../01_data/rag_automotive_tech/processed/tech_reports/bcg_ai_value_2025.txt"
+      }
+    },
+    {
+      "content": "Because these agents use language that \nhumans can read, they can describe what \nthey’re doing and be guided via feedback on \ntheir work plan.\nThe potential of agentic AI has persuaded many \nindustries to explore enlisting agentic virtual \ncoworkers for a variety of functions and roles. \n11\nTechnology Trends Outlook 2025\nLatest developments \nThe development of AI agents capable of \nautonomous decision-making and interagent \ncommunication presents exciting possibilities. \nHowever, the rapid progress of agentic AI \nunderscores a critical need for robust governance \nframeworks to address trust, liability, and ethical \nconcerns. The latest developments in agentic AI \ninclude the following:\n —Developers are building AI-powered, general-\npurpose agent platforms. Some companies \nare adding agentic capabilities to their existing \n1 Google Blog , “Gemini 2.0 is now available to everyone,” blog entry by Koray Kavukcuoglu, February 5, 2025; “Introducing Operator,” OpenAI,",
+      "source_file": "mckinsey_tech_trends_2025.txt",
+      "doc_type": "tech_report",
+      "similarity_score": 0.4631870873003856,
+      "full_metadata": {
+        "source": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "file_path": "../../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+      }
+    },
+    {
+      "content": "outputtothenext(e.g.,asketchingagentgeneratesa2Dconcept,\nwhich is then refined by a styling agent, followed by a simu-\nlation agent for aerodynamic evaluation). Hierarchical agents,\non theother hand,follow astructured decision-makingapproach,\nwhereacentralagent(orhigher-levelcontroller)delegatestasksto\nspecializedsub-agents,ensuringcoordinationandgoalalignment.\nThisapproachisbeneficialwhentasksrequirecomplexdependen-\ncies and prioritization. Hybrid agents combine both approaches,\nallowing agents to work both sequentially and in parallel, where\ncertaintasksmayrunindependentlywhileothersfollowadefined\nworkflow.\nIncardesign,thehybridagentapproachisthemostrelevant,\nastheprocessinvolvesbothsequentialdependencies(e.g.,starting\nwith sketches, then generating 3D shapes, and finally evaluating\naerodynamics) and parallel tasks (e.g., styling and aerodynamic\nsimulation can be iterated independently before final validation).\nThisflexibilityallowsengineersanddesignerstooptimizeperfor-",
+      "source_file": "AI_agents_in_engineering_design_a_multiagent_framework_for_aesthetic_and_aerodynamic_car_design.txt",
+      "doc_type": "research_paper",
+      "similarity_score": 0.4513522451315398,
+      "full_metadata": {
+        "source": "AI_agents_in_engineering_design_a_multiagent_framework_for_aesthetic_and_aerodynamic_car_design.txt",
+        "doc_type": "research_paper",
+        "file_path": "../../01_data/rag_automotive_tech/processed/automotive_papers/AI_agents_in_engineering_design_a_multiagent_framework_for_aesthetic_and_aerodynamic_car_design.txt"
+      }
+    }
+  ],
+  "retrieved_chunks": 5,
+  "source_count_used": 5,
+  "startup_boost_applied": false,
+  "patent_boost_applied": false,
+  "timestamp": "2025-12-03T14:03:55.216549",
+  "model_used": "llama-3.1-8b-instant"
+}

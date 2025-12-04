@@ -1,0 +1,57 @@
+{
+  "query_id": 1,
+  "question": "Which startups work on AI for automotive?",
+  "answer": "Based on the provided context, the following startups work on AI for automotive:\n\n1. **2021.AI** (Europe)\n\t* Primary focus area or technology specialization: AI acceleration solution for organizations\n\t* Location and key business details: Europe, specifically Austria\n\t* Funding status: Not available in the context\n\t* Notable products or services: GRACE AI platform for standardizing processes and workflows across data ingestion, model training, deployment, and maintenance\n2. **Qianhang Technology** (Greater China)\n\t* Primary focus area or technology specialization: Automatic driving truck company, focusing on L4 truck autonomous driving technology\n\t* Location and key business details: Greater China, specifically Hangzhou, China\n\t* Funding status: Not available in the context\n\t* Notable products or services: Trunk logistics and transportation services based on automatic driving technology\n\nAdditionally, the context mentions the **ASA (Automotive Skills Alliance)**, which represents the pact for skills partner in the EU Erasmus+ program for the automotive sector. The research work about the use of AI for the implementation of specific ISO 560xx chapters will be published.\n\nIn terms of AI adoption in the automotive sector, the **McKinsey Technology Trends Outlook 2025** report highlights that 46 percent of leaders cite skill gaps in their workforces as a major barrier to AI adoption. The report also mentions that addressing today's upskilling needs is only one part of the equation, and that the talent landscape will continue to evolve, shifting toward capabilities that support human-AI collaboration.\n\nNote that the context does not provide information on the AI adoption status or the specific AI applications used by Qeebike Technology, which provides electric bike rental and share services.",
+  "sources": [
+    {
+      "content": "STARTUP #2044:\nName: Qeebike Technology\nLocation: Greater China\nDate: 07-Jun-2025\nDescription: Qeebike Technology Co, Ltd provides electric bike rental and share services. It offers an application to hire, share, and unlock bike. The company was founded on October 2016 and is based in Hangzhou, China.Log In AutoTechInsight11/27/25, 7:54 PM Automotive Technology Insight | Forecasts | Industry News | Supply Chain https://autotechinsight.spglobal.com/feed?fs_site_area%5B0%5D=startup 406/512\n----------------------------------------\n\nSTARTUP #2045:\nName: Qianhang Technology\nLocation: Greater China\nDate: 07-Jun-2025\nDescription: Qianhang Technology, an automatic driving truck company, provides trunk logistics and transportation services based on automatic driving technology. The company focuses on L4 truck autonomous driving technology and commercialization. Qianhang Technology was…\n----------------------------------------",
+      "source_file": "autotechinsight_startups_processed.txt",
+      "doc_type": "startups",
+      "similarity_score": 0.45088691324720725,
+      "full_metadata": {
+        "source": "autotechinsight_startups_processed.txt",
+        "doc_type": "startups",
+        "file_path": "../../01_data/rag_automotive_tech/processed/startups/autotechinsight_startups_processed.txt"
+      }
+    },
+    {
+      "content": "STARTUP #1826:\nName: RePark\nLocation: Europe\nDate: 03-Jul-2025\nDescription: Europe / AustriaLog In AutoTechInsight11/27/25, 7:54 PM Automotive Technology Insight | Forecasts | Industry News | Supply Chain https://autotechinsight.spglobal.com/feed?fs_site_area%5B0%5D=startup 363/512\n----------------------------------------\n\nSTARTUP #1827:\nName: 2021.AI\nLocation: Europe\nDate: 02-Jul-2025\nDescription: 2021.ai ApS operates as an AI technology provider that develops an AI acceleration solution that empowers organizations to ease their AI implementations. It offers a GRACE AI platform that standardizes processes and workflows across data ingestion, model training, deploymen…\n----------------------------------------",
+      "source_file": "autotechinsight_startups_processed.txt",
+      "doc_type": "startups",
+      "similarity_score": 0.43935354380744746,
+      "full_metadata": {
+        "source": "autotechinsight_startups_processed.txt",
+        "doc_type": "startups",
+        "file_path": "../../01_data/rag_automotive_tech/processed/startups/autotechinsight_startups_processed.txt"
+      }
+    },
+    {
+      "content": "Skills Hub of the ASA (Automotive Skills Alliance). ASA represents the pact for skills partner in the EU Erasmus+ program for the automotive sector. The research work about the use of AI (artificial intelligence) for the implementation of specific ISO 560xx chapters will be published. This paper is about the results of the work on the ISO 56006 Strategic Intelligence Management implementation using AI in the TRIREME project.</jats:p>",
+      "source_file": "automotive_papers_processed.txt",
+      "doc_type": "research_paper",
+      "similarity_score": 0.5615049002710127,
+      "full_metadata": {
+        "source": "automotive_papers_processed.txt",
+        "doc_type": "research_paper",
+        "file_path": "../../01_data/rag_automotive_tech/processed/automotive_papers/automotive_papers_processed.txt"
+      }
+    },
+    {
+      "content": "embed AI more deeply into core work/f_lows. Demand for software roles has stabilized, while growth in product and \nsolution-focused positions suggests an increasing emphasis on driving business integration and user impact.\nWhile 46 percent of leaders cite skill gaps in their workforces as a major barrier to AI adoption, and more than 20 percent of \nemployees surveyed report minimal training, addressing today’s upskilling needs is only one part of the equation. As AI agents \nbecome more integrated into enterprise work/f_lows, the talent landscape will continue to evolve, shifting toward capabilities that \nsupport human–AI collaboration. Over time, this symbiotic relationship between workers and AI will become less exceptional and \nmore foundational, gradually reshaping how teams operate, how decisions are made, and how value is created within organizations.1\nSkills availability",
+      "source_file": "mckinsey_tech_trends_2025.txt",
+      "doc_type": "tech_report",
+      "similarity_score": 0.45421648186764696,
+      "full_metadata": {
+        "source": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "file_path": "../../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+      }
+    }
+  ],
+  "retrieved_chunks": 4,
+  "source_count_used": 4,
+  "startup_boost_applied": true,
+  "patent_boost_applied": false,
+  "timestamp": "2025-12-03T14:03:29.375283",
+  "model_used": "llama-3.1-8b-instant"
+}

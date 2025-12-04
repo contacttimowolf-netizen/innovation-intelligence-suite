@@ -1,0 +1,57 @@
+{
+  "query_id": 7,
+  "question": "Which AI research topics in automotive are growing fastest?",
+  "answer": "Based on the provided context, it appears that the automotive industry is actively exploring the application of Artificial Intelligence (AI) in various areas. However, the specific research topics in automotive AI that are growing fastest cannot be conclusively determined from the given information. \n\nThe context mentions two research papers related to AI in the automotive industry:\n\n1. The first paper discusses the deployment of AI-driven talent acquisition solutions in the Indian automotive industry, contributing to the growing field of HR analytics [Source: research_paper_1].\n2. The second paper focuses on the application of AI for discovering and designing new electrolytic systems for Lithium-ion Batteries (LIBs) in the automotive industry [Source: research_paper_2].\n\nWhile these papers demonstrate the growing interest in AI applications in the automotive industry, they do not provide information on the specific topics that are growing the fastest.\n\nHowever, we can infer that the development of AI-driven solutions for LIBs is an area of active research, as mentioned in the second paper [Source: research_paper_2]. This area has the potential to significantly enhance the performance and efficiency of next-generation batteries.\n\nRegarding the broader trend of AI adoption in the automotive industry, the McKinsey Technology Trends Outlook 2025 report highlights the growing importance of semiconductors in addressing specialized needs across industries, including automotive, AI, and telecommunications [Source: McKinsey_Technology_Trends_Outlook_2025]. This report suggests that the semiconductor industry is leading the way in patent activity, with a broad increase in patent filings and equity investments.\n\nIn conclusion, while the provided context does not explicitly state the specific AI research topics in automotive that are growing fastest, it suggests that the development of AI-driven solutions for LIBs and the adoption of AI in the automotive industry as a whole are areas of active research and growth.\n\n**Key Takeaways:**\n\n* AI-driven talent acquisition solutions in the Indian automotive industry are contributing to the growing field of HR analytics [Source: research_paper_1].\n* The application of AI for discovering and designing new electrolytic systems for LIBs is an area of active research [Source: research_paper_2].\n* The semiconductor industry is leading the way in patent activity, with a broad increase in patent filings and equity investments [Source: McKinsey_Technology_Trends_Outlook_2025].\n\n**Limitations:**\n\n* The provided context does not explicitly state the specific AI research topics in automotive that are growing fastest.\n* The information is limited to",
+  "sources": [
+    {
+      "content": "This research contributes to the growing field of HR analytics and provides a practical framework for deploying AI-driven talent acquisition solutions in the Indian automotive industry.</jats:p>\n--------------------------------------------------",
+      "source_file": "automotive_papers_processed.txt",
+      "doc_type": "research_paper",
+      "similarity_score": 0.5145228285494179,
+      "full_metadata": {
+        "source": "automotive_papers_processed.txt",
+        "doc_type": "research_paper",
+        "file_path": "../../01_data/rag_automotive_tech/processed/automotive_papers/automotive_papers_processed.txt"
+      }
+    },
+    {
+      "content": "there is growing interest in using AI to design LIBs, the application of AI to discover new electrolytic systems for LIBs needs more investigation. The gap in existing research lies in the lack of a comprehensive framework that integrates AI-driven techniques with the specific requirements for electrolyte development in LIBs. This research aims to fill this gap by reviewing the application of AI for discovering and designing new electrolytic systems for LIBs. In this study, we outlined the fundamental processes involved in applying AI to this domain, including data processing, feature engineering, model training, testing, and validation. We also discussed the quantitative evaluation of structure–property relationships in electrolytic systems, which is guided by AI methods. This work presents a novel approach to use AI for the accelerated discovery of LIB electrolytes, which has the potential to significantly enhance the performance and efficiency of next-generation battery",
+      "source_file": "automotive_papers_processed.txt",
+      "doc_type": "research_paper",
+      "similarity_score": 0.3780452391120983,
+      "full_metadata": {
+        "source": "automotive_papers_processed.txt",
+        "doc_type": "research_paper",
+        "file_path": "../../01_data/rag_automotive_tech/processed/automotive_papers/automotive_papers_processed.txt"
+      }
+    },
+    {
+      "content": "Abstract: <jats:p>Artificial Intelligence (AI) is a new and fast-growing technology that is changing the way humans live, work, and communicate. AI means the ability of machines or computers to do tasks that normally need human intelligence. These tasks include learning from data, understanding speech or images, solving problems, and making decisions. In today’s world, AI is everywhere — in mobile phones, hospitals, schools, banks, cars, farming, online shopping, and even in our homes. AI helps in saving time, reducing mistakes, and making life easier and more comfortable. AI is used in many useful ways. In the field of health, AI supports doctors in identifying diseases faster and more accurately. In education, students can learn using AI-powered apps which give personal guidance. In transport, AI is used in smart traffic systems and self-driving cars. Businesses use AI for customer support, data management, and sales. AI also helps farmers by giving weather and crop advice. At",
+      "source_file": "automotive_papers_processed.txt",
+      "doc_type": "research_paper",
+      "similarity_score": 0.376003957240857,
+      "full_metadata": {
+        "source": "automotive_papers_processed.txt",
+        "doc_type": "research_paper",
+        "file_path": "../../01_data/rag_automotive_tech/processed/automotive_papers/automotive_papers_processed.txt"
+      }
+    },
+    {
+      "content": "broad increase in patent activity, and the semiconductor industry leads the way with \nthe highest number /f_iled overall. In fact, patenting in semiconductors is accelerating \nrapidly, setting the pace for technological progress across sectors. This re/f_lects the \ngrowing importance of semiconductors in addressing specialized needs across \nindustries, including automotive, AI, and telecommunications. The trend also saw \nstrong growth from 2023 to 2024 across Google searches, with searches growing \nby more than 38 percent, while mentions of the technology in publications increased \nby 68 percent, and equity investments were up by 97 percent. The total value of \nequity investments that we estimated could be considered conservative. While we \nhave observed some leading players expanding their ecosystems through M&A in \nother layers of the tech stack (such as software, server systems, and cloud services),",
+      "source_file": "mckinsey_tech_trends_2025.txt",
+      "doc_type": "tech_report",
+      "similarity_score": 0.36119989046900247,
+      "full_metadata": {
+        "source": "mckinsey_tech_trends_2025.txt",
+        "doc_type": "tech_report",
+        "file_path": "../../01_data/rag_automotive_tech/processed/tech_reports/mckinsey_tech_trends_2025.txt"
+      }
+    }
+  ],
+  "retrieved_chunks": 4,
+  "source_count_used": 4,
+  "startup_boost_applied": false,
+  "patent_boost_applied": false,
+  "timestamp": "2025-12-03T14:04:40.948411",
+  "model_used": "llama-3.1-8b-instant"
+}

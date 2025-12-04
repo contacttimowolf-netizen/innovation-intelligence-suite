@@ -1,0 +1,57 @@
+{
+  "query_id": 8,
+  "question": "Which automotive technologies are moving from academy to application?",
+  "answer": "Based on the provided context, the following automotive technologies are moving from the academy to application:\n\n1. **Application Device for Paint Application**: This technology is in the Commercialization Phase (TRL 7-9). The patent [Source: patents_data] with Lens ID 074-399-943-164-580 and Date Published 2025-01-07 indicates that the application device is characterized by movable nozzle rows for position adjustment. This suggests that the technology has been developed and is being deployed in the industry.\n\nTransition indicator: The patent's publication date and the description of the application device's features indicate that the technology is ready for commercialization.\n\n2. **Robot Control Information Providing Device for Automatic Tire Mounting**: This technology is in the Commercialization Phase (TRL 7-9). The patent [Source: patents_data] with Lens ID 165-544-902-071-385 and Date Published 2025-10-02 describes a device that includes a moving member, a coupling interlocking unit, a return driving unit, and a tracking information providing unit. This suggests that the technology has been developed and is being deployed in the industry.\n\nTransition indicator: The patent's publication date and the description of the device's features indicate that the technology is ready for commercialization.\n\n3. **Method for Travel Based on Planned Motion Trajectory**: This technology is in the Development Phase (TRL 5-6). The patent [Source: patents_data] with an unspecified Lens ID and Date Published 2025-07-29 describes a method that can be applied to an object that can move autonomously, such as an intelligent vehicle or robot. This suggests that the technology is being developed and tested.\n\nTransition indicator: The patent's publication date and the description of the method's features indicate that the technology is in the development phase.\n\n4. **Control System and Method for Vehicle Control in Geographical Control Zones**: This technology is in the Commercialization Phase (TRL 7-9). The patent [Source: patents_data] with Lens ID unspecified and Date Published 2025-07-29 describes a control system that receives traffic information, generates a set of images frames, predicts unsafe behavior, and generates control information. This suggests that the technology has been developed and is being deployed in the industry.\n\nTransition indicator: The patent's publication date and the description of the control system's features indicate that the technology is ready for commercialization.\n\nIn summary, the automotive technologies mentioned in",
+  "sources": [
+    {
+      "content": "Lens ID: 074-399-943-164-580\n  Jurisdiction: US\n  Kind: B2\n  Date Published: 2025-01-07\n  Abstract: The disclosure relates to an application device for the application of an application medium onto a component, preferably for application of a paint onto a motor vehicle body component, comprising: at least one print head for application of the application medium preferably in series and for mounting on an application robot, and at least two nozzle rows which can be moved by the application robot, wherein the at least two nozzle rows comprise a first nozzle row with several nozzles for the output of application medium jets and at least one further nozzle row with several nozzles for the output of application medium jets. The application device is characterised in particular in that at least one nozzle row of the at least two nozzle rows is movable for the purpose of position adjustment of the nozzles of the first nozzle row and the nozzles of the at least one further nozzle row.",
+      "source_file": "automotive_patents_processed.txt",
+      "doc_type": "patents_data",
+      "similarity_score": 0.40543039255116364,
+      "full_metadata": {
+        "source": "automotive_patents_processed.txt",
+        "doc_type": "patents_data",
+        "file_path": "../../01_data/rag_automotive_tech/processed/automotive_tech_patents/automotive_patents_processed.txt"
+      }
+    },
+    {
+      "content": "PATENT #1692:\n  Lens ID: 165-544-902-071-385\n  Jurisdiction: US\n  Kind: A1\n  Date Published: 2025-10-02\n  Abstract: A robot control information providing device for automatic tire mounting includes a moving member configured to move along the transport direction of a vehicle body, a coupling interlocking unit that couples the moving member with a transport carrier, which transports the vehicle body for tire mounting, thereby allowing the moving member to advance in synchronization with the transport carrier, a return driving unit that provides movement force to the moving member, enabling it to move backward to its original position, and a tracking information providing unit that supplies displacement information of the moving member's forward movement to the control unit of a robot arm for tire mounting.\n--------------------------------------------------",
+      "source_file": "automotive_patents_processed.txt",
+      "doc_type": "patents_data",
+      "similarity_score": 0.38609965528265255,
+      "full_metadata": {
+        "source": "automotive_patents_processed.txt",
+        "doc_type": "patents_data",
+        "file_path": "../../01_data/rag_automotive_tech/processed/automotive_tech_patents/automotive_patents_processed.txt"
+      }
+    },
+    {
+      "content": "travel based on the planned motion trajectory. The method in this application may be applied to an object that can move autonomously, for example, an intelligent vehicle or an intelligent robot, to reduce problems such as unexpected and frequent mistaken heavy and light braking, and mistaken stopping of the autonomous moving object, thereby helping improve passing efficiency of the autonomous moving object.",
+      "source_file": "automotive_patents_processed.txt",
+      "doc_type": "patents_data",
+      "similarity_score": 0.34516985156301616,
+      "full_metadata": {
+        "source": "automotive_patents_processed.txt",
+        "doc_type": "patents_data",
+        "file_path": "../../01_data/rag_automotive_tech/processed/automotive_tech_patents/automotive_patents_processed.txt"
+      }
+    },
+    {
+      "content": "Jurisdiction: US\n  Kind: B2\n  Date Published: 2025-07-29\n  Abstract: A control system and a method for vehicle control in geographical control zones is provided. The control system receives traffic information, including a plurality of image frames of a group of moving objects in a geographical control zone and generates a set of images frames of a first moving object of the group of moving objects based on application of a trained Neural Network (NN) model on the received traffic information. The generated set of image frames corresponds to a set of likely positions of the first moving object at a future time instant. The control system predicts the unsafe behavior of the first moving object based on the generated set of image frames and generates first control information, including an alternate route for a first vehicle in the geographical control zone based on the predicted unsafe behavior. The first vehicle is controlled based on the generated first control information.",
+      "source_file": "automotive_patents_processed.txt",
+      "doc_type": "patents_data",
+      "similarity_score": 0.32998441078585644,
+      "full_metadata": {
+        "source": "automotive_patents_processed.txt",
+        "doc_type": "patents_data",
+        "file_path": "../../01_data/rag_automotive_tech/processed/automotive_tech_patents/automotive_patents_processed.txt"
+      }
+    }
+  ],
+  "retrieved_chunks": 4,
+  "source_count_used": 4,
+  "startup_boost_applied": false,
+  "patent_boost_applied": false,
+  "timestamp": "2025-12-03T14:04:51.896232",
+  "model_used": "llama-3.1-8b-instant"
+}
