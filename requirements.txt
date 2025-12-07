@@ -8,6 +8,7 @@ scipy
 pickle
 importlib
 EOF
+matplotlib
 
 # LangChain Ecosystem
 langchain>=0.1.0
@@ -27,9 +28,11 @@ fastembed==0.2.5
 streamlit>=1.28.0
 
 # Hugging Face (optional - for future LLM integration)
-transformers
+transformers==4.57.3
 torch
-accelerate
+accelerate>=1.0
+datasets>=4.0
+pyarrow>=10.0.0
 
 # Utilities
 groq
@@ -48,3 +51,6 @@ ipywidgets
 black
 flake8
 pytest
+
+# Dataset
+kaggle
