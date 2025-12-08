@@ -9,6 +9,7 @@ pickle
 importlib
 EOF
 matplotlib
+umap
 
 # LangChain Ecosystem
 langchain>=0.1.0
