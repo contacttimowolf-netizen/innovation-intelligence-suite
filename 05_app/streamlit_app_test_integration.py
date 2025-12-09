@@ -39,50 +39,37 @@ def import_your_components():
         return None, f"Error importing FAISS retriever: {str(e)}"
 
 def import_predictive_components():
-    """Import predictive model components - SIMPLIFIED VERSION"""
-    rag_components_path, _, project_root = get_correct_paths()
-    
-    # Define predictive components path
-    predictive_components_path = os.path.join(project_root, '03_notebooks', 'predictive_notebooks', 'predictive_components')
-    
-    if not os.path.exists(predictive_components_path):
+    """Import predictive model components"""
+    _, _, project_root = get_correct_paths()
+
+    from pathlib import Path
+    notebooks_root = Path(project_root) / "03_notebooks"
+    predictive_components_path = notebooks_root / "predictive_notebooks" / "predictive_components"
+
+    if not predictive_components_path.exists():
         return None, "Predictive components directory not found"
-    
-    # Add to system path
-    if predictive_components_path not in sys.path:
-        sys.path.insert(0, predictive_components_path)
-    
+
+    if str(notebooks_root) not in sys.path:
+        sys.path.insert(0, str(notebooks_root))
+
     try:
-    # Try to import analytics module
-    def import_predictive_components(project_root):
-        import sys
-        from pathlib import Path
-        
-        # 1) Add 03_notebooks to sys.path
-        notebooks_root = Path(project_root) / "03_notebooks"
-        if str(notebooks_root) not in sys.path:
-            sys.path.insert(0, str(notebooks_root))
-        
-        try:
-            # 2) Import the analytics module
-            from predictive_notebooks.predictive_components import analytics as predictive_analytics
-            
-            # Create functions dictionary with correct attribute access
-            predictive_functions = {
-                'load_area_tech_ts': predictive_analytics.load_area_tech_ts,  # FIXED: predictive_analytics.load_area_tech_ts
-                'get_fastest_growing_topics': predictive_analytics.get_fastest_growing_topics,
-                'get_transitioning_technologies': predictive_analytics.get_transitioning_technologies,
-                'get_likely_to_mature_next_year': predictive_analytics.get_likely_to_mature_next_year,
-            }
-            
-            return predictive_functions, None
-            
-        except ImportError as e:
-            return None, f"Error importing analytics module: {e}"  # FIXED: return None for first value
-            
-except Exception as e:
-    # This outer try-catch is unusual - but keeping your structure
-    return None, f"Error in import_predictive_components: {e}"
+        from predictive_notebooks.predictive_components import analytics as predictive_analytics
+
+        predictive_functions = {
+            "load_area_tech_ts": predictive_analytics.load_area_tech_ts,
+            "get_fastest_growing_topics": predictive_analytics.get_fastest_growing_topics,
+            "get_transitioning_technologies": predictive_analytics.get_transitioning_technologies,
+            "get_likely_to_mature_next_year": predictive_analytics.get_likely_to_mature_next_year,
+        }
+
+        return predictive_functions, None
+
+    except ImportError as e:
+        return None, f"Error importing analytics module: {e}"
+    except Exception as e:
+        return None, f"Error in import_predictive_components: {e}"
+
+
 
 def import_query_expander():
     """Import the existing query expander module (if it exists)"""
