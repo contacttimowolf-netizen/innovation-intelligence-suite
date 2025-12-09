@@ -6,6 +6,88 @@ import sys
 import os
 import importlib.util
 import re
+import matplotlib.pyplot as plt  # For plotting graphs
+
+# ADDED: Technology definitions dictionary - UPDATED with correct formatting
+AUTO_TOP_SEEDS_1 = {
+    "Sensor_Fusion": "multi sensor fusion architecture combining lidar radar and camera into unified perception outputs",
+    "Occupancy_Grid": "spatial occupancy grid mapping for free space and obstacle representation around the vehicle",
+    "SLAM": "simultaneous localization and mapping using onboard sensors for ego pose and map building in dynamic traffic",
+    "Trajectory_Prediction": "future motion and path prediction of vehicles and vulnerable road users in traffic scenes",
+    "Environment_Modeling": "semantic scene and object relationship modeling for a structured driving environment representation"
+}
+AUTO_TOP_SEEDS_2 = {
+    "4G": "4g lte cellular communication for connected vehicles",
+    "5G": "5g cellular communication for ultra low latency vehicle connectivity",
+    "Wireless_Communication": "wireless communication protocols for vehicle data transmission",
+    "V2V": "vehicle to vehicle direct communication",
+    "V2I": "vehicle to infrastructure communication",
+    "V2X": "v2x communication framework including v2v and v2i",
+    "Edge_Computing": "edge computing for real time vehicle data processing",
+    "Fog_Computing": "fog computing layer between edge and cloud",
+    "Cloud_Computing": "cloud computing backend for vehicle data storage and processing"
+}
+AUTO_TOP_SEEDS_3 = {
+    "Renewable_Energy": "renewable energy systems",
+    "Solar_Cell": "photovoltaic solar cells (solar cell, perovskite solar, sensitized solar, organic photovoltaics, quantum dots, silicon solar)",
+    "Electrochemical_Energy": "electrochemical energy systems (electrochemical energy, hydrogen evolution)",
+    "Nano_Energy": "nanoscale energy systems (nano energy, quantum dots)",
+    "Natural_Gas_Energy": "natural gas based energy systems (natural gas)",
+}
+AUTO_TOP_SEEDS_4 = {
+    "Battery_Management_System": "battery management and control (battery management bms, battery management system, state charge soc, state health soh, battery state health)",
+    "High_Energy_Batteries": "lithium ion battery technology (li ion batteries, ion batteries electric, performance lithium ion, high energy density)",
+    "Battery_Thermal_Management": "battery thermal and cooling systems (battery thermal management, thermal management systems)",
+    "Battery_Diagnostics_EIS": "electrochemical battery diagnostics (electrochemical impedance spectroscopy)",
+    "Battery_Performance_Prediction": "lithium ion aging and performance prediction (prediction lithium ion, RUL)"
+}
+AUTO_TOP_SEEDS_5 = {
+    "Smart_Grid": "smart grid control and monitoring (smart grid technologies, power grid)",
+    "Distributed_Energy_Resources": "distributed energy generation and control (distributed energy resources)",
+    "V2G_G2V_Technologies": "bidirectional vehicle grid interaction (grid v2g technology, vehicle g2v, bidirectional energy)",
+    "Charging_Infrastructure": "ev charging systems and network (charging infrastructure)",
+    "Reactive_Power_Management": "reactive power control in grids (reactive power)",
+    "DC_Microgrid": "dc based local energy networks (dc microgrid)"
+}
+AUTO_TOP_SEEDS_6 = {
+    "Traffic_Planning": "urban traffic congestion dynamics (traffic congestion)",
+    "Transport_Infrastructure": "urban transport network and infrastructure (transport infrastructure)",
+    "Shared_Mobility": "ride sharing and shared transport systems (shared mobility)",
+    "Mobility_Demand_Forecasting": "urban travel demand prediction (demand forecasting)",
+    "Micro_Mobility": "e scooters bikes and small personal transport (micro mobility)",
+    "Node_Activity": "traffic node and intersection activity dynamics (node activity)"
+}
+AUTO_TOP_SEEDS_7 = {
+    "InLine_Quality_Inspection": "inline defect and weld quality inspection (defect detection, weld quality)",
+    "Error_Proofing_PokaYoke": "mistake proofing and error prevention (poka yoke)",
+    "Predictive_Maintenance": "vehicle and equipment predictive maintenance (vehicle maintenance, predictive maintenance pd)",
+    "Process_Monitoring_Optimization": "real time monitoring and waste minimizing stable processes (real time monitoring, proactively finding deviations, minimizing waste optimizing, quality constant process)"
+}
+AUTO_TOP_SEEDS_8 = {
+    "Autonomous_Delivery_Robots": "autonomous robotic delivery and last mile transport (automated delivery, robotic delivery shipping)",
+    "Warehouse_Intelligence_Robots": "autonomous warehouse robots for inventory tracking mapping inspection and stock counting (counting stock warehouse)",
+    "AGV_Systems": "automated guided vehicles for structured factory and warehouse transport (automated guided vehicle)",
+    "Hybrid_Modular_Robotics": "hybrid and modular robotic system architectures combining multiple robot types into reconfigurable platforms (hybrid modular)"
+}
+AUTO_TOP_SEEDS_9 = {
+    "Intrusion_Detection": "network intrusion detection (intrusion detection)",
+    "Cyber_Physical_Security": "security of cyber physical automotive systems (cyber physical)",
+    "InVehicle_Network_Protocols": "automotive communication and bus protocols (controller area network, protocols)",
+    "Cryptography_Key_Management": "encryption ciphering and cryptographic key management (ciphering key)",
+    "Integrity_Protection": "data and message integrity protection mechanisms (integrity protection)",
+    "Functional_Safety": "automotive functional safety and fail safe systems (functional safety)"
+}
+AUTO_TOP_SEEDS = {
+    "Perception": AUTO_TOP_SEEDS_1,
+    "Communication_Technologies": AUTO_TOP_SEEDS_2,
+    "Energy_Source": AUTO_TOP_SEEDS_3,
+    "Energy_Storage": AUTO_TOP_SEEDS_4,
+    "Energy_Management": AUTO_TOP_SEEDS_5,
+    "Urban_Mobility": AUTO_TOP_SEEDS_6,
+    "Manufacturing": AUTO_TOP_SEEDS_7,
+    "Robotics": AUTO_TOP_SEEDS_8,
+    "Cybersecurity": AUTO_TOP_SEEDS_9,
+}
 
 def get_correct_paths():
     """Get absolute paths based on your exact folder structure"""
@@ -59,6 +141,7 @@ def import_predictive_components():
             "load_area_tech_ts": predictive_analytics.load_area_tech_ts,
             "get_fastest_growing_topics": predictive_analytics.get_fastest_growing_topics,
             "get_likely_to_mature_next_year": predictive_analytics.get_likely_to_mature_next_year,
+            "plot_simple_timeseries": predictive_analytics.plot_simple_timeseries,  # ADDED: New function
         }
 
         return predictive_functions, None
@@ -185,39 +268,109 @@ def determine_question_category(question):
     # Default: RAG-Only Questions
     else:
         return 'rag_only'
-
+     
 def format_predictive_results(results_df, category):
-    """Format predictive model results for display"""
-    if results_df is None or results_df.empty:
-        return "No predictive insights available for this query."
+    """Format predictive model results for display with technology definitions - ROBUST VERSION"""
+    # Check if results_df is None or empty
+    if results_df is None:
+        return "Error: Predictive model returned None results."
+    
+    if hasattr(results_df, 'empty') and results_df.empty:
+        return "No predictive insights available for this query (empty results)."
     
     try:
-        # Different formatting based on category
+        # GROWTH QUERY FORMAT
         if category == 'predictive_growth':
             formatted = "**Fastest Growing Automotive Technologies:**\n\n"
+            
+            # Check if we have the required columns
+            required_cols = ['auto_tech_cluster', 'auto_focus_area', 'growth_slope_n_total']
+            missing_cols = [col for col in required_cols if col not in results_df.columns]
+            
+            if missing_cols:
+                return f"Error: Missing required columns in growth data: {missing_cols}\nAvailable columns: {list(results_df.columns)}"
+            
+            # Create a table-like format
             for idx, row in results_df.head(10).iterrows():
-                formatted += f"{idx+1}. **{row['auto_tech_cluster']}** (Area: {row['auto_focus_area']})\n"
-                formatted += f"   Growth Rate: {row.get('growth_slope_n_total', 'N/A'):.3f}\n"
-                formatted += f"   Recent Activity: {int(row.get('n_total_last', 0))} documents\n\n"
+                tech = row['auto_tech_cluster']
+                tech_display = tech.replace('_', ' ') if isinstance(tech, str) else str(tech)
+                
+                area = row['auto_focus_area']
+                area_display = area.replace('_', ' ') if isinstance(area, str) else str(area)
+                
+                growth = row.get('growth_slope_n_total', 0)
+                
+                # Get definition
+                definition = ""
+                area_key = area_display.replace(' ', '_')
+                if area_key in AUTO_TOP_SEEDS and tech in AUTO_TOP_SEEDS[area_key]:
+                    definition = AUTO_TOP_SEEDS[area_key][tech]
+                
+                # Format
+                formatted += f"{idx+1}. **{tech_display}**\n"
+                formatted += f"   Area: {area_display}\n"
+                if definition:
+                    formatted += f"   Definition: {definition}\n"
+                
+                if isinstance(growth, (int, float)):
+                    formatted += f"   Growth Rate: {growth:.3f}\n"
+                else:
+                    formatted += f"   Growth Rate: {growth}\n"
+                
+                recent_activity = row.get('n_total_last', row.get('recent_activity', 0))
+                formatted += f"   Recent Activity: {int(recent_activity)} documents\n\n"
         
+        # MATURITY QUERY FORMAT  
         elif category == 'predictive_maturity':
             formatted = "**Technologies Likely to Mature in Coming Year:**\n\n"
-            for idx, row in results_df.head(10).iterrows():
+            
+            # Check if we have the required columns
+            required_cols = ['auto_tech_cluster', 'auto_focus_area', 'last_share_patent', 'forecast_share_patent_mean', 'delta_share_patent']
+            missing_cols = [col for col in required_cols if col not in results_df.columns]
+            
+            if missing_cols:
+                return f"Error: Missing required columns in maturity data: {missing_cols}\nAvailable columns: {list(results_df.columns)}"
+            
+            # Create numbered list with exact format
+            for idx, row in results_df.head(15).iterrows():
+                tech = row['auto_tech_cluster']
+                tech_display = tech.replace('_', ' ') if isinstance(tech, str) else str(tech)
+                
+                area = row['auto_focus_area']
+                area_display = area.replace('_', ' ') if isinstance(area, str) else str(area)
+                
+                # Get patent percentages
                 current_pct = row.get('last_share_patent', 0) * 100
                 forecast_pct = row.get('forecast_share_patent_mean', 0) * 100
-                formatted += f"{idx+1}. **{row['auto_tech_cluster']}** (Area: {row['auto_focus_area']})\n"
-                formatted += f"   Current: {current_pct:.1f}% patents\n"
-                formatted += f"   Forecast: {forecast_pct:.1f}% patents\n"
-                formatted += f"   Growth: +{row.get('delta_share_patent', 0)*100:.1f}%\n\n"
+                growth_pct = row.get('delta_share_patent', 0) * 100
+                
+                # Get definition
+                definition = ""
+                area_key = area_display.replace(' ', '_')
+                if area_key in AUTO_TOP_SEEDS and tech in AUTO_TOP_SEEDS[area_key]:
+                    definition = AUTO_TOP_SEEDS[area_key][tech]
+                
+                # Format exactly as requested
+                line = f"{idx+36}. **{tech_display}** Area: {area_display}"
+                if definition:
+                    line += f" Definition: {definition}"
+                line += f" Current: {current_pct:.1f}% patents Forecast: {forecast_pct:.1f}% patents Growth: +{growth_pct:.1f}%"
+                
+                formatted += line + "\n"
         
         else:
-            # Default table format
             formatted = f"**Predictive Insights:**\n\n"
-            formatted += results_df.head(10).to_markdown()
+            if hasattr(results_df, 'head'):
+                formatted += results_df.head(10).to_markdown()
+            else:
+                formatted += str(results_df)
         
         return formatted
+        
     except Exception as e:
-        return f"Error formatting predictive results: {str(e)}"
+        import traceback
+        error_details = traceback.format_exc()
+        return f"Error formatting predictive results: {str(e)}\n\nDebug info:\n{error_details}"
 
 def build_smart_prompt(question, context, predictive_insights=None):
     """Your existing prompt template - UNCHANGED"""
@@ -808,7 +961,8 @@ def process_predictive_query(question, predictive_functions):
             'sources': [],
             'success': True,
             'source_count': 0,
-            'predictive_used': False
+            'predictive_used': False,
+            'graphs': []  # ADDED: Empty graphs list
         }
     
     try:
@@ -822,10 +976,36 @@ def process_predictive_query(question, predictive_functions):
         if category == 'predictive_growth':
             results = predictive_functions['get_fastest_growing_topics'](ts_data, top_n=15)
             insights = format_predictive_results(results, 'predictive_growth')
+            graphs = []  # No graphs for growth query yet
             
         elif category == 'predictive_maturity':
             results = predictive_functions['get_likely_to_mature_next_year'](ts_data)
             insights = format_predictive_results(results, 'predictive_maturity')
+            
+            # ADDED: Generate graphs for top technologies
+            graphs = []
+            if not results.empty and 'plot_simple_timeseries' in predictive_functions:
+                # Get top 3 technologies for visualization
+                top_techs = results.head(3)
+                for idx, row in top_techs.iterrows():
+                    try:
+                        area = row['auto_focus_area']
+                        tech = row['auto_tech_cluster']
+                        fig = predictive_functions['plot_simple_timeseries'](
+                            ts_data, 
+                            area=area, 
+                            tech=tech,
+                            value_col="n_total"
+                        )
+                        graphs.append({
+                            'figure': fig,
+                            'title': f"{tech} - Growth Trend",
+                            'area': area,
+                            'tech': tech
+                        })
+                    except Exception as e:
+                        print(f"Warning: Could not generate graph for {row['auto_tech_cluster']}: {e}")
+                        continue
             
         else:
             return {
@@ -833,7 +1013,8 @@ def process_predictive_query(question, predictive_functions):
                 'sources': [],
                 'success': True,
                 'source_count': 0,
-                'predictive_used': False
+                'predictive_used': False,
+                'graphs': []
             }
         
         # Format final answer
@@ -853,7 +1034,8 @@ def process_predictive_query(question, predictive_functions):
             'success': True,
             'source_count': 0,
             'predictive_used': True,
-            'predictive_results': results.to_dict('records') if hasattr(results, 'to_dict') else []
+            'predictive_results': results.to_dict('records') if hasattr(results, 'to_dict') else [],
+            'graphs': graphs  # ADDED: Include graphs in response
         }
         
     except Exception as e:
@@ -861,7 +1043,8 @@ def process_predictive_query(question, predictive_functions):
             'answer': f"Error processing predictive query: {str(e)}",
             'sources': [],
             'success': False,
-            'predictive_used': True
+            'predictive_used': True,
+            'graphs': []
         }
 
 def process_rag_query(question, retriever, groq_client, query_expander=None):
@@ -883,7 +1066,8 @@ def process_rag_query(question, retriever, groq_client, query_expander=None):
                 'sources': [],
                 'success': True,
                 'source_count': k,
-                'predictive_used': False
+                'predictive_used': False,
+                'graphs': []  # ADDED: Empty graphs list
             }
         
         # Build context from retrieved data
@@ -921,7 +1105,8 @@ def process_rag_query(question, retriever, groq_client, query_expander=None):
             'sources': retrieved_data,
             'success': True,
             'source_count': k,
-            'predictive_used': False
+            'predictive_used': False,
+            'graphs': []  # ADDED: Empty graphs list
         }
         
     except Exception as e:
@@ -929,7 +1114,8 @@ def process_rag_query(question, retriever, groq_client, query_expander=None):
             'answer': f"I encountered an error while processing your question: {str(e)}",
             'sources': [],
             'success': False,
-            'predictive_used': False
+            'predictive_used': False,
+            'graphs': []
         }
 
 def ask_question(question, retriever, groq_client, predictive_functions=None, query_expander=None):
@@ -1152,6 +1338,26 @@ def main():
             st.caption("*Based on Time-Series Predictive Model*")
         elif result['sources']:
             st.caption(f"*Based on {len(result['sources'])} documents*")
+        
+        # ADDED: Display graphs if available (for predictive maturity queries)
+        if result.get('predictive_used', False) and 'graphs' in result and result['graphs']:
+            st.subheader("📈 **Growth Trends**")
+            
+            # Create columns for graphs
+            num_graphs = len(result['graphs'])
+            if num_graphs == 1:
+                cols = [st]
+            elif num_graphs == 2:
+                cols = st.columns(2)
+            else:
+                cols = st.columns(3)
+            
+            for idx, graph_info in enumerate(result['graphs']):
+                if idx < len(cols):
+                    with cols[idx]:
+                        st.markdown(f"**{graph_info['title']}**")
+                        st.markdown(f"*Area: {graph_info['area']}*")
+                        st.pyplot(graph_info['figure'])
         
         # Display sources if available
         if result['sources']:
