@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 from .ts_core import (
     load_ts_from_parquet,
     estimate_growth,
@@ -54,3 +55,37 @@ def get_likely_to_mature_next_year(
     return df_trans.loc[mask].sort_values(
         "forecast_share_patent_mean", ascending=False
     ).copy()
+
+def plot_simple_timeseries(
+    df_ts: pd.DataFrame,
+    area: str,
+    tech: str,
+    value_col: str = "n_total"
+):
+    """
+    Streamlit içinde gösterilebilecek basit zaman serisi grafiği üretir.
+
+    Beklenen kolonlar:
+    - auto_focus_area
+    - auto_tech_cluster
+    - date
+    - value_col (default: n_total)
+    """
+
+    g = df_ts[
+        (df_ts["auto_focus_area"] == area) &
+        (df_ts["auto_tech_cluster"] == tech)
+    ].sort_values("date")
+
+    if g.empty:
+        fig, ax = plt.subplots()
+        ax.set_title("No data found for this selection")
+        return fig
+
+    fig, ax = plt.subplots()
+    ax.plot(g["date"], g[value_col])
+    ax.set_title(f"{tech} – {value_col}")
+    ax.set_xlabel("Date")
+    ax.set_ylabel(value_col)
+
+    return fig
