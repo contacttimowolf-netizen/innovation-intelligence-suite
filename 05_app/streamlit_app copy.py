@@ -89,23 +89,6 @@ AUTO_TOP_SEEDS = {
     "Cybersecurity": AUTO_TOP_SEEDS_9,
 }
 
-# ADDED: Mapping between display area names and dictionary keys
-AREA_NAME_MAPPING = {
-    "Sensing Perception VehicleUnderstanding": "Perception",
-    "Robotic Factory Autonomous Delivery": "Robotics", 
-    "Manufacturing Industrial AI": "Manufacturing",
-    "Communication Technologies": "Communication_Technologies",
-    "Energy Source": "Energy_Source",
-    "Energy Storage": "Energy_Storage", 
-    "Energy Management": "Energy_Management",
-    "Urban Mobility": "Urban_Mobility",
-    "Cybersecurity": "Cybersecurity",
-    "Perception": "Perception",
-    "Robotics": "Robotics",
-    "Manufacturing": "Manufacturing",
-    "Communication_Technologies": "Communication_Technologies",
-}
-
 def get_correct_paths():
     """Get absolute paths based on your exact folder structure"""
     current_dir = os.path.dirname(os.path.abspath(__file__))  # 05_app folder
@@ -286,29 +269,6 @@ def determine_question_category(question):
     else:
         return 'rag_only'
 
-def get_technology_definition(tech_name, area_display):
-    """Get technology definition with proper mapping"""
-    # Normalize the tech name to match dictionary keys
-    tech_key = tech_name.replace(' ', '_')
-    
-    # Map the display area name to dictionary key
-    area_key = AREA_NAME_MAPPING.get(area_display, area_display.replace(' ', '_'))
-    
-    # Try to get definition
-    definition = None
-    if area_key in AUTO_TOP_SEEDS:
-        # Try exact match first
-        if tech_key in AUTO_TOP_SEEDS[area_key]:
-            definition = AUTO_TOP_SEEDS[area_key][tech_key]
-        else:
-            # Try to find a close match
-            for dict_key, dict_value in AUTO_TOP_SEEDS[area_key].items():
-                if dict_key.lower() == tech_key.lower() or dict_key.replace('_', ' ').lower() == tech_key.replace('_', ' ').lower():
-                    definition = dict_value
-                    break
-    
-    return definition
-
 def format_predictive_results(results_df, category):
     """Format predictive model results for display with technology definitions - ROBUST VERSION"""
     # Check if results_df is None or empty
@@ -340,15 +300,18 @@ def format_predictive_results(results_df, category):
                 
                 growth = getattr(row, 'growth_slope_n_total', 0)
                 
-                # Get definition using the new function
-                definition = get_technology_definition(tech, area_display)
+                # Get definition
+                definition = "N/A"
+                area_key = area_display.replace(' ', '_')
+                if area_key in AUTO_TOP_SEEDS and tech in AUTO_TOP_SEEDS[area_key]:
+                    definition = AUTO_TOP_SEEDS[area_key][tech]
+                    # Capitalize first letter if definition exists
+                    if definition and len(definition) > 0:
+                        definition = definition[0].upper() + definition[1:]
                 
                 # Format as requested - each item on separate line with explicit line breaks
                 formatted += f"**{idx}. {tech_display}**\n\n"
-                if definition:
-                    formatted += f"**Definition:** {definition[0].upper() + definition[1:] if definition else 'N/A'}\n\n"
-                else:
-                    formatted += f"**Definition:** Technology for {tech_display.lower()} applications\n\n"
+                formatted += f"**Definition:** {definition}\n\n"
                 formatted += f"**Area:** {area_display}\n\n"
                 
                 if isinstance(growth, (int, float)):
@@ -361,7 +324,7 @@ def format_predictive_results(results_df, category):
                 recent_activity = getattr(row, 'n_total_last', getattr(row, 'recent_activity', 0))
                 formatted += f"**Recent Activity:** {int(recent_activity)} documents\n\n"
         
-        # MATURITY QUERY FORMAT - UPDATED to remove Current, Forecast, Growth
+        # MATURITY QUERY FORMAT  
         elif category == 'predictive_maturity':
             formatted = "**Technologies Likely to Mature in Coming Year**\n\n"
             
@@ -380,16 +343,27 @@ def format_predictive_results(results_df, category):
                 area = row.auto_focus_area
                 area_display = area.replace('_', ' ') if isinstance(area, str) else str(area)
                 
-                # Get definition using the new function
-                definition = get_technology_definition(tech, area_display)
+                # Get patent percentages
+                current_pct = getattr(row, 'last_share_patent', 0) * 100
+                forecast_pct = getattr(row, 'forecast_share_patent_mean', 0) * 100
+                growth_pct = getattr(row, 'delta_share_patent', 0) * 100
+                
+                # Get definition
+                definition = "N/A"
+                area_key = area_display.replace(' ', '_')
+                if area_key in AUTO_TOP_SEEDS and tech in AUTO_TOP_SEEDS[area_key]:
+                    definition = AUTO_TOP_SEEDS[area_key][tech]
+                    # Capitalize first letter if definition exists
+                    if definition and len(definition) > 0:
+                        definition = definition[0].upper() + definition[1:]
                 
                 # Format exactly as requested - each item on separate line with explicit line breaks
                 formatted += f"**{idx}. {tech_display}**\n\n"
-                if definition:
-                    formatted += f"**Definition:** {definition[0].upper() + definition[1:] if definition else 'N/A'}\n\n"
-                else:
-                    formatted += f"**Definition:** Technology for {tech_display.lower()} applications\n\n"
+                formatted += f"**Definition:** {definition}\n\n"
                 formatted += f"**Area:** {area_display}\n\n"
+                formatted += f"**Current:** {current_pct:.1f}% patents\n\n"
+                formatted += f"**Forecast:** {forecast_pct:.1f}% patents\n\n"
+                formatted += f"**Growth:** +{growth_pct:.1f}%\n\n"
         
         else:
             formatted = f"**Predictive Insights**\n\n"
@@ -1066,8 +1040,14 @@ def process_predictive_query(question, predictive_functions):
                     
                     growth = getattr(row, 'growth_slope_n_total', 0)
                     
-                    # Get definition using the new function
-                    definition = get_technology_definition(tech, area_display)
+                    # Get definition
+                    definition = "N/A"
+                    area_key = area_display.replace(' ', '_')
+                    if area_key in AUTO_TOP_SEEDS and tech in AUTO_TOP_SEEDS[area_key]:
+                        definition = AUTO_TOP_SEEDS[area_key][tech]
+                        # Capitalize first letter if definition exists
+                        if definition and len(definition) > 0:
+                            definition = definition[0].upper() + definition[1:]
                     
                     # Convert growth rate to percentage
                     growth_pct = growth * 100 if isinstance(growth, (int, float)) else growth
@@ -1076,10 +1056,7 @@ def process_predictive_query(question, predictive_functions):
                     
                     # Format technology text
                     tech_text = f"**{idx}. {tech_display}**\n\n"
-                    if definition:
-                        tech_text += f"**Definition:** {definition[0].upper() + definition[1:] if definition else 'N/A'}\n\n"
-                    else:
-                        tech_text += f"**Definition:** Technology for {tech_display.lower()} applications\n\n"
+                    tech_text += f"**Definition:** {definition}\n\n"
                     tech_text += f"**Area:** {area_display}\n\n"
                     tech_text += f"**Growth Rate:** {growth_pct:.1f}%\n\n"
                     tech_text += f"**Recent Activity:** {int(recent_activity)} documents\n\n"
@@ -1132,16 +1109,27 @@ def process_predictive_query(question, predictive_functions):
                     area = row.auto_focus_area
                     area_display = area.replace('_', ' ') if isinstance(area, str) else str(area)
                     
-                    # Get definition using the new function
-                    definition = get_technology_definition(tech, area_display)
+                    # Get patent percentages
+                    current_pct = getattr(row, 'last_share_patent', 0) * 100
+                    forecast_pct = getattr(row, 'forecast_share_patent_mean', 0) * 100
+                    growth_pct = getattr(row, 'delta_share_patent', 0) * 100
                     
-                    # Format technology text WITH separator (removed Current, Forecast, Growth)
+                    # Get definition
+                    definition = "N/A"
+                    area_key = area_display.replace(' ', '_')
+                    if area_key in AUTO_TOP_SEEDS and tech in AUTO_TOP_SEEDS[area_key]:
+                        definition = AUTO_TOP_SEEDS[area_key][tech]
+                        # Capitalize first letter if definition exists
+                        if definition and len(definition) > 0:
+                            definition = definition[0].upper() + definition[1:]
+                    
+                    # Format technology text WITH separator
                     formatted_text += f"**{idx}. {tech_display}**\n\n"
-                    if definition:
-                        formatted_text += f"**Definition:** {definition[0].upper() + definition[1:] if definition else 'N/A'}\n\n"
-                    else:
-                        formatted_text += f"**Definition:** Technology for {tech_display.lower()} applications\n\n"
+                    formatted_text += f"**Definition:** {definition}\n\n"
                     formatted_text += f"**Area:** {area_display}\n\n"
+                    formatted_text += f"**Current:** {current_pct:.1f}% patents\n\n"
+                    formatted_text += f"**Forecast:** {forecast_pct:.1f}% patents\n\n"
+                    formatted_text += f"**Growth:** +{growth_pct:.1f}%\n\n"
                     
                     # Add separator after each technology (except the last one)
                     if idx < min(15, len(results)):
