@@ -1164,7 +1164,7 @@ def process_predictive_query(question, predictive_functions):
 
 {insights}
 **Methodology Note**
-- Based on time-series analysis of automotive technology publications and patents
+- Based on time-series analysis of automotive technology publications and patents from Lens.org
 - Forecasts derived from historical growth patterns
 - Updated with the latest available data
 """
@@ -1492,7 +1492,7 @@ def main():
             
             # Add methodology note at the bottom
             st.markdown("**Methodology Note**")
-            st.markdown("- Based on time-series analysis of automotive technology publications and patents")
+            st.markdown("- Based on time-series analysis of automotive technology publications and patents from Lens.org")
             st.markdown("- Forecasts derived from historical growth patterns")
             st.markdown("- Updated with the latest available data")
             
