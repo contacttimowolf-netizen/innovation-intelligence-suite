@@ -5,6 +5,8 @@
 
 # 1. SECRETS & CONFIGURATION - NEVER COMMIT!
 # ============================================
+.env
+.env.local
 .env                    # Your actual API keys (KEEP SECRET!)
 .env.local              # Local overrides
 credentials.json        # Service credentials
@@ -127,3 +129,5 @@ logs/
 
 # Raw data sources (NEVER commit)
 01_data/**/raw_sources/
+*.env
+.env.*
