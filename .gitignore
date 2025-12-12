@@ -9,6 +9,7 @@
 **/01_data/**/processed/*.pdf
 **/01_data/**/processed/*.txt  # Add this if you process text files
 !**/01_data/**/README.md
+**/01_data/rag_automotive_tech/raw_sources
 
 # Old structure - data/ (if any legacy files exist)
 data/rag_automotive_tech/raw_sources/

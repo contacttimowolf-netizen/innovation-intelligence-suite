@@ -31,6 +31,9 @@ Note: The Innovation Intelligence Suite will return on these queries within the 
 6. "What are the fastest growing technologies growing in academia?" (Trend / Analytical)
 
 7. “Which automotive technologies are reaching commercial maturity in the next 12 months?” (Shift / TRL/Maturity)
+"For which automotive technologies is the commercial interest rising in the next year?"
+->notebook 3
+-> streamlit app
      
 
 Out of Scope: 
