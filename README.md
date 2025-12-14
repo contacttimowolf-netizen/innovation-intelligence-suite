@@ -6,7 +6,7 @@ This capstone project explores how AI/ML can accelerate insight generation for R
 - A **Retrieval-Augmented Generation (RAG)** interface synthesizing information and answering domain-scoped innovation queries
 - A **Technology Adoption Readiness Predictor** that classifies emerging technologies by feeding tags into a prediction model
 - **Modular design** with intelligent query classification to route requests to appropriate processing modules
-- **Automotive AI technology focus** with research papers, tech reports, startups and patent data (2025)
+- **Automotive (AI) technology focus** with research papers, tech reports, startups and patent data (2025)
 
 ![Architecture Diagram](./06_doc/architecture_diagram.png)
 
