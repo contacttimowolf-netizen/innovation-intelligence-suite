@@ -7,6 +7,14 @@ from .ts_core import (
     forecast_paper_to_patent_shift,
 )
 
+# === THEME-SAFE COLORS (white & dark background compatible) ===
+COLOR_TEXT = "#111111"       
+COLOR_AXIS = "#333333"
+COLOR_GRID = "#CCCCCC"
+
+COLOR_TECH_BAR = "#1F77B4"    
+COLOR_BASELINE = "#2CA02C"    
+COLOR_DERIV = "#D62728"       
 
 def load_area_tech_ts() -> pd.DataFrame:
     return load_ts_from_parquet()
@@ -248,41 +256,43 @@ def plot_simple_timeseries(
     fig, ax = plt.subplots(figsize=(6, 3))
 
     # Arka plan şeffaf
-    fig.patch.set_alpha(0.0)
-    ax.set_facecolor("none")
+    fig.patch.set_facecolor("white")
+    ax.set_facecolor("white")
 
     # Barlar: seçilen teknoloji
     tech_label = tech.replace("_", " ")
     ax.bar(
-        x,
-        g["tech_index"].values,
-        width=0.6,
-        label=tech_label,
+    x,
+    g["tech_index"].values,
+    width=0.6,
+    label=tech_label,
+    color=COLOR_TECH_BAR,
     )
 
-    # Kesikli çizgi: tüm teknolojilerin baseline index'i (quarter-quarter değişen)
     ax.plot(
-        x,
-        g["overall_index"].values,
-        linestyle="--",
-        linewidth=1.0,
-        label="All technologies baseline",
-        alpha=0.9,
-    )
+    x,
+    g["overall_index"].values,
+    linestyle="--",
+    linewidth=1.5,
+    label="All technologies baseline",
+    color=COLOR_BASELINE,
+)
 
     ax.set_xticks(x)
     ax.set_xticklabels(labels, rotation=45, ha="right")
 
     # Y ekseni: % formatı
     ax.yaxis.set_major_formatter(FuncFormatter(lambda v, pos: f"{int(v)}%"))
-    ax.set_ylabel("Relative publication momentum", color="#DDDDDD")
+    ax.set_ylabel("Quarterly publication rate", color=COLOR_TEXT)
 
-    ax.tick_params(axis="x", colors="#DDDDDD")
-    ax.tick_params(axis="y", colors="#DDDDDD")
+    ax.tick_params(axis="x", colors=COLOR_AXIS)
+    ax.tick_params(axis="y", colors=COLOR_AXIS)
+
     for spine in ax.spines.values():
-        spine.set_color("#666666")
+        spine.set_color(COLOR_AXIS)
 
-    ax.legend(loc="upper left", frameon=False, labelcolor="#DDDDDD")
+    ax.legend(loc="upper left", frameon=False, labelcolor=COLOR_TEXT)
+
 
     fig.tight_layout()
     return fig
@@ -301,9 +311,9 @@ def plot_maturity_derivatives(
     max_quarters: int = 8,
 ):
     """
-    Tech Maturity paneli:
-    - Sol: Patent momentum (1. türev)
-    - Sağ: Momentum ivmesi (2. türev)
+    
+    
+    
     """
 
     qdf = _to_quarterly(df_ts)
@@ -340,23 +350,25 @@ def plot_maturity_derivatives(
 
     # 1. türev yorumu
     if last_d1 > 0:
-        momentum_title = "Momentum: positive – activity still expanding"
+        momentum_title = "Short Term Direction: Up"
     elif last_d1 < 0:
-        momentum_title = "Momentum: negative – activity in contraction"
+        momentum_title = "Short Term Direction: Down"
     else:
-        momentum_title = "Momentum: flat – no net change in activity"
+        momentum_title = "Short Term Direction: Neutral"
 
     # 2. türev + outlook yorumu
     if (last_d2 > 0) and (last_d1 > 0):
-        outlook_title = "Outlook: growth accelerating in the near term"
+        outlook_title = "Mid Term - Growth is speeding up"
     elif (last_d2 < 0) and (last_d1 > 0):
-        outlook_title = "Outlook: growth slowing – risk of plateau"
+        outlook_title = "Mid Term - Growth continues but is slowing down"
     elif (last_d2 > 0) and (last_d1 <= 0):
-        outlook_title = "Outlook: early recovery signals – momentum turning up"
+        outlook_title = "Mid Term - Early signs of recovery"
     elif (last_d2 < 0) and (last_d1 < 0):
-        outlook_title = "Outlook: decline deepening – downside pressure"
+        outlook_title = "Mid Term - Decline is getting stronger"
+    elif (last_d2 == 0) and (last_d1 != 0):
+        outlook_title = "Mid Term - Trend continues at a steady pace"
     else:
-        outlook_title = "Outlook: broadly stable – no strong inflection"
+        outlook_title = "Mid Term - Watch next period for direction"
 
     x = np.arange(len(g))
     labels = [str(q) for q in g["quarter"].astype(str)]
@@ -365,39 +377,32 @@ def plot_maturity_derivatives(
 
 
     # Arka plan şeffaf
-    fig.patch.set_alpha(0.0)
+    fig.patch.set_facecolor("white")
     for ax in axes:
-        ax.set_facecolor("none")
+        ax.set_facecolor("white")
 
     line_color = "#4DB6AC"
 
     # 1. türev – “Patent momentum”
-    axes[0].plot(x, g["d1"], marker="o", color=line_color)
-    axes[0].axhline(0, linestyle="--", linewidth=0.8, color="#888888")
-    axes[0].set_title(
-        momentum_title,
-        color="#DDDDDD",
-        fontsize=9,
-    )
-    axes[0].set_ylabel("Δ patents", color="#DDDDDD")
+    axes[0].plot(x, g["d1"], marker="o", color=COLOR_DERIV)
+    axes[0].axhline(0, linestyle="--", linewidth=0.8, color=COLOR_GRID)
+    axes[0].set_title(momentum_title, color=COLOR_TEXT, fontsize=9)
+    axes[0].set_ylabel("Δ patents", color=COLOR_TEXT)
 
     # 2. türev – “Momentum acceleration”
-    axes[1].plot(x, g["d2"], marker="o", color=line_color)
-    axes[1].axhline(0, linestyle="--", linewidth=0.8, color="#888888")
-    axes[1].set_title(
-        outlook_title,
-        color="#DDDDDD",
-        fontsize=9,
-    )
-    axes[1].set_ylabel("Δ² patents", color="#DDDDDD")
+    axes[1].plot(x, g["d2"], marker="o", color=COLOR_TECH_BAR)
+    axes[1].axhline(0, linestyle="--", linewidth=0.8, color=COLOR_GRID)
+    axes[1].set_title(outlook_title, color=COLOR_TEXT, fontsize=9)
+    axes[1].set_ylabel("Δ² patents", color=COLOR_TEXT)
 
     for ax in axes:
         ax.set_xticks(x)
         ax.set_xticklabels(labels, rotation=45, ha="right")
-        ax.tick_params(axis="x", colors="#DDDDDD")
-        ax.tick_params(axis="y", colors="#DDDDDD")
+        ax.tick_params(axis="x", colors=COLOR_AXIS)
+        ax.tick_params(axis="y", colors=COLOR_AXIS)
         for spine in ax.spines.values():
-            spine.set_color("#666666")
+            spine.set_color(COLOR_AXIS)
+
 
     # figure-level başlık YOK – Streamlit üst başlığı veriyor
     fig.tight_layout()
