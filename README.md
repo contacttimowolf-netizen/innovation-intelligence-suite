@@ -57,6 +57,9 @@ pip install -r requirements.txt
 Copy .env.example to .env
 Add your Groq API key: GROQ_API_KEY=your_key_here
 Get free API key at: https://console.groq.com
+
+Add your Kaggle API key: GROQ_API_KEY=your_key_here
+Get free API key at: https://www.kaggle.com/docs/api
 ```
 
 ### 5. Run the System

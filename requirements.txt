@@ -3,9 +3,12 @@
 # ============================================
 
 # CORE (Required for basic functionality)
+jupyterlab==3.6.3
 pandas>=2.0.3
 numpy>=1.24.3
 python-dotenv>=1.0.0
+scikit-learn==1.7.2
+joblib==1.5.2
 
 # STREAMLIT & WEB APP
 streamlit>=1.28.0
@@ -26,3 +29,29 @@ groq>=0.3.0
 
 # UTILITIES
 tqdm>=4.65.0
+pyarrow==22.0.0
+
+# DATA 
+httpcore==1.0.9
+kaggle==1.8.2
+
+# NLP
+sentence-transformers==5.1.2
+huggingface-hub==0.36.0
+safetensors==0.6.2
+tensorboard==2.20.0
+tensorboard-data-server==0.7.2
+tensorflow==2.20.0
+tf_keras==2.20.1
+torch==2.9.1
+fastembed==0.7.4
+
+# 2D VISUALISATION
+umap-learn==0.5.9.post2
+seaborn==0.12.2
+matplotlib==3.7.1
+matplotlib-inline==0.2.1
+
+# CLUSTERING
+hdbscan==0.8.40
+

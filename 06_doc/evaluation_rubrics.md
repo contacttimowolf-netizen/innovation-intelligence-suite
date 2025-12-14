@@ -26,11 +26,17 @@ We set a performance target requiring the system to load and respond in under 10
 
 ### Predictive Model
 
-Accuracy, qualitative plausability - 
-    
-F1 for classification (80 considered a good score) - Add definition and our score goal
+Semantic Coherence & Seed Orthogonality Evaluation & Topic Modelling
 
-Tbc for time-series analysis
+To evaluate the semantic coherence of the technology classification and the quality of the seed-based ontology, we relied on silhouette score as the primary quantitative metric. The silhouette score measures how well documents assigned to the same technology cluster are separated from documents assigned to other clusters, providing an intrinsic assessment of clustering quality in the embedding space.
+
+A target silhouette score of 0.5 was defined as an indicator of strong semantic separation. While this value was treated as an aspirational benchmark rather than a strict acceptance criterion, it served as a reference point for evaluating different assignment and clustering configurations.
+
+In addition to quantitative evaluation, sanity checks were performed using cosine similarity distributions between documents and their assigned technology seeds. Specifically, we analysed histogram shapes to assess seed orthogonality. A single-mode (unimodal) distribution was expected and observed, indicating that technology seeds were not competing for the same semantic regions and that assignments were not driven by ambiguous overlaps between seed definitions.
+
+The absence of multimodal or heavy-tailed distributions provided evidence that the seed ontology formed a semantically consistent and stable partitioning of the document space, rather than a fragmented or overlapping classification.
+
+This combined approach—using silhouette score for structural separation and similarity histograms for orthogonality and confidence diagnostics—ensured that downstream trend analysis and forecasting were built on a robust and interpretable semantic foundation, without relying on hard similarity thresholds or heuristic filtering.
 
 
 
