@@ -30,9 +30,9 @@ View full project presentation: [final_capstone_project_presentation.pptx.pdf](.
 
 ## Quick Start
 
-### 1. Clone Repository
-```bash 
-git clone https://github.com/contacttimowolf-netizen/innovation-intelligence-suite.git
+### 1. Fork & Clone Repository
+```bash  
+git clone https://github.com/YOUR-USERNAME/innovation-intelligence-suite.git
 cd innovation-intelligence-suite
 ```
 
@@ -40,10 +40,10 @@ cd innovation-intelligence-suite
 ```bash
 python -m venv .venv```
 
-**Mac/Linux:**
+#Mac/Linux:
 source .venv/bin/activate
 
-**Windows:**
+#Windows:
 .venv\Scripts\activate 
 ```
 
@@ -53,14 +53,10 @@ pip install -r requirements.txt
 ```
 
 ### 4. Configure API Keys
-```bash
 Copy .env.example to .env
 Add your Groq API key: GROQ_API_KEY=your_key_here
 Get free API key at: https://console.groq.com
 
-Add your Kaggle API key: GROQ_API_KEY=your_key_here
-Get free API key at: https://www.kaggle.com/docs/api
-```
 
 ### 5. Run the System
 
@@ -68,15 +64,15 @@ Get free API key at: https://www.kaggle.com/docs/api
 ```bash
 cd 05_app
 streamlit run streamlit_app.py
-Open http://localhost:8501 in your browser
+#Open http://localhost:8501 in your browser
 ```
 
 **Option B: CLI/Jupyter (For Development & Testing -needs additional requirements installment-)**
 
 ```bash
 jupyter notebook
-Explore notebooks in 03_notebooks/ to understand the pipeline
-Notebook 03_rag_pipeline.ipynb contains the main RAG implementation
+#Explore notebooks in 03_notebooks/ to understand the pipeline
+#Notebook 03_rag_pipeline.ipynb contains the main RAG implementation
 ```
 
 ## Project Structure
