@@ -22,7 +22,7 @@ View full project presentation: [final_capstone_project_presentation.pptx.pdf](.
 - **Domain insight retrieval**: Get insights on specific innovation topics from research papers, tech reports, startups and patent data (2025)
 - **Transparent attribution**: Source citation with relevance scoring
 - **Template-based generation**: Structured answer generation with full transparency
-- **Trend analysis**: Topic modeling and trend forecasting based on academic and commercial interest (25,000+ research papers and patents, Fraunhofer ISI-inspired)
+- **Predictive analysis**: Topic modeling and trend forecasting based on academic and commercial interest (25,000+ research papers and patents, Fraunhofer ISI-inspired)
 
 ![Demo Screenshot 1](02_images/demo_screenshot2.png)
 
